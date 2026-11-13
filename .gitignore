@@ -1,0 +1,11 @@
+# answer key: never committed
+reference/
+# python / tooling
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# large intermediate rasters for non-pilot pages
+work/
+.DS_Store
+cache/

@@ -1,0 +1,29 @@
+[project]
+name = "prairie-grass-ocr"
+version = "0.1.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "easyocr==1.7.2",
+    "numpy<2",
+    "opencv-python-headless>=4.9,<5",
+    "pillow>=13.0.0",
+    "pymupdf>=1.24,<1.27",
+    "pyyaml>=6.0.3",
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/extract", "scoring"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
