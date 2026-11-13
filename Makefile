@@ -4,7 +4,7 @@ PY  = $(UV) run python
 
 .PHONY: pilot recon select extract reference score review test clean-cache
 
-pilot: recon select extract test reference score review
+pilot: recon select extract test reference score score-holdout review
 
 recon:            ## page map + table-page inventory (docs/)
 	$(PY) -m extract.recon

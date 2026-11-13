@@ -18,3 +18,5 @@ cache/*
 # scores and experiments contain reference values: never committed
 output/scores/
 output/experiments/
+# review pack reproduces reference values: local only
+review/
