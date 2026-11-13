@@ -1,0 +1,121 @@
+rule: "Rule-based pilot page selection -> config/pilot_pages.yaml.\n\nIf config/pilot_pages.yaml already\
+  \ exists it is used as is (never rewritten).\n\nRule (also recorded in the YAML):\n  Eligible Table\
+  \ 5.2 pages: run label resolved, page half resolved, all 15\n  column boundaries found (structure detection\
+  \ did not fail), and at least\n  MIN_INKED value cells containing ink (pages that are almost all blank\
+  \ say\n  little about reading accuracy).\n  Rank eligible pages by legibility (docs/page_inventory.csv).\n\
+  \    dev:     best, worst, and 2 of the 6 pages nearest the median\n    holdout: 2nd best, 2nd worst,\
+  \ and 2 other pages near the median\n  Near-median: take the 6 eligible pages closest to the median\
+  \ legibility,\n  shuffle them with random.Random(SEED); dev gets positions 0-1, holdout 2-3.\n  Table\
+  \ 5.3: shuffle the tower pages with random.Random(SEED); dev gets the\n  first, holdout the second."
+seed: 1956
+min_inked_cells: 25
+eligible_arc_pages: 84
+median_legibility: 1.9436
+excluded_arc_pages:
+  '95': 22 inked cells
+  '109': 5 inked cells
+  '114': 15 inked cells
+  '116': 13 inked cells
+  '120': 14 inked cells
+  '125': 23 inked cells
+  '126': 20 inked cells
+  '129': 22 inked cells
+  '133': 24 inked cells
+  '135': 16 inked cells
+  '145': 18 inked cells
+  '151': 11 inked cells
+  '158': 24 inked cells
+  '161': 6 inked cells
+  '170': 16 inked cells
+  '172': 5 inked cells
+  '187': 9 inked cells
+  '189': 19 inked cells
+  '190': 23 inked cells
+  '193': 4 inked cells
+  '195': 10 inked cells
+  '199': 7 inked cells
+  '201': 2 inked cells
+  '202': 19 inked cells
+  '205': 13 inked cells
+unresolved_arc_pages:
+- '156'
+dev:
+- pdf_index: 146
+  printed_page: 133
+  table: '5.2'
+  runs: '29'
+  half: B
+  legibility: 2.6758
+  stratum: best
+  inked_cells: 132
+- pdf_index: 111
+  printed_page: 98
+  table: '5.2'
+  runs: '10'
+  half: B
+  legibility: 1.9495
+  stratum: near-median
+  inked_cells: 155
+- pdf_index: 162
+  printed_page: 149
+  table: '5.2'
+  runs: '39'
+  half: A
+  legibility: 1.9555
+  stratum: near-median
+  inked_cells: 79
+- pdf_index: 124
+  printed_page: 111
+  table: '5.2'
+  runs: '17'
+  half: A
+  legibility: 1.1516
+  stratum: worst
+  inked_cells: 38
+- pdf_index: 210
+  printed_page: 197
+  table: '5.3'
+  runs: 42 43 44 45 46 47 48S 48 49
+  half: null
+  legibility: 1.5052
+  stratum: tower (random)
+holdout:
+- pdf_index: 182
+  printed_page: 169
+  table: '5.2'
+  runs: '52'
+  half: A
+  legibility: 2.5941
+  stratum: 2nd best
+  inked_cells: 184
+- pdf_index: 98
+  printed_page: 85
+  table: '5.2'
+  runs: '3'
+  half: B
+  legibility: 1.9487
+  stratum: near-median
+  inked_cells: 235
+- pdf_index: 144
+  printed_page: 131
+  table: '5.2'
+  runs: '28'
+  half: A
+  legibility: 1.9436
+  stratum: near-median
+  inked_cells: 56
+- pdf_index: 107
+  printed_page: 94
+  table: '5.2'
+  runs: '8'
+  half: A
+  legibility: 1.3252
+  stratum: 2nd worst
+  inked_cells: 40
+- pdf_index: 211
+  printed_page: 198
+  table: '5.3'
+  runs: 50 51 52 54 ? 56 57 58 59
+  half: null
+  legibility: 1.4353
+  stratum: tower (random)

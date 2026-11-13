@@ -3,9 +3,10 @@
 If config/pilot_pages.yaml already exists it is used as is (never rewritten).
 
 Rule (also recorded in the YAML):
-  Eligible Table 5.2 pages: run label resolved, page half resolved, and at
-  least MIN_INKED value cells containing ink (pages that are almost all
-  blank say little about reading accuracy).
+  Eligible Table 5.2 pages: run label resolved, page half resolved, all 15
+  column boundaries found (structure detection did not fail), and at least
+  MIN_INKED value cells containing ink (pages that are almost all blank say
+  little about reading accuracy).
   Rank eligible pages by legibility (docs/page_inventory.csv).
     dev:     best, worst, and 2 of the 6 pages nearest the median
     holdout: 2nd best, 2nd worst, and 2 other pages near the median
@@ -37,6 +38,8 @@ def _inked_cells(idx: int) -> int:
     from .preprocess import PreprocessConfig, preprocess
     img, _ = preprocess(page_image(idx), PreprocessConfig())
     st = S.analyse_arc_page(img)
+    if len(st.col_bounds) != 15:
+        return -1  # structure failed
     cells = arc_cells(idx, st, run="?")
     return sum(1 for c in cells if ink_stats(img, c.box)["tall_components"] > 0)
 
@@ -49,6 +52,8 @@ def select(inventory: Path = REPO / "docs" / "page_inventory.csv") -> dict:
     for r, n in zip(arc, inked):
         r["inked_cells"] = n
     eligible = [r for r in arc if r["inked_cells"] >= MIN_INKED]
+    excluded = {r["pdf_index"]: ("structure failed" if r["inked_cells"] < 0 else f"{r['inked_cells']} inked cells")
+                for r in arc if r["inked_cells"] < MIN_INKED}
     eligible.sort(key=lambda r: float(r["legibility"]), reverse=True)
     leg = [float(r["legibility"]) for r in eligible]
     med = sorted(leg)[len(leg) // 2]
@@ -78,6 +83,8 @@ def select(inventory: Path = REPO / "docs" / "page_inventory.csv") -> dict:
         "min_inked_cells": MIN_INKED,
         "eligible_arc_pages": len(eligible),
         "median_legibility": med,
+        "excluded_arc_pages": excluded,
+        "unresolved_arc_pages": [r["pdf_index"] for r in rows if r["table"] == "5.2" and not r["runs"]],
         "dev": dev,
         "holdout": hold,
     }

@@ -176,6 +176,9 @@ def isolate_glyphs(crop: np.ndarray) -> tuple[np.ndarray, dict]:
     Returns the cleaned crop (same size, 0 = ink) and stats: kept ink pixels,
     component count, and the bounding box of kept ink (or None).
     """
+    if crop.size == 0 or min(crop.shape) < 3:
+        return np.full(crop.shape, 255, np.uint8), {"ink": 0, "components": 0,
+                                                    "tall_components": 0, "bbox": None}
     clean = clean_for_ocr(crop)
     ink = np.where(clean < 128, 255, 0).astype(np.uint8)
     n, lab, stats, _ = cv2.connectedComponentsWithStats(ink, connectivity=8)
@@ -359,12 +362,75 @@ def _fit_arc_panel(img, bands, kx0, kx1, panel_idx):
     return {"rows": rows, "pitch": float(pitch), "half": half, "support": int(support)}, notes
 
 
+# Relative x of the 15 Table 5.2 rules (first = 0, last = 1): median over ten
+# pages where all 15 were detected (PDF 94, 100, 101, 130, 140, 150, 170, 173,
+# 185, 205); spread < 0.0025 at every position. It is one printed form.
+ARC_RULE_TEMPLATE = np.array([0.0, 0.0615, 0.1334, 0.213, 0.2846, 0.3587, 0.4328, 0.5101,
+                              0.5836, 0.6413, 0.7188, 0.7923, 0.8613, 0.9303, 1.0])
+
+
+def fit_rule_template(xs: list[tuple[float, float]], template: np.ndarray, tol: float = 14.0
+                      ) -> tuple[list[tuple[float, float]], list[str]]:
+    """Match detected rules to the printed form's template (scale + offset).
+
+    Detected rules that match keep their measured extents; template rules with
+    no detection (faint or broken rules) get an inferred position; detections
+    matching no template rule (page edges, stray strokes) are dropped. All
+    such repairs are reported.
+    """
+    c = np.array([(a + b) / 2 for a, b in xs])
+    n, m = len(c), len(template)
+    best = None
+    for i in range(n):
+        for j in range(i + 1, n):
+            for a in range(m):
+                for b in range(a + 1, m):
+                    scale = (c[j] - c[i]) / (template[b] - template[a])
+                    if scale <= 0:
+                        continue
+                    pred = c[i] + (template - template[a]) * scale
+                    d = np.abs(c[None, :] - pred[:, None])
+                    score = int((d.min(axis=1) <= tol).sum())
+                    resid = float(np.sort(d.min(axis=1))[:score].sum()) if score else 1e9
+                    if best is None or (score, -resid) > (best[0], -best[1]):
+                        best = (score, resid, pred)
+    if best is None:
+        return xs, ["too few rules to fit the column template"]
+    score, _, pred = best
+    # refine scale/offset on matched rules
+    d = np.abs(c[None, :] - pred[:, None])
+    match = [(k, int(d[k].argmin())) for k in range(m) if d[k].min() <= tol]
+    if len(match) >= 2:
+        A = np.column_stack([np.ones(len(match)), template[[k for k, _ in match]]])
+        coef, *_ = np.linalg.lstsq(A, c[[j for _, j in match]], rcond=None)
+        pred = coef[0] + coef[1] * template
+    notes = []
+    out, used = [], set()
+    for k in range(m):
+        j = int(np.abs(c - pred[k]).argmin())
+        if abs(c[j] - pred[k]) <= tol and j not in used:
+            out.append(xs[j])
+            used.add(j)
+        else:
+            out.append((pred[k] - 4, pred[k] + 4))
+            notes.append(f"column rule {k} not detected; position inferred from template at x={pred[k]:.0f}")
+    dropped = [int(c[j]) for j in range(n) if j not in used]
+    if dropped:
+        notes.append(f"ignored {len(dropped)} vertical stroke(s) not on the table form at x={dropped}")
+    return out, notes
+
+
 def analyse_arc_page(img: np.ndarray) -> PageStructure:
     """Table 5.2 page: two panels, each [inner post | 800m post || 50 100 200 400 800]."""
     xs, (ty0, ty1) = vertical_boundaries(img)
     anomalies: list[str] = []
     if len(xs) != 15:
-        anomalies.append(f"found {len(xs)} vertical boundaries, expected 15")
+        anomalies.append(f"found {len(xs)} vertical rules, expected 15; fitting column template")
+        xs, notes = fit_rule_template(xs, ARC_RULE_TEMPLATE)
+        anomalies += notes
+        inferred_rules = {int(m.group(1)) for n in notes for m in [re.search(r"column rule (\d+) not detected", n)] if m}
+    else:
+        inferred_rules = set()
     panels: list[Panel] = []
     halves = []
     for p in range(2):
@@ -373,6 +439,8 @@ def analyse_arc_page(img: np.ndarray) -> PageStructure:
             anomalies.append(f"panel {p}: incomplete column boundaries")
             continue
         cols = {name: _interior(b[i], b[i + 1]) for i, name in enumerate(ARC_PANEL_COLS)}
+        inferred_cols = [name for i, name in enumerate(ARC_PANEL_COLS)
+                         if (7 * p + i) in inferred_rules or (7 * p + i + 1) in inferred_rules]
         kx0, kx1 = cols["post800"]
         bands = text_bands(img, kx0, kx1, max(0, ty0 - 50), min(img.shape[0], ty1 + 80))
         fit, notes = _fit_arc_panel(img, bands, kx0, kx1, p)
@@ -382,7 +450,8 @@ def analyse_arc_page(img: np.ndarray) -> PageStructure:
             continue
         halves.append(fit["half"])
         panels.append(Panel(cols, fit["rows"], fit["pitch"], row_edges(fit["rows"], fit["pitch"]),
-                            {"panel": p, "half": fit["half"], "support": fit["support"]}))
+                            {"panel": p, "half": fit["half"], "support": fit["support"],
+                             "inferred_cols": inferred_cols}))
     half = halves[0] if halves and all(h == halves[0] for h in halves) else None
     if halves and half is None:
         anomalies.append(f"panels disagree on page half: {halves}")

@@ -39,6 +39,7 @@ def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "") -> lis
         if not p.rows or half is None:
             continue
         start = ARC_HALVES[half][pidx]
+        inferred_cols = set(p.meta.get("inferred_cols", []))
         n = len(p.rows)
         for i, (row, (t, b)) in enumerate(zip(p.rows, p.edges)):
             post800 = start + i
@@ -48,14 +49,16 @@ def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "") -> lis
             elif row.key_read and row.key_read != row.key_expected:
                 rnotes.append(f"800 m post printed as '{row.key_read}', expected {row.key_expected}")
             x0, x1 = p.cols["800"]
-            out.append(CellSpec(page, "5.2", run, "800", str(post800), (x0, t, x1, b), list(rnotes)))
+            cn = rnotes + (["column bound inferred from template (rule not visible)"] if "800" in inferred_cols else [])
+            out.append(CellSpec(page, "5.2", run, "800", str(post800), (x0, t, x1, b), cn))
             if post800 % 2 == 1:
                 inner = (post800 + 1) // 2
                 # inner-arc cell spans this row and the next (even) 800 m row
                 b2 = p.edges[i + 1][1] if i + 1 < n else b
                 for d in ARC_DISTANCES[:-1]:
                     x0, x1 = p.cols[d]
-                    out.append(CellSpec(page, "5.2", run, d, str(inner), (x0, t, x1, b2), list(rnotes)))
+                    cn = rnotes + (["column bound inferred from template (rule not visible)"] if d in inferred_cols else [])
+                    out.append(CellSpec(page, "5.2", run, d, str(inner), (x0, t, x1, b2), cn))
     return out
 
 
