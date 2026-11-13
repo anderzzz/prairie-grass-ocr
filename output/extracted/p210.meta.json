@@ -1,0 +1,199 @@
+{
+ "pdf_index": 210,
+ "table": "5.3",
+ "run": "",
+ "run_note": "",
+ "preprocess": {
+  "config": {
+   "deskew": true,
+   "despeckle": true,
+   "repair": false,
+   "speck_max_area": 4,
+   "repair_kernel": 2
+  },
+  "skew_deg": -0.4267
+ },
+ "structure_anomalies": [
+  "inferred 1 column boundary(ies) between x=1060 and x=1381",
+  "inferred 1 column boundary(ies) between x=1381 and x=1710",
+  "8 printed heights read differently from the expected sequence"
+ ],
+ "half": null,
+ "n_cells": 486,
+ "tower_column_runs": [
+  {
+   "col": "c1",
+   "x": [
+    750,
+    901
+   ],
+   "raw": {
+    "tesseract": "42",
+    "easyocr": "42"
+   },
+   "run": "42",
+   "note": "",
+   "source": "manual",
+   "run_auto": "42",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c2",
+   "x": [
+    913,
+    1054
+   ],
+   "raw": {
+    "tesseract": "43",
+    "easyocr": "43"
+   },
+   "run": "43",
+   "note": "",
+   "source": "manual",
+   "run_auto": "43",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c3",
+   "x": [
+    1066,
+    1213
+   ],
+   "raw": {
+    "tesseract": "44",
+    "easyocr": "44"
+   },
+   "run": "44",
+   "note": "",
+   "source": "manual",
+   "run_auto": "44",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c4",
+   "x": [
+    1227,
+    1375
+   ],
+   "raw": {
+    "tesseract": "45",
+    "easyocr": "45"
+   },
+   "run": "45",
+   "note": "",
+   "source": "manual",
+   "run_auto": "45",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c5",
+   "x": [
+    1387,
+    1538
+   ],
+   "raw": {
+    "tesseract": "46",
+    "easyocr": "40"
+   },
+   "run": "46",
+   "note": "run header readers disagree or unreadable: {'tesseract': '46', 'easyocr': '40'}",
+   "source": "manual",
+   "run_auto": "46",
+   "source_auto": "readers disagree; chosen by run order",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c6",
+   "x": [
+    1552,
+    1703
+   ],
+   "raw": {
+    "tesseract": "47",
+    "easyocr": "47"
+   },
+   "run": "47",
+   "note": "",
+   "source": "manual",
+   "run_auto": "47",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c7",
+   "x": [
+    1717,
+    1869
+   ],
+   "raw": {
+    "tesseract": "48S",
+    "easyocr": "48S"
+   },
+   "run": "48S",
+   "note": "",
+   "source": "manual",
+   "run_auto": "48S",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c8",
+   "x": [
+    1883,
+    2030
+   ],
+   "raw": {
+    "tesseract": "48",
+    "easyocr": "48"
+   },
+   "run": "48",
+   "note": "",
+   "source": "manual",
+   "run_auto": "48",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c9",
+   "x": [
+    2045,
+    2184
+   ],
+   "raw": {
+    "tesseract": "49",
+    "easyocr": "49"
+   },
+   "run": "49",
+   "note": "",
+   "source": "manual",
+   "run_auto": "49",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  }
+ ],
+ "mistral": {
+  "model": "mistral-ocr-4-1",
+  "pages_processed": 1,
+  "problems": [],
+  "cells_mapped": 486
+ },
+ "subset": "dev",
+ "readers": {
+  "tesseract": {
+   "engine": "tesseract 5.4.1",
+   "psm": 7,
+   "scale": 1.0,
+   "whitelist": "0123456789.M*"
+  },
+  "easyocr": {
+   "engine": "easyocr 1.7.2 english_g2",
+   "scale": 1.0,
+   "allowlist": "0123456789.M*"
+  }
+ },
+ "preprocess_preset": "default"
+}

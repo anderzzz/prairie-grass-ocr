@@ -39,9 +39,11 @@ printed 78–201. The table numbers in the brief are right.
   * half **A**: left panel 800 m posts 1–45 (inner 1–23), right panel 46–90 (inner 24–45);
   * half **B**: left panel 91–135 (inner 46–68), right panel 136–181 (inner 69–91).
   Geometry check: inner arcs 91 posts at 2° over 180°, 800 m arc 181 posts at 1°.
-* Not every run has both halves: e.g. run 2, 10, 23, 24 have only one page in the
-  scan; run 46 has only half A and run 47 only half B. A half that would be empty
-  appears to have been omitted.
+* Not every run has both halves: by the automatic run labels in
+  `docs/page_inventory.csv`, about 20-25 runs have a single Table 5.2 page (the
+  exact count depends on a few labels settled by order; see
+  `docs/recon_discrepancies.md`). For example run 46 has only half A and run 47
+  only half B. A half that would be empty appears to have been omitted.
 * Order of runs: 1 … 34, 35S, 35, 36 … 47, 48S, 48, 49 … 62, 65 … 68.
 * Values: three significant figures as a rule — `0.ddd` below 1, `d.dd` from 1 to 10,
   `dd.d` from 10 to 100, integers from 100 (e.g. `2200`). Decimal points often print

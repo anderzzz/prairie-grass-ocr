@@ -97,7 +97,7 @@ def cell_level_flag(r: dict) -> bool:
     if any(b(r[k]) for k in FLAG_COLS if k != "flag_structural"):
         return True
     notes = [n for n in r["flag_notes"].split(" | ") if n and not n.startswith("implausible")
-             and not n.startswith("low confidence")]
+             and not n.startswith("low confidence") and not n.startswith("info:")]
     return any(not n.startswith(PAGE_KEY_NOTES) for n in notes)
 
 
@@ -270,7 +270,7 @@ def write(out_dir: Path, cells: list[dict], summary: dict, by_page: dict, meta: 
     (out_dir / "summary.md").write_text("\n".join(L))
 
 
-def main(which: str = "dev") -> dict:
+def main(which: str = "dev", extracted: Path = EXTRACTED, label: str | None = None) -> dict:
     sel = yaml.safe_load((REPO / "config" / "pilot_pages.yaml").read_text())
     frozen = holdout_guard() if which == "holdout" else None
     if not (REF / "PGARCS.txt").exists():
@@ -279,7 +279,7 @@ def main(which: str = "dev") -> dict:
     cells, uncovered, by_page = [], {}, {}
     for e in sel[which]:
         idx = e["pdf_index"]
-        path = EXTRACTED / f"p{idx}.csv"
+        path = extracted / f"p{idx}.csv"
         if not path.exists():
             raise SystemExit(f"missing {path}; run the pipeline first")
         rows = list(csv.DictReader(path.open()))
@@ -295,7 +295,7 @@ def main(which: str = "dev") -> dict:
             "dirty_extraction_code": bool(git("status", "--porcelain", "--", *FROZEN_PATHS).stdout.strip()),
             "frozen": frozen,
             "reference_sha256": json.loads((REPO / "scoring" / "reference_checksums.json").read_text())}
-    out_dir = SCORES / which
+    out_dir = SCORES / (label or which)
     if which == "holdout" and (out_dir / "summary.json").exists():
         prev = json.loads((out_dir / "summary.json").read_text())["meta"]
         meta["previous_holdout_scoring"] = prev.get("scored_at")
@@ -307,4 +307,7 @@ def main(which: str = "dev") -> dict:
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--set", default="dev", choices=["dev", "holdout"])
-    main(ap.parse_args().set)
+    ap.add_argument("--extracted", default=str(EXTRACTED))
+    ap.add_argument("--label", default=None, help="output folder name under output/scores")
+    a = ap.parse_args()
+    main(a.set, Path(a.extracted), a.label)

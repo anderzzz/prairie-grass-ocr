@@ -4,9 +4,17 @@ reference/
 __pycache__/
 *.pyc
 .venv/
-.pytest_cache/
+.pytest_# caches are local, except the raw Mistral responses (the primary reader's
+# output; committed so the dataset can be rebuilt without the service)
+cache/*
+!cache/reader_mistral_page/
 # large intermediate rasters for non-pilot pages
 work/
 .DS_Store
-cache/
+# caches are local, except the raw Mistral responses (the primary reader's
+# output; committed so the dataset can be rebuilt without the service)
+cache/*
+!cache/reader_mistral_page/
+# scores and experiments contain reference values: never committed
 output/scores/
+output/experiments/

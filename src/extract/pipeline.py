@@ -2,12 +2,17 @@
 
     uv run python -m extract.pipeline [--set dev|holdout|all] [--preprocess raw|default|repair]
 
-For each page: preprocess -> structure -> keyed cells -> ink check -> readers
--> consensus -> flags. Writes output/extracted/p<idx>.csv (one row per cell)
-and output/crops/p<idx>/<cell_id>.png. Values are never filled, smoothed or
-corrected: a cell's consensus is one of the readers' tokens, verbatim apart
-from the documented normalisation (comma read as decimal point, spaces
-dropped), and plausibility checks only raise flags.
+For each page: preprocess -> structure -> keyed cells -> primary reader
+(Mistral OCR, page-level, mapped onto the pipeline's cell grid) and two
+offline cross-check readers (Tesseract, EasyOCR, per cell) -> value -> flags.
+Writes output/extracted/p<idx>.csv (one row per cell) and
+output/crops/p<idx>/<cell_id>.png.
+
+Values are never filled, smoothed or corrected: a cell's value is Mistral's
+token, verbatim apart from the documented normalisation (comma read as
+decimal point, spaces dropped). Only when Mistral gives nothing for a cell
+(no table or the cell is outside its table) does the offline consensus
+stand in, and that is flagged. Plausibility checks only raise flags.
 """
 from __future__ import annotations
 
@@ -26,6 +31,7 @@ from . import structure as S
 from .cells import CellSpec, arc_cells, ink_stats, tower_cells
 from . import manual_keys
 from .keys import read_tower_runs
+from . import mistral as MI
 from .pdfio import REPO, page_image
 from .preprocess import PreprocessConfig, preprocess
 from .readers import default_readers
@@ -39,8 +45,9 @@ PRESETS = {
 }
 
 # thresholds (tuned on dev pages only; see REPORT.md)
-CONF_MIN = {"tesseract": 0.80, "easyocr": 0.80}
-IMPLAUSIBLE_LOG10 = 1.0   # >10x away from both same-arc neighbours
+CONF_MIN = {"tesseract": 0.80, "easyocr": 0.80}   # offline fallback only
+MISTRAL_CONF_MIN = 0.999  # minimum word confidence in the cell
+IMPLAUSIBLE_LOG10 = 0.6   # > x4 from the log-interpolation of both neighbours
 MARGIN = 16               # px read beyond a cell's rules (digits can overlap them)
 V_RULE_MIN = 90           # vertical ink runs this long are rules, not glyphs
 
@@ -116,12 +123,37 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
         st = S.analyse_tower_page(img)
         col_runs = manual_keys.apply_tower(idx, read_tower_runs(img, st))
         cells = tower_cells(idx, st, col_runs)
+    try:
+        resp = MI.ocr_page(img)
+        mi, mprob = (MI.map_arc(resp, cells) if table == "5.2"
+                     else MI.map_tower(resp, cells, col_runs))
+        mmeta = {"model": resp.get("model"), "pages_processed": (resp.get("usage_info") or {}).get("pages_processed"),
+                 "problems": mprob, "cells_mapped": len(mi)}
+    except MI.MistralUnavailable as e:
+        mi, mmeta = {}, {"model": None, "problems": [str(e)], "cells_mapped": 0}
+    if table == "5.2" and mi:
+        mrun = MI.header_run(resp)
+        mmeta["header_run"] = mrun
+        if mrun and run_label and mrun == run_label and run_note.startswith("run label:"):
+            # an order-chosen run label confirmed by a third, independent reading
+            mmeta["run_note_resolved"] = run_note
+            run_note = ""
+            for c in cells:
+                c.structural = [n for n in c.structural if not n.startswith("run label:")]
+                c.key_source = "pipeline (Mistral header agrees)"
+        elif mrun and run_label and mrun != run_label:
+            for c in cells:
+                c.structural.append(f"Mistral reads run header as '{mrun}', page keyed as '{run_label}'")
     page_meta = {"pdf_index": idx, "table": table, "run": run_label, "run_note": run_note,
                  "preprocess": info, "structure_anomalies": st.anomalies,
                  "half": st.meta.get("half"), "n_cells": len(cells),
-                 "tower_column_runs": col_runs}
+                 "tower_column_runs": col_runs, "mistral": mmeta}
     if crops_dir:
         crops_dir.mkdir(parents=True, exist_ok=True)
+        # the page image every reader saw (after preprocessing), for review
+        pages_dir = crops_dir.parent.parent / "pages"
+        pages_dir.mkdir(parents=True, exist_ok=True)
+        cv2.imwrite(str(pages_dir / f"p{idx}.png"), img)
     rows = []
     img_r = remove_vertical_rules(img)
     W = img.shape[1]
@@ -148,7 +180,16 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
                 res = r.read(glyphs)  # readers see only the isolated glyphs
             rec[f"raw_{r.name}"] = res["text"]
             rec[f"conf_{r.name}"] = res.get("conf")
+        m = mi.get(c.cell_id)
+        rec["mistral_mapped"] = m is not None
+        rec["raw_mistral"] = m["text"] if m else ""
+        rec["conf_mistral"] = m["conf"] if m else None
+        rec["mistral_row_key"] = m["key_read"] if m else ""
         notes = list(c.structural)
+        if m is None:
+            notes.append("no Mistral reading for this cell; offline consensus used")
+        elif m["key_read"] and not m["key_ok"]:
+            notes.append(f"Mistral row key '{m['key_read']}' differs from the expected key")
         # glyph geometry checks
         if ist["components"] and not ist["tall_components"]:
             notes.append("only small ink fragments, not read (faint or broken print?)")
@@ -163,6 +204,7 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
         rec["_structural"] = notes
         rows.append(rec)
     consensus(rows, [r.name for r in readers])
+    primary(rows, [r.name for r in readers])
     implausibility(rows, table)
     finalise(rows)
     return rows, page_meta
@@ -200,11 +242,47 @@ def consensus(rows: list[dict], names: list[str]) -> None:
                                         or any(not parsed[n]["format_ok"] for n in names))
 
 
+def primary(rows: list[dict], offline: list[str]) -> None:
+    """Mistral's token is the value. Flags (tuned on dev pages):
+    readers disagree - neither offline reader gives Mistral's token;
+    low confidence  - Mistral's minimum word confidence < MISTRAL_CONF_MIN;
+    token unexpected - Mistral's token does not parse or breaks the printed
+    format. Without a Mistral reading the offline consensus stays (flagged
+    structural by read_page)."""
+    for rec in rows:
+        if not rec["mistral_mapped"]:
+            rec["value_source"] = "offline consensus (no Mistral reading)"
+            rec["offline_consensus_token"] = rec["consensus_token"]
+            continue
+        tok = normalise(rec["raw_mistral"])
+        p = parse(tok)
+        off = [normalise(rec[f"raw_{n}"]) for n in offline]
+        rec["flag_readers_disagree"] = bool(off) and all(o != tok for o in off)
+        cf = rec["conf_mistral"]
+        low = cf is not None and cf < MISTRAL_CONF_MIN
+        rec["flag_low_confidence"] = low
+        rec["_low"] = [f"mistral {cf:.4f}"] if low else []
+        rec["offline_consensus_token"] = rec["consensus_token"]
+        rec["consensus_token"] = tok
+        agree = [n for n, o in zip(offline, off) if o == tok]
+        rec["consensus_source"] = ("mistral; offline agree: " + ",".join(agree)) if agree else "mistral; no offline reader agrees"
+        rec["value_source"] = "mistral"
+        rec["value_kind"] = p["kind"]
+        rec["value"] = p["value"]
+        rec["estimated_mark"] = p["estimated"]
+        rec["flag_token_unexpected"] = p["kind"] == "unparseable" or not p["format_ok"]
+        if tok == "":
+            # Mistral reads the cell as blank: leftover fragments are information
+            rec["_structural"] = [("info: " + n) if n.startswith("only small ink fragments") else n
+                                  for n in rec["_structural"]]
+
+
 def implausibility(rows: list[dict], table: str) -> None:
-    """Flag (never change) values >10x away from both neighbours on the same
-    arc (Table 5.2) or the same tower (Table 5.3), when both neighbours have
-    numbers; also values bordered by blanks on both sides on the 800 m arc
-    are left alone (plume edges are legitimately abrupt)."""
+    """Flag (never change) a value that deviates more than x10**IMPLAUSIBLE_LOG10
+    from the log-interpolation of its two neighbours: adjacent posts on the
+    same arc (Table 5.2) or adjacent heights on the same tower (Table 5.3).
+    Both neighbours must carry numbers. Catches lost or misplaced decimal
+    points (x10 to x1000); smaller digit errors are within natural scatter."""
     gkey = "arc_m" if table == "5.2" else "tower"
     pkey = "post" if table == "5.2" else "height_m"
     groups: dict = {}
@@ -213,25 +291,31 @@ def implausibility(rows: list[dict], table: str) -> None:
     for recs in groups.values():
         if table == "5.2":
             recs.sort(key=lambda r: int(r[pkey]))
+        else:
+            recs.sort(key=lambda r: -float(r[pkey]))
         for i, rec in enumerate(recs):
             rec["flag_implausible"] = False
             if rec["value_kind"] != "number" or not rec["value"]:
                 continue
-            nb = [recs[j] for j in (i - 1, i + 1) if 0 <= j < len(recs)]
-            vals = [n["value"] for n in nb if n["value_kind"] == "number" and n["value"]]
-            if len(vals) == 2:
-                d = [abs(math.log10(rec["value"] / v)) for v in vals]
-                if min(d) > IMPLAUSIBLE_LOG10:
-                    rec["flag_implausible"] = True
-                    rec["_structural"].append(
-                        f"implausible: {rec['value']} vs neighbours {vals[0]}, {vals[1]}")
+            if i == 0 or i == len(recs) - 1:
+                continue
+            nb = (recs[i - 1], recs[i + 1])
+            if not all(n["value_kind"] == "number" and n["value"] for n in nb):
+                continue
+            pred = (math.log10(nb[0]["value"]) + math.log10(nb[1]["value"])) / 2
+            dev = math.log10(rec["value"]) - pred
+            if abs(dev) > IMPLAUSIBLE_LOG10:
+                rec["flag_implausible"] = True
+                rec["_structural"].append(
+                    f"implausible: {rec['value']} vs neighbours {nb[0]['value']}, "
+                    f"{nb[1]['value']} (x{10 ** abs(dev):.1f})")
 
 
 def finalise(rows: list[dict]) -> None:
     for rec in rows:
         notes = rec.pop("_structural")
         low = rec.pop("_low")
-        rec["flag_structural"] = any(not n.startswith("implausible") for n in notes)
+        rec["flag_structural"] = any(not n.startswith(("implausible", "info:")) for n in notes)
         if low:
             notes.append("low confidence: " + ", ".join(low))
         rec["flags_any"] = any(rec[k] for k in FLAG_COLS)
