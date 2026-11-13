@@ -5,6 +5,7 @@ requires-python = ">=3.11,<3.12"
 dependencies = [
     "anthropic>=2.8.0",
     "easyocr==1.7.2",
+    "mistralai>=3.7.0",
     "numpy<2",
     "opencv-python-headless>=4.9,<5",
     "pillow>=13.0.0",
