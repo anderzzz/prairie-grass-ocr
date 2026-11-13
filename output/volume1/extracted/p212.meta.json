@@ -1,0 +1,197 @@
+{
+ "pdf_index": 212,
+ "table": "5.3",
+ "run": "",
+ "run_note": "",
+ "preprocess": {
+  "config": {
+   "deskew": true,
+   "despeckle": true,
+   "repair": false,
+   "speck_max_area": 4,
+   "repair_kernel": 2
+  },
+  "skew_deg": -0.2445
+ },
+ "structure_anomalies": [
+  "9 of 54 rows had no text band in the height column; positions inferred",
+  "3 printed heights read differently from the expected sequence"
+ ],
+ "half": null,
+ "n_cells": 378,
+ "tower_column_runs": [
+  {
+   "col": "c1",
+   "x": [
+    774,
+    925
+   ],
+   "raw": {
+    "tesseract": "60",
+    "easyocr": "80"
+   },
+   "run": "60",
+   "note": "run header readers disagree or unreadable: {'tesseract': '60', 'easyocr': '80'}",
+   "source": "manual",
+   "run_auto": "60",
+   "source_auto": "readers disagree; chosen by run order",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c2",
+   "x": [
+    938,
+    1077
+   ],
+   "raw": {
+    "tesseract": "61",
+    "easyocr": "01"
+   },
+   "run": "61",
+   "note": "run header readers disagree or unreadable: {'tesseract': '61', 'easyocr': '01'}",
+   "source": "manual",
+   "run_auto": null,
+   "source_auto": "unresolved",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c3",
+   "x": [
+    1090,
+    1240
+   ],
+   "raw": {
+    "tesseract": "62",
+    "easyocr": "62"
+   },
+   "run": "62",
+   "note": "",
+   "source": "manual",
+   "run_auto": "62",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c4",
+   "x": [
+    1253,
+    1400
+   ],
+   "raw": {
+    "tesseract": "65",
+    "easyocr": "65"
+   },
+   "run": "65",
+   "note": "",
+   "source": "manual",
+   "run_auto": "65",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c5",
+   "x": [
+    1414,
+    1568
+   ],
+   "raw": {
+    "tesseract": "66",
+    "easyocr": "86"
+   },
+   "run": "66",
+   "note": "run header readers disagree or unreadable: {'tesseract': '66', 'easyocr': '86'}",
+   "source": "manual",
+   "run_auto": "66",
+   "source_auto": "readers disagree; chosen by run order",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c6",
+   "x": [
+    1581,
+    1730
+   ],
+   "raw": {
+    "tesseract": "87",
+    "easyocr": "3367"
+   },
+   "run": "67",
+   "note": "run header readers disagree or unreadable: {'tesseract': '87', 'easyocr': '3367'}",
+   "source": "manual",
+   "run_auto": null,
+   "source_auto": "unresolved",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c7",
+   "x": [
+    1742,
+    1897
+   ],
+   "raw": {
+    "tesseract": "68",
+    "easyocr": "68"
+   },
+   "run": "68",
+   "note": "",
+   "source": "manual",
+   "run_auto": "68",
+   "source_auto": "both readers agree",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c8",
+   "x": [
+    1910,
+    2057
+   ],
+   "raw": {
+    "tesseract": "",
+    "easyocr": ""
+   },
+   "run": null,
+   "note": "blank run header (unused column)",
+   "source": "blank header",
+   "run_auto": null,
+   "source_auto": "blank header",
+   "key_source": "manual (project owner, 2026-11-13)"
+  },
+  {
+   "col": "c9",
+   "x": [
+    2070,
+    2212
+   ],
+   "raw": {
+    "tesseract": "",
+    "easyocr": ""
+   },
+   "run": null,
+   "note": "blank run header (unused column)",
+   "source": "blank header",
+   "run_auto": null,
+   "source_auto": "blank header",
+   "key_source": "manual (project owner, 2026-11-13)"
+  }
+ ],
+ "mistral": {
+  "model": "mistral-ocr-4-1",
+  "pages_processed": 1,
+  "problems": [],
+  "cells_mapped": 378
+ },
+ "readers": {
+  "tesseract": {
+   "engine": "tesseract 5.4.1",
+   "psm": 7,
+   "scale": 1.0,
+   "whitelist": "0123456789.M*"
+  },
+  "easyocr": {
+   "engine": "easyocr 1.7.2 english_g2",
+   "scale": 1.0,
+   "allowlist": "0123456789.M*"
+  }
+ },
+ "offline": true
+}

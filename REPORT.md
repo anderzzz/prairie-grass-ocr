@@ -254,3 +254,43 @@ The Mistral responses for pilot pages are committed, so `make pilot` needs no Mi
 The reference is downloaded into the gitignored `reference/`, with SHA-256 checksums in
 `scoring/reference_checksums.json`. The review pack (`review/index.html`) and scores contain
 reference values and are therefore not committed; `make pilot` regenerates them.
+
+---
+
+## Addendum (post-pilot): all of Volume I
+
+*Written after the pilot was complete (tag `pilot-v1`). It uses code changed after the
+holdout scoring and is **not** part of the pilot's holdout result.*
+
+**Run.** The frozen pipeline ran over all 118 Table 5.2 / 5.3 pages, including PDF page 200,
+which recon misses. Mistral cost was about $0.50. Sonnet was not used. Run with
+`make volume`; outputs are in `output/volume1/`.
+
+**One post-pilot code change.** On PDF pages 97 and 103, Mistral returned the column-heading
+row as a data row, which shifted all their rows. The flags caught every affected cell (116
+conflicts, all flagged). `extract.mistral.drop_header_rows` now skips such rows. Only these
+two responses are affected, and re-parsing them needed no new API calls.
+
+**Result: 158 conflicts with the reference in 33,048 keyed cells (0.48%; 1.7% of cells with
+a number).** The pipeline flags 7.95% of cells.
+
+| What | Cells | Notes |
+|---|---|---|
+| Blank in print, "missing" in reference | 42 | convention difference; not counted as conflicts |
+| PDF page 196 (run 61, 800 m arc) | 26 | the **reference** is shifted by 1–2 posts in part of the column; the scan matches our values (checked by eye at posts 118–125) |
+| PDF page 106 (run 7, 100 m arc, posts 46+) | 25 | the **reference** repeats the 200 m column in the 100 m slot (22 of 27 identical); the print shows different values (checked at posts 51–53) |
+| Other conflicts, all three readers agree | 38 | 11 flagged; 18 differ by < 12%, 7 by ×10 or more (e.g. 2.69 vs 0.269, 0.090 vs 0.900), so reference errors or ambiguous print |
+| Other conflicts, readers differ | 69 | 43 flagged; mostly Mistral misreads of a single digit (34 within 12%) |
+| PDF page 200 | 270 cells, unkeyed | run unresolved; Mistral reads the header as "86", which is impossible (runs end at 68). Needs a manual key |
+
+**What this means for the dataset.**
+- Reading quality is high. Systematic problems are rare and visible: whole-page row shifts
+  show up as clusters of flagged conflicts.
+- The reference contains real errors: whole-column copy and shift errors, plus scattered
+  ×10 differences. That supports building the dataset from the scan, with the reference
+  used only to find cells worth a second look.
+- **Unflagged real misreads** are at most the 26 unflagged "readers differ" conflicts plus
+  any of the 27 unflagged "all agree" cells that turn out to be misreads. Either way, fewer
+  than 1 in 600 cells.
+- **Owner's triage design:** sending reference conflicts to Sonnet and then to a person
+  means about 158 cells. Sonnet would cost under $0.50. About 1–2 hours of human review.

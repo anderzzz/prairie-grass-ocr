@@ -1,0 +1,188 @@
+{
+ "pdf_index": 208,
+ "table": "5.3",
+ "run": "",
+ "run_note": "",
+ "preprocess": {
+  "config": {
+   "deskew": true,
+   "despeckle": true,
+   "repair": false,
+   "speck_max_area": 4,
+   "repair_kernel": 2
+  },
+  "skew_deg": 0.1915
+ },
+ "structure_anomalies": [
+  "2 of 54 rows had no text band in the height column; positions inferred",
+  "2 printed heights read differently from the expected sequence"
+ ],
+ "half": null,
+ "n_cells": 486,
+ "tower_column_runs": [
+  {
+   "col": "c1",
+   "x": [
+    782,
+    916
+   ],
+   "raw": {
+    "tesseract": "22",
+    "easyocr": "22"
+   },
+   "run": "22",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "22"
+  },
+  {
+   "col": "c2",
+   "x": [
+    942,
+    1066
+   ],
+   "raw": {
+    "tesseract": "24",
+    "easyocr": "24"
+   },
+   "run": "24",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "24"
+  },
+  {
+   "col": "c3",
+   "x": [
+    1093,
+    1220
+   ],
+   "raw": {
+    "tesseract": "25",
+    "easyocr": "25"
+   },
+   "run": "25",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "25"
+  },
+  {
+   "col": "c4",
+   "x": [
+    1246,
+    1376
+   ],
+   "raw": {
+    "tesseract": "26",
+    "easyocr": "26"
+   },
+   "run": "26",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "26"
+  },
+  {
+   "col": "c5",
+   "x": [
+    1401,
+    1541
+   ],
+   "raw": {
+    "tesseract": "27",
+    "easyocr": "27"
+   },
+   "run": "27",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "27"
+  },
+  {
+   "col": "c6",
+   "x": [
+    1559,
+    1694
+   ],
+   "raw": {
+    "tesseract": "29",
+    "easyocr": "29"
+   },
+   "run": "29",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "29"
+  },
+  {
+   "col": "c7",
+   "x": [
+    1713,
+    1860
+   ],
+   "raw": {
+    "tesseract": "30",
+    "easyocr": "30"
+   },
+   "run": "30",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "30"
+  },
+  {
+   "col": "c8",
+   "x": [
+    1872,
+    2015
+   ],
+   "raw": {
+    "tesseract": "31",
+    "easyocr": "31"
+   },
+   "run": "31",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "31"
+  },
+  {
+   "col": "c9",
+   "x": [
+    2043,
+    2165
+   ],
+   "raw": {
+    "tesseract": "32",
+    "easyocr": "32"
+   },
+   "run": "32",
+   "note": "",
+   "source": "both readers agree",
+   "key_source": "pipeline",
+   "run_auto": "32"
+  }
+ ],
+ "mistral": {
+  "model": "mistral-ocr-4-1",
+  "pages_processed": 1,
+  "problems": [],
+  "cells_mapped": 486
+ },
+ "readers": {
+  "tesseract": {
+   "engine": "tesseract 5.4.1",
+   "psm": 7,
+   "scale": 1.0,
+   "whitelist": "0123456789.M*"
+  },
+  "easyocr": {
+   "engine": "easyocr 1.7.2 english_g2",
+   "scale": 1.0,
+   "allowlist": "0123456789.M*"
+  }
+ },
+ "offline": true
+}

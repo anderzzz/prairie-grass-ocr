@@ -94,12 +94,28 @@ def _main_table(resp: dict) -> tuple[dict | None, list[str]]:
     return tables[0], []
 
 
+DATA_TOKEN = re.compile(r"^(|M|\d[\d.,\s]*\*?|[.,]\d[\d.,\s]*\*?)$")
+
+
+def drop_header_rows(rows: list[list[dict]], problems: list[str]) -> list[list[dict]]:
+    """Mistral sometimes returns a column-heading row ('50m', 'POST NO.') as a
+    <td> row. A row with any token that is not blank, M or numeric-looking is
+    a heading, not data (post-pilot fix, see REPORT addendum)."""
+    out = []
+    for i, r in enumerate(rows):
+        if any(not DATA_TOKEN.match(c["text"]) for c in r):
+            problems.append(f"Mistral row {i}: heading row skipped: {[c['text'] for c in r][:7]}")
+            continue
+        out.append(r)
+    return out
+
+
 def map_arc(resp: dict, cells: list) -> tuple[dict, list[str]]:
     """cell_id -> {text, conf, key_read, key_ok}; plus page-level problems."""
     table, problems = _main_table(resp)
     if table is None:
         return {}, problems
-    rows = table_rows(table)
+    rows = drop_header_rows(table_rows(table), problems)
     by_key = {(c.group, c.position): c.cell_id for c in cells}
     posts800 = sorted({int(c.position) for c in cells if c.group == "800"})
     panels = (posts800[:45], posts800[45:])

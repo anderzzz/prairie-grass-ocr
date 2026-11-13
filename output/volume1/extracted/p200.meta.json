@@ -1,0 +1,47 @@
+{
+ "pdf_index": 200,
+ "table": "5.2",
+ "run": "",
+ "run_note": "run label unresolved",
+ "preprocess": {
+  "config": {
+   "deskew": true,
+   "despeckle": true,
+   "repair": false,
+   "speck_max_area": 4,
+   "repair_kernel": 2
+  },
+  "skew_deg": -0.316
+ },
+ "structure_anomalies": [
+  "found 14 vertical rules, expected 15; fitting column template",
+  "column rule 8 not detected; position inferred from template at x=1521",
+  "panel 0: 2 of 45 rows had no text band in the key column; positions inferred",
+  "panel 0: 3 printed post numbers read differently from the expected sequence",
+  "panel 1: 8 printed post numbers read differently from the expected sequence"
+ ],
+ "half": "A",
+ "n_cells": 270,
+ "tower_column_runs": null,
+ "mistral": {
+  "model": "mistral-ocr-4-1",
+  "pages_processed": 1,
+  "problems": [],
+  "cells_mapped": 270,
+  "header_run": "86"
+ },
+ "readers": {
+  "tesseract": {
+   "engine": "tesseract 5.4.1",
+   "psm": 7,
+   "scale": 1.0,
+   "whitelist": "0123456789.M*"
+  },
+  "easyocr": {
+   "engine": "easyocr 1.7.2 english_g2",
+   "scale": 1.0,
+   "allowlist": "0123456789.M*"
+  }
+ },
+ "offline": true
+}

@@ -2,9 +2,9 @@
 UV ?= uv
 PY  = $(UV) run python
 
-.PHONY: pilot recon select extract reference score review test clean-cache
+.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume
 
-pilot: recon select extract test reference score score-holdout review
+pilot: recon select extract test reference score review   # full pilot incl. holdout: git checkout pilot-v1 && make pilot
 
 recon:            ## page map + table-page inventory (docs/)
 	$(PY) -m extract.recon
@@ -32,3 +32,7 @@ clean-cache:
 
 score-holdout:    ## once, after the extraction-frozen tag
 	$(PY) -m scoring.score --set holdout
+
+volume:           ## all Volume I table pages -> output/volume1 (post-pilot)
+	$(PY) scripts/run_volume.py
+	$(PY) -m scoring.volume_compare

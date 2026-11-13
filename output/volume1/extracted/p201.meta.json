@@ -1,0 +1,45 @@
+{
+ "pdf_index": 201,
+ "table": "5.2",
+ "run": "66",
+ "run_note": "",
+ "preprocess": {
+  "config": {
+   "deskew": true,
+   "despeckle": true,
+   "repair": false,
+   "speck_max_area": 4,
+   "repair_kernel": 2
+  },
+  "skew_deg": -0.0787
+ },
+ "structure_anomalies": [
+  "panel 0: 2 printed post numbers read differently from the expected sequence",
+  "panel 1: 6 printed post numbers read differently from the expected sequence"
+ ],
+ "half": "B",
+ "n_cells": 275,
+ "tower_column_runs": null,
+ "mistral": {
+  "model": "mistral-ocr-4-1",
+  "pages_processed": 1,
+  "problems": [],
+  "cells_mapped": 275,
+  "header_run": "66",
+  "run_note_resolved": "run label: readers disagree (tesseract=66 easyocr=8); chosen by run order"
+ },
+ "readers": {
+  "tesseract": {
+   "engine": "tesseract 5.4.1",
+   "psm": 7,
+   "scale": 1.0,
+   "whitelist": "0123456789.M*"
+  },
+  "easyocr": {
+   "engine": "easyocr 1.7.2 english_g2",
+   "scale": 1.0,
+   "allowlist": "0123456789.M*"
+  }
+ },
+ "offline": true
+}
