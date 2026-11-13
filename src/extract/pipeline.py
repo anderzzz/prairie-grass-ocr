@@ -41,6 +41,17 @@ PRESETS = {
 # thresholds (tuned on dev pages only; see REPORT.md)
 CONF_MIN = {"tesseract": 0.80, "easyocr": 0.80}
 IMPLAUSIBLE_LOG10 = 1.0   # >10x away from both same-arc neighbours
+MARGIN = 16               # px read beyond a cell's rules (digits can overlap them)
+V_RULE_MIN = 90           # vertical ink runs this long are rules, not glyphs
+
+
+def remove_vertical_rules(img: np.ndarray) -> np.ndarray:
+    """Whiten vertical ink runs >= V_RULE_MIN px (the column rules) and a
+    2 px fringe, so digits overlapping a rule are not fused with it."""
+    ink = (img < 128).astype(np.uint8)
+    v = cv2.morphologyEx(ink, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, V_RULE_MIN)))
+    v = cv2.dilate(v, np.ones((1, 5), np.uint8))  # the rules' ragged fringe
+    return np.where(v > 0, 255, img).astype(np.uint8)
 
 VALUE_RE = re.compile(r"^(\d+(?:\.\d+)?)(\*?)$")
 
@@ -112,10 +123,13 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
     if crops_dir:
         crops_dir.mkdir(parents=True, exist_ok=True)
     rows = []
+    img_r = remove_vertical_rules(img)
+    W = img.shape[1]
     for c in cells:
         x0, y0, x1, y1 = c.box
-        crop = img[y0:y1, x0:x1]
-        glyphs, ist = S.isolate_glyphs(crop)
+        ex0, ex1 = max(0, x0 - MARGIN), min(W, x1 + MARGIN)
+        crop = img_r[y0:y1, ex0:ex1]
+        glyphs, ist = S.isolate_glyphs(crop, interior=(x0 - ex0, x1 - ex0))
         rec = {"cell_id": c.cell_id, "pdf_index": idx, "printed_page": idx - 13, "table": table,
                "run": c.run, "arc_m" if table == "5.2" else "tower": c.group,
                "post" if table == "5.2" else "height_m": c.position,
@@ -123,7 +137,7 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
                "box": f"{x0},{y0},{x1},{y1}", "ink_px": ist["ink"],
                "ink_components": ist["components"]}
         if crops_dir:
-            cv2.imwrite(str(crops_dir / f"{c.cell_id}.png"), crop)
+            cv2.imwrite(str(crops_dir / f"{c.cell_id}.png"), img[y0:y1, ex0:ex1])
         # readers run only when a glyph-height component exists; fragments
         # alone are recorded (ink_components) and flagged, not read
         no_ink = ist["tall_components"] == 0
@@ -131,7 +145,7 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
             if no_ink:
                 res = {"text": "", "conf": None, "skipped": "no glyph-height ink"}
             else:
-                res = r.read(crop)
+                res = r.read(glyphs)  # readers see only the isolated glyphs
             rec[f"raw_{r.name}"] = res["text"]
             rec[f"conf_{r.name}"] = res.get("conf")
         notes = list(c.structural)

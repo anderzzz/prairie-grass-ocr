@@ -164,59 +164,79 @@ def clean_for_ocr(crop: np.ndarray, edge: int = 4) -> np.ndarray:
     return np.where(ink > 0, 0, 255).astype(np.uint8)
 
 
-def isolate_glyphs(crop: np.ndarray) -> tuple[np.ndarray, dict]:
+def isolate_glyphs(crop: np.ndarray, interior: tuple[int, int] | None = None
+                   ) -> tuple[np.ndarray, dict]:
     """Keep only character-like ink in a cell crop.
 
     After gentle rule removal, connected components are classified:
-      * flat strokes (height <= 4 px and width >= 2.5 x height) are rule
-        fragments or dashes and are dropped;
       * specks under 6 px are dropped;
-      * low components (height < 12 px) near the top or bottom edge of the
-        crop (outer quarter) are ruling residue unless they sit on a text
-        line formed by glyph-height components;
-      * flat components up to 8 px high and >= 3 x as wide are rule residue;
-      * everything else is kept, including small near-square blobs which are
-        decimal points or the asterisk.
+      * flat strokes (height <= 4 px and width >= 2.5 x height, or height
+        <= 8 px and width >= 3 x height) are rule fragments and dropped;
+      * with `interior` = (x0, x1) the crop carries a margin beyond the cell's
+        rules (printed digits can overlap a rule); glyph-height components
+        (>= 12 px) are kept only if their horizontal centre lies inside the
+        interior, so the neighbouring column's digits are not taken;
+      * smaller blobs on the text line are kept as decimal points only when
+        they lie between glyphs (the printed format never starts or ends
+        with a point); a baseline blob down to 3 px is kept (a point resting
+        on an underline is partly erased with the rule); raised blobs
+        (asterisk = estimated) may trail the digits;
+      * with no glyph-height component, low components in the outer quarter
+        of the crop height are ruling residue and dropped.
     Returns the cleaned crop (same size, 0 = ink) and stats: kept ink pixels,
-    component count, and the bounding box of kept ink (or None).
+    component count, glyph-height component count and bbox of kept ink.
     """
     if crop.size == 0 or min(crop.shape) < 3:
         return np.full(crop.shape, 255, np.uint8), {"ink": 0, "components": 0,
                                                     "tall_components": 0, "bbox": None}
     clean = clean_for_ocr(crop)
     ink = np.where(clean < 128, 255, 0).astype(np.uint8)
+    H, W = ink.shape
+    ix0, ix1 = interior if interior is not None else (0, W)
     n, lab, stats, _ = cv2.connectedComponentsWithStats(ink, connectivity=8)
-    keep = []
+
+    def flat(w, h):
+        return (h <= 4 and w >= 2.5 * h) or (h <= 8 and w >= 3 * h)
+
+    tall, small = [], []
     for i in range(1, n):
         x, y, w, h, a = stats[i]
-        if a < 6:
+        if a < 3:
             continue
-        if h <= 4 and w >= 2.5 * h:
-            continue
-        if h <= 8 and w >= 3 * h:
-            continue
-        keep.append(i)
-    tall = [i for i in keep if stats[i, cv2.CC_STAT_HEIGHT] >= 12]
-    if not tall:
-        H = ink.shape[0]
-        band = max(4, 0.25 * H)
-        keep = [i for i in keep if band < stats[i, cv2.CC_STAT_TOP] + stats[i, cv2.CC_STAT_HEIGHT] / 2 < H - band]
+        if h >= 12:
+            if w >= 3 and ix0 <= x + w / 2 <= ix1:  # w < 3: rule sliver
+                tall.append(i)
+        else:
+            small.append(i)
+    keep = []
     if tall:
-        # small blobs (decimal points, asterisks) must sit on the text line
-        # and within its horizontal span; other specks are scanner dust
         ty0 = min(stats[i, cv2.CC_STAT_TOP] for i in tall)
         ty1 = max(stats[i, cv2.CC_STAT_TOP] + stats[i, cv2.CC_STAT_HEIGHT] for i in tall)
         tx0 = min(stats[i, cv2.CC_STAT_LEFT] for i in tall)
         tx1 = max(stats[i, cv2.CC_STAT_LEFT] + stats[i, cv2.CC_STAT_WIDTH] for i in tall)
-        small_ok = []
-        for i in keep:
-            if i in tall:
-                continue
+        for i in small:
             x, y, w, h, a = stats[i]
             cy, cx = y + h / 2, x + w / 2
-            if ty0 - 2 <= cy <= ty1 + 3 and tx0 - 10 <= cx <= tx1 + 10:
-                small_ok.append(i)
-        keep = tall + small_ok
+            if not (ty0 - 2 <= cy <= ty1 + 3 and tx0 - 10 <= cx <= tx1 + 10):
+                continue
+            low = (y + h) >= ty1 - 0.35 * (ty1 - ty0)    # sits in the lower part of the line
+            if low:
+                # a decimal point: always between digits in the printed format
+                inside = tx0 + 2 <= cx <= tx1 - 2
+                ok = inside and ((a >= 6 and not flat(w, h))
+                                 or (abs((y + h) - ty1) <= 4 and w <= 10 and h >= 2))
+            else:
+                # raised mark (asterisk = estimated value), may trail the digits
+                ok = a >= 6 and not flat(w, h)
+            if ok:
+                keep.append(i)
+        keep = tall + keep
+    else:
+        band = max(4, 0.25 * H)
+        keep = [i for i in small if stats[i, cv2.CC_STAT_AREA] >= 6
+                and not flat(stats[i, cv2.CC_STAT_WIDTH], stats[i, cv2.CC_STAT_HEIGHT])
+                and ix0 <= stats[i, cv2.CC_STAT_LEFT] + stats[i, cv2.CC_STAT_WIDTH] / 2 <= ix1
+                and band < stats[i, cv2.CC_STAT_TOP] + stats[i, cv2.CC_STAT_HEIGHT] / 2 < H - band]
     mask = np.isin(lab, keep)
     out = np.where(mask, 0, 255).astype(np.uint8)
     if keep:

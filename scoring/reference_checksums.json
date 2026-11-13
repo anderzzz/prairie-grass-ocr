@@ -1,0 +1,20 @@
+{
+ "PGARCS.txt": {
+  "url": "https://www.harmo.org/jsirwin/PGARCS.txt",
+  "sha256": "36a12bc90b8ef65e692b50fe6c5b8db851f785e19b6a85244507ddbce10147c8",
+  "bytes": 388856,
+  "fetched": "2026-11-13T16:24:34+00:00"
+ },
+ "PGVertConc.txt": {
+  "url": "https://www.harmo.org/jsirwin/PGVertConc.txt",
+  "sha256": "7d7f6f619159c8844631cc4e9016e0d58597f77c8b2595f5e7f1e16a234e571b",
+  "bytes": 46036,
+  "fetched": "2026-11-13T16:24:34+00:00"
+ },
+ "D6589_UGDesign2_Table_2.pdf": {
+  "url": "https://www.harmo.org/jsirwin/D6589_UGDesign2_Table_2.pdf",
+  "sha256": "0b2a1c7cdf5032a21cdfe12fdfab5b6262cce46e1bfa80a6b21b9621217123a1",
+  "bytes": 48047,
+  "fetched": "2026-11-13T16:24:34+00:00"
+ }
+}
