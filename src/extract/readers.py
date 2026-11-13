@@ -96,44 +96,13 @@ class EasyOCRReader:
         return {"engine": "easyocr 1.7.2 english_g2", "scale": self.scale, "allowlist": self.allowlist}
 
 
-@dataclass(frozen=True)
-class ClaudeReader:
-    """Vision-LLM reader. Raw responses cached; only active with an API key."""
-    name: str = "claude"
-    model: str = "claude-sonnet-5-5"
-
-    @staticmethod
-    def available() -> bool:
-        return bool(os.environ.get("ANTHROPIC_API_KEY"))
-
-    def read(self, crop: np.ndarray) -> dict:
-        img = prepare(crop, 2.0)
-        ok, png = cv2.imencode(".png", img)
-        prompt = ("This image is one cell of a 1950s printed table of gas concentrations. "
-                  "Transcribe exactly the characters printed in the cell (digits, decimal point, "
-                  "the letter M, or an asterisk). Reply with only the characters. If the cell is "
-                  "empty reply EMPTY. If you cannot read it reply ILLEGIBLE.")
-
-        def run():
-            import anthropic
-            client = anthropic.Anthropic()
-            msg = client.messages.create(
-                model=self.model, max_tokens=20,
-                messages=[{"role": "user", "content": [
-                    {"type": "image", "source": {"type": "base64", "media_type": "image/png",
-                                                 "data": base64.b64encode(png.tobytes()).decode()}},
-                    {"type": "text", "text": prompt}]}])
-            raw = "".join(b.text for b in msg.content if b.type == "text").strip()
-            return {"raw_response": raw, "text": "" if raw == "EMPTY" else raw, "conf": None}
-
-        return cached("reader_claude", {"model": self.model, "prompt": prompt}, img, run)
-
-    def describe(self) -> dict:
-        return {"engine": self.model}
-
-
 def default_readers() -> list:
+    """Offline readers always; the vision-LLM reader only when explicitly
+    enabled with PGOCR_LLM=<model id> (and an API key) - never implicitly."""
     rs: list = [TesseractReader(), EasyOCRReader()]
-    if ClaudeReader.available():
-        rs.append(ClaudeReader())
+    model = os.environ.get("PGOCR_LLM")
+    if model:
+        from .llm import LLMReader
+        if LLMReader.available():
+            rs.append(LLMReader(model=model))
     return rs
