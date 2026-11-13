@@ -24,6 +24,7 @@ import numpy as np
 
 from . import structure as S
 from .cells import CellSpec, arc_cells, ink_stats, tower_cells
+from . import manual_keys
 from .keys import read_tower_runs
 from .pdfio import REPO, page_image
 from .preprocess import PreprocessConfig, preprocess
@@ -94,11 +95,15 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
     img, info = preprocess(page_image(idx), cfg)
     if table == "5.2":
         st = S.analyse_arc_page(img)
-        cells = arc_cells(idx, st, run_label, run_note)
+        auto = run_label
+        run_label, ksrc, mnote = manual_keys.arc_run(idx, auto)
+        if ksrc != "pipeline":
+            run_note = ""  # settled by a person; pipeline reading kept in run_auto
+        cells = arc_cells(idx, st, run_label, run_note, ksrc, auto)
         col_runs = None
     else:
         st = S.analyse_tower_page(img)
-        col_runs = read_tower_runs(img, st)
+        col_runs = manual_keys.apply_tower(idx, read_tower_runs(img, st))
         cells = tower_cells(idx, st, col_runs)
     page_meta = {"pdf_index": idx, "table": table, "run": run_label, "run_note": run_note,
                  "preprocess": info, "structure_anomalies": st.anomalies,
@@ -114,14 +119,17 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
         rec = {"cell_id": c.cell_id, "pdf_index": idx, "printed_page": idx - 13, "table": table,
                "run": c.run, "arc_m" if table == "5.2" else "tower": c.group,
                "post" if table == "5.2" else "height_m": c.position,
+               "key_source": c.key_source, "run_auto": c.run_auto,
                "box": f"{x0},{y0},{x1},{y1}", "ink_px": ist["ink"],
                "ink_components": ist["components"]}
         if crops_dir:
             cv2.imwrite(str(crops_dir / f"{c.cell_id}.png"), crop)
-        no_ink = ist["components"] == 0
+        # readers run only when a glyph-height component exists; fragments
+        # alone are recorded (ink_components) and flagged, not read
+        no_ink = ist["tall_components"] == 0
         for r in readers:
             if no_ink:
-                res = {"text": "", "conf": None, "skipped": "no ink"}
+                res = {"text": "", "conf": None, "skipped": "no glyph-height ink"}
             else:
                 res = r.read(crop)
             rec[f"raw_{r.name}"] = res["text"]
@@ -129,7 +137,7 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
         notes = list(c.structural)
         # glyph geometry checks
         if ist["components"] and not ist["tall_components"]:
-            notes.append("only small ink fragments (faint or broken print?)")
+            notes.append("only small ink fragments, not read (faint or broken print?)")
         if ist["bbox"] is not None:
             if text_lines(glyphs) > 1:
                 notes.append("more than one line of text in cell")
@@ -221,8 +229,16 @@ FLAG_COLS = ["flag_readers_disagree", "flag_low_confidence", "flag_token_unexpec
 
 
 def page_run_label(entry: dict) -> tuple[str, str]:
+    """Run label from page selection; if recon did not get it from both
+    readers agreeing on the header, every cell carries that doubt."""
     run = str(entry.get("runs") or "")
-    return run, "" if run else "run label unresolved"
+    if not run:
+        return "", "run label unresolved"
+    inv = REPO / "docs" / "page_inventory.csv"
+    for r in csv.DictReader(inv.open()):
+        if int(r["pdf_index"]) == entry["pdf_index"] and r["run_source"] != "header":
+            return run, f"run label: {r['run_source']}"
+    return run, ""
 
 
 def write_rows(path: Path, rows: list[dict]) -> None:

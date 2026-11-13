@@ -22,13 +22,32 @@ class CellSpec:
     position: str              # post number or height (m)
     box: tuple[int, int, int, int]
     structural: list[str] = field(default_factory=list)
+    key_source: str = "pipeline"
+    run_auto: str = ""
 
     @property
     def cell_id(self) -> str:
         return f"p{self.page}_{self.table}_r{self.run or 'X'}_{self.group}_{self.position}"
 
 
-def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "") -> list[CellSpec]:
+def _key_note(rows, i: int, what: str) -> str:
+    """A printed row key that reads as a *neighbouring* row's key (within two
+    rows) is evidence the row lattice is locally shifted -> structural note.
+    Any other misreading is key-OCR noise against a lattice fitted by voting
+    over all rows, and is not flagged."""
+    row = rows[i]
+    if row.inferred:
+        return f"row position inferred ({what} not found)"
+    if not row.key_read or row.key_read == row.key_expected:
+        return ""
+    near = {rows[j].key_expected for j in range(max(0, i - 2), min(len(rows), i + 3)) if j != i}
+    if row.key_read in near:
+        return f"{what} printed as '{row.key_read}', expected {row.key_expected} (row shift?)"
+    return ""
+
+
+def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "",
+              key_source: str = "pipeline", run_auto: str = "") -> list[CellSpec]:
     half = st.meta.get("half")
     out: list[CellSpec] = []
     page_notes = [run_note] if run_note else []
@@ -44,13 +63,12 @@ def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "") -> lis
         for i, (row, (t, b)) in enumerate(zip(p.rows, p.edges)):
             post800 = start + i
             rnotes = list(page_notes)
-            if row.inferred:
-                rnotes.append("row position inferred (800 m post number not found)")
-            elif row.key_read and row.key_read != row.key_expected:
-                rnotes.append(f"800 m post printed as '{row.key_read}', expected {row.key_expected}")
+            kn = _key_note(p.rows, i, "800 m post number")
+            if kn:
+                rnotes.append(kn)
             x0, x1 = p.cols["800"]
             cn = rnotes + (["column bound inferred from template (rule not visible)"] if "800" in inferred_cols else [])
-            out.append(CellSpec(page, "5.2", run, "800", str(post800), (x0, t, x1, b), cn))
+            out.append(CellSpec(page, "5.2", run, "800", str(post800), (x0, t, x1, b), cn, key_source, run_auto))
             if post800 % 2 == 1:
                 inner = (post800 + 1) // 2
                 # inner-arc cell spans this row and the next (even) 800 m row
@@ -58,7 +76,7 @@ def arc_cells(page: int, st: PageStructure, run: str, run_note: str = "") -> lis
                 for d in ARC_DISTANCES[:-1]:
                     x0, x1 = p.cols[d]
                     cn = rnotes + (["column bound inferred from template (rule not visible)"] if d in inferred_cols else [])
-                    out.append(CellSpec(page, "5.2", run, d, str(inner), (x0, t, x1, b2), cn))
+                    out.append(CellSpec(page, "5.2", run, d, str(inner), (x0, t, x1, b2), cn, key_source, run_auto))
     return out
 
 
@@ -70,11 +88,8 @@ def tower_cells(page: int, st: PageStructure, col_runs: list[dict]) -> list[Cell
     by_col = {c["col"]: c for c in col_runs}
     for i, (row, (t, b)) in enumerate(zip(p.rows, p.edges)):
         tower = str(i // 9 + 1)
-        rnotes = []
-        if row.inferred:
-            rnotes.append("row position inferred (height label not found)")
-        elif row.key_read and row.key_read != row.key_expected:
-            rnotes.append(f"height printed as '{row.key_read}', expected {row.key_expected}")
+        kn = _key_note(p.rows, i, "height label")
+        rnotes = [kn] if kn else []
         for name, (x0, x1) in p.cols.items():
             if not name.startswith("c"):
                 continue
@@ -85,9 +100,10 @@ def tower_cells(page: int, st: PageStructure, col_runs: list[dict]) -> list[Cell
                 continue  # unused column
             if not run:
                 notes.append(f"column run header unresolved: {c.get('raw')}")
-            elif c.get("source") != "both readers agree":
+            elif c.get("source") not in ("both readers agree", "manual"):
                 notes.append(f"column run header: {c.get('source')} {c.get('raw')}")
-            out.append(CellSpec(page, "5.3", run, tower, row.key_expected, (x0, t, x1, b), notes))
+            out.append(CellSpec(page, "5.3", run, tower, row.key_expected, (x0, t, x1, b), notes,
+                                c.get("key_source", "pipeline"), c.get("run_auto") or ""))
     return out
 
 

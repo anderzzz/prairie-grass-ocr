@@ -1,0 +1,25 @@
+# Keys (run labels) settled by a person reading the scan. Keys only - never
+# data values. The pipeline still reads every key itself; when an entry here
+# exists it is used instead, every affected cell gets key_source = manual,
+# and the pipeline's own reading is kept alongside (key_auto) so the
+# key-reading error rate can still be reported.
+reviewer: project owner
+date: 2026-11-13
+method: visual inspection of the scanned page headers (no reference data consulted)
+
+# Table 5.2: one run label per page (PDF index -> run)
+arc_pages:
+  155: 35S   # printed "RUN NO. 35-S"; pipeline read 36S (wrong, unflagged by order rule)
+  156: '35'  # pipeline unresolved (tesseract 95 / easyocr 36)
+  157: '36'  # confirms pipeline
+  # 200 (printed 187): confirmed to be a Table 5.2 page; pipeline does not
+  # detect it. Run not recorded here. Outside the pilot.
+
+# Table 5.3: run label per data column, left to right (PDF index -> list).
+# null = blank header (unused column). A dict sets single columns only.
+tower_pages:
+  207: ['13', '14', '15', '16', '17', '18', '19', '20', '21']
+  209: {c3: 35S}
+  210: ['42', '43', '44', '45', '46', '47', 48S, '48', '49']
+  211: ['50', '51', '52', '54', '55', '56', '57', '58', '59']   # no run 53 printed
+  212: ['60', '61', '62', '65', '66', '67', '68', null, null]

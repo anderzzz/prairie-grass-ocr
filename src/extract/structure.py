@@ -171,6 +171,10 @@ def isolate_glyphs(crop: np.ndarray) -> tuple[np.ndarray, dict]:
       * flat strokes (height <= 4 px and width >= 2.5 x height) are rule
         fragments or dashes and are dropped;
       * specks under 6 px are dropped;
+      * low components (height < 12 px) near the top or bottom edge of the
+        crop (outer quarter) are ruling residue unless they sit on a text
+        line formed by glyph-height components;
+      * flat components up to 8 px high and >= 3 x as wide are rule residue;
       * everything else is kept, including small near-square blobs which are
         decimal points or the asterisk.
     Returns the cleaned crop (same size, 0 = ink) and stats: kept ink pixels,
@@ -189,8 +193,14 @@ def isolate_glyphs(crop: np.ndarray) -> tuple[np.ndarray, dict]:
             continue
         if h <= 4 and w >= 2.5 * h:
             continue
+        if h <= 8 and w >= 3 * h:
+            continue
         keep.append(i)
     tall = [i for i in keep if stats[i, cv2.CC_STAT_HEIGHT] >= 12]
+    if not tall:
+        H = ink.shape[0]
+        band = max(4, 0.25 * H)
+        keep = [i for i in keep if band < stats[i, cv2.CC_STAT_TOP] + stats[i, cv2.CC_STAT_HEIGHT] / 2 < H - band]
     if tall:
         # small blobs (decimal points, asterisks) must sit on the text line
         # and within its horizontal span; other specks are scanner dust
