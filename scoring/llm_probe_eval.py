@@ -58,7 +58,7 @@ def main(model: str) -> str:
     for p in probe:
         by_mode[p["mode"]][p["cell_id"]] = p
     L = [f"# Vision-LLM probe: {model} on dev pages", ""]
-    base_ids = list(by_mode["cell"])
+    base_ids = list(by_mode["cell_rules"])
     tok_in = sum(int(p["input_tokens"]) for p in probe)
     tok_out = sum(int(p["output_tokens"]) for p in probe)
     L += [f"{len(probe)} reads, {tok_in} input / {tok_out} output tokens.", ""]
