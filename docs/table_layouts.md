@@ -49,8 +49,10 @@ printed 78–201. The table numbers in the brief are right.
   `dd.d` from 10 to 100, integers from 100 (e.g. `2200`). Decimal points often print
   as or merge into commas against the underline.
 * Special values (Table 5.2 intro, printed page 79):
-  * **blank** = no measurable concentration;
+  * **blank** = no measurable concentration (verbatim: "the letter "M" indicates
+    missing data and the blank spaces denote no measurable concentration");
   * **`M`** = missing data.
+  * A few cells print an explicit zero (`0.000`, `0`), distinct from a blank.
   * Run-specific remarks (printed page 79–80): run 4 adjusted to a 10-min release;
     run 25 gnat-affected samplers marked missing; runs 30/31 low background
     resistance; run 45 post 38 of 50 m arc adjusted; runs 47, 50, 51, 57 sampler
@@ -69,7 +71,7 @@ printed 78–201. The table numbers in the brief are right.
   (≈0.75–1.05 row pitches), so groups must be located individually.
 * Towers stand between 100 m arc posts 28–29, 35–36, 42–43, 49–50, 56–57, 63–64
   (towers 1–6).
-* Specials: blank = no measurable concentration; `M` = missing; `*` after a value
+* Specials (Table 5.3 intro, printed page 193): blank = no measurable concentration; `M` = missing; `*` after a value
   = estimated (footnote `*ESTIMATED VALUE`; run 13, tower 4, 0.5 m: `2200*`).
 * Tower data begin with run 13; no data for runs 23, 28, 35, 53, 63, 64.
 * Value formats as in 5.2.

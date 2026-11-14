@@ -277,11 +277,11 @@ a number).** The pipeline flags 7.95% of cells.
 | What | Cells | Notes |
 |---|---|---|
 | Blank in print, "missing" in reference | 42 | convention difference; not counted as conflicts |
-| PDF page 196 (run 61, 800 m arc) | 26 | the **reference** is shifted by 1–2 posts in part of the column; the scan matches our values (checked by eye at posts 118–125) |
+| PDF page 196 (run 61, 800 m arc) | 26 | **ambiguous layout, not a proven reference error** (corrected 2026-11-14): the 800 m values drift off the post grid on this page, many sitting between two post numbers. Posts 95–132 hold 38 printed values for 38 posts, so our one-to-one assignment is self-consistent, but the reference assigns some differently; a person decides |
 | PDF page 106 (run 7, 100 m arc, posts 46+) | 25 | the **reference** repeats the 200 m column in the 100 m slot (22 of 27 identical); the print shows different values (checked at posts 51–53) |
 | Other conflicts, all three readers agree | 38 | 11 flagged; 18 differ by < 12%, 7 by ×10 or more (e.g. 2.69 vs 0.269, 0.090 vs 0.900), so reference errors or ambiguous print |
 | Other conflicts, readers differ | 69 | 43 flagged; mostly Mistral misreads of a single digit (34 within 12%) |
-| PDF page 200 | 270 cells, unkeyed | run unresolved; Mistral reads the header as "86", which is impossible (runs end at 68). Needs a manual key |
+| PDF page 200 | 270 cells | first run unkeyed (Mistral read the header as "86"). Now keyed as run 66 by the owner, **inferred from page order** (half B of run 66 is PDF 201), recorded as such in `config/manual_keys.yaml`. With that key 269 of 270 cells match the reference, an independent confirmation |
 
 **What this means for the dataset.**
 - Reading quality is high. Systematic problems are rare and visible: whole-page row shifts
@@ -294,3 +294,45 @@ a number).** The pipeline flags 7.95% of cells.
   than 1 in 600 cells.
 - **Owner's triage design:** sending reference conflicts to Sonnet and then to a person
   means about 158 cells. Sonnet would cost under $0.50. About 1–2 hours of human review.
+
+### Update 2026-11-14: blank vs missing, run 66, triage
+
+**What a blank means.** Both table introductions say it explicitly:
+- Table 5.2, printed p. 79 (PDF 92): *"the letter "M" indicates missing data and the blank
+  spaces denote no measurable concentration."*
+- Table 5.3, printed p. 193 (PDF 206): *"The letter "M" indicates missing data, and blank
+  spaces in the table signify no measurable concentration."*
+- Table 5.4 (printed p. 200) uses the opposite: *"Blank spaces signify missing data."*
+
+Every extracted cell now carries `status`, derived only from the printed token:
+`value`, `not_measurable` (printed blank), `missing` (printed M) or `unread` (token not
+interpretable; 2 cells). A blank is never written as 0 or as missing. `no_station`
+cannot occur, because the grid creates cells only where a sampler stood; a test checks
+this. Volume I: 9,267 value, 24,006 not_measurable, 43 missing, 2 unread.
+
+**Printed zeros.** Two cells print an explicit zero: run 1, 800 m post 31 (`0.000`, PDF 94),
+and run 30, 800 m post 98 (`0`, PDF 148). They are kept as printed (status `value`, 0.0).
+The reference stores 0 for blank, so it cannot tell them apart. Both are in the conflict
+list.
+
+**Code changes (post-pilot).**
+- A manual key can carry its own method, e.g. "inferred from page order".
+- On a page keyed by a person, Mistral's disagreeing header reading becomes an `info:`
+  note rather than a structural flag on every cell.
+- Re-running Volume I from the Mistral cache made no new API calls. It changed only
+  PDF 200 (keyed now) and added the status column.
+
+**Totals.** 159 conflicts in 33,318 keyed cells (0.48%).
+
+**Triage.** `scoring/triage.py` sends only the conflict cells to Claude Sonnet (mode
+`context`: the cell outlined in a strip of its column, pixels only, no reference and no
+other readings). It halts before any call if more than 250 cells would go. Raw responses
+go to `cache/reader_llm/` (committed) and `output/volume1/triage/sonnet_reads.csv`; spend
+goes to `output/volume1/triage/spend.json`. The review pack is `review/volume1/index.html`
+(local only). It groups the conflicts as follows:
+- A: ambiguous layout, PDF 196 (25 cells);
+- B: suspected reference column copy, PDF 106 (23);
+- C: Mistral, Tesseract and EasyOCR give the same token (42);
+- D: readers differ (69).
+
+Verdicts are entered in the page and saved to `review/volume1/verdicts.csv`.

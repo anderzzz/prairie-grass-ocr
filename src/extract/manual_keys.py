@@ -31,9 +31,13 @@ def arc_run(idx: int, auto: str, d: dict | None = None) -> tuple[str, str, str]:
     man = d["arc_pages"].get(idx)
     if man is None:
         return auto, "pipeline", ""
+    src = provenance(d)
+    if isinstance(man, dict):  # {run, method, date}: a key not read from the header
+        src = f"manual ({d.get('reviewer', '?')}, {man.get('date', d.get('date', '?'))}; {man.get('method', '?')})"
+        man = man["run"]
     man = str(man)
     note = "" if man == auto else f"pipeline read run '{auto or '?'}', manual key '{man}'"
-    return man, provenance(d), note
+    return man, src, note
 
 
 def apply_tower(idx: int, col_runs: list[dict], d: dict | None = None) -> list[dict]:

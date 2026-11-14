@@ -108,6 +108,10 @@ def text_lines(glyph_img: np.ndarray) -> int:
     return n
 
 
+def c_pipeline_keyed(cells) -> bool:
+    return not any(str(c.key_source).startswith("manual") for c in cells)
+
+
 def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: PreprocessConfig,
               readers, crops_dir: Path | None) -> tuple[list[dict], dict]:
     img, info = preprocess(page_image(idx), cfg)
@@ -142,8 +146,11 @@ def read_page(idx: int, table: str, run_label: str, run_note: str, cfg: Preproce
                 c.structural = [n for n in c.structural if not n.startswith("run label:")]
                 c.key_source = "pipeline (Mistral header agrees)"
         elif mrun and run_label and mrun != run_label:
+            # a key settled by a person is not re-flagged on every cell; the
+            # disagreement stays visible as an info note and in the page meta
+            pre = "info: " if not c_pipeline_keyed(cells) else ""
             for c in cells:
-                c.structural.append(f"Mistral reads run header as '{mrun}', page keyed as '{run_label}'")
+                c.structural.append(f"{pre}Mistral reads run header as '{mrun}', page keyed as '{run_label}'")
     page_meta = {"pdf_index": idx, "table": table, "run": run_label, "run_note": run_note,
                  "preprocess": info, "structure_anomalies": st.anomalies,
                  "half": st.meta.get("half"), "n_cells": len(cells),
@@ -320,6 +327,17 @@ def finalise(rows: list[dict]) -> None:
             notes.append("low confidence: " + ", ".join(low))
         rec["flags_any"] = any(rec[k] for k in FLAG_COLS)
         rec["flag_notes"] = " | ".join(notes)
+        rec["status"] = STATUS.get(rec["value_kind"], "unread")
+
+
+# What the printed token means, per the table introductions (Vol. I printed
+# p. 79 for Table 5.2, p. 193 for Table 5.3): "the letter "M" indicates
+# missing data and the blank spaces denote no measurable concentration".
+# A blank is never written as 0 and never as missing. "no_station" (a
+# position without a sampler, e.g. inner arcs on 800 m-only rows) cannot
+# occur: the grid only creates cells where a sampler exists (tested).
+# Not valid for Table 5.4, where blank = missing.
+STATUS = {"number": "value", "blank": "not_measurable", "missing": "missing"}
 
 
 FLAG_COLS = ["flag_readers_disagree", "flag_low_confidence", "flag_token_unexpected",

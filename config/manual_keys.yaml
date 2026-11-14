@@ -12,8 +12,11 @@ arc_pages:
   155: 35S   # printed "RUN NO. 35-S"; pipeline read 36S (wrong, unflagged by order rule)
   156: '35'  # pipeline unresolved (tesseract 95 / easyocr 36)
   157: '36'  # confirms pipeline
-  # 200 (printed 187): confirmed to be a Table 5.2 page; pipeline does not
-  # detect it. Run not recorded here. Outside the pilot.
+  # 200 (printed 187): a Table 5.2 page that recon does not detect. Run
+  # INFERRED FROM CONTEXT by the project owner (2026-11-14), not read from the
+  # header: run 66 half B is PDF 201 and half A is otherwise absent. Mistral's
+  # header reading was "86" (impossible; runs end at 68).
+  200: {run: '66', method: inferred from page order, date: 2026-11-14}
 
 # Table 5.3: run label per data column, left to right (PDF index -> list).
 # null = blank header (unused column). A dict sets single columns only.

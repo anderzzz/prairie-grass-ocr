@@ -1,8 +1,8 @@
 {
  "pdf_index": 200,
  "table": "5.2",
- "run": "",
- "run_note": "run label unresolved",
+ "run": "66",
+ "run_note": "",
  "preprocess": {
   "config": {
    "deskew": true,

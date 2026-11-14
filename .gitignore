@@ -4,10 +4,7 @@ reference/
 __pycache__/
 *.pyc
 .venv/
-.pytest_# caches are local, except the raw Mistral responses (the primary reader's
-# output; committed so the dataset can be rebuilt without the service)
-cache/*
-!cache/reader_mistral_page/
+.pytest_cache/
 # large intermediate rasters for non-pilot pages
 work/
 .DS_Store
@@ -15,6 +12,8 @@ work/
 # output; committed so the dataset can be rebuilt without the service)
 cache/*
 !cache/reader_mistral_page/
+# raw vision-LLM responses (Sonnet triage, probes): committed for the same reason
+!cache/reader_llm/
 # scores and experiments contain reference values: never committed
 output/scores/
 output/experiments/

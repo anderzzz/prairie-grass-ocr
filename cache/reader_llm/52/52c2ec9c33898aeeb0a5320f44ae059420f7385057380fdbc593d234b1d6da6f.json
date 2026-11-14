@@ -1,0 +1,1 @@
+{"raw_response": "35.7", "stop_reason": "end_turn", "model": "claude-haiku-5-5", "request_id": "req_011Ch1GjnLkV7Ud9X7gTxGCB", "usage": {"input_tokens": 225, "output_tokens": 5}, "conf": null, "text": "35.7", "uncertain": false, "note": ""}
