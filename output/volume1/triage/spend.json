@@ -1,0 +1,9 @@
+{
+ "model": "claude-sonnet-5-5",
+ "mode": "context",
+ "cells": 159,
+ "new_calls_this_run": 146,
+ "new_cost_usd": 0.3755,
+ "all_reads_cost_usd_incl_cached": 0.4113,
+ "errors": 0
+}

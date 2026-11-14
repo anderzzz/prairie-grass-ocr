@@ -336,3 +336,20 @@ goes to `output/volume1/triage/spend.json`. The review pack is `review/volume1/i
 - D: readers differ (69).
 
 Verdicts are entered in the page and saved to `review/volume1/verdicts.csv`.
+
+**Sonnet triage result (2026-11-14).** 159 conflict cells, 149 new calls plus 10 cached
+from the dev probe, **$0.38** new spend ($0.41 counting cached reads). Sonnet sees pixels
+only. The table counts how its reading compares with Mistral's and with the reference:
+
+| Group | Cells | Sonnet = Mistral | Sonnet = reference | Neither | Sonnet "uncertain" |
+|---|---|---|---|---|---|
+| A. PDF 196, 800 m layout | 25 | 24 | 0 | 1 | 3 |
+| B. PDF 106, column copy | 23 | 23 | 0 | 0 | 2 |
+| C. readers all agree | 42 | 42 | 0 | 0 | 10 |
+| D. readers differ | 69 | 40 | 21 | 8 | 45 |
+
+In groups A–C a fourth, independent reader backs the scan reading in 89 of 90 cells. That
+is strong but not conclusive: in group A the question is which post a value belongs to,
+not what the value is. Group D is where the real misreads are: Sonnet sides with the
+reference in 21 cells, and is unsure in two-thirds of the group. Nothing has been changed
+in the data; verdicts come from the project owner.
