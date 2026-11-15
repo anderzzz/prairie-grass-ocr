@@ -2,7 +2,7 @@
 UV ?= uv
 PY  = $(UV) run python
 
-.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset
+.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks
 
 pilot: recon select extract test reference score review   # full pilot incl. holdout: git checkout pilot-v1 && make pilot
 
@@ -39,3 +39,6 @@ volume:           ## all Volume I table pages -> output/volume1 (post-pilot)
 
 dataset:          ## reviewed Volume I dataset (extraction + owner verdicts; no reference) -> output/volume1/dataset
 	cd src && $(PY) -m dataset.build
+
+notebooks:        ## exploration notebooks (needs `make dataset` first)
+	$(UV) run --group notebooks jupyter lab notebooks/
