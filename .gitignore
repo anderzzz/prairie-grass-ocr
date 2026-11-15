@@ -18,4 +18,4 @@ cache/*
 output/scores/
 output/experiments/
 # review pack reproduces reference values: local only
-review/
+/review/

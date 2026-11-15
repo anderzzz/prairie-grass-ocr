@@ -353,3 +353,56 @@ is strong but not conclusive: in group A the question is which post a value belo
 not what the value is. Group D is where the real misreads are: Sonnet sides with the
 reference in 21 cells, and is unsure in two-thirds of the group. Nothing has been changed
 in the data; verdicts come from the project owner.
+
+### Owner review of the 159 conflicts (2026-11-15)
+
+The pack's "ours" button meant **Sonnet's reading**, as the owner confirmed. The pack
+showed no separate "our value" column, so this was ambiguous; "other" was used where
+Mistral was right and Sonnet wrong. `scoring/resolve_verdicts.py` turns the verdicts into
+explicit printed values, recorded as the owner's reading, in
+`config/review/volume1_verdicts.csv`. Undecided cells count as "ours" (owner's
+instruction); in all 39 of them Sonnet and Mistral agree.
+
+Who was right, of the 159 cells where Mistral and the reference disagree:
+
+| Group | Cells | Mistral right | Sonnet right | Reference right |
+|---|---|---|---|---|
+| A. PDF 196, 800 m | 25 | 24 | 24 | 1 |
+| B. PDF 106, column copy | 23 | 23 | 23 | 0 |
+| C. readers all agree | 42 | 40 | 40 | 2 |
+| D. readers differ | 69 | 31 | 47 | 37 |
+| **All** | **159** | **118** | **134** | **40** |
+
+- **The reference is wrong in about 119 of these cells.** Errors that are not a printed
+  blank/missing coding difference sit almost entirely in the reference whenever the
+  readers agree among themselves (groups A–C).
+- **Mistral is wrong in 41 cells.** These are Mistral misreads that the comparison with
+  the reference surfaced, i.e. 0.12% of keyed cells. In 21 of them Sonnet was wrong too
+  and the owner sided with the reference.
+- **Sonnet as the tie-breaker** is right in 134 of 159 and in 47 of 69 in group D. It
+  helps, but in group D it is no substitute for a person.
+- **The 0/6 problem.** This typeface prints 6 with a weak or broken top loop, so it can
+  pass for 0 (and 3/8/9 blur together similarly). Many group D cells are of this kind,
+  and so are both group C cells where all machine readers were wrong (161 read as 16,
+  6.68 read as 0.68). The reference shows the same confusion, which suggests it too was
+  produced by OCR or hurried keying. The scan is read at its native 300 dpi, so no better
+  pixels exist. Most of these differences are small relative to the measurement's own
+  uncertainty, but the larger ones (0 vs 6 as a leading digit) are not.
+
+**Reviewed dataset.** `make dataset` (`src/dataset/build.py`) writes
+`output/volume1/dataset/arcs.csv` (30,510 cells) and `towers.csv` (2,808). It uses
+Mistral's token for every cell, except the 159 reviewed cells, which take the owner's
+value. It reads only the extraction and the verdict file, never the reference; a test
+checks this. Status counts:
+
+| | value | not_measurable | missing |
+|---|---|---|---|
+| Arcs | 8,173 | 22,306 | 31 |
+| Towers | 1,096 | 1,700 | 12 |
+
+The review changed the value in 25 cells, Mistral's reading being confirmed in the rest.
+
+**Limits of this review.** Only cells that conflict with the reference were reviewed.
+Where Mistral and the reference make the *same* misreading (plausible for 0/6), nothing
+has looked at the cell. The pipeline flags (7.9% of cells) remain in the dataset and have
+not been cleared.

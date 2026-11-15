@@ -1,0 +1,160 @@
+cell_id,pdf_index,group,token_as_printed,basis,verdict_given,decided,mistral_token,sonnet_token,mistral_right,sonnet_right,reviewer,date
+p94_5.2_r1_800_31,94,D,0.000,Sonnet's reading confirmed by the owner,ours,explicit,0.000,0.000,True,True,project owner,2026-11-15
+p94_5.2_r1_200_16,94,D,0.995,owner reading (agrees with the reference value),reference,explicit,.995,.995,False,False,project owner,2026-11-15
+p103_5.2_r6_100_35,103,C,0.060,Sonnet's reading confirmed by the owner,ours,explicit,0.060,0.060,True,True,project owner,2026-11-15
+p123_5.2_r16_100_59,123,C,,Sonnet's reading confirmed by the owner,ours,explicit,,,True,True,project owner,2026-11-15
+p148_5.2_r30_800_98,148,C,0,Sonnet's reading confirmed by the owner,ours,explicit,0,0,True,True,project owner,2026-11-15
+p196_5.2_r61_800_132,196,A,0.060,Sonnet's reading confirmed by the owner,ours,explicit,0.060,0.060,True,True,project owner,2026-11-15
+p202_5.2_r67_800_90,202,D,0.075,owner reading (agrees with the reference value),reference,explicit,.075,0.75,False,False,project owner,2026-11-15
+p112_5.2_r11_800_90,112,D,0.430,owner reading (agrees with the reference value),reference,explicit,430,430,False,False,project owner,2026-11-15
+p207_5.3_r18_3_0.5,207,D,6.02,Sonnet's reading confirmed by the owner,ours,explicit,6.02,6.02,True,True,project owner,2026-11-15
+p189_5.2_r58_50_42,189,D,6.68,owner reading (agrees with the reference value),reference,explicit,0.08,0.08,False,False,project owner,2026-11-15
+p94_5.2_r1_400_10,94,D,0.030,Sonnet's reading confirmed by the owner,ours,explicit,0.930,0.030,False,True,project owner,2026-11-15
+p169_5.2_r44_800_69,169,C,9.565,Sonnet's reading confirmed by the owner,ours,explicit,9.565,9.565,True,True,project owner,2026-11-15
+p173_5.2_r46_50_35,173,D,6.3,Sonnet's reading confirmed by the owner,ours,explicit,6.1,6.3,False,True,project owner,2026-11-15
+p100_5.2_r4_50_76,100,D,9.90,Sonnet's reading confirmed by the owner,ours,explicit,9.90,9.90,True,True,project owner,2026-11-15
+p162_5.2_r39_100_26,162,C,161,owner reading (agrees with the reference value),reference,explicit,16,16,False,False,project owner,2026-11-15
+p204_5.2_r68_50_35,204,C,3.21,Sonnet's reading confirmed by the owner,ours,explicit,3.21,3.21,True,True,project owner,2026-11-15
+p101_5.2_r5_50_26,101,C,2.69,Sonnet's reading confirmed by the owner,ours,explicit,2.69,2.69,True,True,project owner,2026-11-15
+p149_5.2_r31_800_114,149,C,0.090,Sonnet's reading confirmed by the owner,ours,explicit,0.090,0.090,True,True,project owner,2026-11-15
+p207_5.3_r21_3_17.5,207,C,0.090,Sonnet's reading confirmed by the owner,ours,explicit,0.090,0.090,True,True,project owner,2026-11-15
+p187_5.2_r57_50_45,187,C,6.68,owner reading (agrees with the reference value),reference,explicit,0.68,0.68,False,False,project owner,2026-11-15
+p106_5.2_r7_100_67,106,B,21.2,Sonnet's reading confirmed by the owner,ours,explicit,21.2,21.2,True,True,project owner,2026-11-15
+p106_5.2_r7_100_68,106,B,14.4,Sonnet's reading confirmed by the owner,ours,explicit,14.4,14.4,True,True,project owner,2026-11-15
+p106_5.2_r7_100_53,106,B,11.7,Sonnet's reading confirmed by the owner,ours,explicit,11.7,11.7,True,True,project owner,2026-11-15
+p163_5.2_r40_800_80,163,D,0.035,Sonnet's reading confirmed by the owner,ours,explicit,0.005,0.035,False,True,project owner,2026-11-15
+p106_5.2_r7_100_60,106,B,9.71,Sonnet's reading confirmed by the owner,ours,explicit,9.71,9.71,True,True,project owner,2026-11-15
+p106_5.2_r7_100_66,106,B,19.4,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),19.4,19.4,True,True,project owner,2026-11-15
+p106_5.2_r7_100_52,106,B,11.8,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),11.8,11.8,True,True,project owner,2026-11-15
+p106_5.2_r7_100_51,106,B,11.3,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),11.3,11.3,True,True,project owner,2026-11-15
+p106_5.2_r7_100_59,106,B,7.79,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),7.79,7.79,True,True,project owner,2026-11-15
+p106_5.2_r7_100_46,106,B,19.4,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),19.4,19.4,True,True,project owner,2026-11-15
+p106_5.2_r7_100_50,106,B,10.2,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),10.2,10.2,True,True,project owner,2026-11-15
+p106_5.2_r7_100_61,106,B,13.5,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),13.5,13.5,True,True,project owner,2026-11-15
+p106_5.2_r7_100_49,106,B,11.7,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),11.7,11.7,True,True,project owner,2026-11-15
+p106_5.2_r7_100_64,106,B,17.0,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),17.0,17.0,True,True,project owner,2026-11-15
+p106_5.2_r7_100_65,106,B,19.5,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),19.5,19.5,True,True,project owner,2026-11-15
+p106_5.2_r7_100_54,106,B,8.82,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),8.82,8.82,True,True,project owner,2026-11-15
+p106_5.2_r7_100_48,106,B,15.5,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),15.5,15.5,True,True,project owner,2026-11-15
+p106_5.2_r7_100_63,106,B,16.1,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),16.1,16.1,True,True,project owner,2026-11-15
+p210_5.3_r42_5_10.5,210,C,1.32,Sonnet's reading confirmed by the owner,ours,explicit,1.32,1.32,True,True,project owner,2026-11-15
+p106_5.2_r7_100_55,106,B,6.77,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),6.77,6.77,True,True,project owner,2026-11-15
+p106_5.2_r7_100_47,106,B,17.4,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),17.4,17.4,True,True,project owner,2026-11-15
+p106_5.2_r7_100_57,106,B,5.91,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),5.91,5.91,True,True,project owner,2026-11-15
+p106_5.2_r7_100_58,106,B,5.73,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),5.73,5.73,True,True,project owner,2026-11-15
+p106_5.2_r7_100_56,106,B,5.69,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),5.69,5.69,True,True,project owner,2026-11-15
+p106_5.2_r7_100_62,106,B,14.4,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),14.4,14.4,True,True,project owner,2026-11-15
+p104_5.2_r6_50_52,104,C,46.7,Sonnet's reading confirmed by the owner,ours,explicit,46.7,46.7,True,True,project owner,2026-11-15
+p102_5.2_r5_100_46,102,C,47.0,Sonnet's reading confirmed by the owner,ours,explicit,47.0,47.0,True,True,project owner,2026-11-15
+p105_5.2_r7_800_90,105,D,0.030,Sonnet's reading confirmed by the owner,ours,explicit,0.030,0.030,True,True,project owner,2026-11-15
+p123_5.2_r16_50_60,123,D,99.0,owner reading (agrees with the reference value),reference,explicit,39.0,39.0,False,False,project owner,2026-11-15
+p196_5.2_r61_800_102,196,A,0.845,owner reading (agrees with the reference value),reference,explicit,0.345,0.945,False,False,project owner,2026-11-15
+p196_5.2_r61_800_131,196,A,0.135,Sonnet's reading confirmed by the owner,ours,explicit,0.135,0.135,True,True,project owner,2026-11-15
+p196_5.2_r61_800_124,196,A,0.170,Sonnet's reading confirmed by the owner,ours,explicit,0.170,0.170,True,True,project owner,2026-11-15
+p204_5.2_r68_100_38,204,C,19.7,Sonnet's reading confirmed by the owner,ours,explicit,19.7,19.7,True,True,project owner,2026-11-15
+p196_5.2_r61_800_119,196,A,0.420,Sonnet's reading confirmed by the owner,ours,explicit,0.420,0.420,True,True,project owner,2026-11-15
+p181_5.2_r51_800_149,181,C,0.300,Sonnet's reading confirmed by the owner,ours,explicit,0.300,0.300,True,True,project owner,2026-11-15
+p158_5.2_r37_50_41,158,C,3.09,Sonnet's reading confirmed by the owner,ours,explicit,3.09,3.09,True,True,project owner,2026-11-15
+p104_5.2_r6_400_46,104,D,3.27,owner reading (agrees with the reference value),reference,explicit,5.27,5.27,False,False,project owner,2026-11-15
+p180_5.2_r50_50_68,180,D,102,Sonnet's reading confirmed by the owner,ours,explicit,102,102,True,True,project owner,2026-11-15
+p100_5.2_r4_100_68,100,D,163,Sonnet's reading confirmed by the owner,ours,explicit,103,163,False,True,project owner,2026-11-15
+p142_5.2_r27_100_34,142,D,1.64,Sonnet's reading confirmed by the owner,ours,explicit,1.64,1.64,True,True,project owner,2026-11-15
+p178_5.2_r49_50_43,178,D,10.5,Sonnet's reading confirmed by the owner,ours,explicit,10.5,10.5,True,True,project owner,2026-11-15
+p191_5.2_r59_800_82,191,C,0.105,Sonnet's reading confirmed by the owner,ours,explicit,0.105,0.105,True,True,project owner,2026-11-15
+p112_5.2_r11_50_45,112,D,167,owner reading (agrees with the reference value),reference,explicit,107,107,False,False,project owner,2026-11-15
+p207_5.3_r19_3_7.5,207,C,16.8,Sonnet's reading confirmed by the owner,ours,explicit,16.8,16.8,True,True,project owner,2026-11-15
+p181_5.2_r51_200_67,181,D,1.68,owner reading (agrees with the reference value),reference,explicit,1.08,1.08,False,False,project owner,2026-11-15
+p132_5.2_r21_50_42,132,C,210,Sonnet's reading confirmed by the owner,ours,explicit,210,210,True,True,project owner,2026-11-15
+p196_5.2_r61_800_128,196,A,0.105,Sonnet's reading confirmed by the owner,ours,explicit,0.105,0.105,True,True,project owner,2026-11-15
+p181_5.2_r51_50_66,181,D,36.3,Sonnet's reading confirmed by the owner,ours,explicit,26.3,36.3,False,True,project owner,2026-11-15
+p210_5.3_r47_6_4.5,210,D,0.530,owner reading (agrees with the reference value),reference,explicit,0.730,0.130,False,False,project owner,2026-11-15
+p203_5.2_r67_50_55,203,D,3.75,Sonnet's reading confirmed by the owner,ours,explicit,2.75,3.75,False,True,project owner,2026-11-15
+p173_5.2_r46_50_32,173,D,18.9,Sonnet's reading confirmed by the owner,ours,explicit,13.9,18.9,False,True,project owner,2026-11-15
+p196_5.2_r61_800_117,196,A,0.425,Sonnet's reading confirmed by the owner,ours,explicit,0.425,0.425,True,True,project owner,2026-11-15
+p196_5.2_r61_800_118,196,A,0.320,Sonnet's reading confirmed by the owner,ours,explicit,0.320,0.320,True,True,project owner,2026-11-15
+p196_5.2_r61_800_127,196,A,0.080,Sonnet's reading confirmed by the owner,ours,explicit,0.080,0.080,True,True,project owner,2026-11-15
+p210_5.3_r49_5_1.5,210,D,66.3,Sonnet's reading confirmed by the owner,ours,explicit,86.3,66.3,False,True,project owner,2026-11-15
+p210_5.3_r47_6_7.5,210,D,0.865,Sonnet's reading confirmed by the owner,ours,explicit,0.665,0.865,False,True,project owner,2026-11-15
+p154_5.2_r34_100_34,154,D,20.1,Sonnet's reading confirmed by the owner,ours,explicit,20.1,20.1,True,True,project owner,2026-11-15
+p135_5.2_r22_200_47,135,D,0.205,Sonnet's reading confirmed by the owner,ours,explicit,0.205,0.205,True,True,project owner,2026-11-15
+p196_5.2_r61_800_108,196,A,0.600,Sonnet's reading confirmed by the owner,ours,explicit,0.600,0.600,True,True,project owner,2026-11-15
+p96_5.2_r2_50_5,96,D,38.6,Sonnet's reading confirmed by the owner,ours,explicit,30.6,38.6,False,True,project owner,2026-11-15
+p127_5.2_r18_400_47,127,D,29.5,owner reading (agrees with the reference value),reference,explicit,23.5,23.5,False,False,project owner,2026-11-15
+p160_5.2_r38_400_45,160,D,0.025,Sonnet's reading confirmed by the owner,ours,explicit,0.025,0.025,True,True,project owner,2026-11-15
+p196_5.2_r61_800_121,196,A,0.230,Sonnet's reading confirmed by the owner,ours,explicit,0.230,0.230,True,True,project owner,2026-11-15
+p196_5.2_r61_800_113,196,A,0.735,Sonnet's reading confirmed by the owner,ours,explicit,0.735,0.735,True,True,project owner,2026-11-15
+p180_5.2_r50_800_132,180,C,0.490,Sonnet's reading confirmed by the owner,ours,explicit,0.490,0.490,True,True,project owner,2026-11-15
+p196_5.2_r61_800_120,196,A,0.280,Sonnet's reading confirmed by the owner,ours,explicit,0.280,0.280,True,True,project owner,2026-11-15
+p150_5.2_r32_400_43,150,D,60.3,owner reading (typed),other,explicit,60.3,30.3,True,False,project owner,2026-11-15
+p178_5.2_r49_200_45,178,D,3.03,Sonnet's reading confirmed by the owner,ours,explicit,3.03,3.03,True,True,project owner,2026-11-15
+p207_5.3_r15_6_1.5,207,D,30.3,Sonnet's reading confirmed by the owner,ours,explicit,36.3,30.3,False,True,project owner,2026-11-15
+p200_5.2_r66_400_34,200,C,5.65,Sonnet's reading confirmed by the owner,ours,explicit,5.65,5.65,True,True,project owner,2026-11-15
+p196_5.2_r61_800_109,196,A,0.775,Sonnet's reading confirmed by the owner,ours,explicit,0.775,0.775,True,True,project owner,2026-11-15
+p196_5.2_r61_800_114,196,A,0.595,Sonnet's reading confirmed by the owner,ours,explicit,0.595,0.595,True,True,project owner,2026-11-15
+p196_5.2_r61_800_112,196,A,0.845,Sonnet's reading confirmed by the owner,ours,explicit,0.845,0.845,True,True,project owner,2026-11-15
+p159_5.2_r37_400_50,159,D,4.61,Sonnet's reading confirmed by the owner,ours,explicit,4.61,4.61,True,True,project owner,2026-11-15
+p196_5.2_r61_800_115,196,A,0.510,Sonnet's reading confirmed by the owner,ours,explicit,0.510,0.510,True,True,project owner,2026-11-15
+p109_5.2_r9_50_45,109,D,5.66,owner reading (agrees with the reference value),reference,explicit,5.00,5.00,False,False,project owner,2026-11-15
+p196_5.2_r61_800_111,196,A,0.955,Sonnet's reading confirmed by the owner,ours,explicit,0.955,0.955,True,True,project owner,2026-11-15
+p170_5.2_r44_50_47,170,C,18.5,Sonnet's reading confirmed by the owner,ours,explicit,18.5,18.5,True,True,project owner,2026-11-15
+p139_5.2_r25_100_65,139,D,16.7,Sonnet's reading confirmed by the owner,ours,explicit,18.7,16.7,False,True,project owner,2026-11-15
+p208_5.3_r27_3_17.5,208,D,1.88,Sonnet's reading confirmed by the owner,ours,explicit,1.68,1.88,False,True,project owner,2026-11-15
+p94_5.2_r1_100_6,94,C,0.870,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.870,0.870,True,True,project owner,2026-11-15
+p164_5.2_r40_100_51,164,D,76.4,Sonnet's reading confirmed by the owner,ours,explicit,76.4,76.4,True,True,project owner,2026-11-15
+p196_5.2_r61_800_107,196,A,0.555,Sonnet's reading confirmed by the owner,ours,explicit,0.555,0.555,True,True,project owner,2026-11-15
+p196_5.2_r61_800_130,196,A,0.145,Sonnet's reading confirmed by the owner,ours,explicit,0.145,0.145,True,True,project owner,2026-11-15
+p210_5.3_r48S_6_0.5,210,D,6.32,owner reading (agrees with the reference value),reference,explicit,6.72,6.?2,False,False,project owner,2026-11-15
+p196_5.2_r61_800_125,196,A,0.085,Sonnet's reading confirmed by the owner,ours,explicit,0.085,0.085,True,True,project owner,2026-11-15
+p196_5.2_r61_50_56,196,C,159,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),159,159,True,True,project owner,2026-11-15
+p196_5.2_r61_800_116,196,A,0.450,Sonnet's reading confirmed by the owner,ours,explicit,0.450,0.450,True,True,project owner,2026-11-15
+p196_5.2_r61_800_123,196,A,0.180,Sonnet's reading confirmed by the owner,ours,explicit,0.180,0.180,True,True,project owner,2026-11-15
+p212_5.3_r68_3_0.5,212,D,362,Sonnet's reading confirmed by the owner,ours,explicit,362,362,True,True,project owner,2026-11-15
+p196_5.2_r61_800_110,196,A,0.905,Sonnet's reading confirmed by the owner,ours,explicit,0.905,0.905,True,True,project owner,2026-11-15
+p181_5.2_r51_100_66,181,D,3.89,owner reading (agrees with the reference value),reference,explicit,3.69,3.80,False,False,project owner,2026-11-15
+p179_5.2_r49_100_59,179,C,36.9,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),36.9,36.9,True,True,project owner,2026-11-15
+p113_5.2_r11_800_93,113,D,1.27,Sonnet's reading confirmed by the owner,ours,explicit,1.21,1.27,False,True,project owner,2026-11-15
+p139_5.2_r25_400_50,139,D,0.485,Sonnet's reading confirmed by the owner,ours,explicit,0.465,0.485,False,True,project owner,2026-11-15
+p210_5.3_r44_1_1.5,210,C,25.1,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),25.1,25.1,True,True,project owner,2026-11-15
+p140_5.2_r26_100_40,140,C,21.8,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),21.8,21.8,True,True,project owner,2026-11-15
+p182_5.2_r52_100_31,182,C,27.9,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),27.9,27.9,True,True,project owner,2026-11-15
+p169_5.2_r44_400_24,169,C,0.320,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.320,0.320,True,True,project owner,2026-11-15
+p182_5.2_r52_200_23,182,D,3.54,owner reading (typed),other,explicit,3.54,3.64,True,False,project owner,2026-11-15
+p196_5.2_r61_800_122,196,A,0.185,Sonnet's reading confirmed by the owner,ours,explicit,0.185,0.185,True,True,project owner,2026-11-15
+p99_5.2_r4_100_28,99,D,1.88,owner reading (agrees with the reference value),reference,explicit,1.83,1.83,False,False,project owner,2026-11-15
+p106_5.2_r7_200_59,106,C,1.2,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),1.2,1.2,True,True,project owner,2026-11-15
+p181_5.2_r51_50_88,181,D,27.6,owner reading (agrees with the reference value),reference,explicit,27.0,27.0,False,False,project owner,2026-11-15
+p100_5.2_r4_800_119,100,C,0.935,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.935,0.935,True,True,project owner,2026-11-15
+p207_5.3_r16_3_1.0,207,D,29.6,owner reading (typed),other,explicit,29.6,29.0,True,False,project owner,2026-11-15
+p180_5.2_r50_50_61,180,D,159,owner reading (agrees with the reference value),reference,explicit,156,156,False,False,project owner,2026-11-15
+p155_5.2_r35S_50_16,155,D,0.055,Sonnet's reading confirmed by the owner,ours,explicit,0.055,0.055,True,True,project owner,2026-11-15
+p164_5.2_r40_100_49,164,C,55.8,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),55.8,55.8,True,True,project owner,2026-11-15
+p210_5.3_r45_2_0.5,210,D,113,Sonnet's reading confirmed by the owner,ours,explicit,115,113,False,True,project owner,2026-11-15
+p210_5.3_r48S_6_17.5,210,D,6.32,owner reading (agrees with the reference value),reference,explicit,6.42,0.?82,False,False,project owner,2026-11-15
+p209_5.3_r41_4_1.0,209,C,0.660,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.660,0.660,True,True,project owner,2026-11-15
+p94_5.2_r1_100_30,94,D,13.8,Sonnet's reading confirmed by the owner,ours,explicit,13.8,13.8,True,True,project owner,2026-11-15
+p211_5.3_r56_1_4.5,211,C,13.8,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),13.8,13.8,True,True,project owner,2026-11-15
+p100_5.2_r4_100_74,100,D,42.6,Sonnet's reading confirmed by the owner,ours,explicit,42.6,42.6,True,True,project owner,2026-11-15
+p169_5.2_r44_50_39,169,D,168,Sonnet's reading confirmed by the owner,ours,explicit,166,168,False,True,project owner,2026-11-15
+p208_5.3_r30_3_7.5,208,D,5.16,owner reading (agrees with the reference value),reference,explicit,5.10,5.10,False,False,project owner,2026-11-15
+p154_5.2_r34_200_31,154,D,18.6,Sonnet's reading confirmed by the owner,ours,explicit,18.6,18.6,True,True,project owner,2026-11-15
+p210_5.3_r48S_6_2.5,210,D,5.13,Sonnet's reading confirmed by the owner,ours,explicit,5.13,5.13,True,True,project owner,2026-11-15
+p177_5.2_r48_200_60,177,D,10.5,Sonnet's reading confirmed by the owner,ours,explicit,10.5,10.5,True,True,project owner,2026-11-15
+p143_5.2_r27_50_58,143,D,7.86,Sonnet's reading confirmed by the owner,ours,explicit,7.86,7.86,True,True,project owner,2026-11-15
+p106_5.2_r7_50_58,106,C,39.6,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),39.6,39.6,True,True,project owner,2026-11-15
+p173_5.2_r46_100_18,173,D,13.5,Sonnet's reading confirmed by the owner,ours,explicit,13.5,13.5,True,True,project owner,2026-11-15
+p211_5.3_r57_4_1.5,211,D,27.6,Sonnet's reading confirmed by the owner,ours,explicit,27.8,27.6,False,True,project owner,2026-11-15
+p178_5.2_r49_50_38,178,D,0.430,Sonnet's reading confirmed by the owner,ours,explicit,0.433,0.430,False,True,project owner,2026-11-15
+p176_5.2_r48S_200_49,176,D,0.745,Sonnet's reading confirmed by the owner,ours,explicit,0.745,0.745,True,True,project owner,2026-11-15
+p98_5.2_r3_50_72,98,D,32.3,Sonnet's reading confirmed by the owner,ours,explicit,32.5,32.3,False,True,project owner,2026-11-15
+p111_5.2_r10_800_131,111,C,0.165,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.165,0.165,True,True,project owner,2026-11-15
+p207_5.3_r19_4_7.5,207,D,0.726,owner reading (typed),other,explicit,0.726,0.720,True,False,project owner,2026-11-15
+p171_5.2_r45_50_34,171,D,246,Sonnet's reading confirmed by the owner,ours,explicit,246,246,True,True,project owner,2026-11-15
+p136_5.2_r23_50_26,136,C,7.53,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),7.53,7.53,True,True,project owner,2026-11-15
+p134_5.2_r22_200_41,134,C,25.5,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),25.5,25.5,True,True,project owner,2026-11-15
+p167_5.2_r43_400_24,167,D,0.275,Sonnet's reading confirmed by the owner,ours,explicit,0.275,0.275,True,True,project owner,2026-11-15
+p99_5.2_r4_50_32,99,C,5.78,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),5.78,5.78,True,True,project owner,2026-11-15
+p154_5.2_r34_100_33,154,D,40.5,Sonnet's reading confirmed by the owner,ours,explicit,40.5,40.5,True,True,project owner,2026-11-15
+p180_5.2_r50_50_71,180,C,42.2,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),42.2,42.2,True,True,project owner,2026-11-15
+p162_5.2_r39_100_23,162,C,98.4,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),98.4,98.4,True,True,project owner,2026-11-15
+p112_5.2_r11_50_38,112,D,0.535,Sonnet's reading confirmed by the owner,ours,explicit,0.535,0.535,True,True,project owner,2026-11-15
+p148_5.2_r30_100_66,148,C,0.735,Sonnet's reading confirmed by the owner,ours,default (undecided = ours),0.735,0.735,True,True,project owner,2026-11-15
