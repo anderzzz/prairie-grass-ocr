@@ -25,7 +25,7 @@ def _common(df: pd.DataFrame) -> pd.DataFrame:
     df["run"] = df["run"].astype(str)
     df["run_order"] = df["run"].map(run_order)
     df["concentration_mg_m3"] = pd.to_numeric(df["concentration_mg_m3"], errors="coerce")
-    for c in ("estimated", "reviewed", "flagged"):
+    for c in ("estimated", "reviewed", "flagged", "suspect"):
         df[c] = df[c].astype(str).eq("True")
     df["status"] = pd.Categorical(df["status"], ["value", "not_measurable", "missing", "unread"])
     return df

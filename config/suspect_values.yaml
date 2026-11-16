@@ -1,0 +1,46 @@
+# Suspect values: cells read correctly from the scan, where the owner suspects
+# the ORIGINAL report has an error (typically a typing slip).
+#
+# Nothing here changes a value. The dataset keeps the printed token and its
+# value; the build only marks the cell (suspect = True) and carries the note
+# and the owner's guess (suspect_alternative) so users can decide for
+# themselves, e.g. exclude the cell or test the alternative in a fit.
+#
+# Applied by src/dataset/build.py (Volume I). The Volume II erratum on release
+# 45 (Table 10.1 time) is in config/volume2_keys.yaml.
+
+volume1:
+  - cell_id: p169_5.2_r44_800_69
+    run: "44"
+    table: "5.2"
+    arc_m: 800
+    post: 69
+    bearing_deg: 338
+    printed: "9.565"
+    suspect_alternative: "0.565"
+    basis: >-
+      Print is clear (Mistral, Sonnet and owner agree). 18x its neighbours
+      (0.505, 0.575), the only four-figure value in the column, and it makes
+      the run's 800 m peak 3x its 400 m peak. With a leading 0 it fits the
+      profile; the owner suspects a typing error in the original.
+    pdf_index: 169
+    printed_page: 156
+    reviewer: project owner
+    date: 2026-11-16
+
+  - cell_id: p111_5.2_r10_800_127
+    run: "10"
+    table: "5.2"
+    arc_m: 800
+    post: 127
+    bearing_deg: 36
+    printed: "0.90"
+    suspect_alternative: "0.090"
+    basis: >-
+      Print is clear. 12x its neighbours (0.050, 0.110), and the only
+      two-decimal value in a column printed with three decimals; 0.090 would
+      fit both. The owner suspects a typing error in the original.
+    pdf_index: 111
+    printed_page: 98
+    reviewer: project owner
+    date: 2026-11-16
