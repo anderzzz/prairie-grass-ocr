@@ -1,0 +1,7 @@
+# Volume I supplementary tables (not part of the Table 5.2/5.3 pipeline).
+# PDF index is 0-based; printed = pdf_index - 13.
+tables:
+  "5.1":     {title: Source strengths Q (g/s) per run, pages: [91], printed: [78]}
+  "5.2-remarks": {title: Per-run remarks printed with Table 5.2, pages: [92, 93], printed: [79, 80]}
+  "5.4":     {title: Correction factors for evaporative loss of impinger solution, pages: [213, 214], printed: [200, 201]}
+  "6.1":     {title: Slow-response meteorological measurements (MIT), 2 m wind speed, direction and sigma_theta, pages: [222, 227], printed: [209, 214]}

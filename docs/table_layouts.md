@@ -11,6 +11,11 @@ CCITT G4 scans at 300 dpi.
 | 5.2 | 10-min mean SO₂ concentration on the five horizontal arcs | intro text 92–93, tables 94–205 | 79–80, 81–192 |
 | 5.3 | 10-min mean SO₂ concentration on the six towers | intro text 206, tables 207–212 | 193, 194–199 |
 | 5.4 | Correction factors for evaporative loss of impinger solution | 213–214 | 200–201 |
+| 6.1 | Slow-response 2 m wind speed, direction, σ_θ (MIT); legend + 5 pages | 222–227 | 209–214 |
+| 6.2 | Frequency distributions of wind direction (not transcribed) | 228– | 215– |
+
+The text above Table 5.1 refers to "Tables 5.4 and 5.5" for slow-response
+meteorological data. There is no Table 5.5; the slow-response data are Table 6.1.
 
 The brief placed Chapter 5 at printed pages 57–201; the data tables sit at
 printed 78–201. The table numbers in the brief are right.
@@ -43,7 +48,11 @@ printed 78–201. The table numbers in the brief are right.
   `docs/page_inventory.csv`, about 20-25 runs have a single Table 5.2 page (the
   exact count depends on a few labels settled by order; see
   `docs/recon_discrepancies.md`). For example run 46 has only half A and run 47
-  only half B. A half that would be empty appears to have been omitted.
+  only half B. A half that would be empty appears to have been omitted. **The
+  report does not say so** (the intro, printed pp. 79–80, only says blanks mean
+  "no measurable concentration"); it is our inference. The data support it: on
+  all 120 run/arc pairs with one half printed, the printed half is below 5 % of
+  the arc maximum at the seam (checked 2026-11-16).
 * Order of runs: 1 … 34, 35S, 35, 36 … 47, 48S, 48, 49 … 62, 65 … 68.
 * Values: three significant figures as a rule — `0.ddd` below 1, `d.dd` from 1 to 10,
   `dd.d` from 10 to 100, integers from 100 (e.g. `2200`). Decimal points often print
@@ -82,3 +91,16 @@ printed 78–201. The table numbers in the brief are right.
 * Factors with two decimals (`0.97`). Blank = missing data. Tower data take the
   100 m factor. Runs 30 and 31 blank throughout.
 * Not part of the pilot: no reference file covers it.
+
+## Table 6.1 — slow-response meteorological measurements (MIT)
+
+* Legend page (PDF 222): units, the asterisk convention (estimate from an
+  incomplete record), the 450 m vane offset (~8° too high) and a list of
+  incomplete or missing records per run.
+* Data pages 223–227: two blocks per page, seven release columns per block,
+  ten blocks; the slots of runs 63 and 64 are printed empty.
+* Rows per block: Gas release No., Date (printed once per day), Time (CST,
+  the release start; 10 min before Table 8.1's observation time for 62 of 68
+  releases), then wind speed, wind direction and standard deviation of wind
+  direction, each for Source (10 min), 450 m (10 min), Source (20 min),
+  450 m (20 min).

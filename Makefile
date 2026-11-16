@@ -2,7 +2,7 @@
 UV ?= uv
 PY  = $(UV) run python
 
-.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks volume2 volume2-review volume2-dataset
+.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks volume2 volume2-review volume2-dataset volume1s volume1s-dataset
 
 pilot: recon select extract test reference score review   # full pilot incl. holdout: git checkout pilot-v1 && make pilot
 
@@ -51,3 +51,9 @@ volume2-review:   ## Sonnet second reading of rows in failed checks (capped, cac
 
 volume2-dataset:  ## Volume II dataset (after review: DATE=yyyy-mm-dd make volume2-dataset) -> output/volume2/dataset
 	cd src && $(PY) -m volume2.dataset $(if $(DATE),--resolve $(DATE),) && $(PY) -m volume2.outliers
+
+volume1s:         ## Vol I Tables 5.1, 5.4, 6.1: Mistral + full Sonnet second reading (cached) -> checks -> review pack
+	cd src && $(PY) -m volume1s.ocr && $(PY) -m volume1s.second_read && $(PY) -m volume1s.compare && $(PY) -m volume1s.checks && $(PY) -m volume1s.review
+
+volume1s-dataset: ## Vol I supplementary dataset (after review: DATE=yyyy-mm-dd make volume1s-dataset) -> output/volume1/dataset
+	cd src && $(PY) -m volume1s.dataset $(if $(DATE),--resolve $(DATE),)

@@ -1,0 +1,1991 @@
+{
+ "p223-top": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "3 July",
+      "",
+      "5 July",
+      "6 July",
+      "",
+      "",
+      "10 July"
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "1055",
+      "1455",
+      "2155",
+      "0055",
+      "1355",
+      "1655",
+      "1355"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "2.62*",
+      "2.01",
+      "",
+      "1.40",
+      "6.47",
+      "",
+      "4.19"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "",
+      "2.57",
+      "",
+      "1.65",
+      "5.96",
+      "5.86",
+      "4.14"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "2.40*",
+      "2.14",
+      "",
+      "1.58",
+      "6.57",
+      "",
+      "4.19"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "",
+      "2.19",
+      "",
+      "1.76",
+      "6.45",
+      "6.65",
+      "4.55"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "216",
+      "176",
+      "",
+      "188"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "223",
+      "186",
+      "191",
+      "194"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "207",
+      "176",
+      "",
+      "197"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "226",
+      "184",
+      "190",
+      "200"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "7.4",
+      "9.5",
+      "",
+      "25.6"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "7.6",
+      "9.1",
+      "7.1",
+      "27.1"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "9.7",
+      "11.1",
+      "",
+      "31.7"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "",
+      "",
+      "",
+      "9.2",
+      "9.7",
+      "7.7",
+      "23.9"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed Source (20 min)",
+    "direction 450 m (20 min)"
+   ],
+   "note": "The second block (releases 8-14) is cut off at the bottom of the image, so its rows are incomplete and it is not transcribed. Only the first block is fully visible."
+  },
+  "request_id": "req_011Ch6yh9K2WUQy3ApKUZLnb",
+  "usage": {
+   "input_tokens": 5542,
+   "output_tokens": 670
+  }
+ },
+ "p223-bottom": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "10 July",
+      "11 July",
+      "",
+      "14 July",
+      "",
+      "22 July",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "1655",
+      "0955",
+      "1155",
+      "0755",
+      "0955",
+      "1955",
+      "2155"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "4.85",
+      "6.88",
+      "4.60",
+      "7.03",
+      "8.35",
+      "1.25",
+      "1.91"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "4.75",
+      "7.13",
+      "4.65",
+      "7.74",
+      "8.25",
+      "1.81",
+      "1.81"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "4.70",
+      "6.83",
+      "4.52",
+      "7.61",
+      "8.07",
+      "1.37",
+      "1.75"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "4.80",
+      "7.13",
+      "4.65",
+      "7.76",
+      "8.14",
+      "1.65",
+      "1.81"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "184",
+      "204",
+      "225",
+      "184",
+      "194",
+      "190",
+      "170"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "193",
+      "214",
+      "214",
+      "196",
+      "200",
+      "206",
+      "186"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "176",
+      "206",
+      "217",
+      "185",
+      "192",
+      "192",
+      "172"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "181",
+      "214",
+      "217",
+      "196",
+      "199",
+      "206",
+      "186"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "10.2",
+      "10.2",
+      "16.8",
+      "7.2",
+      "7.9",
+      "3.2",
+      "3.6"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "9.6",
+      "10.2",
+      "14.1",
+      "6.8",
+      "5.1",
+      "2.4",
+      "3.1"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "16.3",
+      "9.5",
+      "18.3",
+      "6.9",
+      "9.9",
+      "5.0",
+      "4.3"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "10.1",
+      "9.1",
+      "15.4",
+      "6.7",
+      "6.9",
+      "2.5",
+      "5.9"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed Source (10 min)",
+    "speed 450 m (20 min)",
+    "direction Source (10 min)",
+    "sigma Source (20 min)",
+    "sigma 450 m (20 min)",
+    "sigma 450 m (10 min)"
+   ],
+   "note": "Top partial block (sigma rows only, cut off) ignored."
+  },
+  "request_id": "req_011Ch6yhXntigASH7kaoHtjf",
+  "usage": {
+   "input_tokens": 5542,
+   "output_tokens": 763
+  }
+ },
+ "p224-top": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "23 July",
+      "",
+      "",
+      "",
+      "25 July",
+      "",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "0755",
+      "0955",
+      "1955",
+      "2155",
+      "1055",
+      "1255",
+      "2155"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "3.43",
+      "3.23",
+      "3.33",
+      "3.53",
+      "5.81",
+      "8.60",
+      "6.12"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "3.43",
+      "3.28",
+      "3.48",
+      "3.43",
+      "5.76",
+      "8.35",
+      "-5.76"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "3.25",
+      "3.02",
+      "3.33",
+      "3.45",
+      "5.81",
+      "8.52",
+      "5.53"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "3.40",
+      "3.12",
+      "3.48",
+      "3.50",
+      "5.79",
+      "8.42",
+      "5.73"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "209",
+      "192",
+      "184",
+      "187",
+      "166",
+      "178",
+      "181"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "211",
+      "216",
+      "188",
+      "195",
+      "174",
+      "184",
+      "186"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "209",
+      "201",
+      "182",
+      "189",
+      "166",
+      "177",
+      "179"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "212",
+      "212",
+      "186",
+      "196",
+      "174",
+      "183",
+      "185"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "12.8",
+      "18.5",
+      "5.6",
+      "5.3",
+      "11.6",
+      "8.3",
+      "6.6"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "11.0",
+      "18.9",
+      "5.2",
+      "4.7",
+      "10.1",
+      "7.9",
+      "5.7"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "12.4",
+      "23.4",
+      "5.5",
+      "5.7",
+      "12.4",
+      "8.3",
+      "6.2"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "9.6",
+      "18.7",
+      "5.4",
+      "4.0",
+      "9.5",
+      "8.2",
+      "5.9"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed Source (20 min)",
+    "direction Source (10 min)",
+    "direction 450 m (10 min)",
+    "direction Source (20 min)",
+    "direction 450 m (20 min)",
+    "sigma Source (10 min)",
+    "sigma 450 m (10 min)",
+    "sigma 450 m (20 min)",
+    "speed 450 m (10 min)"
+   ],
+   "note": "Only the first block (releases 15-21) is fully visible with all rows; the second block (22-28) has its header visible but is cut off before the sub-rows are complete, so it was omitted."
+  },
+  "request_id": "req_011Ch6yhxVSZ7hy14VULjFHm",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 830
+  }
+ },
+ "p224-bottom": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "25 July",
+      "29 July",
+      "",
+      "1 Aug.",
+      "2 Aug.",
+      "",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "2355",
+      "2055",
+      "2255",
+      "1255",
+      "1155",
+      "1355",
+      "2355"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "6.42",
+      "5.91",
+      "6.22",
+      "2.77",
+      "6.77",
+      "6.57",
+      "2.62"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "6.78",
+      "6.27",
+      "5.76",
+      "2.92*",
+      "6.57",
+      "6.57",
+      "2.62"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "6.67",
+      "6.12",
+      "5.91",
+      "2.90",
+      "6.37",
+      "6.67",
+      "2.77"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "6.82",
+      "6.22",
+      "5.81",
+      "2.91*",
+      "6.29",
+      "6.39*",
+      "2.67"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "176",
+      "128",
+      "141",
+      "177",
+      "199",
+      "184",
+      "174"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "184",
+      "134",
+      "150",
+      "188*",
+      "197",
+      "190",
+      "183"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "176",
+      "128",
+      "141",
+      "176",
+      "186",
+      "185",
+      "174"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "184",
+      "133",
+      "150",
+      "187*",
+      "192",
+      "190*",
+      "181"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "5.8",
+      "7.3",
+      "7.1",
+      "24.8",
+      "13.2",
+      "9.2",
+      "6.4"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "5.1",
+      "5.2",
+      "6.2",
+      "16.0*",
+      "10.2",
+      "8.8",
+      "5.9"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "5.6",
+      "7.2",
+      "6.4",
+      "21.4",
+      "12.1",
+      "9.2",
+      "6.0"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "4.7",
+      "5.5",
+      "6.2",
+      "15.5*",
+      "11.2",
+      "8.5*",
+      "5.3"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed Source (10 min)",
+    "speed 450 m (10 min)",
+    "direction Source (10 min)",
+    "direction 450 m (10 min)",
+    "direction Source (20 min)",
+    "sigma 450 m (10 min)",
+    "sigma Source (20 min)",
+    "sigma 450 m (20 min)",
+    "speed 450 m (20 min)"
+   ],
+   "note": "Top block (standard deviation rows) is cut off at top and was ignored; only the block starting with Gas release No. 22 is transcribed."
+  },
+  "request_id": "req_011Ch6yiRxRGgYSN7SBAFzEM",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 836
+  }
+ },
+ "p225-top": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35S"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "3 Aug.",
+      "",
+      "",
+      "6 Aug.",
+      "7 Aug.",
+      "",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "0155",
+      "1255",
+      "1455",
+      "1955",
+      "1255",
+      "1455",
+      "2257"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "3.48",
+      "6.82",
+      "7.33",
+      "2.21",
+      "8.50",
+      "9.00",
+      "4.04"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "",
+      "6.72",
+      "7.43",
+      "2.01",
+      "8.30",
+      "9.26",
+      "3.99"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "3.68",
+      "6.65",
+      "7.64",
+      "2.10",
+      "7.89",
+      "8.30",
+      "3.99"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "",
+      "6.55",
+      "7.76",
+      "2.24",
+      "7.99",
+      "9.36",
+      "3.91"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "220",
+      "196",
+      "225",
+      "171",
+      "181",
+      "146",
+      "135"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "",
+      "209",
+      "223",
+      "185",
+      "190",
+      "161",
+      "150"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "222",
+      "201",
+      "216",
+      "170",
+      "179",
+      "145",
+      "136"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "",
+      "211",
+      "221",
+      "185",
+      "189",
+      "156",
+      "149"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "8.0",
+      "10.3",
+      "10.9",
+      "3.6",
+      "10.5",
+      "7.3",
+      "5.0"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "",
+      "11.5",
+      "7.7",
+      "5.8",
+      "9.0",
+      "8.7",
+      "5.4"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "12.7",
+      "12.3",
+      "14.2",
+      "5.2",
+      "9.2",
+      "7.5",
+      "6.4"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "",
+      "10.8",
+      "10.7",
+      "3.4",
+      "8.9",
+      "9.6",
+      "5.9"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed 450 m (20 min)",
+    "direction 450 m (10 min)",
+    "sigma Source (20 min)"
+   ],
+   "note": "The second block (releases 35-41) is cut off at the bottom; its direction and sigma rows are not visible, so it is omitted."
+  },
+  "request_id": "req_011Ch6yitmEQ8ABN2y4qbDys",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 743
+  }
+ },
+ "p225-bottom": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "35",
+      "36",
+      "37",
+      "38",
+      "39",
+      "40",
+      "41"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "11 Aug.",
+      "",
+      "12 Aug.",
+      "",
+      "13 Aug.",
+      "14 Aug.",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "2125",
+      "2325",
+      "0255",
+      "0455",
+      "2225",
+      "0025",
+      "0255"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "1.86",
+      "1.86",
+      "4.64",
+      "4.14",
+      "3.12",
+      "3.08",
+      "4.04"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "1.75",
+      "2.06",
+      "4.70",
+      "4.49",
+      "2.21",
+      "2.36",
+      "4.19"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "1.86",
+      "1.87*",
+      "4.57",
+      "4.09",
+      "3.10",
+      "3.15",
+      "4.06"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "1.65",
+      "1.88",
+      "4.62",
+      "4.39",
+      "2.46",
+      "2.45*",
+      "4.09"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "132",
+      "160",
+      "187",
+      "170",
+      "140",
+      "180",
+      "198"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "105",
+      "169",
+      "190",
+      "175",
+      "131",
+      "188",
+      "201"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "131",
+      "158*",
+      "186",
+      "170",
+      "139",
+      "179",
+      "198"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "109",
+      "167",
+      "190",
+      "175",
+      "133",
+      "182",
+      "201"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "3.3",
+      "3.8",
+      "7.0",
+      "5.0",
+      "5.8",
+      "9.0",
+      "5.0"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "5.1",
+      "4.2",
+      "7.0",
+      "4.6",
+      "6.8",
+      "10.4",
+      "4.5"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "3.6",
+      "4.2*",
+      "6.8",
+      "5.6",
+      "8.8",
+      "10.5",
+      "5.0"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "7.1",
+      "4.4",
+      "6.6",
+      "4.7",
+      "6.7",
+      "11.8",
+      "4.7"
+     ]
+    }
+   ],
+   "unclear": [
+    "sigma 450 m (20 min)",
+    "direction Source (20 min)",
+    "sigma Source (20 min)"
+   ],
+   "note": "The top block is cut off (its Gas release No. row is not visible), so it was ignored."
+  },
+  "request_id": "req_011Ch6yjFyvj9Sa9DD32L9oC",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 751
+  }
+ },
+ "p226-top": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48S"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "14 Aug.",
+      "15 Aug.",
+      "",
+      "",
+      "",
+      "20 Aug.",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "0455",
+      "1155",
+      "1355",
+      "1655",
+      "1840",
+      "0955",
+      "1225"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "5.81",
+      "4.95",
+      "5.71",
+      "6.12",
+      "5.15",
+      "3.58",
+      "3.38"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "6.88",
+      "5.10",
+      "6.01",
+      "6.12",
+      "5.26",
+      "3.58",
+      "2.41"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "5.90",
+      "4.95",
+      "5.71",
+      "5.66",
+      "5.20",
+      "3.45",
+      "3.17"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "6.32",
+      "5.05",
+      "6.14",
+      "5.89",
+      "5.38",
+      "3.48",
+      "2.90"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "212",
+      "170",
+      "158",
+      "163",
+      "134",
+      "243",
+      ""
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "215",
+      "179",
+      "167",
+      "168",
+      "133",
+      "225",
+      ""
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "212",
+      "170",
+      "158",
+      "161",
+      "134",
+      "236",
+      ""
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "215",
+      "177",
+      "161",
+      "167",
+      "135",
+      "235",
+      ""
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "6.6",
+      "12.2",
+      "12.7",
+      "6.9",
+      "7.7",
+      "13.9",
+      ""
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "5.9",
+      "10.3",
+      "14.0",
+      "7.2",
+      "8.2",
+      "12.6",
+      ""
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "6.6",
+      "13.7",
+      "13.7",
+      "8.2",
+      "7.6",
+      "20.0",
+      ""
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "5.3",
+      "11.7",
+      "18.1",
+      "8.4",
+      "8.6",
+      "18.0",
+      ""
+     ]
+    }
+   ],
+   "unclear": [
+    "Gas release No.",
+    "speed Source (10 min)",
+    "speed 450 m (10 min)",
+    "sigma Source (10 min)",
+    "sigma 450 m (20 min)"
+   ],
+   "note": "A second block (releases 48-54) starts at the bottom but is cut off before all rows are visible, so only the first block was transcribed."
+  },
+  "request_id": "req_011Ch6yjgY4C5j8vRvWWs55S",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 759
+  }
+ },
+ "p226-bottom": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "48",
+      "49",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "21 Aug.",
+      "",
+      "",
+      "",
+      "24 Aug.",
+      "",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "0855",
+      "1055",
+      "1355",
+      "1525",
+      "1110",
+      "1955",
+      "2155"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "8.04",
+      "6.27",
+      "6.57",
+      "6.12",
+      "4.29",
+      "2.51",
+      "4.04"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "8.55",
+      "6.67",
+      "6.78",
+      "6.67",
+      "4.75",
+      "2.41",
+      "4.04"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "7.94",
+      "6.39",
+      "6.47",
+      "5.96",
+      "4.32",
+      "2.46",
+      "4.11"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "8.40",
+      "6.85",
+      "6.77",
+      "6.77",
+      "4.75",
+      "2.39",
+      "4.06"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "214",
+      "199",
+      "215",
+      "245",
+      "132",
+      "132",
+      "140"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "213",
+      "202",
+      "214",
+      "237",
+      "",
+      "131",
+      "142"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "212",
+      "198",
+      "216",
+      "244",
+      "129",
+      "133",
+      "140"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "213",
+      "201",
+      "217",
+      "243",
+      "",
+      "132",
+      "143"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "8.1",
+      "11.9",
+      "10.9",
+      "10.8",
+      "17.7",
+      "3.9",
+      "5.9"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "6.9",
+      "10.9",
+      "9.0",
+      "11.4",
+      "",
+      "2.5",
+      "6.1"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "8.1",
+      "11.1",
+      "10.7",
+      "12.6",
+      "16.5",
+      "3.6",
+      "5.7"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "6.7",
+      "10.9",
+      "10.4",
+      "12.5",
+      "",
+      "2.7",
+      "5.8"
+     ]
+    }
+   ],
+   "unclear": [
+    "speed 450 m (10 min)",
+    "sigma 450 m (10 min)",
+    "sigma Source (20 min)",
+    "sigma 450 m (20 min)",
+    "Time (CST)"
+   ],
+   "note": "The top block is cut off and was ignored. Only the block starting at Gas release No. 48 is fully visible."
+  },
+  "request_id": "req_011Ch6yk6p3VrJWB7tYCpe1s",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 756
+  }
+ },
+ "p227-top": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "55",
+      "56",
+      "57",
+      "58",
+      "59",
+      "60",
+      "81"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "25 Aug.",
+      "",
+      "",
+      "",
+      "",
+      "26 Aug.",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "0055",
+      "0255",
+      "1725",
+      "1925",
+      "2225",
+      "0135",
+      "1055"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "5.41",
+      "4.34",
+      "6.67",
+      "1.91*",
+      "2.62",
+      "4.90",
+      "7.99"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "5.86",
+      "4.75",
+      "6.82",
+      "2.36",
+      "2.67",
+      "5.00",
+      "7.64"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "5.28",
+      "4.44",
+      "6.90",
+      "1.96*",
+      "2.62",
+      "4.87",
+      "7.64"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "5.94",
+      "4.70",
+      "6.98",
+      "2.39",
+      "2.72",
+      "4.87",
+      "7.61"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "156",
+      "153",
+      "200",
+      "178*",
+      "174",
+      "198",
+      "203"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "162",
+      "156",
+      "206",
+      "185",
+      "181",
+      "202",
+      "204"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "155",
+      "152",
+      "198",
+      "179*",
+      "173",
+      "199",
+      "206"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "162",
+      "154",
+      "205",
+      "186",
+      "180",
+      "202",
+      "209"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "5.8",
+      "6.1",
+      "8.0",
+      "4.1*",
+      "5.2",
+      "5.9",
+      "11.0"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "6.0",
+      "7.2",
+      "7.8",
+      "3.3",
+      "3.6",
+      "6.5",
+      "9.0"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "6.1",
+      "7.8",
+      "8.2",
+      "4.1*",
+      "4.6",
+      "5.5",
+      "10.9"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "5.5",
+      "8.6",
+      "8.1",
+      "3.3",
+      "3.5",
+      "5.3",
+      "9.5"
+     ]
+    }
+   ],
+   "unclear": [
+    "Time (CST)",
+    "sigma 450 m (10 min)",
+    "sigma Source (20 min)",
+    "sigma 450 m (20 min)",
+    "direction 450 m (10 min)"
+   ],
+   "note": "The second block (releases 62-68) is cut off at the bottom, with direction and sigma rows not visible, so it is not transcribed. Only the first block is complete."
+  },
+  "request_id": "req_011Ch6ykVMcvYrTRTG7dwDFB",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 787
+  }
+ },
+ "p227-bottom": {
+  "raw": {
+   "rows": [
+    {
+     "label": "Gas release No.",
+     "cells": [
+      "62",
+      "",
+      "",
+      "65",
+      "66",
+      "67",
+      "68"
+     ]
+    },
+    {
+     "label": "Date",
+     "cells": [
+      "26 Aug.",
+      "",
+      "",
+      "29 Aug.",
+      "",
+      "30 Aug.",
+      ""
+     ]
+    },
+    {
+     "label": "Time (CST)",
+     "cells": [
+      "1355",
+      "",
+      "",
+      "1925",
+      "2125",
+      "0025",
+      "0225"
+     ]
+    },
+    {
+     "label": "speed Source (10 min)",
+     "cells": [
+      "5.15",
+      "",
+      "",
+      "4.44",
+      "3.08",
+      "4.34",
+      "2.82"
+     ]
+    },
+    {
+     "label": "speed 450 m (10 min)",
+     "cells": [
+      "5.41",
+      "",
+      "",
+      "4.44",
+      "3.33",
+      "4.70",
+      "2.77"
+     ]
+    },
+    {
+     "label": "speed Source (20 min)",
+     "cells": [
+      "5.00",
+      "",
+      "",
+      "4.24",
+      "3.17",
+      "4.42",
+      "2.82"
+     ]
+    },
+    {
+     "label": "speed 450 m (20 min)",
+     "cells": [
+      "5.30",
+      "",
+      "",
+      "4.37",
+      "3.43",
+      "4.67",
+      "2.95"
+     ]
+    },
+    {
+     "label": "direction Source (10 min)",
+     "cells": [
+      "212",
+      "",
+      "",
+      "178",
+      "166",
+      "185",
+      "174"
+     ]
+    },
+    {
+     "label": "direction 450 m (10 min)",
+     "cells": [
+      "214",
+      "",
+      "",
+      "174",
+      "171",
+      "190",
+      "181"
+     ]
+    },
+    {
+     "label": "direction Source (20 min)",
+     "cells": [
+      "213",
+      "",
+      "",
+      "173",
+      "165",
+      "182",
+      "173"
+     ]
+    },
+    {
+     "label": "direction 450 m (20 min)",
+     "cells": [
+      "215",
+      "",
+      "",
+      "177",
+      "172",
+      "187",
+      "179"
+     ]
+    },
+    {
+     "label": "sigma Source (10 min)",
+     "cells": [
+      "8.8",
+      "",
+      "",
+      "5.0",
+      "6.9",
+      "5.4",
+      "5.3"
+     ]
+    },
+    {
+     "label": "sigma 450 m (10 min)",
+     "cells": [
+      "6.9",
+      "",
+      "",
+      "5.4",
+      "5.1",
+      "5.2",
+      "5.3"
+     ]
+    },
+    {
+     "label": "sigma Source (20 min)",
+     "cells": [
+      "9.4",
+      "",
+      "",
+      "5.4",
+      "6.4",
+      "6.6",
+      "6.2"
+     ]
+    },
+    {
+     "label": "sigma 450 m (20 min)",
+     "cells": [
+      "7.6",
+      "",
+      "",
+      "4.8",
+      "5.0",
+      "6.2",
+      "5.9"
+     ]
+    }
+   ],
+   "unclear": [
+    "sigma Source (20 min)",
+    "speed Source (20 min)"
+   ],
+   "note": "The top block is cut off and was ignored."
+  },
+  "request_id": "req_011Ch6ykuYuof5kjn5HzSVEu",
+  "usage": {
+   "input_tokens": 5602,
+   "output_tokens": 651
+  }
+ }
+}

@@ -1,0 +1,20 @@
+cell_id,group,token_as_printed,basis,verdict,reviewer,date
+T6.1|p223|r1|wind_speed|source|20,A,2.49*,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p223|r8|sigma_theta|450m|20,A,19.1,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p224|r21|wind_speed|450m|10,A,5.76,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p224|r26|wind_speed|450m|20,A,6.29,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T6.1|p224|r26|wind_direction|source|10,A,190,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p224|r27|sigma_theta|450m|10,A,8.6,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p225|r32|wind_speed|source|20,A,2.19,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p225|r33|wind_speed|450m|20,A,7.99,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T6.1|p226|r42|wind_speed|source|20,A,5.99,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p227|r61|release,A,61,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T6.1|p225|r35|wind_direction|source|10,C,132,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p225|r35|wind_direction|450m|10,C,105,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p225|r40|wind_speed|source|10,C,3.08,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r60|date,C,26 Aug.,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r60|time_cst,C,0135,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r61|date,C,,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r61|time_cst,C,1055,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r62|date,C,26 Aug.,owner: printed as such,printed,project owner,2026-11-16
+T6.1|p227|r62|time_cst,C,1355,owner: printed as such,printed,project owner,2026-11-16

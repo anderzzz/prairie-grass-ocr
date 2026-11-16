@@ -44,3 +44,66 @@ volume1:
     printed_page: 98
     reviewer: project owner
     date: 2026-11-16
+
+# Volume I Table 6.1 (slow-response wind, src/volume1s/dataset.py): printed keys
+# and values that disagree with other tables of the report. Both readers and
+# the owner confirmed the print (review of 2026-11-16); nothing is corrected.
+volume1s:
+  - cell_id: T6.1|p227|r60|time_cst
+    release: "60"
+    table: "6.1"
+    printed: "0135"
+    suspect_alternative: "0025"
+    basis: >-
+      Every other release in Table 6.1 is printed 10 min before the Table 8.1
+      observation time (62 of 68). Release 60 is 0135, while Table 8.1 has 0035
+      and the Table 5.2 header (PDF 193) "TIME 0030-0040 CST". 0025 would follow
+      the pattern; the owner suspects a typing error in the original.
+    pdf_index: 227
+    printed_page: 214
+    reviewer: project owner
+    date: 2026-11-16
+
+  - cell_id: T6.1|p227|r61|date
+    release: "61"
+    table: "6.1"
+    printed: ""
+    suspect_alternative: "1956-08-27"
+    basis: >-
+      The Date cell is blank, so by the table's convention release 61 shares
+      release 60's date (26 Aug.). Table 8.1 and the Table 5.2 header (PDF 195,
+      "DATE 27 August 1956") give 27 August. The derived `date` column carries
+      26 Aug. forward as printed.
+    pdf_index: 227
+    printed_page: 214
+    reviewer: project owner
+    date: 2026-11-16
+
+  - cell_id: T6.1|p227|r62|date
+    release: "62"
+    table: "6.1"
+    printed: "26 Aug."
+    suspect_alternative: "27 Aug."
+    basis: >-
+      Printed "26 Aug."; Table 8.1 and the Table 5.2 header (PDF 197,
+      "DATE 27 AUGUST 1956") give 27 August. Probably printed one column too far
+      right (61 should carry the new date).
+    pdf_index: 227
+    printed_page: 214
+    reviewer: project owner
+    date: 2026-11-16
+
+  - cell_id: T6.1|p225|r40|wind_speed|source|10
+    release: "40"
+    table: "6.1"
+    printed: "3.08"
+    suspect_alternative: ""
+    basis: >-
+      2 m speed 3.08 m/s at the source, against 2.08 m/s (208 cm/s) at 2 m in
+      Table 8.1, the only release outside 30 %. The 6.1 values agree among
+      themselves (20 min 3.15), so it is not clear which table is wrong, or
+      whether either is (different instruments). No alternative proposed.
+    pdf_index: 225
+    printed_page: 212
+    reviewer: project owner
+    date: 2026-11-16

@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EXTRACT = ROOT / "src" / "extract"
 DATASET = ROOT / "src" / "dataset"  # the dataset build may not read it either
 VOLUME2 = ROOT / "src" / "volume2"  # Volume II has no reference, and must not acquire one by accident
+VOLUME1S = ROOT / "src" / "volume1s"  # Tables 5.1, 5.4, 6.1: no reference either
 
 # any mention of the reference directory or the reference files themselves
 FORBIDDEN = re.compile(r"reference[/\\'\"]|\breference\b\s*[/)]|PGARCS|PGVertConc|harmo\.org|D6589|\bscoring\b",
@@ -14,7 +15,8 @@ FORBIDDEN = re.compile(r"reference[/\\'\"]|\breference\b\s*[/)]|PGARCS|PGVertCon
 
 def test_extract_never_references_answer_key():
     offenders = []
-    for path in sorted(EXTRACT.rglob("*.py")) + sorted(DATASET.rglob("*.py")) + sorted(VOLUME2.rglob("*.py")):
+    for path in (sorted(EXTRACT.rglob("*.py")) + sorted(DATASET.rglob("*.py")) + sorted(VOLUME2.rglob("*.py"))
+                 + sorted(VOLUME1S.rglob("*.py"))):
         for n, line in enumerate(path.read_text().splitlines(), 1):
             if FORBIDDEN.search(line):
                 offenders.append(f"{path.relative_to(ROOT)}:{n}: {line.strip()}")

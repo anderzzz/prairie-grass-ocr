@@ -1,0 +1,10 @@
+check,table,cell_id,token,message
+6.1-place,6.1,T6.1|p225|r35|wind_direction|source|10,132,release 35 wind_direction 10 min: source 132 vs 450 m 105
+6.1-place,6.1,T6.1|p225|r35|wind_direction|450m|10,105,release 35 wind_direction 10 min: source 132 vs 450 m 105
+6.1-8.1,6.1,T6.1|p225|r40|wind_speed|source|10,3.08,release 40: 2 m speed 3.08 m/s vs Table 8.1 2.08 m/s
+6.1-8.1,6.1,T6.1|p227|r60|date,26 Aug.,release 60: 1956-08-26 0135 vs Table 8.1 1956-08-26 0035
+6.1-8.1,6.1,T6.1|p227|r60|time_cst,0135,release 60: 1956-08-26 0135 vs Table 8.1 1956-08-26 0035
+6.1-8.1,6.1,T6.1|p227|r61|date,,release 61: 1956-08-26 1055 vs Table 8.1 1956-08-27 1105
+6.1-8.1,6.1,T6.1|p227|r61|time_cst,1055,release 61: 1956-08-26 1055 vs Table 8.1 1956-08-27 1105
+6.1-8.1,6.1,T6.1|p227|r62|date,26 Aug.,release 62: 1956-08-26 1355 vs Table 8.1 1956-08-27 1405
+6.1-8.1,6.1,T6.1|p227|r62|time_cst,1355,release 62: 1956-08-26 1355 vs Table 8.1 1956-08-27 1405

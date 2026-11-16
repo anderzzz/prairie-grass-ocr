@@ -4,7 +4,9 @@ Machine-readable transcriptions of the data tables in the **Project Prairie Gras
 reports (Barad, ed., 1958), digitised from the scanned PDFs in `rawdata/`:
 
 - **Volume I**: Chapter 5 SO₂ concentration tables. Table 5.2 covers the five horizontal arcs
-  and Table 5.3 covers the six towers.
+  and Table 5.3 covers the six towers. Also the source strengths Q (Table 5.1), the evaporation
+  correction factors (Table 5.4), the slow-response 2 m wind and σ_θ (Table 6.1) and the per-run
+  remarks.
 - **Volume II**: the meteorological tables in Chapters 7–13. These are micrometeorology,
   heat budget, soil, optical ΔT/Δz, rawinsonde and aircraft data.
 
@@ -24,6 +26,10 @@ token next to the parsed number, along with where the number came from.
 |---|---|---|
 | `output/volume1/dataset/arcs.csv` | Table 5.2: arc samplers at 1.5 m, 68 runs | 30,510 |
 | `output/volume1/dataset/towers.csv` | Table 5.3: tower samplers, 52 runs | 2,808 |
+| `output/volume1/dataset/source_strength.csv` | Table 5.1: release rate Q (g/s), 68 runs | 68 |
+| `output/volume1/dataset/evaporation_correction.csv` | Table 5.4: correction factors per run and arc | 350 |
+| `output/volume1/dataset/slow_response_wind.csv` | Table 6.1: 2 m wind speed, direction, σ_θ (source and 450 m; 10 and 20 min) | 952 |
+| `output/volume1/dataset/run_remarks.csv` | Per-run remarks printed with Table 5.2 and the Table 6.1 legend | 23 |
 | `output/volume2/dataset/table_<id>.csv` | One file per Volume II table (catalogue below) | 31 – 7,767 |
 
 Each file is **long format, one row per printed cell**. That includes blank cells, because a
@@ -164,8 +170,33 @@ transcription is never read by the build**, and `tests/test_isolation.py` checks
 reference was used to find cells worth a second look, and it turned out to contain real
 errors. See `REPORT.md` for details.
 
-Not included: Table 5.1 (source strengths) and Table 5.4 (evaporation correction factors).
-Their layouts are documented in `docs/table_layouts.md`.
+### Tables 5.1, 5.4, 6.1 and the run remarks
+
+Smaller Volume I tables, built by `src/volume1s/` (`make volume1s`, `make volume1s-dataset`).
+Every cell was read by Mistral **and** independently by Sonnet (13 calls, $0.25), then checked
+for keys, printed format, ranges, internal consistency and against Table 8.1. The columns
+follow Volume II: `token`, `value`, `status`, `quality`, `value_source`, `check_failures`,
+`review_note` and the provenance columns.
+
+- `source_strength.csv`: `run`, `value` = Q in g/s as printed.
+- `evaporation_correction.csv`: `run`, `arc_m`, `value` = factor to multiply concentrations by.
+  A blank is printed as "missing data" (`status = missing`); runs 30, 31, 63 and 64 are blank
+  throughout. Towers take the 100 m factor (legend). **The Table 5.2/5.3 values are not
+  corrected**; the factors are kept separately.
+- `slow_response_wind.csv`: `release`, `quantity` (`wind_speed` m/s, `wind_direction` deg,
+  `sigma_theta` deg = standard deviation of azimuth wind direction), `location` (`source` = 2 m
+  on the base line, `450m`), `period_min` (10 or 20; the 10 min source period coincides with
+  the release). `estimated` = printed with `*` (estimate from an incomplete record). The legend
+  says the 450 m vane reads about 8° too high; values are as printed. A blank `Date` cell repeats
+  the date to its left: `date_token` is printed, `date` is carried forward. Rows with
+  `quantity = key:date` / `key:time_cst` hold the printed keys and their checks.
+- `run_remarks.csv`: one row per run and remark (e.g. run 4 released for 9.5 min; run 47's rate
+  varied ±50 % in the first 90 s; vacuum-line faults in runs 50, 51, 57; missing slow-response
+  records).
+
+`suspect`, `suspect_alternative`, `suspect_note` mark printed values that disagree with
+other tables (release 60 time, 61/62 date, 40 speed; `config/suspect_values.yaml`). They are
+never corrected. See `docs/volume1s.md` for the checks and the review.
 
 ---
 
@@ -306,6 +337,8 @@ API keys are needed unless you add pages.
 make dataset            # Volume I dataset from output/volume1/extracted + config/review
 make volume2            # Volume II: OCR (cached) -> parsed tables -> consistency checks
 make volume2-dataset    # Volume II dataset + outlier screen
+make volume1s           # Vol I Tables 5.1, 5.4, 6.1: OCR + second reading (cached), checks, review pack
+make volume1s-dataset   # their dataset (after review: DATE=yyyy-mm-dd make volume1s-dataset)
 make test
 make notebooks          # JupyterLab with the exploration notebooks
 ```
@@ -321,6 +354,7 @@ rawdata/          the two scanned volumes (1-bit, 300 dpi)
 src/extract/      Volume I pipeline: structure detection, readers, flags
 src/dataset/      Volume I dataset build
 src/volume2/      Volume II parsers, checks, second reading, dataset, outliers
+src/volume1s/     Volume I Tables 5.1, 5.4, 6.1 and run remarks
 scoring/          pilot scoring against the reference, triage, verdict resolution
 config/           manual keys, page inventories, owner verdicts, suspect values
 docs/             table layouts, page maps, Volume II conventions
