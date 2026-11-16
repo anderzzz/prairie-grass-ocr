@@ -1,0 +1,38 @@
+# Owner decisions on Volume II header keys and conventions (2026-11-15).
+# Applied by src/volume2/run.py. A key decided here replaces the OCR reading of a
+# smudged header; the token Mistral read is kept alongside it. Errata record
+# where the PRINTED value is kept but the owner interprets it differently.
+reviewer: project owner
+date: 2026-11-15
+
+keys:
+  - table: "8.2"
+    pdf_index: 97
+    field: date
+    value: "1956-08-08"
+    basis: header smudged (Mistral read "August 9"); page lies between two 8 August pages, and 9 August 1405 is on page 101
+  - table: "8.1"
+    pdf_index: 68
+    release: "29"
+    field: date
+    value: "1956-08-03"
+    basis: day smudged (Mistral read "5"); Tables 10.1 and 12.1 and the release order give 3 August
+    note: owner's answer named both 3 and 5 August; 3 August applied, to be confirmed
+
+errata:
+  - table: "10.1"
+    release: "45"
+    field: time_cst
+    printed: "1200"
+    interpreted: "1700"
+    basis: print is clear, but Table 8.1 (1705) and Table 12.1 (1658 sounding) place release 45 at about 1700; the owner judges the printed 1200 a typing error in the original
+
+conventions:
+  - table: "13.1"
+    field: remarks
+    decision: free-text remarks are kept as Mistral read them and marked "unverified transcription"; not reviewed cell by cell
+
+excluded_tables:
+  - table: "11.3"
+    date: 2026-11-16
+    basis: owner judges the printed table dubious (hand corrections in the original); fixing it would take far more work than it is worth. Extracted to output/volume2/extracted for the record, left out of the dataset.

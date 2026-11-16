@@ -1,0 +1,537 @@
+check,role,cell_id,table,pdf_index,token,detail
+format,suspect,T8.1|p66|16|1956-07-23|1005|radiation|insolation,8.1,66,0183,"8.1 insolation: token '0183' is not in the column's printed format (-?\.\d{4,5})"
+format,suspect,T8.1|p67|23|1956-07-29|2105|vapor_pressure|vapor_pressure|1.0,8.1,67,20.7*,"8.1 vapor_pressure: token '20.7*' is not in the column's printed format (\d{1,2}\.\d{2})"
+format,suspect,T8.1|p67|24|1956-07-29|2305|vapor_pressure|vapor_pressure|1.0,8.1,67,20.9*,"8.1 vapor_pressure: token '20.9*' is not in the column's printed format (\d{1,2}\.\d{2})"
+format,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|2.0,8.1,71,3.21,"8.1 wind_speed: token '3.21' is not in the column's printed format (\d{1,4})"
+format,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|1.0,8.1,71,2.94,"8.1 wind_speed: token '2.94' is not in the column's printed format (\d{1,4})"
+format,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.5,8.1,71,2.96,"8.1 wind_speed: token '2.96' is not in the column's printed format (\d{1,4})"
+format,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.25,8.1,71,2.23,"8.1 wind_speed: token '2.23' is not in the column's printed format (\d{1,4})"
+format,suspect,T8.2|p80|1956-07-23|0905|soil_temperature_change|run_time,8.2,80,.27,"8.2 run_time: token '.27' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p80|1956-07-23|1105|soil_temperature_change|run_time,8.2,80,.25,"8.2 run_time: token '.25' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p80|1956-07-23|1205|soil_temperature_change|run_time,8.2,80,.27,"8.2 run_time: token '.27' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p80|1956-07-23|1305|soil_temperature_change|run_time,8.2,80,.20,"8.2 run_time: token '.20' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p80|1956-07-23|1405|soil_temperature_change|run_time,8.2,80,.25,"8.2 run_time: token '.25' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p80|1956-07-23|1605|soil_temperature_change|run_time,8.2,80,.30,"8.2 run_time: token '.30' is not in the column's printed format (\d{1,2})"
+format,suspect,T8.2|p93|1956-08-07|1105|radiation|net_radiation,8.2,93,0130,"8.2 net_radiation: token '0130' is not in the column's printed format (-?\.\d{4,5})"
+format,suspect,T8.2|p97|1956-08-08|1805|temperature|temperature|-0.06,8.2,97,30.8,"8.2 temperature: token '30.8' is not in the column's printed format (-?\d{1,2}\.\d{2})"
+format,suspect,T8.2|p97|1956-08-08|1805|temperature|temperature|-0.25,8.2,97,23.4,"8.2 temperature: token '23.4' is not in the column's printed format (-?\d{1,2}\.\d{2})"
+format,suspect,T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|8.0,8.2,104,16.7,"8.2 vapor_pressure: token '16.7' is not in the column's printed format (\d{1,2}\.\d{2})"
+format,suspect,T8.2|p104|1956-08-28|0805|soil_temperature_change|soil_temperature_change|-0.06,8.2,104,32,"8.2 soil_temperature_change: token '32' is not in the column's printed format ([-+]?(\d?\.\d{1,2}|0|00))"
+format,suspect,T13.1|p190|5|1956-07-06|0|8|dew_point,13.1,190,1.50,"13.1 dew_point: token '1.50' is not in the column's printed format (-?\d{1,2}\.\d)"
+9.1-sum,involved,T9.1|p124|34|19|q_c,9.1,124,-7.50,release 34: q_c+q_e+q_s = -10.81 but printed sum -11.81
+9.1-sum,involved,T9.1|p124|34|19|q_e,9.1,124,-2.96,release 34: q_c+q_e+q_s = -10.81 but printed sum -11.81
+9.1-sum,involved,T9.1|p124|34|19|q_s,9.1,124,-.35,release 34: q_c+q_e+q_s = -10.81 but printed sum -11.81
+9.1-sum,involved,T9.1|p124|34|19|sum_q,9.1,124,-11.81,release 34: q_c+q_e+q_s = -10.81 but printed sum -11.81
+9.1-9.2,suspect,T9.1|p124|34|19|q_e,9.1,124,-2.96,release 34 q_e: 0.06 x -2.96 = -0.1776 but Table 9.2 prints -.238 (9.1 sum fails)
+9.1-9.2,context,T9.2|p125|34|20|q_e,9.2,125,-.238,release 34 q_e: 0.06 x -2.96 = -0.1776 but Table 9.2 prints -.238 (9.1 sum fails)
+9.1-sum,involved,T9.1|p124|43|28|R_n,9.1,124,10.80,release 43: -(R_n + sum) = -0.83 but printed -.33
+9.1-sum,involved,T9.1|p124|43|28|sum_q,9.1,124,-9.97,release 43: -(R_n + sum) = -0.83 but printed -.33
+9.1-sum,involved,T9.1|p124|43|28|R_n_plus_sum_q,9.1,124,-.33,release 43: -(R_n + sum) = -0.83 but printed -.33
+9.1-9.2,context,T9.1|p124|48S|32|q_c,9.1,124,-3.63,release 48S q_c: 0.06 x -3.63 = -0.2178 but Table 9.2 prints .218 (9.1 sum holds)
+9.1-9.2,suspect,T9.2|p125|48S|33|q_c,9.2,125,.218,release 48S q_c: 0.06 x -3.63 = -0.2178 but Table 9.2 prints .218 (9.1 sum holds)
+9.1-9.2,involved,T9.1|p124|50|35|R_n,9.1,124,12.80,release 50 R_n: 0.06 x 12.80 = 0.7680 but Table 9.2 prints .763
+9.1-9.2,involved,T9.2|p125|50|36|R_n,9.2,125,.763,release 50 R_n: 0.06 x 12.80 = 0.7680 but Table 9.2 prints .763
+9.1-9.2,context,T9.1|p124|60|44|q_e,9.1,124,-.13,release 60 q_e: 0.06 x -.13 = -0.0078 but Table 9.2 prints -.066 (9.1 sum holds)
+9.1-9.2,suspect,T9.2|p125|60|45|q_e,9.2,125,-.066,release 60 q_e: 0.06 x -.13 = -0.0078 but Table 9.2 prints -.066 (9.1 sum holds)
+13.1-humidity,context,T13.1|p189|4|1956-07-06|1|6|temperature,13.1,189,24.4,"field test 4 level 6: T=24.4 Td=17.3 e=18.5 RH=59; e_s(Td)=19.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p189|4|1956-07-06|1|6|dew_point,13.1,189,17.3,"field test 4 level 6: T=24.4 Td=17.3 e=18.5 RH=59; e_s(Td)=19.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p189|4|1956-07-06|1|6|vapor_pressure,13.1,189,18.5,"field test 4 level 6: T=24.4 Td=17.3 e=18.5 RH=59; e_s(Td)=19.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p189|4|1956-07-06|1|6|relative_humidity,13.1,189,59,"field test 4 level 6: T=24.4 Td=17.3 e=18.5 RH=59; e_s(Td)=19.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p190|5|1956-07-06|0|8|temperature,13.1,190,25.3,"field test 5 level 8: T=25.3 Td=1.50 e=17.0 RH=52; e_s(Td)=6.8 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p190|5|1956-07-06|0|8|dew_point,13.1,190,1.50,"field test 5 level 8: T=25.3 Td=1.50 e=17.0 RH=52; e_s(Td)=6.8 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p190|5|1956-07-06|0|8|vapor_pressure,13.1,190,17.0,"field test 5 level 8: T=25.3 Td=1.50 e=17.0 RH=52; e_s(Td)=6.8 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p190|5|1956-07-06|0|8|relative_humidity,13.1,190,52,"field test 5 level 8: T=25.3 Td=1.50 e=17.0 RH=52; e_s(Td)=6.8 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p190|6|1956-07-06|1|1|temperature,13.1,190,30.3,field test 6 level 1: T=30.3 Td=17.3 e=18.5 RH=43; e_s(Td)=19.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p190|6|1956-07-06|1|1|dew_point,13.1,190,17.3,field test 6 level 1: T=30.3 Td=17.3 e=18.5 RH=43; e_s(Td)=19.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p190|6|1956-07-06|1|1|vapor_pressure,13.1,190,18.5,field test 6 level 1: T=30.3 Td=17.3 e=18.5 RH=43; e_s(Td)=19.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p190|6|1956-07-06|1|1|relative_humidity,13.1,190,43,field test 6 level 1: T=30.3 Td=17.3 e=18.5 RH=43; e_s(Td)=19.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p191|8|1956-07-10|1|13|temperature,13.1,191,17.6,"field test 8 level 13: T=17.6 Td=10.8 e=13.0 RH=59; e_s(Td)=12.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p191|8|1956-07-10|1|13|dew_point,13.1,191,10.8,"field test 8 level 13: T=17.6 Td=10.8 e=13.0 RH=59; e_s(Td)=12.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p191|8|1956-07-10|1|13|vapor_pressure,13.1,191,13.0,"field test 8 level 13: T=17.6 Td=10.8 e=13.0 RH=59; e_s(Td)=12.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p191|8|1956-07-10|1|13|relative_humidity,13.1,191,59,"field test 8 level 13: T=17.6 Td=10.8 e=13.0 RH=59; e_s(Td)=12.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p192|9|1956-07-11|0|16|temperature,13.1,192,15.1,"field test 9 level 16: T=15.1 Td=2.6 e=7.4 RH=49; e_s(Td)=7.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p192|9|1956-07-11|0|16|dew_point,13.1,192,2.6,"field test 9 level 16: T=15.1 Td=2.6 e=7.4 RH=49; e_s(Td)=7.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p192|9|1956-07-11|0|16|vapor_pressure,13.1,192,7.4,"field test 9 level 16: T=15.1 Td=2.6 e=7.4 RH=49; e_s(Td)=7.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p192|9|1956-07-11|0|16|relative_humidity,13.1,192,49,"field test 9 level 16: T=15.1 Td=2.6 e=7.4 RH=49; e_s(Td)=7.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|5|temperature,13.1,192,26.3,field test 10 level 5: T=26.3 Td=18.8 e=21.0 RH=63; e_s(Td)=21.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|5|dew_point,13.1,192,18.8,field test 10 level 5: T=26.3 Td=18.8 e=21.0 RH=63; e_s(Td)=21.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|5|vapor_pressure,13.1,192,21.0,field test 10 level 5: T=26.3 Td=18.8 e=21.0 RH=63; e_s(Td)=21.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|5|relative_humidity,13.1,192,63,field test 10 level 5: T=26.3 Td=18.8 e=21.0 RH=63; e_s(Td)=21.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|14|temperature,13.1,192,18.1,field test 10 level 14: T=18.1 Td=9.8 e=11.4 RH=54; e_s(Td)=12.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|14|dew_point,13.1,192,9.8,field test 10 level 14: T=18.1 Td=9.8 e=11.4 RH=54; e_s(Td)=12.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|14|vapor_pressure,13.1,192,11.4,field test 10 level 14: T=18.1 Td=9.8 e=11.4 RH=54; e_s(Td)=12.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p192|10|1956-07-11|1|14|relative_humidity,13.1,192,54,field test 10 level 14: T=18.1 Td=9.8 e=11.4 RH=54; e_s(Td)=12.1 failed: ['e-Td']
+13.1-humidity,context,T13.1|p193|11|1956-07-14|0|16|temperature,13.1,193,12.5,"field test 11 level 16: T=12.5 Td=6.4 e=6.3 RH=43; e_s(Td)=9.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p193|11|1956-07-14|0|16|dew_point,13.1,193,6.4,"field test 11 level 16: T=12.5 Td=6.4 e=6.3 RH=43; e_s(Td)=9.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p193|11|1956-07-14|0|16|vapor_pressure,13.1,193,6.3,"field test 11 level 16: T=12.5 Td=6.4 e=6.3 RH=43; e_s(Td)=9.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p193|11|1956-07-14|0|16|relative_humidity,13.1,193,43,"field test 11 level 16: T=12.5 Td=6.4 e=6.3 RH=43; e_s(Td)=9.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|9|temperature,13.1,194,18.0,"field test 13 level 9: T=18.0 Td=13.1 e=15.9 RH=72; e_s(Td)=15.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|9|dew_point,13.1,194,13.1,"field test 13 level 9: T=18.0 Td=13.1 e=15.9 RH=72; e_s(Td)=15.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p194|13|1956-07-22|0|9|vapor_pressure,13.1,194,15.9,"field test 13 level 9: T=18.0 Td=13.1 e=15.9 RH=72; e_s(Td)=15.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|9|relative_humidity,13.1,194,72,"field test 13 level 9: T=18.0 Td=13.1 e=15.9 RH=72; e_s(Td)=15.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|15|temperature,13.1,194,8.1,"field test 13 level 15: T=8.1 Td=8.1 e=11.3 RH=100; e_s(Td)=10.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|15|dew_point,13.1,194,8.1,"field test 13 level 15: T=8.1 Td=8.1 e=11.3 RH=100; e_s(Td)=10.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p194|13|1956-07-22|0|15|vapor_pressure,13.1,194,11.3,"field test 13 level 15: T=8.1 Td=8.1 e=11.3 RH=100; e_s(Td)=10.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p194|13|1956-07-22|0|15|relative_humidity,13.1,194,100,"field test 13 level 15: T=8.1 Td=8.1 e=11.3 RH=100; e_s(Td)=10.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p194|14|1956-07-22|1|11|temperature,13.1,194,13.1,"field test 14 level 11: T=13.1 Td=13.1 e=15.0 RH=93; e_s(Td)=15.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p194|14|1956-07-22|1|11|dew_point,13.1,194,13.1,"field test 14 level 11: T=13.1 Td=13.1 e=15.0 RH=93; e_s(Td)=15.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p194|14|1956-07-22|1|11|vapor_pressure,13.1,194,15.0,"field test 14 level 11: T=13.1 Td=13.1 e=15.0 RH=93; e_s(Td)=15.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p194|14|1956-07-22|1|11|relative_humidity,13.1,194,93,"field test 14 level 11: T=13.1 Td=13.1 e=15.0 RH=93; e_s(Td)=15.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p195|15|1956-07-23|0|11|temperature,13.1,195,15.0,"field test 15 level 11: T=15.0 Td=13.3 e=15.3 RH=84; e_s(Td)=15.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p195|15|1956-07-23|0|11|dew_point,13.1,195,13.3,"field test 15 level 11: T=15.0 Td=13.3 e=15.3 RH=84; e_s(Td)=15.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p195|15|1956-07-23|0|11|vapor_pressure,13.1,195,15.3,"field test 15 level 11: T=15.0 Td=13.3 e=15.3 RH=84; e_s(Td)=15.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p195|15|1956-07-23|0|11|relative_humidity,13.1,195,84,"field test 15 level 11: T=15.0 Td=13.3 e=15.3 RH=84; e_s(Td)=15.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|15|1956-07-23|0|18|temperature,13.1,195,21.3,"field test 15 level 18: T=21.3 Td=14.9 e=19.3 RH=75; e_s(Td)=16.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p195|15|1956-07-23|0|18|dew_point,13.1,195,14.9,"field test 15 level 18: T=21.3 Td=14.9 e=19.3 RH=75; e_s(Td)=16.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|15|1956-07-23|0|18|vapor_pressure,13.1,195,19.3,"field test 15 level 18: T=21.3 Td=14.9 e=19.3 RH=75; e_s(Td)=16.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|15|1956-07-23|0|18|relative_humidity,13.1,195,75,"field test 15 level 18: T=21.3 Td=14.9 e=19.3 RH=75; e_s(Td)=16.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|14|temperature,13.1,195,12.4,"field test 16 level 14: T=12.4 Td=1.2 e=5.5 RH=38; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p195|16|1956-07-23|1|14|dew_point,13.1,195,1.2,"field test 16 level 14: T=12.4 Td=1.2 e=5.5 RH=38; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|14|vapor_pressure,13.1,195,5.5,"field test 16 level 14: T=12.4 Td=1.2 e=5.5 RH=38; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|14|relative_humidity,13.1,195,38,"field test 16 level 14: T=12.4 Td=1.2 e=5.5 RH=38; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|17|temperature,13.1,195,24.4,"field test 16 level 17: T=24.4 Td=16.9 e=18.1 RH=58; e_s(Td)=19.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p195|16|1956-07-23|1|17|dew_point,13.1,195,16.9,"field test 16 level 17: T=24.4 Td=16.9 e=18.1 RH=58; e_s(Td)=19.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|17|vapor_pressure,13.1,195,18.1,"field test 16 level 17: T=24.4 Td=16.9 e=18.1 RH=58; e_s(Td)=19.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p195|16|1956-07-23|1|17|relative_humidity,13.1,195,58,"field test 16 level 17: T=24.4 Td=16.9 e=18.1 RH=58; e_s(Td)=19.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p196|17|1956-07-23|0|7|temperature,13.1,196,28.2,"field test 17 level 7: T=28.2 Td=10.5 e=10.7 RH=33; e_s(Td)=12.7 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p196|17|1956-07-23|0|7|dew_point,13.1,196,10.5,"field test 17 level 7: T=28.2 Td=10.5 e=10.7 RH=33; e_s(Td)=12.7 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p196|17|1956-07-23|0|7|vapor_pressure,13.1,196,10.7,"field test 17 level 7: T=28.2 Td=10.5 e=10.7 RH=33; e_s(Td)=12.7 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p196|17|1956-07-23|0|7|relative_humidity,13.1,196,33,"field test 17 level 7: T=28.2 Td=10.5 e=10.7 RH=33; e_s(Td)=12.7 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p196|17|1956-07-23|0|11|temperature,13.1,196,33.2,"field test 17 level 11: T=33.2 Td=8.2 e=10.8 RH=38; e_s(Td)=10.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p196|17|1956-07-23|0|11|dew_point,13.1,196,8.2,"field test 17 level 11: T=33.2 Td=8.2 e=10.8 RH=38; e_s(Td)=10.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p196|17|1956-07-23|0|11|vapor_pressure,13.1,196,10.8,"field test 17 level 11: T=33.2 Td=8.2 e=10.8 RH=38; e_s(Td)=10.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p196|17|1956-07-23|0|11|relative_humidity,13.1,196,38,"field test 17 level 11: T=33.2 Td=8.2 e=10.8 RH=38; e_s(Td)=10.9 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p196|18|1956-07-23|1|9|temperature,13.1,196,23.4,"field test 18 level 9: T=23.4 Td=5.8 e=11.3 RH=39; e_s(Td)=9.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p196|18|1956-07-23|1|9|dew_point,13.1,196,5.8,"field test 18 level 9: T=23.4 Td=5.8 e=11.3 RH=39; e_s(Td)=9.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p196|18|1956-07-23|1|9|vapor_pressure,13.1,196,11.3,"field test 18 level 9: T=23.4 Td=5.8 e=11.3 RH=39; e_s(Td)=9.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p196|18|1956-07-23|1|9|relative_humidity,13.1,196,39,"field test 18 level 9: T=23.4 Td=5.8 e=11.3 RH=39; e_s(Td)=9.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p197|19|1956-07-25|0|11|temperature,13.1,197,20.3,field test 19 level 11: T=20.3 Td=-0.3 e=6.9 RH=25; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|19|1956-07-25|0|11|dew_point,13.1,197,-0.3,field test 19 level 11: T=20.3 Td=-0.3 e=6.9 RH=25; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|19|1956-07-25|0|11|vapor_pressure,13.1,197,6.9,field test 19 level 11: T=20.3 Td=-0.3 e=6.9 RH=25; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|19|1956-07-25|0|11|relative_humidity,13.1,197,25,field test 19 level 11: T=20.3 Td=-0.3 e=6.9 RH=25; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,context,T13.1|p197|19|1956-07-25|0|16|temperature,13.1,197,13.5,"field test 19 level 16: T=13.5 Td=0.9 e=5.7 RH=36; e_s(Td)=6.5 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p197|19|1956-07-25|0|16|dew_point,13.1,197,0.9,"field test 19 level 16: T=13.5 Td=0.9 e=5.7 RH=36; e_s(Td)=6.5 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p197|19|1956-07-25|0|16|vapor_pressure,13.1,197,5.7,"field test 19 level 16: T=13.5 Td=0.9 e=5.7 RH=36; e_s(Td)=6.5 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p197|19|1956-07-25|0|16|relative_humidity,13.1,197,36,"field test 19 level 16: T=13.5 Td=0.9 e=5.7 RH=36; e_s(Td)=6.5 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p197|20|1956-07-25|1|14|temperature,13.1,197,17.0,"field test 20 level 14: T=17.0 Td=1.1 e=5.9 RH=28; e_s(Td)=6.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p197|20|1956-07-25|1|14|dew_point,13.1,197,1.1,"field test 20 level 14: T=17.0 Td=1.1 e=5.9 RH=28; e_s(Td)=6.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p197|20|1956-07-25|1|14|vapor_pressure,13.1,197,5.9,"field test 20 level 14: T=17.0 Td=1.1 e=5.9 RH=28; e_s(Td)=6.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p197|20|1956-07-25|1|14|relative_humidity,13.1,197,28,"field test 20 level 14: T=17.0 Td=1.1 e=5.9 RH=28; e_s(Td)=6.6 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p197|20|1956-07-25|1|15|temperature,13.1,197,13.8,field test 20 level 15: T=13.8 Td=0.6 e=5.8 RH=36; e_s(Td)=6.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|20|1956-07-25|1|15|dew_point,13.1,197,0.6,field test 20 level 15: T=13.8 Td=0.6 e=5.8 RH=36; e_s(Td)=6.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|20|1956-07-25|1|15|vapor_pressure,13.1,197,5.8,field test 20 level 15: T=13.8 Td=0.6 e=5.8 RH=36; e_s(Td)=6.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p197|20|1956-07-25|1|15|relative_humidity,13.1,197,36,field test 20 level 15: T=13.8 Td=0.6 e=5.8 RH=36; e_s(Td)=6.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p198|22|1956-07-26|1|4|temperature,13.1,198,26.4,field test 22 level 4: T=26.4 Td=10.9 e=13.6 RH=38; e_s(Td)=13.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p198|22|1956-07-26|1|4|dew_point,13.1,198,10.9,field test 22 level 4: T=26.4 Td=10.9 e=13.6 RH=38; e_s(Td)=13.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p198|22|1956-07-26|1|4|vapor_pressure,13.1,198,13.6,field test 22 level 4: T=26.4 Td=10.9 e=13.6 RH=38; e_s(Td)=13.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p198|22|1956-07-26|1|4|relative_humidity,13.1,198,38,field test 22 level 4: T=26.4 Td=10.9 e=13.6 RH=38; e_s(Td)=13.0 failed: ['e-Td']
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|13|temperature,13.1,198,19.5,"field test 22 level 13: T=19.5 Td=1.9 e=5.2 RH=23; e_s(Td)=7.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p198|22|1956-07-26|1|13|dew_point,13.1,198,1.9,"field test 22 level 13: T=19.5 Td=1.9 e=5.2 RH=23; e_s(Td)=7.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|13|vapor_pressure,13.1,198,5.2,"field test 22 level 13: T=19.5 Td=1.9 e=5.2 RH=23; e_s(Td)=7.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|13|relative_humidity,13.1,198,23,"field test 22 level 13: T=19.5 Td=1.9 e=5.2 RH=23; e_s(Td)=7.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|16|temperature,13.1,198,26.9,"field test 22 level 16: T=26.9 Td=10.6 e=15.8 RH=36; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|16|dew_point,13.1,198,10.6,"field test 22 level 16: T=26.9 Td=10.6 e=15.8 RH=36; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p198|22|1956-07-26|1|16|vapor_pressure,13.1,198,15.8,"field test 22 level 16: T=26.9 Td=10.6 e=15.8 RH=36; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p198|22|1956-07-26|1|16|relative_humidity,13.1,198,36,"field test 22 level 16: T=26.9 Td=10.6 e=15.8 RH=36; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|6|temperature,13.1,199,20.0,field test 25 level 6: T=20.0 Td=20.0 e=24.4 RH=>100; e_s(Td)=23.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|6|dew_point,13.1,199,20.0,field test 25 level 6: T=20.0 Td=20.0 e=24.4 RH=>100; e_s(Td)=23.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|6|vapor_pressure,13.1,199,24.4,field test 25 level 6: T=20.0 Td=20.0 e=24.4 RH=>100; e_s(Td)=23.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|6|relative_humidity,13.1,199,>100,field test 25 level 6: T=20.0 Td=20.0 e=24.4 RH=>100; e_s(Td)=23.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|7|temperature,13.1,199,19.5,field test 25 level 7: T=19.5 Td=19.5 e=23.7 RH=>100; e_s(Td)=22.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|7|dew_point,13.1,199,19.5,field test 25 level 7: T=19.5 Td=19.5 e=23.7 RH=>100; e_s(Td)=22.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|7|vapor_pressure,13.1,199,23.7,field test 25 level 7: T=19.5 Td=19.5 e=23.7 RH=>100; e_s(Td)=22.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|7|relative_humidity,13.1,199,>100,field test 25 level 7: T=19.5 Td=19.5 e=23.7 RH=>100; e_s(Td)=22.7 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|8|temperature,13.1,199,8.2,field test 25 level 8: T=8.2 Td=18.2 e=23.2 RH=>100; e_s(Td)=20.9 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|8|dew_point,13.1,199,18.2,field test 25 level 8: T=8.2 Td=18.2 e=23.2 RH=>100; e_s(Td)=20.9 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|8|vapor_pressure,13.1,199,23.2,field test 25 level 8: T=8.2 Td=18.2 e=23.2 RH=>100; e_s(Td)=20.9 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|8|relative_humidity,13.1,199,>100,field test 25 level 8: T=8.2 Td=18.2 e=23.2 RH=>100; e_s(Td)=20.9 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|9|temperature,13.1,199,19.4,field test 25 level 9: T=19.4 Td=19.4 e=23.2 RH=>100; e_s(Td)=22.5 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|9|dew_point,13.1,199,19.4,field test 25 level 9: T=19.4 Td=19.4 e=23.2 RH=>100; e_s(Td)=22.5 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|9|vapor_pressure,13.1,199,23.2,field test 25 level 9: T=19.4 Td=19.4 e=23.2 RH=>100; e_s(Td)=22.5 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p199|25|1956-08-01|0|9|relative_humidity,13.1,199,>100,field test 25 level 9: T=19.4 Td=19.4 e=23.2 RH=>100; e_s(Td)=22.5 failed: ['e-Td']
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|7|temperature,13.1,199,24.4,"field test 26 level 7: T=24.4 Td=20.4 e=25.9 RH=78; e_s(Td)=24.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|7|dew_point,13.1,199,20.4,"field test 26 level 7: T=24.4 Td=20.4 e=25.9 RH=78; e_s(Td)=24.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p199|26|1956-08-02|1|7|vapor_pressure,13.1,199,25.9,"field test 26 level 7: T=24.4 Td=20.4 e=25.9 RH=78; e_s(Td)=24.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|7|relative_humidity,13.1,199,78,"field test 26 level 7: T=24.4 Td=20.4 e=25.9 RH=78; e_s(Td)=24.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p199|26|1956-08-02|1|10|temperature,13.1,199,19.4,"field test 26 level 10: T=19.4 Td=19.1 e=22.0 RH=91; e_s(Td)=22.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p199|26|1956-08-02|1|10|dew_point,13.1,199,19.1,"field test 26 level 10: T=19.4 Td=19.1 e=22.0 RH=91; e_s(Td)=22.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p199|26|1956-08-02|1|10|vapor_pressure,13.1,199,22.0,"field test 26 level 10: T=19.4 Td=19.1 e=22.0 RH=91; e_s(Td)=22.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p199|26|1956-08-02|1|10|relative_humidity,13.1,199,91,"field test 26 level 10: T=19.4 Td=19.1 e=22.0 RH=91; e_s(Td)=22.1 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|15|temperature,13.1,199,14.0,"field test 26 level 15: T=14.0 Td=10.6 e=13.7 RH=78; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|15|dew_point,13.1,199,10.6,"field test 26 level 15: T=14.0 Td=10.6 e=13.7 RH=78; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p199|26|1956-08-02|1|15|vapor_pressure,13.1,199,13.7,"field test 26 level 15: T=14.0 Td=10.6 e=13.7 RH=78; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|15|relative_humidity,13.1,199,78,"field test 26 level 15: T=14.0 Td=10.6 e=13.7 RH=78; e_s(Td)=12.8 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|16|temperature,13.1,199,11.8,"field test 26 level 16: T=11.8 Td=9.6 e=12.9 RH=95; e_s(Td)=11.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p199|26|1956-08-02|1|16|dew_point,13.1,199,9.6,"field test 26 level 16: T=11.8 Td=9.6 e=12.9 RH=95; e_s(Td)=11.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|16|vapor_pressure,13.1,199,12.9,"field test 26 level 16: T=11.8 Td=9.6 e=12.9 RH=95; e_s(Td)=11.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p199|26|1956-08-02|1|16|relative_humidity,13.1,199,95,"field test 26 level 16: T=11.8 Td=9.6 e=12.9 RH=95; e_s(Td)=11.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|9|temperature,13.1,200,23.6,field test 27 level 9: T=23.6 Td=19.0 e=23.2 RH=79; e_s(Td)=22.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|9|dew_point,13.1,200,19.0,field test 27 level 9: T=23.6 Td=19.0 e=23.2 RH=79; e_s(Td)=22.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|9|vapor_pressure,13.1,200,23.2,field test 27 level 9: T=23.6 Td=19.0 e=23.2 RH=79; e_s(Td)=22.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|9|relative_humidity,13.1,200,79,field test 27 level 9: T=23.6 Td=19.0 e=23.2 RH=79; e_s(Td)=22.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|14|temperature,13.1,200,16.4,field test 27 level 14: T=16.4 Td=11.0 e=13.7 RH=72; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|14|dew_point,13.1,200,11.0,field test 27 level 14: T=16.4 Td=11.0 e=13.7 RH=72; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|14|vapor_pressure,13.1,200,13.7,field test 27 level 14: T=16.4 Td=11.0 e=13.7 RH=72; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|27|1956-08-02|0|14|relative_humidity,13.1,200,72,field test 27 level 14: T=16.4 Td=11.0 e=13.7 RH=72; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|28|1956-08-03|1|11|temperature,13.1,200,23.0,field test 28 level 11: T=23.0 Td=11.0 e=13.7 RH=49; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|28|1956-08-03|1|11|dew_point,13.1,200,11.0,field test 28 level 11: T=23.0 Td=11.0 e=13.7 RH=49; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|28|1956-08-03|1|11|vapor_pressure,13.1,200,13.7,field test 28 level 11: T=23.0 Td=11.0 e=13.7 RH=49; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p200|28|1956-08-03|1|11|relative_humidity,13.1,200,49,field test 28 level 11: T=23.0 Td=11.0 e=13.7 RH=49; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|3|temperature,13.1,201,26.5,"field test 29 level 3: T=26.5 Td=15.5 e=15.5 RH=50; e_s(Td)=17.6 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|3|dew_point,13.1,201,15.5,"field test 29 level 3: T=26.5 Td=15.5 e=15.5 RH=50; e_s(Td)=17.6 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p201|29|1956-08-03|0|3|vapor_pressure,13.1,201,15.5,"field test 29 level 3: T=26.5 Td=15.5 e=15.5 RH=50; e_s(Td)=17.6 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|3|relative_humidity,13.1,201,50,"field test 29 level 3: T=26.5 Td=15.5 e=15.5 RH=50; e_s(Td)=17.6 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|12|temperature,13.1,201,26.2,"field test 29 level 12: T=26.2 Td=14.3 e=10.3 RH=48; e_s(Td)=16.3 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|12|dew_point,13.1,201,14.3,"field test 29 level 12: T=26.2 Td=14.3 e=10.3 RH=48; e_s(Td)=16.3 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p201|29|1956-08-03|0|12|vapor_pressure,13.1,201,10.3,"field test 29 level 12: T=26.2 Td=14.3 e=10.3 RH=48; e_s(Td)=16.3 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|29|1956-08-03|0|12|relative_humidity,13.1,201,48,"field test 29 level 12: T=26.2 Td=14.3 e=10.3 RH=48; e_s(Td)=16.3 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p201|30|1956-08-03|1|10|temperature,13.1,201,22.5,"field test 30 level 10: T=22.5 Td=16.7 e=17.8 RH=64; e_s(Td)=19.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p201|30|1956-08-03|1|10|dew_point,13.1,201,16.7,"field test 30 level 10: T=22.5 Td=16.7 e=17.8 RH=64; e_s(Td)=19.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p201|30|1956-08-03|1|10|vapor_pressure,13.1,201,17.8,"field test 30 level 10: T=22.5 Td=16.7 e=17.8 RH=64; e_s(Td)=19.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p201|30|1956-08-03|1|10|relative_humidity,13.1,201,64,"field test 30 level 10: T=22.5 Td=16.7 e=17.8 RH=64; e_s(Td)=19.0 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p202|37|1956-08-12|0|10|temperature,13.1,202,19.8,"field test 37 level 10: T=19.8 Td=10.2 e=13.5 RH=53; e_s(Td)=12.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p202|37|1956-08-12|0|10|dew_point,13.1,202,10.2,"field test 37 level 10: T=19.8 Td=10.2 e=13.5 RH=53; e_s(Td)=12.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p202|37|1956-08-12|0|10|vapor_pressure,13.1,202,13.5,"field test 37 level 10: T=19.8 Td=10.2 e=13.5 RH=53; e_s(Td)=12.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p202|37|1956-08-12|0|10|relative_humidity,13.1,202,53,"field test 37 level 10: T=19.8 Td=10.2 e=13.5 RH=53; e_s(Td)=12.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|13|temperature,13.1,202,15.2,"field test 37 level 13: T=15.2 Td=7.3 e=10.2 RH=76; e_s(Td)=10.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|13|dew_point,13.1,202,7.3,"field test 37 level 13: T=15.2 Td=7.3 e=10.2 RH=76; e_s(Td)=10.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|13|vapor_pressure,13.1,202,10.2,"field test 37 level 13: T=15.2 Td=7.3 e=10.2 RH=76; e_s(Td)=10.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|13|relative_humidity,13.1,202,76,"field test 37 level 13: T=15.2 Td=7.3 e=10.2 RH=76; e_s(Td)=10.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|17|temperature,13.1,202,31.2,"field test 37 level 17: T=31.2 Td=18.6 e=21.5 RH=84; e_s(Td)=21.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|17|dew_point,13.1,202,18.6,"field test 37 level 17: T=31.2 Td=18.6 e=21.5 RH=84; e_s(Td)=21.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|17|vapor_pressure,13.1,202,21.5,"field test 37 level 17: T=31.2 Td=18.6 e=21.5 RH=84; e_s(Td)=21.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|37|1956-08-12|0|17|relative_humidity,13.1,202,84,"field test 37 level 17: T=31.2 Td=18.6 e=21.5 RH=84; e_s(Td)=21.4 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p202|38|1956-08-12|1|4|temperature,13.1,202,22.2,field test 38 level 4: T=22.2 Td=17.6 e=20.7 RH=; e_s(Td)=20.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p202|38|1956-08-12|1|4|dew_point,13.1,202,17.6,field test 38 level 4: T=22.2 Td=17.6 e=20.7 RH=; e_s(Td)=20.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p202|38|1956-08-12|1|4|vapor_pressure,13.1,202,20.7,field test 38 level 4: T=22.2 Td=17.6 e=20.7 RH=; e_s(Td)=20.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p202|38|1956-08-12|1|4|relative_humidity,13.1,202,,field test 38 level 4: T=22.2 Td=17.6 e=20.7 RH=; e_s(Td)=20.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|8|temperature,13.1,203,23.0,field test 39 level 8: T=23.0 Td=8.4 e=11.9 RH=39; e_s(Td)=11.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|8|dew_point,13.1,203,8.4,field test 39 level 8: T=23.0 Td=8.4 e=11.9 RH=39; e_s(Td)=11.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|8|vapor_pressure,13.1,203,11.9,field test 39 level 8: T=23.0 Td=8.4 e=11.9 RH=39; e_s(Td)=11.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|8|relative_humidity,13.1,203,39,field test 39 level 8: T=23.0 Td=8.4 e=11.9 RH=39; e_s(Td)=11.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|16|temperature,13.1,203,25.0,"field test 39 level 16: T=25.0 Td=12.2 e=14.2 RH=32; e_s(Td)=14.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|16|dew_point,13.1,203,12.2,"field test 39 level 16: T=25.0 Td=12.2 e=14.2 RH=32; e_s(Td)=14.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|16|vapor_pressure,13.1,203,14.2,"field test 39 level 16: T=25.0 Td=12.2 e=14.2 RH=32; e_s(Td)=14.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p203|39|1956-08-13|0|16|relative_humidity,13.1,203,32,"field test 39 level 16: T=25.0 Td=12.2 e=14.2 RH=32; e_s(Td)=14.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p205|43|1956-08-15|0|14|temperature,13.1,205,18.7,"field test 43 level 14: T=18.7 Td=5.3 e=4.9 RH=41; e_s(Td)=8.9 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p205|43|1956-08-15|0|14|dew_point,13.1,205,5.3,"field test 43 level 14: T=18.7 Td=5.3 e=4.9 RH=41; e_s(Td)=8.9 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p205|43|1956-08-15|0|14|vapor_pressure,13.1,205,4.9,"field test 43 level 14: T=18.7 Td=5.3 e=4.9 RH=41; e_s(Td)=8.9 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p205|43|1956-08-15|0|14|relative_humidity,13.1,205,41,"field test 43 level 14: T=18.7 Td=5.3 e=4.9 RH=41; e_s(Td)=8.9 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|8|temperature,13.1,206,29.8,field test 46 level 8: T=29.8 Td=11.0 e=13.9 RH=33; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|8|dew_point,13.1,206,11.0,field test 46 level 8: T=29.8 Td=11.0 e=13.9 RH=33; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|8|vapor_pressure,13.1,206,13.9,field test 46 level 8: T=29.8 Td=11.0 e=13.9 RH=33; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|8|relative_humidity,13.1,206,33,field test 46 level 8: T=29.8 Td=11.0 e=13.9 RH=33; e_s(Td)=13.1 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|9|temperature,13.1,206,28.1,field test 46 level 9: T=28.1 Td=10.4 e=13.4 RH=35; e_s(Td)=12.6 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|9|dew_point,13.1,206,10.4,field test 46 level 9: T=28.1 Td=10.4 e=13.4 RH=35; e_s(Td)=12.6 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|9|vapor_pressure,13.1,206,13.4,field test 46 level 9: T=28.1 Td=10.4 e=13.4 RH=35; e_s(Td)=12.6 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p206|46|1956-08-15|1|9|relative_humidity,13.1,206,35,field test 46 level 9: T=28.1 Td=10.4 e=13.4 RH=35; e_s(Td)=12.6 failed: ['e-Td']
+13.1-humidity,context,T13.1|p207|47|1956-08-20|0|15|temperature,13.1,207,1.7,"field test 47 level 15: T=1.7 Td=-2.4 e=5.9 RH=71; e_s(Td)=5.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p207|47|1956-08-20|0|15|dew_point,13.1,207,-2.4,"field test 47 level 15: T=1.7 Td=-2.4 e=5.9 RH=71; e_s(Td)=5.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p207|47|1956-08-20|0|15|vapor_pressure,13.1,207,5.9,"field test 47 level 15: T=1.7 Td=-2.4 e=5.9 RH=71; e_s(Td)=5.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p207|47|1956-08-20|0|15|relative_humidity,13.1,207,71,"field test 47 level 15: T=1.7 Td=-2.4 e=5.9 RH=71; e_s(Td)=5.1 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|1|temperature,13.1,207,12.0,"field test 48S level 1: T=12.0 Td=7.4 e=10.3 RH=49; e_s(Td)=10.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|1|dew_point,13.1,207,7.4,"field test 48S level 1: T=12.0 Td=7.4 e=10.3 RH=49; e_s(Td)=10.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|1|vapor_pressure,13.1,207,10.3,"field test 48S level 1: T=12.0 Td=7.4 e=10.3 RH=49; e_s(Td)=10.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|1|relative_humidity,13.1,207,49,"field test 48S level 1: T=12.0 Td=7.4 e=10.3 RH=49; e_s(Td)=10.3 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|15|temperature,13.1,207,-0.2,field test 48S level 15: T=-0.2 Td=-0.5 e=6.3 RH=95; e_s(Td)=5.9 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|15|dew_point,13.1,207,-0.5,field test 48S level 15: T=-0.2 Td=-0.5 e=6.3 RH=95; e_s(Td)=5.9 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|15|vapor_pressure,13.1,207,6.3,field test 48S level 15: T=-0.2 Td=-0.5 e=6.3 RH=95; e_s(Td)=5.9 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p207|48S|1956-08-20|1|15|relative_humidity,13.1,207,95,field test 48S level 15: T=-0.2 Td=-0.5 e=6.3 RH=95; e_s(Td)=5.9 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|3|temperature,13.1,208,15.2,field test 48 level 3: T=15.2 Td=11.1 e=12.2 RH=75; e_s(Td)=13.2 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|3|dew_point,13.1,208,11.1,field test 48 level 3: T=15.2 Td=11.1 e=12.2 RH=75; e_s(Td)=13.2 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|3|vapor_pressure,13.1,208,12.2,field test 48 level 3: T=15.2 Td=11.1 e=12.2 RH=75; e_s(Td)=13.2 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|3|relative_humidity,13.1,208,75,field test 48 level 3: T=15.2 Td=11.1 e=12.2 RH=75; e_s(Td)=13.2 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|12|temperature,13.1,208,10.8,field test 48 level 12: T=10.8 Td=1.0 e=6.7 RH=47; e_s(Td)=6.6 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|12|dew_point,13.1,208,1.0,field test 48 level 12: T=10.8 Td=1.0 e=6.7 RH=47; e_s(Td)=6.6 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|12|vapor_pressure,13.1,208,6.7,field test 48 level 12: T=10.8 Td=1.0 e=6.7 RH=47; e_s(Td)=6.6 failed: ['RH-e-T']
+13.1-humidity,involved,T13.1|p208|48|1956-08-21|0|12|relative_humidity,13.1,208,47,field test 48 level 12: T=10.8 Td=1.0 e=6.7 RH=47; e_s(Td)=6.6 failed: ['RH-e-T']
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|9|temperature,13.1,209,18.6,"field test 50 level 9: T=18.6 Td=9.9 e=11.4 RH=52; e_s(Td)=12.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p209|50|1956-08-21|0|9|dew_point,13.1,209,9.9,"field test 50 level 9: T=18.6 Td=9.9 e=11.4 RH=52; e_s(Td)=12.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|9|vapor_pressure,13.1,209,11.4,"field test 50 level 9: T=18.6 Td=9.9 e=11.4 RH=52; e_s(Td)=12.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|9|relative_humidity,13.1,209,52,"field test 50 level 9: T=18.6 Td=9.9 e=11.4 RH=52; e_s(Td)=12.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|15|temperature,13.1,209,10.1,"field test 50 level 15: T=10.1 Td=-5.2 e=3.6 RH=29; e_s(Td)=4.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p209|50|1956-08-21|0|15|dew_point,13.1,209,-5.2,"field test 50 level 15: T=10.1 Td=-5.2 e=3.6 RH=29; e_s(Td)=4.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|15|vapor_pressure,13.1,209,3.6,"field test 50 level 15: T=10.1 Td=-5.2 e=3.6 RH=29; e_s(Td)=4.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|50|1956-08-21|0|15|relative_humidity,13.1,209,29,"field test 50 level 15: T=10.1 Td=-5.2 e=3.6 RH=29; e_s(Td)=4.2 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|51|1956-08-21|1|13|temperature,13.1,209,15.4,"field test 51 level 13: T=15.4 Td=6.8 e=12.0 RH=68; e_s(Td)=9.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p209|51|1956-08-21|1|13|dew_point,13.1,209,6.8,"field test 51 level 13: T=15.4 Td=6.8 e=12.0 RH=68; e_s(Td)=9.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|51|1956-08-21|1|13|vapor_pressure,13.1,209,12.0,"field test 51 level 13: T=15.4 Td=6.8 e=12.0 RH=68; e_s(Td)=9.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p209|51|1956-08-21|1|13|relative_humidity,13.1,209,68,"field test 51 level 13: T=15.4 Td=6.8 e=12.0 RH=68; e_s(Td)=9.9 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|11|temperature,13.1,210,13.6,field test 52 level 11: T=13.6 Td=4.5 e=7.9 RH=50; e_s(Td)=8.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|11|dew_point,13.1,210,4.5,field test 52 level 11: T=13.6 Td=4.5 e=7.9 RH=50; e_s(Td)=8.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|11|vapor_pressure,13.1,210,7.9,field test 52 level 11: T=13.6 Td=4.5 e=7.9 RH=50; e_s(Td)=8.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|11|relative_humidity,13.1,210,50,field test 52 level 11: T=13.6 Td=4.5 e=7.9 RH=50; e_s(Td)=8.4 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|17|temperature,13.1,210,19.5,field test 52 level 17: T=19.5 Td=7.4 e=9.6 RH=42; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|17|dew_point,13.1,210,7.4,field test 52 level 17: T=19.5 Td=7.4 e=9.6 RH=42; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|17|vapor_pressure,13.1,210,9.6,field test 52 level 17: T=19.5 Td=7.4 e=9.6 RH=42; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|52|1956-08-24|0|17|relative_humidity,13.1,210,42,field test 52 level 17: T=19.5 Td=7.4 e=9.6 RH=42; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|53|1956-08-24|1|5|temperature,13.1,210,21.1,field test 53 level 5: T=21.1 Td=7.4 e=11.3 RH=41; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|53|1956-08-24|1|5|dew_point,13.1,210,7.4,field test 53 level 5: T=21.1 Td=7.4 e=11.3 RH=41; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|53|1956-08-24|1|5|vapor_pressure,13.1,210,11.3,field test 53 level 5: T=21.1 Td=7.4 e=11.3 RH=41; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p210|53|1956-08-24|1|5|relative_humidity,13.1,210,41,field test 53 level 5: T=21.1 Td=7.4 e=11.3 RH=41; e_s(Td)=10.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p211|54|1956-08-24|0|8|temperature,13.1,211,15.8,"field test 54 level 8: T=15.8 Td=6.4 e=9.6 RH=43; e_s(Td)=9.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p211|54|1956-08-24|0|8|dew_point,13.1,211,6.4,"field test 54 level 8: T=15.8 Td=6.4 e=9.6 RH=43; e_s(Td)=9.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p211|54|1956-08-24|0|8|vapor_pressure,13.1,211,9.6,"field test 54 level 8: T=15.8 Td=6.4 e=9.6 RH=43; e_s(Td)=9.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p211|54|1956-08-24|0|8|relative_humidity,13.1,211,43,"field test 54 level 8: T=15.8 Td=6.4 e=9.6 RH=43; e_s(Td)=9.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p212|56|1956-08-25|0|14|temperature,13.1,212,13.2,"field test 56 level 14: T=13.2 Td=4.4 e=18.8 RH=53; e_s(Td)=8.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p212|56|1956-08-25|0|14|dew_point,13.1,212,4.4,"field test 56 level 14: T=13.2 Td=4.4 e=18.8 RH=53; e_s(Td)=8.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p212|56|1956-08-25|0|14|vapor_pressure,13.1,212,18.8,"field test 56 level 14: T=13.2 Td=4.4 e=18.8 RH=53; e_s(Td)=8.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p212|56|1956-08-25|0|14|relative_humidity,13.1,212,53,"field test 56 level 14: T=13.2 Td=4.4 e=18.8 RH=53; e_s(Td)=8.4 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|9|temperature,13.1,212,27.6,"field test 57 level 9: T=27.6 Td=5.8 e=9.2 RH=34; e_s(Td)=9.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|9|dew_point,13.1,212,5.8,"field test 57 level 9: T=27.6 Td=5.8 e=9.2 RH=34; e_s(Td)=9.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|9|vapor_pressure,13.1,212,9.2,"field test 57 level 9: T=27.6 Td=5.8 e=9.2 RH=34; e_s(Td)=9.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|9|relative_humidity,13.1,212,34,"field test 57 level 9: T=27.6 Td=5.8 e=9.2 RH=34; e_s(Td)=9.2 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|10|temperature,13.1,212,25.7,field test 57 level 10: T=25.7 Td=9.4 e=10.8 RH=34; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|10|dew_point,13.1,212,9.4,field test 57 level 10: T=25.7 Td=9.4 e=10.8 RH=34; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|10|vapor_pressure,13.1,212,10.8,field test 57 level 10: T=25.7 Td=9.4 e=10.8 RH=34; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p212|57|1956-08-25|1|10|relative_humidity,13.1,212,34,field test 57 level 10: T=25.7 Td=9.4 e=10.8 RH=34; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p213|58|1956-08-25|0|16|temperature,13.1,213,30.1,field test 58 level 16: T=30.1 Td=10.6 e=13.6 RH=30; e_s(Td)=12.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p213|58|1956-08-25|0|16|dew_point,13.1,213,10.6,field test 58 level 16: T=30.1 Td=10.6 e=13.6 RH=30; e_s(Td)=12.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p213|58|1956-08-25|0|16|vapor_pressure,13.1,213,13.6,field test 58 level 16: T=30.1 Td=10.6 e=13.6 RH=30; e_s(Td)=12.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p213|58|1956-08-25|0|16|relative_humidity,13.1,213,30,field test 58 level 16: T=30.1 Td=10.6 e=13.6 RH=30; e_s(Td)=12.8 failed: ['e-Td']
+13.1-humidity,context,T13.1|p213|59|1956-08-25|1|13|temperature,13.1,213,19.1,"field test 59 level 13: T=19.1 Td=3.8 e=9.0 RH=36; e_s(Td)=8.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p213|59|1956-08-25|1|13|dew_point,13.1,213,3.8,"field test 59 level 13: T=19.1 Td=3.8 e=9.0 RH=36; e_s(Td)=8.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p213|59|1956-08-25|1|13|vapor_pressure,13.1,213,9.0,"field test 59 level 13: T=19.1 Td=3.8 e=9.0 RH=36; e_s(Td)=8.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p213|59|1956-08-25|1|13|relative_humidity,13.1,213,36,"field test 59 level 13: T=19.1 Td=3.8 e=9.0 RH=36; e_s(Td)=8.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|3|temperature,13.1,214,28.6,field test 61 level 3: T=28.6 Td=10.0 e=13.0 RH=33; e_s(Td)=12.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|3|dew_point,13.1,214,10.0,field test 61 level 3: T=28.6 Td=10.0 e=13.0 RH=33; e_s(Td)=12.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|3|vapor_pressure,13.1,214,13.0,field test 61 level 3: T=28.6 Td=10.0 e=13.0 RH=33; e_s(Td)=12.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|3|relative_humidity,13.1,214,33,field test 61 level 3: T=28.6 Td=10.0 e=13.0 RH=33; e_s(Td)=12.3 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|8|temperature,13.1,214,24.9,field test 61 level 8: T=24.9 Td=9.4 e=11.0 RH=35; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|8|dew_point,13.1,214,9.4,field test 61 level 8: T=24.9 Td=9.4 e=11.0 RH=35; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|8|vapor_pressure,13.1,214,11.0,field test 61 level 8: T=24.9 Td=9.4 e=11.0 RH=35; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p214|61|1956-08-27|1|8|relative_humidity,13.1,214,35,field test 61 level 8: T=24.9 Td=9.4 e=11.0 RH=35; e_s(Td)=11.8 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p216|64|1956-08-27|0|1|temperature,13.1,216,20.5,"field test 64 level 1: T=20.5 Td=14.6 e=16.6 RH=60; e_s(Td)=16.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p216|64|1956-08-27|0|1|dew_point,13.1,216,14.6,"field test 64 level 1: T=20.5 Td=14.6 e=16.6 RH=60; e_s(Td)=16.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p216|64|1956-08-27|0|1|vapor_pressure,13.1,216,16.6,"field test 64 level 1: T=20.5 Td=14.6 e=16.6 RH=60; e_s(Td)=16.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p216|64|1956-08-27|0|1|relative_humidity,13.1,216,60,"field test 64 level 1: T=20.5 Td=14.6 e=16.6 RH=60; e_s(Td)=16.6 failed: ['RH-e-T', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|5|temperature,13.1,217,23.7,"field test 67 level 5: T=23.7 Td=1.2 e=10.2 RH=37; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,suspect,T13.1|p217|67|1956-08-30|1|5|dew_point,13.1,217,1.2,"field test 67 level 5: T=23.7 Td=1.2 e=10.2 RH=37; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|5|vapor_pressure,13.1,217,10.2,"field test 67 level 5: T=23.7 Td=1.2 e=10.2 RH=37; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|5|relative_humidity,13.1,217,37,"field test 67 level 5: T=23.7 Td=1.2 e=10.2 RH=37; e_s(Td)=6.7 failed: ['e-Td', 'RH-Td-T']"
+13.1-humidity,involved,T13.1|p217|67|1956-08-30|1|12|temperature,13.1,217,18.4,field test 67 level 12: T=18.4 Td=-0.2 e=5.1 RH=28; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p217|67|1956-08-30|1|12|dew_point,13.1,217,-0.2,field test 67 level 12: T=18.4 Td=-0.2 e=5.1 RH=28; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p217|67|1956-08-30|1|12|vapor_pressure,13.1,217,5.1,field test 67 level 12: T=18.4 Td=-0.2 e=5.1 RH=28; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,involved,T13.1|p217|67|1956-08-30|1|12|relative_humidity,13.1,217,28,field test 67 level 12: T=18.4 Td=-0.2 e=5.1 RH=28; e_s(Td)=6.0 failed: ['e-Td']
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|15|temperature,13.1,217,9.7,"field test 67 level 15: T=9.7 Td=-2.8 e=5.8 RH=40; e_s(Td)=5.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|15|dew_point,13.1,217,-2.8,"field test 67 level 15: T=9.7 Td=-2.8 e=5.8 RH=40; e_s(Td)=5.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,suspect,T13.1|p217|67|1956-08-30|1|15|vapor_pressure,13.1,217,5.8,"field test 67 level 15: T=9.7 Td=-2.8 e=5.8 RH=40; e_s(Td)=5.0 failed: ['e-Td', 'RH-e-T']"
+13.1-humidity,context,T13.1|p217|67|1956-08-30|1|15|relative_humidity,13.1,217,40,"field test 67 level 15: T=9.7 Td=-2.8 e=5.8 RH=40; e_s(Td)=5.0 failed: ['e-Td', 'RH-e-T']"
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|9|pressure_altitude,13.1,194,2000,levels 9->10: Zp 2000->3500 ft but P 881.0->863.0 mb implies dZ = 575 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|10|pressure_altitude,13.1,194,3500,levels 9->10: Zp 2000->3500 ft but P 881.0->863.0 mb implies dZ = 575 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|9|pressure,13.1,194,881.0,levels 9->10: Zp 2000->3500 ft but P 881.0->863.0 mb implies dZ = 575 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|10|pressure,13.1,194,863.0,levels 9->10: Zp 2000->3500 ft but P 881.0->863.0 mb implies dZ = 575 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|10|pressure_altitude,13.1,194,3500,levels 10->11: Zp 3500->3020 ft but P 863.0->848.0 mb implies dZ = 486 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|11|pressure_altitude,13.1,194,3020,levels 10->11: Zp 3500->3020 ft but P 863.0->848.0 mb implies dZ = 486 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|10|pressure,13.1,194,863.0,levels 10->11: Zp 3500->3020 ft but P 863.0->848.0 mb implies dZ = 486 ft
+13.1-hypso,involved,T13.1|p194|13|1956-07-22|0|11|pressure,13.1,194,848.0,levels 10->11: Zp 3500->3020 ft but P 863.0->848.0 mb implies dZ = 486 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|11|pressure_altitude,13.1,197,3025,levels 11->12: Zp 3025->3515 ft but P 844.5->929.5 mb implies dZ = -2701 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|12|pressure_altitude,13.1,197,3515,levels 11->12: Zp 3025->3515 ft but P 844.5->929.5 mb implies dZ = -2701 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|11|pressure,13.1,197,844.5,levels 11->12: Zp 3025->3515 ft but P 844.5->929.5 mb implies dZ = -2701 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|12|pressure,13.1,197,929.5,levels 11->12: Zp 3025->3515 ft but P 844.5->929.5 mb implies dZ = -2701 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|12|pressure_altitude,13.1,197,3515,levels 12->13: Zp 3515->4035 ft but P 929.5->813.5 mb implies dZ = 3753 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|13|pressure_altitude,13.1,197,4035,levels 12->13: Zp 3515->4035 ft but P 929.5->813.5 mb implies dZ = 3753 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|12|pressure,13.1,197,929.5,levels 12->13: Zp 3515->4035 ft but P 929.5->813.5 mb implies dZ = 3753 ft
+13.1-hypso,involved,T13.1|p197|19|1956-07-25|0|13|pressure,13.1,197,813.5,levels 12->13: Zp 3515->4035 ft but P 929.5->813.5 mb implies dZ = 3753 ft
+13.1-hypso,involved,T13.1|p202|37|1956-08-12|0|10|pressure_altitude,13.1,202,2495,levels 10->11: Zp 2495->3470 ft but P 843.0->829.5 mb implies dZ = 453 ft
+13.1-hypso,involved,T13.1|p202|37|1956-08-12|0|11|pressure_altitude,13.1,202,3470,levels 10->11: Zp 2495->3470 ft but P 843.0->829.5 mb implies dZ = 453 ft
+13.1-hypso,involved,T13.1|p202|37|1956-08-12|0|10|pressure,13.1,202,843.0,levels 10->11: Zp 2495->3470 ft but P 843.0->829.5 mb implies dZ = 453 ft
+13.1-hypso,involved,T13.1|p202|37|1956-08-12|0|11|pressure,13.1,202,829.5,levels 10->11: Zp 2495->3470 ft but P 843.0->829.5 mb implies dZ = 453 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|5|pressure_altitude,13.1,203,1000,levels 5->6: Zp 1000->1525 ft but P 912.0->836.5 mb implies dZ = 2483 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|6|pressure_altitude,13.1,203,1525,levels 5->6: Zp 1000->1525 ft but P 912.0->836.5 mb implies dZ = 2483 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|5|pressure,13.1,203,912.0,levels 5->6: Zp 1000->1525 ft but P 912.0->836.5 mb implies dZ = 2483 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|6|pressure,13.1,203,836.5,levels 5->6: Zp 1000->1525 ft but P 912.0->836.5 mb implies dZ = 2483 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|6|pressure_altitude,13.1,203,1525,levels 6->7: Zp 1525->2045 ft but P 836.5->879.0 mb implies dZ = -1419 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|7|pressure_altitude,13.1,203,2045,levels 6->7: Zp 1525->2045 ft but P 836.5->879.0 mb implies dZ = -1419 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|6|pressure,13.1,203,836.5,levels 6->7: Zp 1525->2045 ft but P 836.5->879.0 mb implies dZ = -1419 ft
+13.1-hypso,involved,T13.1|p203|39|1956-08-13|0|7|pressure,13.1,203,879.0,levels 6->7: Zp 1525->2045 ft but P 836.5->879.0 mb implies dZ = -1419 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|7|pressure_altitude,13.1,215,1010,levels 7->8: Zp 1010->1505 ft but P 909.0->803.5 mb implies dZ = 3556 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|8|pressure_altitude,13.1,215,1505,levels 7->8: Zp 1010->1505 ft but P 909.0->803.5 mb implies dZ = 3556 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|7|pressure,13.1,215,909.0,levels 7->8: Zp 1010->1505 ft but P 909.0->803.5 mb implies dZ = 3556 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|8|pressure,13.1,215,803.5,levels 7->8: Zp 1010->1505 ft but P 909.0->803.5 mb implies dZ = 3556 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|8|pressure_altitude,13.1,215,1505,levels 8->9: Zp 1505->2015 ft but P 803.5->867.0 mb implies dZ = -2185 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|9|pressure_altitude,13.1,215,2015,levels 8->9: Zp 1505->2015 ft but P 803.5->867.0 mb implies dZ = -2185 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|8|pressure,13.1,215,803.5,levels 8->9: Zp 1505->2015 ft but P 803.5->867.0 mb implies dZ = -2185 ft
+13.1-hypso,involved,T13.1|p215|62|1956-08-27|0|9|pressure,13.1,215,867.0,levels 8->9: Zp 1505->2015 ft but P 803.5->867.0 mb implies dZ = -2185 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|9|pressure_altitude,13.1,215,2520,levels 9->10: Zp 2520->3950 ft but P 845.5->831.5 mb implies dZ = 477 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|10|pressure_altitude,13.1,215,3950,levels 9->10: Zp 2520->3950 ft but P 845.5->831.5 mb implies dZ = 477 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|9|pressure,13.1,215,845.5,levels 9->10: Zp 2520->3950 ft but P 845.5->831.5 mb implies dZ = 477 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|10|pressure,13.1,215,831.5,levels 9->10: Zp 2520->3950 ft but P 845.5->831.5 mb implies dZ = 477 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|10|pressure_altitude,13.1,215,3950,levels 10->11: Zp 3950->3540 ft but P 831.5->816.5 mb implies dZ = 518 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|11|pressure_altitude,13.1,215,3540,levels 10->11: Zp 3950->3540 ft but P 831.5->816.5 mb implies dZ = 518 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|10|pressure,13.1,215,831.5,levels 10->11: Zp 3950->3540 ft but P 831.5->816.5 mb implies dZ = 518 ft
+13.1-hypso,involved,T13.1|p215|63|1956-08-27|1|11|pressure,13.1,215,816.5,levels 10->11: Zp 3950->3540 ft but P 831.5->816.5 mb implies dZ = 518 ft
+13.1-hypso,involved,T13.1|p217|66|1956-08-29|0|16|pressure_altitude,13.1,217,1050,levels 16->17: Zp 1050->205 ft but P 837.5->925.0 mb implies dZ = -2830 ft
+13.1-hypso,involved,T13.1|p217|66|1956-08-29|0|17|pressure_altitude,13.1,217,205,levels 16->17: Zp 1050->205 ft but P 837.5->925.0 mb implies dZ = -2830 ft
+13.1-hypso,involved,T13.1|p217|66|1956-08-29|0|16|pressure,13.1,217,837.5,levels 16->17: Zp 1050->205 ft but P 837.5->925.0 mb implies dZ = -2830 ft
+13.1-hypso,involved,T13.1|p217|66|1956-08-29|0|17|pressure,13.1,217,925.0,levels 16->17: Zp 1050->205 ft but P 837.5->925.0 mb implies dZ = -2830 ft
+13.1-hypso,involved,T13.1|p218|68|1956-08-30|0|16|pressure_altitude,13.1,218,1010,levels 16->17: Zp 1010->200 ft but P 807.0->924.0 mb implies dZ = -3880 ft
+13.1-hypso,involved,T13.1|p218|68|1956-08-30|0|17|pressure_altitude,13.1,218,200,levels 16->17: Zp 1010->200 ft but P 807.0->924.0 mb implies dZ = -3880 ft
+13.1-hypso,involved,T13.1|p218|68|1956-08-30|0|16|pressure,13.1,218,807.0,levels 16->17: Zp 1010->200 ft but P 807.0->924.0 mb implies dZ = -3880 ft
+13.1-hypso,involved,T13.1|p218|68|1956-08-30|0|17|pressure,13.1,218,924.0,levels 16->17: Zp 1010->200 ft but P 807.0->924.0 mb implies dZ = -3880 ft
+12.1-order,involved,T12.1|p154|9|1956-07-11|0|sounding|7|pressure,12.1,154,803,release 9: pressure 803.0 then 809.0 (must decrease)
+12.1-order,involved,T12.1|p154|9|1956-07-11|0|sounding|8|pressure,12.1,154,809,release 9: pressure 803.0 then 809.0 (must decrease)
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|6|height,12.1,154,888,"release 9: Z 888 at 850 mb -> 1414 at 809 mb; thickness from P,T = 429 m, printed 526 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|8|height,12.1,154,1414,"release 9: Z 888 at 850 mb -> 1414 at 809 mb; thickness from P,T = 429 m, printed 526 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|6|temperature,12.1,154,22.4,"release 9: Z 888 at 850 mb -> 1414 at 809 mb; thickness from P,T = 429 m, printed 526 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|7|temperature,12.1,154,20.5,"release 9: Z 888 at 850 mb -> 1414 at 809 mb; thickness from P,T = 429 m, printed 526 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|8|temperature,12.1,154,20.2,"release 9: Z 888 at 850 mb -> 1414 at 809 mb; thickness from P,T = 429 m, printed 526 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|8|height,12.1,154,1414,"release 9: Z 1414 at 809 mb -> 2548 at 700 mb; thickness from P,T = 1228 m, printed 1134 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|10|height,12.1,154,2548,"release 9: Z 1414 at 809 mb -> 2548 at 700 mb; thickness from P,T = 1228 m, printed 1134 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|8|temperature,12.1,154,20.2,"release 9: Z 1414 at 809 mb -> 2548 at 700 mb; thickness from P,T = 1228 m, printed 1134 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|9|temperature,12.1,154,12.5,"release 9: Z 1414 at 809 mb -> 2548 at 700 mb; thickness from P,T = 1228 m, printed 1134 m"
+12.1-hypso,involved,T12.1|p154|9|1956-07-11|0|sounding|10|temperature,12.1,154,10.9,"release 9: Z 1414 at 809 mb -> 2548 at 700 mb; thickness from P,T = 1228 m, printed 1134 m"
+12.1-order,involved,T12.1|p155|12|1956-07-14|1|sounding|12|pressure,12.1,155,524,release 12: pressure 524.0 then 604.0 (must decrease)
+12.1-order,involved,T12.1|p155|12|1956-07-14|1|sounding|13|pressure,12.1,155,604,release 12: pressure 524.0 then 604.0 (must decrease)
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|3|height,12.1,156,467,"release 14: Z 467 at 900 mb -> 957 at 860 mb; thickness from P,T = 389 m, printed 490 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|5|height,12.1,156,957,"release 14: Z 467 at 900 mb -> 957 at 860 mb; thickness from P,T = 389 m, printed 490 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|3|temperature,12.1,156,19.8,"release 14: Z 467 at 900 mb -> 957 at 860 mb; thickness from P,T = 389 m, printed 490 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|4|temperature,12.1,156,19.7,"release 14: Z 467 at 900 mb -> 957 at 860 mb; thickness from P,T = 389 m, printed 490 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|5|temperature,12.1,156,15.7,"release 14: Z 467 at 900 mb -> 957 at 860 mb; thickness from P,T = 389 m, printed 490 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|5|height,12.1,156,957,"release 14: Z 957 at 860 mb -> 1468 at 800 mb; thickness from P,T = 610 m, printed 511 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|7|height,12.1,156,1468,"release 14: Z 957 at 860 mb -> 1468 at 800 mb; thickness from P,T = 610 m, printed 511 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|5|temperature,12.1,156,15.7,"release 14: Z 957 at 860 mb -> 1468 at 800 mb; thickness from P,T = 610 m, printed 511 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|6|temperature,12.1,156,11.5,"release 14: Z 957 at 860 mb -> 1468 at 800 mb; thickness from P,T = 610 m, printed 511 m"
+12.1-hypso,involved,T12.1|p156|14|1956-07-22|1|sounding|7|temperature,12.1,156,11.4,"release 14: Z 957 at 860 mb -> 1468 at 800 mb; thickness from P,T = 610 m, printed 511 m"
+12.1-order,involved,T12.1|p167|35|1956-08-11|0|sounding|5|pressure,12.1,167,800,release 35: pressure 800.0 then 800.0 (must decrease)
+12.1-order,involved,T12.1|p167|35|1956-08-11|0|sounding|6|pressure,12.1,167,800,release 35: pressure 800.0 then 800.0 (must decrease)
+12.1-order,involved,T12.1|p169|40|1956-08-14|1|sounding|5|pressure,12.1,169,850,release 40: pressure 850.0 then 865.0 (must decrease)
+12.1-order,involved,T12.1|p169|40|1956-08-14|1|sounding|6|pressure,12.1,169,865,release 40: pressure 850.0 then 865.0 (must decrease)
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|1|height,12.1,173,0,"release 47: Z 0 at 955 mb -> 902 at 900 mb; thickness from P,T = 502 m, printed 902 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|3|height,12.1,173,902,"release 47: Z 0 at 955 mb -> 902 at 900 mb; thickness from P,T = 502 m, printed 902 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|1|temperature,12.1,173,19.0,"release 47: Z 0 at 955 mb -> 902 at 900 mb; thickness from P,T = 502 m, printed 902 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|2|temperature,12.1,173,16.5,"release 47: Z 0 at 955 mb -> 902 at 900 mb; thickness from P,T = 502 m, printed 902 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|3|temperature,12.1,173,13.1,"release 47: Z 0 at 955 mb -> 902 at 900 mb; thickness from P,T = 502 m, printed 902 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|3|height,12.1,173,902,"release 47: Z 902 at 900 mb -> 979 at 850 mb; thickness from P,T = 477 m, printed 77 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|4|height,12.1,173,979,"release 47: Z 902 at 900 mb -> 979 at 850 mb; thickness from P,T = 477 m, printed 77 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|3|temperature,12.1,173,13.1,"release 47: Z 902 at 900 mb -> 979 at 850 mb; thickness from P,T = 477 m, printed 77 m"
+12.1-hypso,involved,T12.1|p173|47|1956-08-20|0|sounding|4|temperature,12.1,173,9.1,"release 47: Z 902 at 900 mb -> 979 at 850 mb; thickness from P,T = 477 m, printed 77 m"
+12.1-hypso,involved,T12.1|p174|50|1956-08-21|1|sounding|11|height,12.1,174,2533,"release 50: Z 2533 at 700 mb -> 3700 at 600 mb; thickness from P,T = 1254 m, printed 1167 m"
+12.1-hypso,involved,T12.1|p174|50|1956-08-21|1|sounding|12|height,12.1,174,3700,"release 50: Z 2533 at 700 mb -> 3700 at 600 mb; thickness from P,T = 1254 m, printed 1167 m"
+12.1-hypso,involved,T12.1|p174|50|1956-08-21|1|sounding|11|temperature,12.1,174,8.8,"release 50: Z 2533 at 700 mb -> 3700 at 600 mb; thickness from P,T = 1254 m, printed 1167 m"
+12.1-hypso,involved,T12.1|p174|50|1956-08-21|1|sounding|12|temperature,12.1,174,0.9,"release 50: Z 2533 at 700 mb -> 3700 at 600 mb; thickness from P,T = 1254 m, printed 1167 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|1|height,12.1,178,0,"release 57: Z 0 at 940 mb -> 300 at 900 mb; thickness from P,T = 391 m, printed 300 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|2|height,12.1,178,300,"release 57: Z 0 at 940 mb -> 300 at 900 mb; thickness from P,T = 391 m, printed 300 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|1|temperature,12.1,178,34.5,"release 57: Z 0 at 940 mb -> 300 at 900 mb; thickness from P,T = 391 m, printed 300 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|2|temperature,12.1,178,30.5,"release 57: Z 0 at 940 mb -> 300 at 900 mb; thickness from P,T = 391 m, printed 300 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|2|height,12.1,178,300,"release 57: Z 300 at 900 mb -> 897 at 850 mb; thickness from P,T = 506 m, printed 597 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|3|height,12.1,178,897,"release 57: Z 300 at 900 mb -> 897 at 850 mb; thickness from P,T = 506 m, printed 597 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|2|temperature,12.1,178,30.5,"release 57: Z 300 at 900 mb -> 897 at 850 mb; thickness from P,T = 506 m, printed 597 m"
+12.1-hypso,involved,T12.1|p178|57|1956-08-25|0|sounding|3|temperature,12.1,178,25.2,"release 57: Z 300 at 900 mb -> 897 at 850 mb; thickness from P,T = 506 m, printed 597 m"
+12.1-hypso,involved,T12.1|p178|58|1956-08-25|1|sounding|8|height,12.1,178,2546,"release 58: Z 2546 at 700 mb -> 3812 at 600 mb; thickness from P,T = 1307 m, printed 1266 m"
+12.1-hypso,involved,T12.1|p178|58|1956-08-25|1|sounding|10|height,12.1,178,3812,"release 58: Z 2546 at 700 mb -> 3812 at 600 mb; thickness from P,T = 1307 m, printed 1266 m"
+12.1-hypso,involved,T12.1|p178|58|1956-08-25|1|sounding|8|temperature,12.1,178,11.3,"release 58: Z 2546 at 700 mb -> 3812 at 600 mb; thickness from P,T = 1307 m, printed 1266 m"
+12.1-hypso,involved,T12.1|p178|58|1956-08-25|1|sounding|9|temperature,12.1,178,20.0,"release 58: Z 2546 at 700 mb -> 3812 at 600 mb; thickness from P,T = 1307 m, printed 1266 m"
+12.1-hypso,involved,T12.1|p178|58|1956-08-25|1|sounding|10|temperature,12.1,178,1.0,"release 58: Z 2546 at 700 mb -> 3812 at 600 mb; thickness from P,T = 1307 m, printed 1266 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|6|height,12.1,182,1336,"release 66: Z 1336 at 800 mb -> 2400 at 700 mb; thickness from P,T = 1122 m, printed 1064 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|8|height,12.1,182,2400,"release 66: Z 1336 at 800 mb -> 2400 at 700 mb; thickness from P,T = 1122 m, printed 1064 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|6|temperature,12.1,182,18.0,"release 66: Z 1336 at 800 mb -> 2400 at 700 mb; thickness from P,T = 1122 m, printed 1064 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|7|temperature,12.1,182,13.4,"release 66: Z 1336 at 800 mb -> 2400 at 700 mb; thickness from P,T = 1122 m, printed 1064 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|8|temperature,12.1,182,8.4,"release 66: Z 1336 at 800 mb -> 2400 at 700 mb; thickness from P,T = 1122 m, printed 1064 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|8|height,12.1,182,2400,"release 66: Z 2400 at 700 mb -> 3711 at 600 mb; thickness from P,T = 1249 m, printed 1311 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|10|height,12.1,182,3711,"release 66: Z 2400 at 700 mb -> 3711 at 600 mb; thickness from P,T = 1249 m, printed 1311 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|8|temperature,12.1,182,8.4,"release 66: Z 2400 at 700 mb -> 3711 at 600 mb; thickness from P,T = 1249 m, printed 1311 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|9|temperature,12.1,182,3.0,"release 66: Z 2400 at 700 mb -> 3711 at 600 mb; thickness from P,T = 1249 m, printed 1311 m"
+12.1-hypso,involved,T12.1|p182|66|1956-08-29|1|sounding|10|temperature,12.1,182,-2.0,"release 66: Z 2400 at 700 mb -> 3711 at 600 mb; thickness from P,T = 1249 m, printed 1311 m"
+range,suspect,T12.1|p157|16|1956-07-23|1|winds|7|wind_direction,12.1,157,610,release 16: direction 610.0
+range,suspect,T12.1|p173|47|1956-08-20|0|winds|5|wind_direction,12.1,173,910,release 47: direction 910.0
+8.x-time,suspect,T8.2|p105|1956-08-28|1505|temperature|temperature|-0.03,8.2,105,36.25,8.2 1956-08-28 1505 soil temperature -0.03 m = 36.25: off its hourly series by 1.2x tolerance
+8.x-time,suspect,T8.2|p80|1956-07-23|1405|temperature|temperature|-0.06,8.2,80,32.72,8.2 1956-07-23 1405 soil temperature -0.06 m = 32.72: off its hourly series by 1.0x tolerance
+8.x-time,suspect,T8.2|p104|1956-08-28|0905|temperature|temperature|-0.25,8.2,104,25.02,8.2 1956-08-28 0905 soil temperature -0.25 m = 25.02: off its hourly series by 1.3x tolerance
+8.x-profile,suspect,T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|1.0,8.1,64,66,8.1 1956-07-05 2205 wind_speed 1.0 m = 66: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|2.0,8.1,64,44,8.1 1956-07-05 2205 wind_speed 2.0 m = 44: off its vertical profile by 2.3x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p65|8|1956-07-10|1705|temperature|temperature|0.5,8.1,65,32.61,8.1 1956-07-10 1705 temperature 0.5 m = 32.61: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|8.0,8.1,66,18.14,8.1 1956-07-23 1005 vapor_pressure 8.0 m = 18.14: off its vertical profile by 1.0x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|16.0,8.1,66,17.06,8.1 1956-07-23 1005 vapor_pressure 16.0 m = 17.06: off its vertical profile by 1.0x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.25,8.1,69,16.99,8.1 1956-08-06 2005 vapor_pressure 0.25 m = 16.99: off its vertical profile by 1.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.12,8.1,69,16.12,8.1 1956-08-06 2005 vapor_pressure 0.12 m = 16.12: off its vertical profile by 1.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|33|1956-08-07|1305|temperature|temperature|8.0,8.1,69,27.88,8.1 1956-08-07 1305 temperature 8.0 m = 27.88: off its vertical profile by 5.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|33|1956-08-07|1305|temperature|temperature|16.0,8.1,69,21.71,8.1 1956-08-07 1305 temperature 16.0 m = 21.71: off its vertical profile by 5.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|35S|1956-08-07|2305|temperature|temperature|4.0,8.1,69,22.47,8.1 1956-08-07 2305 temperature 4.0 m = 22.47: off its vertical profile by 3.0x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|35S|1956-08-07|2305|temperature|temperature|8.0,8.1,69,25.68,8.1 1956-08-07 2305 temperature 8.0 m = 25.68: off its vertical profile by 5.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|35S|1956-08-07|2305|temperature|temperature|16.0,8.1,69,23.03,8.1 1956-08-07 2305 temperature 16.0 m = 23.03: off its vertical profile by 5.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p69|35|1956-08-11|2135|vapor_pressure|vapor_pressure|0.5,8.1,69,19.32,8.1 1956-08-11 2135 vapor_pressure 0.5 m = 19.32: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p71|46|1956-08-15|1850|temperature|temperature|8.0,8.1,71,33.61,8.1 1956-08-15 1850 temperature 8.0 m = 33.61: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p71|46|1956-08-15|1850|temperature|temperature|16.0,8.1,71,33.12,8.1 1956-08-15 1850 temperature 16.0 m = 33.12: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|2.0,8.1,71,3.21,8.1 1956-08-20 1255 wind_speed 2.0 m = 3.21: off its vertical profile by 4.9x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|4.0,8.1,71,342,8.1 1956-08-20 1255 wind_speed 4.0 m = 342: off its vertical profile by 4.3x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p72|58|1956-08-25|1935|temperature|temperature|1.0,8.1,72,25.64,8.1 1956-08-25 1935 temperature 1.0 m = 25.64: off its vertical profile by 2.5x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p72|58|1956-08-25|1935|temperature|temperature|2.0,8.1,72,23.64,8.1 1956-08-25 1935 temperature 2.0 m = 23.64: off its vertical profile by 5.5x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p72|58|1956-08-25|1935|temperature|temperature|4.0,8.1,72,27.16,8.1 1956-08-25 1935 temperature 4.0 m = 27.16: off its vertical profile by 2.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|8.0,8.1,73,10.72,8.1 1956-08-24 1120 vapor_pressure 8.0 m = 10.72: off its vertical profile by 1.5x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|16.0,8.1,73,9.22,8.1 1956-08-24 1120 vapor_pressure 16.0 m = 9.22: off its vertical profile by 1.5x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|63|1956-08-27|2005|temperature|temperature|0.5,8.1,74,19.24,8.1 1956-08-27 2005 temperature 0.5 m = 19.24: off its vertical profile by 1.1x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|63|1956-08-27|2005|temperature|temperature|2.0,8.1,74,24.07,8.1 1956-08-27 2005 temperature 2.0 m = 24.07: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|2.0,8.1,74,116,8.1 1956-08-27 2005 wind_speed 2.0 m = 116: off its vertical profile by 1.7x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|1.0,8.1,74,26,8.1 1956-08-27 2005 wind_speed 1.0 m = 26: off its vertical profile by 1.7x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|64|1956-08-27|2235|temperature|temperature|8.0,8.1,74,23.85,8.1 1956-08-27 2235 temperature 8.0 m = 23.85: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|64|1956-08-27|2235|temperature|temperature|16.0,8.1,74,26.77,8.1 1956-08-27 2235 temperature 16.0 m = 26.77: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|1.0,8.1,74,46,8.1 1956-08-27 2235 wind_speed 1.0 m = 46: off its vertical profile by 1.4x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|0.5,8.1,74,26,8.1 1956-08-27 2235 wind_speed 0.5 m = 26: off its vertical profile by 1.4x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.1|p74|66|1956-08-29|2135|temperature|temperature|4.0,8.1,74,20.05,8.1 1956-08-29 2135 temperature 4.0 m = 20.05: off its vertical profile by 1.3x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|8.0,8.2,76,13.06,8.2 1956-07-10 1305 vapor_pressure 8.0 m = 13.06: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|16.0,8.2,76,11.90,8.2 1956-07-10 1305 vapor_pressure 16.0 m = 11.90: off its vertical profile by 1.2x tolerance (no hourly neighbours)
+8.x-profile+time,suspect,T8.2|p77|1956-07-11|0205|vapor_pressure|vapor_pressure|8.0,8.2,77,15.04,8.2 1956-07-11 0205 vapor_pressure 8.0 m = 15.04: off its vertical profile by 2.1x tolerance and its time series by 1.1x
+8.x-profile,suspect,T8.2|p80|1956-07-23|0905|wind_speed|wind_speed|16.0,8.2,80,516,8.2 1956-07-23 0905 wind_speed 16.0 m = 516: off its vertical profile by 1.1x tolerance (no hourly neighbours)
+8.x-profile+time,suspect,T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|0.12,8.2,80,15.30,8.2 1956-07-23 1205 vapor_pressure 0.12 m = 15.30: off its vertical profile by 1.1x tolerance and its time series by 2.0x
+8.x-profile,suspect,T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|16.0,8.2,80,13.77,8.2 1956-07-23 1205 vapor_pressure 16.0 m = 13.77: off its vertical profile by 2.0x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.2|p81|1956-07-23|2105|vapor_pressure|vapor_pressure|4.0,8.2,81,16.26,8.2 1956-07-23 2105 vapor_pressure 4.0 m = 16.26: off its vertical profile by 1.4x tolerance (no hourly neighbours)
+8.x-profile+time,suspect,T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|8.0,8.2,84,16.88,8.2 1956-07-24 1605 vapor_pressure 8.0 m = 16.88: off its vertical profile by 6.4x tolerance and its time series by 3.6x
+8.x-profile+time,suspect,T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|16.0,8.2,84,10.51,8.2 1956-07-24 1605 vapor_pressure 16.0 m = 10.51: off its vertical profile by 6.4x tolerance and its time series by 2.5x
+8.x-profile+time,suspect,T8.2|p85|1956-07-24|2105|wind_speed|wind_speed|0.5,8.2,85,21,8.2 1956-07-24 2105 wind_speed 0.5 m = 21: off its vertical profile by 1.1x tolerance and its time series by 1.0x
+8.x-profile+time,suspect,T8.2|p85|1956-07-24|2205|temperature|temperature|1.0,8.2,85,17.27,8.2 1956-07-24 2205 temperature 1.0 m = 17.27: off its vertical profile by 1.1x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p86|1956-07-25|0205|temperature|temperature|8.0,8.2,86,18.51,8.2 1956-07-25 0205 temperature 8.0 m = 18.51: off its vertical profile by 1.2x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p86|1956-07-25|0305|temperature|temperature|8.0,8.2,86,15.34,8.2 1956-07-25 0305 temperature 8.0 m = 15.34: off its vertical profile by 1.8x tolerance and its time series by 1.4x
+8.x-profile,suspect,T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|8.0,8.2,86,12.01,8.2 1956-07-25 0305 vapor_pressure 8.0 m = 12.01: off its vertical profile by 1.1x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|16.0,8.2,86,13.13,8.2 1956-07-25 0305 vapor_pressure 16.0 m = 13.13: off its vertical profile by 1.1x tolerance (no hourly neighbours)
+8.x-profile+time,suspect,T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|4.0,8.2,86,118,8.2 1956-07-25 0305 wind_speed 4.0 m = 118: off its vertical profile by 1.0x tolerance and its time series by 1.6x
+8.x-profile+time,suspect,T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|8.0,8.2,86,217,8.2 1956-07-25 0305 wind_speed 8.0 m = 217: off its vertical profile by 1.2x tolerance and its time series by 1.4x
+8.x-profile+time,suspect,T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|16.0,8.2,86,458,8.2 1956-07-25 0305 wind_speed 16.0 m = 458: off its vertical profile by 1.1x tolerance and its time series by 0.5x
+8.x-profile+time,suspect,T8.2|p90|1956-07-26|0805|wind_speed|wind_speed|0.25,8.2,90,174,8.2 1956-07-26 0805 wind_speed 0.25 m = 174: off its vertical profile by 1.4x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.5,8.2,93,404,8.2 1956-08-07 1005 wind_speed 0.5 m = 404: off its vertical profile by 1.2x tolerance and its time series by 0.9x
+8.x-profile+time,suspect,T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.25,8.2,93,340,8.2 1956-08-07 1005 wind_speed 0.25 m = 340: off its vertical profile by 6.0x tolerance and its time series by 0.9x
+8.x-profile+time,suspect,T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.5,8.2,96,178,8.2 1956-08-08 1205 wind_speed 0.5 m = 178: off its vertical profile by 1.1x tolerance and its time series by 1.3x
+8.x-profile+time,suspect,T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.25,8.2,96,60,8.2 1956-08-08 1205 wind_speed 0.25 m = 60: off its vertical profile by 2.4x tolerance and its time series by 2.3x
+8.x-profile+time,suspect,T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|2.0,8.2,98,174,8.2 1956-08-08 2205 wind_speed 2.0 m = 174: off its vertical profile by 3.1x tolerance and its time series by 2.2x
+8.x-profile+time,suspect,T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|8.0,8.2,98,156,8.2 1956-08-08 2205 wind_speed 8.0 m = 156: off its vertical profile by 2.5x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.25,8.2,98,15.63,8.2 1956-08-08 2305 vapor_pressure 0.25 m = 15.63: off its vertical profile by 1.6x tolerance and its time series by 1.3x
+8.x-profile+time,suspect,T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.12,8.2,98,15.00,8.2 1956-08-08 2305 vapor_pressure 0.12 m = 15.00: off its vertical profile by 1.6x tolerance and its time series by 2.2x
+8.x-profile+time,suspect,T8.2|p99|1956-08-09|0405|vapor_pressure|vapor_pressure|16.0,8.2,99,16.45,8.2 1956-08-09 0405 vapor_pressure 16.0 m = 16.45: off its vertical profile by 1.1x tolerance and its time series by 0.9x
+8.x-profile+time,suspect,T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|2.0,8.2,99,106,8.2 1956-08-09 0605 wind_speed 2.0 m = 106: off its vertical profile by 1.4x tolerance and its time series by 1.5x
+8.x-profile+time,suspect,T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|4.0,8.2,99,76,8.2 1956-08-09 0605 wind_speed 4.0 m = 76: off its vertical profile by 1.4x tolerance and its time series by 2.0x
+8.x-profile+time,suspect,T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|8.0,8.2,99,17.30,8.2 1956-08-09 0705 vapor_pressure 8.0 m = 17.30: off its vertical profile by 1.1x tolerance and its time series by 4.7x
+8.x-profile+time,suspect,T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|16.0,8.2,99,16.07,8.2 1956-08-09 0705 vapor_pressure 16.0 m = 16.07: off its vertical profile by 1.1x tolerance and its time series by 3.8x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.5,8.2,100,19.11,8.2 1956-08-09 0805 vapor_pressure 0.5 m = 19.11: off its vertical profile by 6.0x tolerance and its time series by 1.6x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|1.0,8.2,100,26.91,8.2 1956-08-09 0805 vapor_pressure 1.0 m = 26.91: off its vertical profile by 7.0x tolerance and its time series by 9.5x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|8.0,8.2,100,27.58,8.2 1956-08-09 0805 vapor_pressure 8.0 m = 27.58: off its vertical profile by 4.7x tolerance and its time series by 10.2x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.12,8.2,100,17.29,8.2 1956-08-09 0805 vapor_pressure 0.12 m = 17.29: off its vertical profile by 1.9x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|16.0,8.2,100,22.62,8.2 1956-08-09 0805 vapor_pressure 16.0 m = 22.62: off its vertical profile by 4.7x tolerance and its time series by 6.1x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|1.0,8.2,100,17.63,8.2 1956-08-09 0905 vapor_pressure 1.0 m = 17.63: off its vertical profile by 1.3x tolerance and its time series by 4.2x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|2.0,8.2,100,18.82,8.2 1956-08-09 0905 vapor_pressure 2.0 m = 18.82: off its vertical profile by 2.5x tolerance and its time series by 3.9x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|4.0,8.2,100,17.50,8.2 1956-08-09 0905 vapor_pressure 4.0 m = 17.50: off its vertical profile by 1.2x tolerance and its time series by 4.8x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|1005|vapor_pressure|vapor_pressure|2.0,8.2,100,17.63,8.2 1956-08-09 1005 vapor_pressure 2.0 m = 17.63: off its vertical profile by 1.8x tolerance and its time series by 0.5x
+8.x-profile+time,suspect,T8.2|p100|1956-08-09|1105|wind_speed|wind_speed|1.0,8.2,100,366,8.2 1956-08-09 1105 wind_speed 1.0 m = 366: off its vertical profile by 1.0x tolerance and its time series by 1.0x
+8.x-profile+time,suspect,T8.2|p102|1956-08-27|2105|temperature|temperature|1.0,8.2,102,18.84,8.2 1956-08-27 2105 temperature 1.0 m = 18.84: off its vertical profile by 2.4x tolerance and its time series by 2.3x
+8.x-profile+time,suspect,T8.2|p102|1956-08-27|2105|temperature|temperature|2.0,8.2,102,22.59,8.2 1956-08-27 2105 temperature 2.0 m = 22.59: off its vertical profile by 1.4x tolerance and its time series by 0.6x
+8.x-profile,suspect,T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|8.0,8.2,102,16.10,8.2 1956-08-27 2105 vapor_pressure 8.0 m = 16.10: off its vertical profile by 2.1x tolerance (no hourly neighbours)
+8.x-profile,suspect,T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|16.0,8.2,102,14.32,8.2 1956-08-27 2105 vapor_pressure 16.0 m = 14.32: off its vertical profile by 2.1x tolerance (no hourly neighbours)
+8.x-profile+time,suspect,T8.2|p102|1956-08-27|2105|wind_speed|wind_speed|0.5,8.2,102,33,8.2 1956-08-27 2105 wind_speed 0.5 m = 33: off its vertical profile by 1.0x tolerance and its time series by 0.6x
+8.x-profile+time,suspect,T8.2|p102|1956-08-28|0005|temperature|temperature|16.0,8.2,102,24.46,8.2 1956-08-28 0005 temperature 16.0 m = 24.46: off its vertical profile by 1.8x tolerance and its time series by 0.7x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|1.0,8.2,103,61,8.2 1956-08-28 0305 wind_speed 1.0 m = 61: off its vertical profile by 1.1x tolerance and its time series by 0.9x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|8.0,8.2,103,149,8.2 1956-08-28 0305 wind_speed 8.0 m = 149: off its vertical profile by 1.1x tolerance and its time series by 0.9x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0405|temperature|temperature|0.5,8.2,103,14.59,8.2 1956-08-28 0405 temperature 0.5 m = 14.59: off its vertical profile by 3.6x tolerance and its time series by 1.3x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0405|temperature|temperature|1.0,8.2,103,18.91,8.2 1956-08-28 0405 temperature 1.0 m = 18.91: off its vertical profile by 4.2x tolerance and its time series by 1.1x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0405|temperature|temperature|2.0,8.2,103,19.01,8.2 1956-08-28 0405 temperature 2.0 m = 19.01: off its vertical profile by 1.2x tolerance and its time series by 0.6x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0405|wind_speed|wind_speed|4.0,8.2,103,112,8.2 1956-08-28 0405 wind_speed 4.0 m = 112: off its vertical profile by 1.2x tolerance and its time series by 1.4x
+8.x-profile+time,suspect,T8.2|p103|1956-08-28|0605|vapor_pressure|vapor_pressure|8.0,8.2,103,13.83,8.2 1956-08-28 0605 vapor_pressure 8.0 m = 13.83: off its vertical profile by 1.0x tolerance and its time series by 1.1x
+8.x-profile+time,suspect,T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|4.0,8.2,104,18.37,8.2 1956-08-28 0905 vapor_pressure 4.0 m = 18.37: off its vertical profile by 2.0x tolerance and its time series by 1.6x
+8.x-profile+time,suspect,T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|16.0,8.2,104,17.96,8.2 1956-08-28 0905 vapor_pressure 16.0 m = 17.96: off its vertical profile by 2.9x tolerance and its time series by 1.5x
+8.x-radiation,involved,T8.2|p93|1956-08-07|1105|radiation|insolation,8.2,93,.0192,"('8.2', '1956-08-07', '1105'): net radiation 0130 > insolation .0192"
+8.x-radiation,involved,T8.2|p93|1956-08-07|1105|radiation|net_radiation,8.2,93,0130,"('8.2', '1956-08-07', '1105'): net radiation 0130 > insolation .0192"
+8.x-radiation,involved,T8.2|p93|1956-08-07|1405|radiation|insolation,8.2,93,.0109,"('8.2', '1956-08-07', '1405'): net radiation .0135 > insolation .0109"
+8.x-radiation,involved,T8.2|p93|1956-08-07|1405|radiation|net_radiation,8.2,93,.0135,"('8.2', '1956-08-07', '1405'): net radiation .0135 > insolation .0109"
+8.x-radiation,involved,T8.2|p103|1956-08-28|0205|radiation|insolation,8.2,103,.0000,"('8.2', '1956-08-28', '0205'): net radiation .0009 > insolation .0000"
+8.x-radiation,involved,T8.2|p103|1956-08-28|0205|radiation|net_radiation,8.2,103,.0009,"('8.2', '1956-08-28', '0205'): net radiation .0009 > insolation .0000"
+keys,involved,T8.1|p64|4|1956-07-06|0105|radiation|insolation,8.1,64,--,"release 4: date/time differ by more than 3 h between tables: {'8.1': '1956-07-06 0105', '10.1': '1956-07-06 0100', '12.1': '1956-07-06 6050C'}"
+keys,involved,T10.1|p136|4|2|I,10.1,136,,"release 4: date/time differ by more than 3 h between tables: {'8.1': '1956-07-06 0105', '10.1': '1956-07-06 0100', '12.1': '1956-07-06 6050C'}"
+keys,involved,T12.1|p151|4|1956-07-06|1|sounding|1|pressure,12.1,151,947,"release 4: date/time differ by more than 3 h between tables: {'8.1': '1956-07-06 0105', '10.1': '1956-07-06 0100', '12.1': '1956-07-06 6050C'}"

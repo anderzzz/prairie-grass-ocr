@@ -1,0 +1,84 @@
+{
+ "8.1 p69": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '10.00' where '16.00' stands (position used)",
+  "info: VAPOR PRESSURE: row label read '10.00' where '16.00' stands (position used)",
+  "info: WIND SPEED: row label read '10.00' where '16.00' stands (position used)"
+ ],
+ "8.1 p71": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '.50' where '-.50' stands (position used)"
+ ],
+ "8.1 p73": [
+  "info: CST label read as 'CET'",
+  "info: AIR AND SOIL TEMPERATURES: row label read '-.05' where '-.03' stands (position used)"
+ ],
+ "8.1 p75": [
+  "info: header block read as one cell; split by row"
+ ],
+ "8.2 p78": [
+  "info: 'Height (m)' row carried only '--'; treated as a heading",
+  "info: SOIL TEMPERATURE CHANGE: row label read '.12' where '-.12' stands (position used)"
+ ],
+ "8.2 p82": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '10.00' where '16.00' stands (position used)",
+  "info: VAPOR PRESSURE: row label read '10.00' where '16.00' stands (position used)",
+  "info: WIND SPEED: row label read '10.00' where '16.00' stands (position used)"
+ ],
+ "8.2 p83": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '10.00' where '16.00' stands (position used)",
+  "info: VAPOR PRESSURE: row label read '10.00' where '16.00' stands (position used)",
+  "info: WIND SPEED: row label read '10.00' where '16.00' stands (position used)"
+ ],
+ "8.2 p84": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '10.00' where '16.00' stands (position used)",
+  "info: VAPOR PRESSURE: row label read '10.00' where '16.00' stands (position used)",
+  "info: WIND SPEED: row label read '10.00' where '16.00' stands (position used)",
+  "SOIL TEMPERATURE CHANGE: 7 rows ['Initial Time', 'Run Time (min)', '-.03', '-.06', '-.12', '-.50', '-1.00'] != expected 8; matched by label"
+ ],
+ "8.2 p88": [
+  "info: AIR AND SOIL TEMPERATURES: row label read '.06' where '-.06' stands (position used)"
+ ],
+ "8.2 p95": [
+  "info: title year read as \"HOURLY OBSERVATIONS AUGUST 8, 1957 O'NEILL, NEBRASKA        \"; 1956 assumed"
+ ],
+ "12.1 p152": [
+  "info: winds row 20: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 21: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 22: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 23: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 24: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 25: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 26: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 27: note ['Signal Failure / No Data'] in one panel",
+  "info: winds row 28: note ['Signal Failure / No Data'] in one panel"
+ ],
+ "12.1 p153": [
+  "info: winds row 29 had 7 cells; aligned to the right panel"
+ ],
+ "12.1 p154": [
+  "info: release 9: first wind row not labelled SFC",
+  "info: release 10: first wind row not labelled SFC"
+ ],
+ "12.1 p156": [
+  "info: winds row 30 had 7 cells; aligned to the right panel"
+ ],
+ "12.1 p162": [
+  "info: winds row 28 had 7 cells; aligned to the right panel"
+ ],
+ "12.1 p163": [
+  "info: winds row 30 had 7 cells; aligned to the right panel"
+ ],
+ "12.1 p164": [
+  "info: release 30: year read as 3 Aug 1958; 1956 assumed",
+  "info: winds row 30 had 7 cells; aligned to the right panel"
+ ],
+ "12.1 p169": [
+  "info: release 39: year read as 13 Aug 1986; 1956 assumed",
+  "info: release 40: year read as 14 Aug 1986; 1956 assumed"
+ ],
+ "12.1 p176": [
+  "info: release 53: first wind row not labelled SFC"
+ ],
+ "13.1 p218": [
+  "1 tables on page (expected 2 field tests)"
+ ]
+}

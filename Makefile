@@ -2,7 +2,7 @@
 UV ?= uv
 PY  = $(UV) run python
 
-.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks
+.PHONY: pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks volume2 volume2-review volume2-dataset
 
 pilot: recon select extract test reference score review   # full pilot incl. holdout: git checkout pilot-v1 && make pilot
 
@@ -42,3 +42,12 @@ dataset:          ## reviewed Volume I dataset (extraction + owner verdicts; no 
 
 notebooks:        ## exploration notebooks (needs `make dataset` first)
 	$(UV) run --group notebooks jupyter lab notebooks/
+
+volume2:          ## Volume II: Mistral OCR (cached) -> parsed tables -> consistency checks -> output/volume2
+	cd src && $(PY) -m volume2.ocr && $(PY) -m volume2.run && $(PY) -m volume2.checks
+
+volume2-review:   ## Sonnet second reading of rows in failed checks (capped, cached) + owner review pack -> review/volume2
+	cd src && $(PY) -m volume2.second_read && $(PY) -m volume2.review
+
+volume2-dataset:  ## Volume II dataset (after review: DATE=yyyy-mm-dd make volume2-dataset) -> output/volume2/dataset
+	cd src && $(PY) -m volume2.dataset $(if $(DATE),--resolve $(DATE),) && $(PY) -m volume2.outliers

@@ -19,18 +19,21 @@ PDF_PATH = REPO / "rawdata" / "PGrassVolumeI.pdf"
 NATIVE_DPI = 300
 
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=2)
 def _doc(path: str = str(PDF_PATH)) -> fitz.Document:
     return fitz.open(path)
 
 
-def page_count() -> int:
-    return _doc().page_count
+def page_count(path: Path = PDF_PATH) -> int:
+    return _doc(str(path)).page_count
 
 
-def page_image(pdf_index: int) -> np.ndarray:
-    """Return the page as a uint8 array, 0 = ink, 255 = paper, native resolution."""
-    doc = _doc()
+def page_image(pdf_index: int, path: Path = PDF_PATH) -> np.ndarray:
+    """Return the page as a uint8 array, 0 = ink, 255 = paper, native resolution.
+
+    `path` defaults to Volume I; Volume II (same scan format: one 1-bit CCITT
+    image per page at 300 dpi) passes its own path."""
+    doc = _doc(str(path))
     page = doc[pdf_index]
     infos = page.get_image_info(xrefs=True)
     if len(infos) != 1:

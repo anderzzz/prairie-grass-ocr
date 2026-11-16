@@ -1,0 +1,23 @@
+# Volume II page inventory (PDF index, 0-based -> table). Built 2026-11-15 from
+# the text layer plus visual inspection of every table page. Volume II holds no
+# concentration data: all tables are meteorological. The harmo.org reference
+# used for Volume I covers none of these tables, so checks are internal
+# (arithmetic, physics, cross-table) rather than against an answer key.
+#
+# rotate: degrees clockwise to bring the page upright before OCR.
+tables:
+  "7.1":  {title: Values of standard error of mean potential temperature, pages: [41], printed: [31], embedded_in_text: true}
+  "7.2":  {title: Statistical measures of temperature, pages: [44], printed: [34], embedded_in_text: true}
+  "8.1":  {title: Micrometeorological data for gas release times (hourly observations), pages: [64, 75], printed: [54, 65]}
+  "8.2":  {title: Micrometeorological data at times other than gas release time, pages: [76, 105], printed: [66, 95]}
+  "8.3":  {title: Soil moisture and soil density, pages: [106], printed: [96]}
+  "9.1":  {title: Heat budget data, Texas A&M (kcal/cm2 sec scaled), pages: [124], printed: [114]}
+  "9.2":  {title: Heat budget data, Texas A&M (cal/cm2 min), pages: [125], printed: [115]}
+  "9.3":  {title: Percentage of double-level values within 10 percent of profile values, pages: [132], printed: [122], shares_page_with: "9.4"}
+  "9.4":  {title: Statistical analysis of heat budget balance, pages: [132], printed: [122]}
+  "10.1": {title: Heat budget data, University of Wisconsin (langleys/min), pages: [136, 137], printed: [126, 127]}
+  "11.1": {title: Values of Delta(dT/dz) by optical method (10-12 July), pages: [142], printed: [132]}
+  "11.2": {title: Values of Delta(dT/dz) by optical method (21, 23, 31 July), pages: [143], printed: [133]}
+  "11.3": {title: Time series of Delta(dT/dz) at 12 cm, pages: [144], printed: [134], rotate: 90}
+  "12.1": {title: Rawinsonde data (two gas releases per page), pages: [150, 183], printed: [140, 173]}
+  "13.1": {title: Aircraft observations (legend on first page), pages: [187, 218], printed: [177, 208]}

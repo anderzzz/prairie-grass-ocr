@@ -1,0 +1,31 @@
+cell_id,table,pdf_index,printed_page,panel,block,row,row_key,quantity,token,value,status,kind,estimated,footnote,conf,flags,col
+T7.1|p41|0|0|6 Aug | 1755-1805 | Cooling|1|3|Δθ* / (°C),7.1,41,31,0,0,1,6 Aug | 1755-1805 | Cooling,Δθ* / (°C),.00,0.0,value,number,False,False,1.0,,3
+T7.1|p41|0|0|6 Aug | 1755-1805 | Cooling|1|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,1,6 Aug | 1755-1805 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),537,537.0,value,number,False,False,1.0,,4
+T7.1|p41|0|0|6 Aug | 1755-1805 | Cooling|1|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,1,6 Aug | 1755-1805 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),160,160.0,value,number,False,False,1.0,,5
+T7.1|p41|0|0|6 Aug | 1755-1805 | Cooling|1|6|S.E._T / (°C),7.1,41,31,0,0,1,6 Aug | 1755-1805 | Cooling,S.E._T / (°C),.031,0.031,value,number,False,False,1.0,,6
+T7.1|p41|0|0|6 Aug | 1755-1805 | Cooling|1|7|Remarks,7.1,41,31,0,0,1,6 Aug | 1755-1805 | Cooling,Remarks,.1 Cs,,text,unread,False,False,0.9998,,7
+T7.1|p41|0|0|7 Aug | 0255-0315 | Dynamic|2|3|Δθ* / (°C),7.1,41,31,0,0,2,7 Aug | 0255-0315 | Dynamic,Δθ* / (°C),.04,0.04,value,number,False,False,1.0,,3
+T7.1|p41|0|0|7 Aug | 0255-0315 | Dynamic|2|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,2,7 Aug | 0255-0315 | Dynamic,Wind Velocity / Speed Dir / (cm/sec) (deg),574,574.0,value,number,False,False,1.0,,4
+T7.1|p41|0|0|7 Aug | 0255-0315 | Dynamic|2|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,2,7 Aug | 0255-0315 | Dynamic,Wind Velocity / Speed Dir / (cm/sec) (deg),65,65.0,value,number,False,False,1.0,,5
+T7.1|p41|0|0|7 Aug | 0255-0315 | Dynamic|2|6|S.E._T / (°C),7.1,41,31,0,0,2,7 Aug | 0255-0315 | Dynamic,S.E._T / (°C),.016,0.016,value,number,False,False,1.0,,6
+T7.1|p41|0|0|7 Aug | 0255-0315 | Dynamic|2|7|Remarks,7.1,41,31,0,0,2,7 Aug | 0255-0315 | Dynamic,Remarks,.4 low cloud / Was raining / previous / two hrs,,text,unread,False,False,0.9934,,7
+T7.1|p41|0|0|8 Aug | 0155-0205 | Dynamic|3|3|Δθ* / (°C),7.1,41,31,0,0,3,8 Aug | 0155-0205 | Dynamic,Δθ* / (°C),.015,0.015,value,number,False,False,1.0,,3
+T7.1|p41|0|0|8 Aug | 0155-0205 | Dynamic|3|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,3,8 Aug | 0155-0205 | Dynamic,Wind Velocity / Speed Dir / (cm/sec) (deg),812,812.0,value,number,False,False,1.0,,4
+T7.1|p41|0|0|8 Aug | 0155-0205 | Dynamic|3|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,3,8 Aug | 0155-0205 | Dynamic,Wind Velocity / Speed Dir / (cm/sec) (deg),20,20.0,value,number,False,False,1.0,,5
+T7.1|p41|0|0|8 Aug | 0155-0205 | Dynamic|3|6|S.E._T / (°C),7.1,41,31,0,0,3,8 Aug | 0155-0205 | Dynamic,S.E._T / (°C),.0048,0.0048,value,number,False,False,1.0,,6
+T7.1|p41|0|0|8 Aug | 0155-0205 | Dynamic|3|7|Remarks,7.1,41,31,0,0,3,8 Aug | 0155-0205 | Dynamic,Remarks,Thunderstorms / to north last / few hrs,,text,text,False,False,1.0,,7
+T7.1|p41|0|0|8 Aug | 0755-0805 | Warming|4|3|Δθ* / (°C),7.1,41,31,0,0,4,8 Aug | 0755-0805 | Warming,Δθ* / (°C),.01,0.01,value,number,False,False,0.9999,,3
+T7.1|p41|0|0|8 Aug | 0755-0805 | Warming|4|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,4,8 Aug | 0755-0805 | Warming,Wind Velocity / Speed Dir / (cm/sec) (deg),314,314.0,value,number,False,False,0.9999,,4
+T7.1|p41|0|0|8 Aug | 0755-0805 | Warming|4|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,4,8 Aug | 0755-0805 | Warming,Wind Velocity / Speed Dir / (cm/sec) (deg),330,330.0,value,number,False,False,0.9999,,5
+T7.1|p41|0|0|8 Aug | 0755-0805 | Warming|4|6|S.E._T / (°C),7.1,41,31,0,0,4,8 Aug | 0755-0805 | Warming,S.E._T / (°C),.030,0.03,value,number,False,False,0.9999,,6
+T7.1|p41|0|0|8 Aug | 0755-0805 | Warming|4|7|Remarks,7.1,41,31,0,0,4,8 Aug | 0755-0805 | Warming,Remarks,Overcast / Raining one / hr. ago,,text,text,False,False,0.9999,,7
+T7.1|p41|0|0|8 Aug | 1855-1905 | Cooling|5|3|Δθ* / (°C),7.1,41,31,0,0,5,8 Aug | 1855-1905 | Cooling,Δθ* / (°C),.03,0.03,value,number,False,False,0.9999,,3
+T7.1|p41|0|0|8 Aug | 1855-1905 | Cooling|5|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,5,8 Aug | 1855-1905 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),527,527.0,value,number,False,False,0.9999,,4
+T7.1|p41|0|0|8 Aug | 1855-1905 | Cooling|5|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,5,8 Aug | 1855-1905 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),0,0.0,value,number,False,False,0.9999,,5
+T7.1|p41|0|0|8 Aug | 1855-1905 | Cooling|5|6|S.E._T / (°C),7.1,41,31,0,0,5,8 Aug | 1855-1905 | Cooling,S.E._T / (°C),.017,0.017,value,number,False,False,0.9999,,6
+T7.1|p41|0|0|8 Aug | 1855-1905 | Cooling|5|7|Remarks,7.1,41,31,0,0,5,8 Aug | 1855-1905 | Cooling,Remarks,.2 Cu,,text,unread,False,False,0.9999,,7
+T7.1|p41|0|0|9 Aug | 1655-1705 | Cooling|6|3|Δθ* / (°C),7.1,41,31,0,0,6,9 Aug | 1655-1705 | Cooling,Δθ* / (°C),.002,0.002,value,number,False,False,0.9997,,3
+T7.1|p41|0|0|9 Aug | 1655-1705 | Cooling|6|4|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,6,9 Aug | 1655-1705 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),416,416.0,value,number,False,False,0.9997,,4
+T7.1|p41|0|0|9 Aug | 1655-1705 | Cooling|6|5|Wind Velocity / Speed Dir / (cm/sec) (deg),7.1,41,31,0,0,6,9 Aug | 1655-1705 | Cooling,Wind Velocity / Speed Dir / (cm/sec) (deg),30,30.0,value,number,False,False,0.9997,,5
+T7.1|p41|0|0|9 Aug | 1655-1705 | Cooling|6|6|S.E._T / (°C),7.1,41,31,0,0,6,9 Aug | 1655-1705 | Cooling,S.E._T / (°C),.019,0.019,value,number,False,False,0.9997,,6
+T7.1|p41|0|0|9 Aug | 1655-1705 | Cooling|6|7|Remarks,7.1,41,31,0,0,6,9 Aug | 1655-1705 | Cooling,Remarks,"Huge thunder- / storm to west, / advancing on / us for last / 3 hrs",,text,unread,False,False,0.9954,,7

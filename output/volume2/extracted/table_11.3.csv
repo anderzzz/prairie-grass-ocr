@@ -1,0 +1,294 @@
+cell_id,table,pdf_index,printed_page,panel,block,row,row_key,observation,quantity,token,value,status,kind,estimated,footnote,conf,flags,col
+T11.3|p144|0|0|24 July | 0555|1|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,1,24 July | 0555,1,Δ(θT/∂z) / (°C/cm),-.005,-0.005,value,number,False,False,0.7726,low Mistral confidence 0.773,2
+T11.3|p144|0|0|24 July | 0555|1|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,1,24 July | 0555,2,Δ(θT/∂z) / (°C/cm),-.003,-0.003,value,number,False,False,0.7726,low Mistral confidence 0.773,2
+T11.3|p144|0|0|24 July | 0555|1|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,1,24 July | 0555,3,Δ(θT/∂z) / (°C/cm),-.003,-0.003,value,number,False,False,0.7726,low Mistral confidence 0.773,2
+T11.3|p144|1|0|24 July | 2215|1|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,1,24 July | 2215,1,Δ(θT/∂z) / (°C/cm),-.097,-0.097,value,number,False,False,0.9995,,5
+T11.3|p144|1|0|24 July | 2215|1|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,1,24 July | 2215,2,Δ(θT/∂z) / (°C/cm),-.124,-0.124,value,number,False,False,0.9995,,5
+T11.3|p144|1|0|24 July | 2215|1|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,1,24 July | 2215,3,Δ(θT/∂z) / (°C/cm),-.120,-0.12,value,number,False,False,0.9995,,5
+"T11.3|p144|2|0|25 July | 1315|1|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,1,25 July | 1315,1,"Δ(θT/∂z) / (°C, cm)",.135,0.135,value,number,False,False,0.9264,low Mistral confidence 0.926,8
+"T11.3|p144|2|0|25 July | 1315|1|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,1,25 July | 1315,2,"Δ(θT/∂z) / (°C, cm)",.143,0.143,value,number,False,False,0.9264,low Mistral confidence 0.926,8
+"T11.3|p144|2|0|25 July | 1315|1|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,1,25 July | 1315,3,"Δ(θT/∂z) / (°C, cm)",.140,0.14,value,number,False,False,0.9264,low Mistral confidence 0.926,8
+T11.3|p144|0|0|24 July | 0515|2|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,2,24 July | 0515,1,Δ(θT/∂z) / (°C/cm),-.005,-0.005,value,number,False,False,0.9264,low Mistral confidence 0.926,2
+T11.3|p144|0|0|24 July | 0515|2|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,2,24 July | 0515,2,Δ(θT/∂z) / (°C/cm),.002,0.002,value,number,False,False,0.9264,low Mistral confidence 0.926,2
+T11.3|p144|0|0|24 July | 0515|2|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,2,24 July | 0515,3,Δ(θT/∂z) / (°C/cm),.002,0.002,value,number,False,False,0.9264,low Mistral confidence 0.926,2
+T11.3|p144|1|0|24 July | 2255|2|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,2,24 July | 2255,1,Δ(θT/∂z) / (°C/cm),-.098,-0.098,value,number,False,False,0.9977,,5
+T11.3|p144|1|0|24 July | 2255|2|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,2,24 July | 2255,2,Δ(θT/∂z) / (°C/cm),-.100,-0.1,value,number,False,False,0.9977,,5
+T11.3|p144|1|0|24 July | 2255|2|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,2,24 July | 2255,3,Δ(θT/∂z) / (°C/cm),-.102,-0.102,value,number,False,False,0.9977,,5
+"T11.3|p144|2|0|25 July | 1355|2|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,2,25 July | 1355,1,"Δ(θT/∂z) / (°C, cm)",.123,0.123,value,number,False,False,0.9852,,8
+"T11.3|p144|2|0|25 July | 1355|2|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,2,25 July | 1355,2,"Δ(θT/∂z) / (°C, cm)",.123,0.123,value,number,False,False,0.9852,,8
+"T11.3|p144|2|0|25 July | 1355|2|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,2,25 July | 1355,3,"Δ(θT/∂z) / (°C, cm)",.125,0.125,value,number,False,False,0.9852,,8
+T11.3|p144|0|0|24 July | 0555|3|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,3,24 July | 0555,1,Δ(θT/∂z) / (°C/cm),.015,0.015,value,number,False,False,0.9795,,2
+T11.3|p144|0|0|24 July | 0555|3|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,3,24 July | 0555,2,Δ(θT/∂z) / (°C/cm),.022,0.022,value,number,False,False,0.9795,,2
+T11.3|p144|0|0|24 July | 0555|3|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,3,24 July | 0555,3,Δ(θT/∂z) / (°C/cm),.015,0.015,value,number,False,False,0.9795,,2
+T11.3|p144|1|0|24 July | 2358|3|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,3,24 July | 2358,1,Δ(θT/∂z) / (°C/cm),-.133,-0.133,value,number,False,False,0.9962,,5
+T11.3|p144|1|0|24 July | 2358|3|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,3,24 July | 2358,2,Δ(θT/∂z) / (°C/cm),-.146,-0.146,value,number,False,False,0.9962,,5
+T11.3|p144|1|0|24 July | 2358|3|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,3,24 July | 2358,3,Δ(θT/∂z) / (°C/cm),-.150,-0.15,value,number,False,False,0.9962,,5
+"T11.3|p144|2|0|25 July | 1415|3|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,3,25 July | 1415,1,"Δ(θT/∂z) / (°C, cm)",.120,0.12,value,number,False,False,0.9975,,8
+"T11.3|p144|2|0|25 July | 1415|3|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,3,25 July | 1415,2,"Δ(θT/∂z) / (°C, cm)",.117,0.117,value,number,False,False,0.9975,,8
+"T11.3|p144|2|0|25 July | 1415|3|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,3,25 July | 1415,3,"Δ(θT/∂z) / (°C, cm)",.119,0.119,value,number,False,False,0.9975,,8
+T11.3|p144|0|0|24 July | 0717|4|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,4,24 July | 0717,1,Δ(θT/∂z) / (°C/cm),.034,0.034,value,number,False,False,0.9966,,2
+T11.3|p144|0|0|24 July | 0717|4|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,4,24 July | 0717,2,Δ(θT/∂z) / (°C/cm),.040,0.04,value,number,False,False,0.9966,,2
+T11.3|p144|0|0|24 July | 0717|4|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,4,24 July | 0717,3,Δ(θT/∂z) / (°C/cm),.030,0.03,value,number,False,False,0.9966,,2
+T11.3|p144|1|0|25 July | 0015|4|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,4,25 July | 0015,1,Δ(θT/∂z) / (°C/cm),-.130,-0.13,value,number,False,False,0.9695,,5
+T11.3|p144|1|0|25 July | 0015|4|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,4,25 July | 0015,2,Δ(θT/∂z) / (°C/cm),-.104,-0.104,value,number,False,False,0.9695,,5
+T11.3|p144|1|0|25 July | 0015|4|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,4,25 July | 0015,3,Δ(θT/∂z) / (°C/cm),-.128,-0.128,value,number,False,False,0.9695,,5
+"T11.3|p144|2|0|25 July | 1455|4|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,4,25 July | 1455,1,"Δ(θT/∂z) / (°C, cm)",.119,0.119,value,number,False,False,0.9591,,8
+"T11.3|p144|2|0|25 July | 1455|4|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,4,25 July | 1455,2,"Δ(θT/∂z) / (°C, cm)",.117,0.117,value,number,False,False,0.9591,,8
+"T11.3|p144|2|0|25 July | 1455|4|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,4,25 July | 1455,3,"Δ(θT/∂z) / (°C, cm)",.115,0.115,value,number,False,False,0.9591,,8
+T11.3|p144|0|0|24 July | 0755|5|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,5,24 July | 0755,1,Δ(θT/∂z) / (°C/cm),.055,0.055,value,number,False,False,0.9591,,2
+T11.3|p144|0|0|24 July | 0755|5|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,5,24 July | 0755,2,Δ(θT/∂z) / (°C/cm),.055,0.055,value,number,False,False,0.9591,,2
+T11.3|p144|0|0|24 July | 0755|5|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,5,24 July | 0755,3,Δ(θT/∂z) / (°C/cm),.058,0.058,value,number,False,False,0.9591,,2
+T11.3|p144|1|0|25 July | 0100|5|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,5,25 July | 0100,1,Δ(θT/∂z) / (°C/cm),-.107,-0.107,value,number,False,False,0.9856,,5
+T11.3|p144|1|0|25 July | 0100|5|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,5,25 July | 0100,2,Δ(θT/∂z) / (°C/cm),-.126,-0.126,value,number,False,False,0.9856,,5
+T11.3|p144|1|0|25 July | 0100|5|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,5,25 July | 0100,3,Δ(θT/∂z) / (°C/cm),-.098,-0.098,value,number,False,False,0.9856,,5
+"T11.3|p144|2|0|25 July | 1515|5|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,5,25 July | 1515,1,"Δ(θT/∂z) / (°C, cm)",.123,0.123,value,number,False,False,0.9915,,8
+"T11.3|p144|2|0|25 July | 1515|5|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,5,25 July | 1515,2,"Δ(θT/∂z) / (°C, cm)",.117,0.117,value,number,False,False,0.9915,,8
+"T11.3|p144|2|0|25 July | 1515|5|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,5,25 July | 1515,3,"Δ(θT/∂z) / (°C, cm)",.115,0.115,value,number,False,False,0.9915,,8
+T11.3|p144|0|0|24 July | 0815|6|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,6,24 July | 0815,1,Δ(θT/∂z) / (°C/cm),.073,0.073,value,number,False,False,0.9915,,2
+T11.3|p144|0|0|24 July | 0815|6|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,6,24 July | 0815,2,Δ(θT/∂z) / (°C/cm),.071,0.071,value,number,False,False,0.9915,,2
+T11.3|p144|0|0|24 July | 0815|6|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,6,24 July | 0815,3,Δ(θT/∂z) / (°C/cm),.071,0.071,value,number,False,False,0.9915,,2
+T11.3|p144|1|0|25 July | 0115|6|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,6,25 July | 0115,1,Δ(θT/∂z) / (°C/cm),-.127,-0.127,value,number,False,False,0.9828,,5
+T11.3|p144|1|0|25 July | 0115|6|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,6,25 July | 0115,2,Δ(θT/∂z) / (°C/cm),-.137,-0.137,value,number,False,False,0.9828,,5
+T11.3|p144|1|0|25 July | 0115|6|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,6,25 July | 0115,3,Δ(θT/∂z) / (°C/cm),-.140,-0.14,value,number,False,False,0.9828,,5
+"T11.3|p144|2|0|25 July | 1555|6|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,6,25 July | 1555,1,"Δ(θT/∂z) / (°C, cm)",.103,0.103,value,number,False,False,0.9334,low Mistral confidence 0.933,8
+"T11.3|p144|2|0|25 July | 1555|6|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,6,25 July | 1555,2,"Δ(θT/∂z) / (°C, cm)",.102,0.102,value,number,False,False,0.9334,low Mistral confidence 0.933,8
+"T11.3|p144|2|0|25 July | 1555|6|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,6,25 July | 1555,3,"Δ(θT/∂z) / (°C, cm)",.105,0.105,value,number,False,False,0.9334,low Mistral confidence 0.933,8
+T11.3|p144|0|0|24 July | 0855|7|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,7,24 July | 0855,1,Δ(θT/∂z) / (°C/cm),.080,0.08,value,number,False,False,0.9334,low Mistral confidence 0.933,2
+T11.3|p144|0|0|24 July | 0855|7|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,7,24 July | 0855,2,Δ(θT/∂z) / (°C/cm),.078,0.078,value,number,False,False,0.9334,low Mistral confidence 0.933,2
+T11.3|p144|0|0|24 July | 0855|7|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,7,24 July | 0855,3,Δ(θT/∂z) / (°C/cm),.088,0.088,value,number,False,False,0.9334,low Mistral confidence 0.933,2
+T11.3|p144|1|0|25 July | 0155|7|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,7,25 July | 0155,1,Δ(θT/∂z) / (°C/cm),-.157,-0.157,value,number,False,False,0.9219,low Mistral confidence 0.922,5
+T11.3|p144|1|0|25 July | 0155|7|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,7,25 July | 0155,2,Δ(θT/∂z) / (°C/cm),-.128,-0.128,value,number,False,False,0.9219,low Mistral confidence 0.922,5
+T11.3|p144|1|0|25 July | 0155|7|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,7,25 July | 0155,3,Δ(θT/∂z) / (°C/cm),-.126,-0.126,value,number,False,False,0.9219,low Mistral confidence 0.922,5
+T11.3|p144|1|0|25 July | 0155|7|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,7,25 July | 0155,4,Δ(θT/∂z) / (°C/cm),-.130,-0.13,value,number,False,False,0.9219,low Mistral confidence 0.922,5
+"T11.3|p144|2|0|25 July | 1615|7|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,7,25 July | 1615,1,"Δ(θT/∂z) / (°C, cm)",.094,0.094,value,number,False,False,0.9959,,8
+"T11.3|p144|2|0|25 July | 1615|7|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,7,25 July | 1615,2,"Δ(θT/∂z) / (°C, cm)",.102,0.102,value,number,False,False,0.9959,,8
+"T11.3|p144|2|0|25 July | 1615|7|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,7,25 July | 1615,3,"Δ(θT/∂z) / (°C, cm)",.096,0.096,value,number,False,False,0.9959,,8
+T11.3|p144|0|0|24 July | 0915|8|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,8,24 July | 0915,1,Δ(θT/∂z) / (°C/cm),.090,0.09,value,number,False,False,0.9996,,2
+T11.3|p144|0|0|24 July | 0915|8|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,8,24 July | 0915,2,Δ(θT/∂z) / (°C/cm),.093,0.093,value,number,False,False,0.9996,,2
+T11.3|p144|0|0|24 July | 0915|8|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,8,24 July | 0915,3,Δ(θT/∂z) / (°C/cm),.082,0.082,value,number,False,False,0.9996,,2
+T11.3|p144|1|0|25 July | 0215|8|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,8,25 July | 0215,1,Δ(θT/∂z) / (°C/cm),-.197,-0.197,value,number,False,False,0.969,,5
+T11.3|p144|1|0|25 July | 0215|8|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,8,25 July | 0215,2,Δ(θT/∂z) / (°C/cm),-.193,-0.193,value,number,False,False,0.969,,5
+T11.3|p144|1|0|25 July | 0215|8|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,8,25 July | 0215,3,Δ(θT/∂z) / (°C/cm),-.222,-0.222,value,number,False,False,0.969,,5
+T11.3|p144|1|0|25 July | 0215|8|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,8,25 July | 0215,4,Δ(θT/∂z) / (°C/cm),-.257,-0.257,value,number,False,False,0.969,,5
+"T11.3|p144|2|0|25 July | 1655|8|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,8,25 July | 1655,1,"Δ(θT/∂z) / (°C, cm)",.088,0.088,value,number,False,False,0.9887,,8
+"T11.3|p144|2|0|25 July | 1655|8|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,8,25 July | 1655,2,"Δ(θT/∂z) / (°C, cm)",.090,0.09,value,number,False,False,0.9887,,8
+"T11.3|p144|2|0|25 July | 1655|8|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,8,25 July | 1655,3,"Δ(θT/∂z) / (°C, cm)",.086,0.086,value,number,False,False,0.9887,,8
+T11.3|p144|0|0|24 July | 0955|9|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,9,24 July | 0955,1,Δ(θT/∂z) / (°C/cm),.107,0.107,value,number,False,False,0.993,,2
+T11.3|p144|0|0|24 July | 0955|9|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,9,24 July | 0955,2,Δ(θT/∂z) / (°C/cm),.112,0.112,value,number,False,False,0.993,,2
+T11.3|p144|0|0|24 July | 0955|9|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,9,24 July | 0955,3,Δ(θT/∂z) / (°C/cm),.109,0.109,value,number,False,False,0.993,,2
+T11.3|p144|1|0|25 July | 0255|9|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,9,25 July | 0255,1,Δ(θT/∂z) / (°C/cm),-.140,-0.14,value,number,False,False,0.9881,,5
+T11.3|p144|1|0|25 July | 0255|9|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,9,25 July | 0255,2,Δ(θT/∂z) / (°C/cm),-.156,-0.156,value,number,False,False,0.9881,,5
+T11.3|p144|1|0|25 July | 0255|9|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,9,25 July | 0255,3,Δ(θT/∂z) / (°C/cm),-.157,-0.157,value,number,False,False,0.9881,,5
+T11.3|p144|1|0|25 July | 0255|9|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,9,25 July | 0255,4,Δ(θT/∂z) / (°C/cm),-.152,-0.152,value,number,False,False,0.9881,,5
+"T11.3|p144|2|0|25 July | 1715|9|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,9,25 July | 1715,1,"Δ(θT/∂z) / (°C, cm)",.080,0.08,value,number,False,False,0.9969,,8
+"T11.3|p144|2|0|25 July | 1715|9|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,9,25 July | 1715,2,"Δ(θT/∂z) / (°C, cm)",.076,0.076,value,number,False,False,0.9969,,8
+"T11.3|p144|2|0|25 July | 1715|9|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,9,25 July | 1715,3,"Δ(θT/∂z) / (°C, cm)",.080,0.08,value,number,False,False,0.9969,,8
+T11.3|p144|0|0|24 July | 1015|10|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,10,24 July | 1015,1,Δ(θT/∂z) / (°C/cm),.097,0.097,value,number,False,False,0.9995,,2
+T11.3|p144|0|0|24 July | 1015|10|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,10,24 July | 1015,2,Δ(θT/∂z) / (°C/cm),.097,0.097,value,number,False,False,0.9995,,2
+T11.3|p144|0|0|24 July | 1015|10|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,10,24 July | 1015,3,Δ(θT/∂z) / (°C/cm),.104,0.104,value,number,False,False,0.9995,,2
+T11.3|p144|1|0|25 July | 0315|10|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,10,25 July | 0315,1,Δ(θT/∂z) / (°C/cm),-.150,-0.15,value,number,False,False,0.9919,,5
+T11.3|p144|1|0|25 July | 0315|10|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,10,25 July | 0315,2,Δ(θT/∂z) / (°C/cm),-.138,-0.138,value,number,False,False,0.9919,,5
+T11.3|p144|1|0|25 July | 0315|10|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,10,25 July | 0315,3,Δ(θT/∂z) / (°C/cm),-.142,-0.142,value,number,False,False,0.9919,,5
+T11.3|p144|1|0|25 July | 0315|10|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,10,25 July | 0315,4,Δ(θT/∂z) / (°C/cm),-.126,-0.126,value,number,False,False,0.9919,,5
+"T11.3|p144|2|0|25 July | 1755|10|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,10,25 July | 1755,1,"Δ(θT/∂z) / (°C, cm)",.046,0.046,value,number,False,False,0.9803,,8
+"T11.3|p144|2|0|25 July | 1755|10|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,10,25 July | 1755,2,"Δ(θT/∂z) / (°C, cm)",.048,0.048,value,number,False,False,0.9803,,8
+"T11.3|p144|2|0|25 July | 1755|10|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,10,25 July | 1755,3,"Δ(θT/∂z) / (°C, cm)",.039,0.039,value,number,False,False,0.9803,,8
+T11.3|p144|0|0|24 July | 1055|11|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,11,24 July | 1055,1,Δ(θT/∂z) / (°C/cm),.108,0.108,value,number,False,False,0.9803,,2
+T11.3|p144|0|0|24 July | 1055|11|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,11,24 July | 1055,2,Δ(θT/∂z) / (°C/cm),.106,0.106,value,number,False,False,0.9803,,2
+T11.3|p144|0|0|24 July | 1055|11|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,11,24 July | 1055,3,Δ(θT/∂z) / (°C/cm),.104,0.104,value,number,False,False,0.9803,,2
+T11.3|p144|1|0|25 July | 0355|11|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,11,25 July | 0355,1,Δ(θT/∂z) / (°C/cm),-.130,-0.13,value,number,False,False,0.9018,low Mistral confidence 0.902,5
+T11.3|p144|1|0|25 July | 0355|11|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,11,25 July | 0355,2,Δ(θT/∂z) / (°C/cm),-.132,-0.132,value,number,False,False,0.9018,low Mistral confidence 0.902,5
+T11.3|p144|1|0|25 July | 0355|11|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,11,25 July | 0355,3,Δ(θT/∂z) / (°C/cm),-.138,-0.138,value,number,False,False,0.9018,low Mistral confidence 0.902,5
+T11.3|p144|1|0|25 July | 0355|11|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,11,25 July | 0355,4,Δ(θT/∂z) / (°C/cm),-.113,-0.113,value,number,False,False,0.9018,low Mistral confidence 0.902,5
+"T11.3|p144|2|0|25 July | 1815|11|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,11,25 July | 1815,1,"Δ(θT/∂z) / (°C, cm)",.053,0.053,value,number,False,False,0.9502,,8
+"T11.3|p144|2|0|25 July | 1815|11|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,11,25 July | 1815,2,"Δ(θT/∂z) / (°C, cm)",.055,0.055,value,number,False,False,0.9502,,8
+"T11.3|p144|2|0|25 July | 1815|11|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,11,25 July | 1815,3,"Δ(θT/∂z) / (°C, cm)",.053,0.053,value,number,False,False,0.9502,,8
+T11.3|p144|0|0|24 July | 1115|12|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,12,24 July | 1115,1,Δ(θT/∂z) / (°C/cm),.109,0.109,value,number,False,False,0.9502,,2
+T11.3|p144|0|0|24 July | 1115|12|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,12,24 July | 1115,2,Δ(θT/∂z) / (°C/cm),.118,0.118,value,number,False,False,0.9502,,2
+T11.3|p144|0|0|24 July | 1115|12|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,12,24 July | 1115,3,Δ(θT/∂z) / (°C/cm),.112,0.112,value,number,False,False,0.9502,,2
+T11.3|p144|1|0|25 July | 0415|12|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,12,25 July | 0415,1,Δ(θT/∂z) / (°C/cm),-.112,-0.112,value,number,False,False,0.7087,low Mistral confidence 0.709,5
+T11.3|p144|1|0|25 July | 0415|12|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,12,25 July | 0415,2,Δ(θT/∂z) / (°C/cm),-.121,-0.121,value,number,False,False,0.7087,low Mistral confidence 0.709,5
+T11.3|p144|1|0|25 July | 0415|12|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,12,25 July | 0415,3,Δ(θT/∂z) / (°C/cm),-.075,-0.075,value,number,False,False,0.7087,low Mistral confidence 0.709,5
+T11.3|p144|1|0|25 July | 0415|12|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,12,25 July | 0415,4,Δ(θT/∂z) / (°C/cm),-.092,-0.092,value,number,False,False,0.7087,low Mistral confidence 0.709,5
+"T11.3|p144|2|0|25 July | 1855|12|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,12,25 July | 1855,1,"Δ(θT/∂z) / (°C, cm)",.025,0.025,value,number,False,False,0.8878,low Mistral confidence 0.888,8
+"T11.3|p144|2|0|25 July | 1855|12|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,12,25 July | 1855,2,"Δ(θT/∂z) / (°C, cm)",.027,0.027,value,number,False,False,0.8878,low Mistral confidence 0.888,8
+"T11.3|p144|2|0|25 July | 1855|12|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,12,25 July | 1855,3,"Δ(θT/∂z) / (°C, cm)",.030,0.03,value,number,False,False,0.8878,low Mistral confidence 0.888,8
+T11.3|p144|0|0|24 July | 1155|13|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,13,24 July | 1155,1,Δ(θT/∂z) / (°C/cm),.119,0.119,value,number,False,False,0.8878,low Mistral confidence 0.888,2
+T11.3|p144|0|0|24 July | 1155|13|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,13,24 July | 1155,2,Δ(θT/∂z) / (°C/cm),.119,0.119,value,number,False,False,0.8878,low Mistral confidence 0.888,2
+T11.3|p144|0|0|24 July | 1155|13|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,13,24 July | 1155,3,Δ(θT/∂z) / (°C/cm),.120,0.12,value,number,False,False,0.8878,low Mistral confidence 0.888,2
+T11.3|p144|1|0|25 July | 0455*|13|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,13,25 July | 0455*,1,Δ(θT/∂z) / (°C/cm),-.105,-0.105,value,number,False,False,0.9134,low Mistral confidence 0.913,5
+T11.3|p144|1|0|25 July | 0455*|13|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,13,25 July | 0455*,2,Δ(θT/∂z) / (°C/cm),-.097,-0.097,value,number,False,False,0.9134,low Mistral confidence 0.913,5
+T11.3|p144|1|0|25 July | 0455*|13|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,13,25 July | 0455*,3,Δ(θT/∂z) / (°C/cm),-.093,-0.093,value,number,False,False,0.9134,low Mistral confidence 0.913,5
+T11.3|p144|1|0|25 July | 0455*|13|4|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,13,25 July | 0455*,4,Δ(θT/∂z) / (°C/cm),-.094,-0.094,value,number,False,False,0.9134,low Mistral confidence 0.913,5
+"T11.3|p144|2|0|25 July | 1917|13|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,13,25 July | 1917,1,"Δ(θT/∂z) / (°C, cm)",.017,0.017,value,number,False,False,0.9876,,8
+"T11.3|p144|2|0|25 July | 1917|13|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,13,25 July | 1917,2,"Δ(θT/∂z) / (°C, cm)",.025,0.025,value,number,False,False,0.9876,,8
+"T11.3|p144|2|0|25 July | 1917|13|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,13,25 July | 1917,3,"Δ(θT/∂z) / (°C, cm)",.021,0.021,value,number,False,False,0.9876,,8
+T11.3|p144|0|0|24 July | 1215|14|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,14,24 July | 1215,1,Δ(θT/∂z) / (°C/cm),.135,0.135,value,number,False,False,0.9983,,2
+T11.3|p144|0|0|24 July | 1215|14|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,14,24 July | 1215,2,Δ(θT/∂z) / (°C/cm),.139,0.139,value,number,False,False,0.9983,,2
+T11.3|p144|0|0|24 July | 1215|14|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,14,24 July | 1215,3,Δ(θT/∂z) / (°C/cm),.140,0.14,value,number,False,False,0.9983,,2
+T11.3|p144|1|0|25 July | 0455*|14|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,14,25 July | 0455*,1,Δ(θT/∂z) / (°C/cm),-.004,-0.004,value,number,False,False,0.9984,,5
+T11.3|p144|1|0|25 July | 0455*|14|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,14,25 July | 0455*,2,Δ(θT/∂z) / (°C/cm),-.014,-0.014,value,number,False,False,0.9984,,5
+T11.3|p144|1|0|25 July | 0455*|14|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,14,25 July | 0455*,3,Δ(θT/∂z) / (°C/cm),-.010,-0.01,value,number,False,False,0.9984,,5
+"T11.3|p144|2|0|25 July | 1955*|14|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,14,25 July | 1955*,1,"Δ(θT/∂z) / (°C, cm)",.025,0.025,value,number,False,False,0.9849,,8
+"T11.3|p144|2|0|25 July | 1955*|14|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,14,25 July | 1955*,2,"Δ(θT/∂z) / (°C, cm)",.023,0.023,value,number,False,False,0.9849,,8
+"T11.3|p144|2|0|25 July | 1955*|14|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,14,25 July | 1955*,3,"Δ(θT/∂z) / (°C, cm)",.015,0.015,value,number,False,False,0.9849,,8
+T11.3|p144|0|0|24 July | 1255|15|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,15,24 July | 1255,1,Δ(θT/∂z) / (°C/cm),.148,0.148,value,number,False,False,0.9849,,2
+T11.3|p144|0|0|24 July | 1255|15|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,15,24 July | 1255,2,Δ(θT/∂z) / (°C/cm),.149,0.149,value,number,False,False,0.9849,,2
+T11.3|p144|0|0|24 July | 1255|15|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,15,24 July | 1255,3,Δ(θT/∂z) / (°C/cm),.154,0.154,value,number,False,False,0.9849,,2
+T11.3|p144|1|0|25 July | 0515|15|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,15,25 July | 0515,1,Δ(θT/∂z) / (°C/cm),-.004,-0.004,value,number,False,False,0.9994,,5
+T11.3|p144|1|0|25 July | 0515|15|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,15,25 July | 0515,2,Δ(θT/∂z) / (°C/cm),-.014,-0.014,value,number,False,False,0.9994,,5
+T11.3|p144|1|0|25 July | 0515|15|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,15,25 July | 0515,3,Δ(θT/∂z) / (°C/cm),-.002,-0.002,value,number,False,False,0.9994,,5
+"T11.3|p144|2|0|25 July | 1955*|15|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,15,25 July | 1955*,1,"Δ(θT/∂z) / (°C, cm)",-.079,-0.079,value,number,False,False,0.9746,,8
+"T11.3|p144|2|0|25 July | 1955*|15|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,15,25 July | 1955*,2,"Δ(θT/∂z) / (°C, cm)",-.075,-0.075,value,number,False,False,0.9746,,8
+"T11.3|p144|2|0|25 July | 1955*|15|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,15,25 July | 1955*,3,"Δ(θT/∂z) / (°C, cm)",-.069,-0.069,value,number,False,False,0.9746,,8
+"T11.3|p144|2|0|25 July | 1955*|15|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,15,25 July | 1955*,4,"Δ(θT/∂z) / (°C, cm)",-.072,-0.072,value,number,False,False,0.9746,,8
+T11.3|p144|0|0|24 July | 1315|16|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,16,24 July | 1315,1,Δ(θT/∂z) / (°C/cm),.144,0.144,value,number,False,False,0.8364,low Mistral confidence 0.836,2
+T11.3|p144|0|0|24 July | 1315|16|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,16,24 July | 1315,2,Δ(θT/∂z) / (°C/cm),.180,0.18,value,number,False,False,0.8364,low Mistral confidence 0.836,2
+T11.3|p144|0|0|24 July | 1315|16|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,16,24 July | 1315,3,Δ(θT/∂z) / (°C/cm),.156,0.156,value,number,False,False,0.8364,low Mistral confidence 0.836,2
+T11.3|p144|1|0|25 July | 0555|16|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,16,25 July | 0555,1,Δ(θT/∂z) / (°C/cm),-.000,-0.0,value,number,False,False,0.9928,,5
+T11.3|p144|1|0|25 July | 0555|16|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,16,25 July | 0555,2,Δ(θT/∂z) / (°C/cm),-.004,-0.004,value,number,False,False,0.9928,,5
+T11.3|p144|1|0|25 July | 0555|16|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,16,25 July | 0555,3,Δ(θT/∂z) / (°C/cm),-.006,-0.006,value,number,False,False,0.9928,,5
+"T11.3|p144|2|0|25 July | 2054|16|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,16,25 July | 2054,1,"Δ(θT/∂z) / (°C, cm)",-.107,-0.107,value,number,False,False,0.9928,,8
+"T11.3|p144|2|0|25 July | 2054|16|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,16,25 July | 2054,2,"Δ(θT/∂z) / (°C, cm)",-.092,-0.092,value,number,False,False,0.9928,,8
+"T11.3|p144|2|0|25 July | 2054|16|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,16,25 July | 2054,3,"Δ(θT/∂z) / (°C, cm)",-.101,-0.101,value,number,False,False,0.9928,,8
+"T11.3|p144|2|0|25 July | 2054|16|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,16,25 July | 2054,4,"Δ(θT/∂z) / (°C, cm)",-.100,-0.1,value,number,False,False,0.9928,,8
+T11.3|p144|0|0|24 July | 1355|17|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,17,24 July | 1355,1,Δ(θT/∂z) / (°C/cm),.144,0.144,value,number,False,False,0.9984,,2
+T11.3|p144|0|0|24 July | 1355|17|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,17,24 July | 1355,2,Δ(θT/∂z) / (°C/cm),.144,0.144,value,number,False,False,0.9984,,2
+T11.3|p144|0|0|24 July | 1355|17|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,17,24 July | 1355,3,Δ(θT/∂z) / (°C/cm),.152,0.152,value,number,False,False,0.9984,,2
+T11.3|p144|1|0|25 July | 0615|17|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,17,25 July | 0615,1,Δ(θT/∂z) / (°C/cm),.010,0.01,value,number,False,False,0.9917,,5
+T11.3|p144|1|0|25 July | 0615|17|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,17,25 July | 0615,2,Δ(θT/∂z) / (°C/cm),.020,0.02,value,number,False,False,0.9917,,5
+T11.3|p144|1|0|25 July | 0615|17|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,17,25 July | 0615,3,Δ(θT/∂z) / (°C/cm),.015,0.015,value,number,False,False,0.9917,,5
+"T11.3|p144|2|0|25 July | 2124|17|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,17,25 July | 2124,1,"Δ(θT/∂z) / (°C, cm)",-.096,-0.096,value,number,False,False,0.9393,low Mistral confidence 0.939,8
+"T11.3|p144|2|0|25 July | 2124|17|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,17,25 July | 2124,2,"Δ(θT/∂z) / (°C, cm)",-.082,-0.082,value,number,False,False,0.9393,low Mistral confidence 0.939,8
+"T11.3|p144|2|0|25 July | 2124|17|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,17,25 July | 2124,3,"Δ(θT/∂z) / (°C, cm)",-.075,-0.075,value,number,False,False,0.9393,low Mistral confidence 0.939,8
+"T11.3|p144|2|0|25 July | 2124|17|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,17,25 July | 2124,4,"Δ(θT/∂z) / (°C, cm)",-.094,-0.094,value,number,False,False,0.9393,low Mistral confidence 0.939,8
+T11.3|p144|0|0|24 July | 1415|18|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,18,24 July | 1415,1,Δ(θT/∂z) / (°C/cm),.144,0.144,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 1415|18|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,18,24 July | 1415,2,Δ(θT/∂z) / (°C/cm),.152,0.152,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 1415|18|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,18,24 July | 1415,3,Δ(θT/∂z) / (°C/cm),.142,0.142,value,number,False,False,0.9985,,2
+T11.3|p144|1|0|25 July | 0655|18|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,18,25 July | 0655,1,Δ(θT/∂z) / (°C/cm),.063,0.063,value,number,False,False,0.954,,5
+T11.3|p144|1|0|25 July | 0655|18|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,18,25 July | 0655,2,Δ(θT/∂z) / (°C/cm),.063,0.063,value,number,False,False,0.954,,5
+T11.3|p144|1|0|25 July | 0655|18|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,18,25 July | 0655,3,Δ(θT/∂z) / (°C/cm),.061,0.061,value,number,False,False,0.954,,5
+"T11.3|p144|2|0|25 July | 2155|18|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,18,25 July | 2155,1,"Δ(θT/∂z) / (°C, cm)",-.050,-0.05,value,number,False,False,0.9291,low Mistral confidence 0.929,8
+"T11.3|p144|2|0|25 July | 2155|18|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,18,25 July | 2155,2,"Δ(θT/∂z) / (°C, cm)",-.101,-0.101,value,number,False,False,0.9291,low Mistral confidence 0.929,8
+"T11.3|p144|2|0|25 July | 2155|18|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,18,25 July | 2155,3,"Δ(θT/∂z) / (°C, cm)",-.081,-0.081,value,number,False,False,0.9291,low Mistral confidence 0.929,8
+"T11.3|p144|2|0|25 July | 2155|18|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,18,25 July | 2155,4,"Δ(θT/∂z) / (°C, cm)",-.066,-0.066,value,number,False,False,0.9291,low Mistral confidence 0.929,8
+T11.3|p144|0|0|24 July | 1455|19|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,19,24 July | 1455,1,Δ(θT/∂z) / (°C/cm),.164,0.164,value,number,False,False,0.9945,,2
+T11.3|p144|0|0|24 July | 1455|19|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,19,24 July | 1455,2,Δ(θT/∂z) / (°C/cm),.148,0.148,value,number,False,False,0.9945,,2
+T11.3|p144|0|0|24 July | 1455|19|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,19,24 July | 1455,3,Δ(θT/∂z) / (°C/cm),.130,0.13,value,number,False,False,0.9945,,2
+T11.3|p144|1|0|25 July | 0715|19|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,19,25 July | 0715,1,Δ(θT/∂z) / (°C/cm),.079,0.079,value,number,False,False,0.9383,low Mistral confidence 0.938,5
+T11.3|p144|1|0|25 July | 0715|19|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,19,25 July | 0715,2,Δ(θT/∂z) / (°C/cm),.074,0.074,value,number,False,False,0.9383,low Mistral confidence 0.938,5
+T11.3|p144|1|0|25 July | 0715|19|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,19,25 July | 0715,3,Δ(θT/∂z) / (°C/cm),.063,0.063,value,number,False,False,0.9383,low Mistral confidence 0.938,5
+"T11.3|p144|2|0|25 July | 2255|19|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,19,25 July | 2255,1,"Δ(θT/∂z) / (°C, cm)",-.113,-0.113,value,number,False,False,0.935,low Mistral confidence 0.935,8
+"T11.3|p144|2|0|25 July | 2255|19|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,19,25 July | 2255,2,"Δ(θT/∂z) / (°C, cm)",-.098,-0.098,value,number,False,False,0.935,low Mistral confidence 0.935,8
+"T11.3|p144|2|0|25 July | 2255|19|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,19,25 July | 2255,3,"Δ(θT/∂z) / (°C, cm)",-.094,-0.094,value,number,False,False,0.935,low Mistral confidence 0.935,8
+T11.3|p144|0|0|24 July | 1515|20|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,20,24 July | 1515,1,Δ(θT/∂z) / (°C/cm),.125,0.125,value,number,False,False,0.9666,,2
+T11.3|p144|0|0|24 July | 1515|20|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,20,24 July | 1515,2,Δ(θT/∂z) / (°C/cm),.168,0.168,value,number,False,False,0.9666,,2
+T11.3|p144|0|0|24 July | 1515|20|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,20,24 July | 1515,3,Δ(θT/∂z) / (°C/cm),.135,0.135,value,number,False,False,0.9666,,2
+T11.3|p144|1|0|25 July | 0755|20|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,20,25 July | 0755,1,Δ(θT/∂z) / (°C/cm),.060,0.06,value,number,False,False,0.9666,,5
+T11.3|p144|1|0|25 July | 0755|20|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,20,25 July | 0755,2,Δ(θT/∂z) / (°C/cm),.065,0.065,value,number,False,False,0.9666,,5
+T11.3|p144|1|0|25 July | 0755|20|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,20,25 July | 0755,3,Δ(θT/∂z) / (°C/cm),.067,0.067,value,number,False,False,0.9666,,5
+"T11.3|p144|2|0|25 July | 2315|20|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,20,25 July | 2315,1,"Δ(θT/∂z) / (°C, cm)",-.112,-0.112,value,number,False,False,0.9987,,8
+"T11.3|p144|2|0|25 July | 2315|20|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,20,25 July | 2315,2,"Δ(θT/∂z) / (°C, cm)",-.112,-0.112,value,number,False,False,0.9987,,8
+"T11.3|p144|2|0|25 July | 2315|20|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,20,25 July | 2315,3,"Δ(θT/∂z) / (°C, cm)",-.107,-0.107,value,number,False,False,0.9987,,8
+"T11.3|p144|2|0|25 July | 2315|20|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,20,25 July | 2315,4,"Δ(θT/∂z) / (°C, cm)",-.111,-0.111,value,number,False,False,0.9987,,8
+T11.3|p144|0|0|24 July | 1555|21|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,21,24 July | 1555,1,Δ(θT/∂z) / (°C/cm),.119,0.119,value,number,False,False,0.9836,,2
+T11.3|p144|0|0|24 July | 1555|21|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,21,24 July | 1555,2,Δ(θT/∂z) / (°C/cm),.117,0.117,value,number,False,False,0.9836,,2
+T11.3|p144|0|0|24 July | 1555|21|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,21,24 July | 1555,3,Δ(θT/∂z) / (°C/cm),.121,0.121,value,number,False,False,0.9836,,2
+T11.3|p144|1|0|25 July | 0815|21|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,21,25 July | 0815,1,Δ(θT/∂z) / (°C/cm),.078,0.078,value,number,False,False,0.9836,,5
+T11.3|p144|1|0|25 July | 0815|21|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,21,25 July | 0815,2,Δ(θT/∂z) / (°C/cm),.068,0.068,value,number,False,False,0.9836,,5
+T11.3|p144|1|0|25 July | 0815|21|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,21,25 July | 0815,3,Δ(θT/∂z) / (°C/cm),.068,0.068,value,number,False,False,0.9836,,5
+"T11.3|p144|2|0|25 July | 2315|21|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,21,25 July | 2315,1,"Δ(θT/∂z) / (°C, cm)",-.071,-0.071,value,number,False,False,0.9722,,8
+"T11.3|p144|2|0|25 July | 2315|21|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,21,25 July | 2315,2,"Δ(θT/∂z) / (°C, cm)",-.063,-0.063,value,number,False,False,0.9722,,8
+"T11.3|p144|2|0|25 July | 2315|21|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,21,25 July | 2315,3,"Δ(θT/∂z) / (°C, cm)",-.063,-0.063,value,number,False,False,0.9722,,8
+T11.3|p144|0|0|24 July | 1755|22|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,22,24 July | 1755,1,Δ(θT/∂z) / (°C/cm),.092,0.092,value,number,False,False,0.9498,low Mistral confidence 0.950,2
+T11.3|p144|0|0|24 July | 1755|22|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,22,24 July | 1755,2,Δ(θT/∂z) / (°C/cm),.095,0.095,value,number,False,False,0.9498,low Mistral confidence 0.950,2
+T11.3|p144|0|0|24 July | 1755|22|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,22,24 July | 1755,3,Δ(θT/∂z) / (°C/cm),.086,0.086,value,number,False,False,0.9498,low Mistral confidence 0.950,2
+T11.3|p144|1|0|25 July | 0855|22|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,22,25 July | 0855,1,Δ(θT/∂z) / (°C/cm),.062,0.062,value,number,False,False,0.9498,low Mistral confidence 0.950,5
+T11.3|p144|1|0|25 July | 0855|22|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,22,25 July | 0855,2,Δ(θT/∂z) / (°C/cm),.061,0.061,value,number,False,False,0.9498,low Mistral confidence 0.950,5
+T11.3|p144|1|0|25 July | 0855|22|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,22,25 July | 0855,3,Δ(θT/∂z) / (°C/cm),.063,0.063,value,number,False,False,0.9498,low Mistral confidence 0.950,5
+"T11.3|p144|2|0|25 July | 25 July|22|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,22,25 July | 25 July,,"Δ(θT/∂z) / (°C, cm)",0215,215.0,value,number,False,False,0.994,,8
+T11.3|p144|0|0|24 July | 1815|23|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,23,24 July | 1815,1,Δ(θT/∂z) / (°C/cm),.097,0.097,value,number,False,False,0.9936,,2
+T11.3|p144|0|0|24 July | 1815|23|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,23,24 July | 1815,2,Δ(θT/∂z) / (°C/cm),.092,0.092,value,number,False,False,0.9936,,2
+T11.3|p144|0|0|24 July | 1815|23|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,23,24 July | 1815,3,Δ(θT/∂z) / (°C/cm),.102,0.102,value,number,False,False,0.9936,,2
+T11.3|p144|1|0|25 July | 0915|23|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,23,25 July | 0915,1,Δ(θT/∂z) / (°C/cm),.057,0.057,value,number,False,False,0.9848,,5
+T11.3|p144|1|0|25 July | 0915|23|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,23,25 July | 0915,2,Δ(θT/∂z) / (°C/cm),.061,0.061,value,number,False,False,0.9848,,5
+T11.3|p144|1|0|25 July | 0915|23|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,23,25 July | 0915,3,Δ(θT/∂z) / (°C/cm),.055,0.055,value,number,False,False,0.9848,,5
+"T11.3|p144|2|0|25 July | 25 July|23|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,23,25 July | 25 July,,"Δ(θT/∂z) / (°C, cm)",0056,56.0,value,number,False,False,0.9848,,8
+T11.3|p144|0|0|24 July | 1855|24|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,24,24 July | 1855,1,Δ(θT/∂z) / (°C/cm),.043,0.043,value,number,False,False,0.9906,,2
+T11.3|p144|0|0|24 July | 1855|24|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,24,24 July | 1855,2,Δ(θT/∂z) / (°C/cm),.060,0.06,value,number,False,False,0.9906,,2
+T11.3|p144|0|0|24 July | 1855|24|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,24,24 July | 1855,3,Δ(θT/∂z) / (°C/cm),.054,0.054,value,number,False,False,0.9906,,2
+T11.3|p144|1|0|25 July | 0955|24|1|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,24,25 July | 0955,1,Δ(θT/∂z) / (°C/cm),.090,0.09,value,number,False,False,0.9906,,5
+T11.3|p144|1|0|25 July | 0955|24|2|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,24,25 July | 0955,2,Δ(θT/∂z) / (°C/cm),.092,0.092,value,number,False,False,0.9906,,5
+T11.3|p144|1|0|25 July | 0955|24|3|5|Δ(θT/∂z) / (°C/cm),11.3,144,,1,0,24,25 July | 0955,3,Δ(θT/∂z) / (°C/cm),.088,0.088,value,number,False,False,0.9906,,5
+"T11.3|p144|2|0|25 July | 25 July|24|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,24,25 July | 25 July,,"Δ(θT/∂z) / (°C, cm)",0150,150.0,value,number,False,False,0.9995,,8
+T11.3|p144|0|0|24 July | 1915|25|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,25,24 July | 1915,1,Δ(θT/∂z) / (°C/cm),.052,0.052,value,number,False,False,0.9709,,2
+T11.3|p144|0|0|24 July | 1915|25|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,25,24 July | 1915,2,Δ(θT/∂z) / (°C/cm),.060,0.06,value,number,False,False,0.9709,,2
+T11.3|p144|0|0|24 July | 1915|25|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,25,24 July | 1915,3,Δ(θT/∂z) / (°C/cm),.052,0.052,value,number,False,False,0.9709,,2
+"T11.3|p144|1|0|1015 | .086, .092, .096|25|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,25,"1015 | .086, .092, .096",,Δ(θT/∂z) / (°C/cm),0215,215.0,value,number,False,False,0.999,,5
+"T11.3|p144|2|0|25 July | 25 July|25|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,25,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",-.054,-0.054,value,number,False,False,0.9209,low Mistral confidence 0.921,8
+"T11.3|p144|2|0|25 July | 25 July|25|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,25,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",-.052,-0.052,value,number,False,False,0.9209,low Mistral confidence 0.921,8
+"T11.3|p144|2|0|25 July | 25 July|25|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,25,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",-.052,-0.052,value,number,False,False,0.9209,low Mistral confidence 0.921,8
+"T11.3|p144|2|0|25 July | 25 July|25|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,25,25 July | 25 July,4,"Δ(θT/∂z) / (°C, cm)",-.053,-0.053,value,number,False,False,0.9209,low Mistral confidence 0.921,8
+T11.3|p144|0|0|24 July | 1955|26|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,26,24 July | 1955,1,Δ(θT/∂z) / (°C/cm),-.011,-0.011,value,number,False,False,0.9888,,2
+T11.3|p144|0|0|24 July | 1955|26|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,26,24 July | 1955,2,Δ(θT/∂z) / (°C/cm),-.016,-0.016,value,number,False,False,0.9888,,2
+T11.3|p144|0|0|24 July | 1955|26|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,26,24 July | 1955,3,Δ(θT/∂z) / (°C/cm),-.009,-0.009,value,number,False,False,0.9888,,2
+"T11.3|p144|1|0|1055 | .124, .129, .134|26|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,26,"1055 | .124, .129, .134",,Δ(θT/∂z) / (°C/cm),0255,255.0,value,number,False,False,0.9995,,5
+"T11.3|p144|2|0|25 July | 25 July|26|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,26,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",-.047,-0.047,value,number,False,False,0.9932,,8
+"T11.3|p144|2|0|25 July | 25 July|26|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,26,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",-.039,-0.039,value,number,False,False,0.9932,,8
+"T11.3|p144|2|0|25 July | 25 July|26|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,26,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",-.049,-0.049,value,number,False,False,0.9932,,8
+"T11.3|p144|2|0|25 July | 25 July|26|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,26,25 July | 25 July,4,"Δ(θT/∂z) / (°C, cm)",-.047,-0.047,value,number,False,False,0.9932,,8
+T11.3|p144|0|0|24 July | 2015|27|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,27,24 July | 2015,1,Δ(θT/∂z) / (°C/cm),-.030,-0.03,value,number,False,False,0.9997,,2
+T11.3|p144|0|0|24 July | 2015|27|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,27,24 July | 2015,2,Δ(θT/∂z) / (°C/cm),-.030,-0.03,value,number,False,False,0.9997,,2
+T11.3|p144|0|0|24 July | 2015|27|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,27,24 July | 2015,3,Δ(θT/∂z) / (°C/cm),-.032,-0.032,value,number,False,False,0.9997,,2
+"T11.3|p144|1|0|1115 | .109, .092, .096|27|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,27,"1115 | .109, .092, .096",,Δ(θT/∂z) / (°C/cm),0315,315.0,value,number,False,False,0.9995,,5
+"T11.3|p144|2|0|25 July | 25 July|27|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,27,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",-.058,-0.058,value,number,False,False,0.9789,,8
+"T11.3|p144|2|0|25 July | 25 July|27|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,27,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",-.050,-0.05,value,number,False,False,0.9789,,8
+"T11.3|p144|2|0|25 July | 25 July|27|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,27,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",-.051,-0.051,value,number,False,False,0.9789,,8
+"T11.3|p144|2|0|25 July | 25 July|27|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,27,25 July | 25 July,4,"Δ(θT/∂z) / (°C, cm)",-.047,-0.047,value,number,False,False,0.9789,,8
+T11.3|p144|0|0|24 July | 2055|28|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,28,24 July | 2055,1,Δ(θT/∂z) / (°C/cm),-.192,-0.192,value,number,False,False,0.9821,,2
+T11.3|p144|0|0|24 July | 2055|28|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,28,24 July | 2055,2,Δ(θT/∂z) / (°C/cm),-.180,-0.18,value,number,False,False,0.9821,,2
+T11.3|p144|0|0|24 July | 2055|28|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,28,24 July | 2055,3,Δ(θT/∂z) / (°C/cm),-.184,-0.184,value,number,False,False,0.9821,,2
+"T11.3|p144|1|0|1155 | .134, .137, .140|28|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,28,"1155 | .134, .137, .140",,Δ(θT/∂z) / (°C/cm),0355,355.0,value,number,False,False,0.999,,5
+"T11.3|p144|2|0|25 July | 25 July|28|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,28,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",-.072,-0.072,value,number,False,False,0.9716,,8
+"T11.3|p144|2|0|25 July | 25 July|28|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,28,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",-.096,-0.096,value,number,False,False,0.9716,,8
+"T11.3|p144|2|0|25 July | 25 July|28|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,28,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",-.098,-0.098,value,number,False,False,0.9716,,8
+"T11.3|p144|2|0|25 July | 25 July|28|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,28,25 July | 25 July,4,"Δ(θT/∂z) / (°C, cm)",-.099,-0.099,value,number,False,False,0.9716,,8
+T11.3|p144|0|0|24 July | 2115|29|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,29,24 July | 2115,1,Δ(θT/∂z) / (°C/cm),-.120,-0.12,value,number,False,False,0.9995,,2
+T11.3|p144|0|0|24 July | 2115|29|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,29,24 July | 2115,2,Δ(θT/∂z) / (°C/cm),-.117,-0.117,value,number,False,False,0.9995,,2
+T11.3|p144|0|0|24 July | 2115|29|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,29,24 July | 2115,3,Δ(θT/∂z) / (°C/cm),-.120,-0.12,value,number,False,False,0.9995,,2
+"T11.3|p144|1|0|1215 | .128, .134, .134|29|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,29,"1215 | .128, .134, .134",,Δ(θT/∂z) / (°C/cm),0415,415.0,value,number,False,False,0.9767,,5
+"T11.3|p144|2|0|25 July | 25 July|29|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,29,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",-.100,-0.1,value,number,False,False,0.9043,low Mistral confidence 0.904,8
+"T11.3|p144|2|0|25 July | 25 July|29|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,29,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",-.080,-0.08,value,number,False,False,0.9043,low Mistral confidence 0.904,8
+"T11.3|p144|2|0|25 July | 25 July|29|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,29,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",-.102,-0.102,value,number,False,False,0.9043,low Mistral confidence 0.904,8
+"T11.3|p144|2|0|25 July | 25 July|29|4|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,29,25 July | 25 July,4,"Δ(θT/∂z) / (°C, cm)",-.107,-0.107,value,number,False,False,0.9043,low Mistral confidence 0.904,8
+T11.3|p144|0|0|24 July | 2155|30|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,30,24 July | 2155,1,Δ(θT/∂z) / (°C/cm),-.094,-0.094,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 2155|30|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,30,24 July | 2155,2,Δ(θT/∂z) / (°C/cm),-.102,-0.102,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 2155|30|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,30,24 July | 2155,3,Δ(θT/∂z) / (°C/cm),-.130,-0.13,value,number,False,False,0.9985,,2
+"T11.3|p144|1|0|1255 | .126, .123, .129|30|5|Δ(θT/∂z) / (°C/cm)",11.3,144,,1,0,30,"1255 | .126, .123, .129",,Δ(θT/∂z) / (°C/cm),0515,515.0,value,number,False,False,0.9992,,5
+"T11.3|p144|2|0|25 July | 25 July|30|1|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,30,25 July | 25 July,1,"Δ(θT/∂z) / (°C, cm)",.017,0.017,value,number,False,False,0.9953,,8
+"T11.3|p144|2|0|25 July | 25 July|30|2|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,30,25 July | 25 July,2,"Δ(θT/∂z) / (°C, cm)",.017,0.017,value,number,False,False,0.9953,,8
+"T11.3|p144|2|0|25 July | 25 July|30|3|8|Δ(θT/∂z) / (°C, cm)",11.3,144,,2,0,30,25 July | 25 July,3,"Δ(θT/∂z) / (°C, cm)",.017,0.017,value,number,False,False,0.9953,,8
+T11.3|p144|0|0|24 July | 0555|31|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,31,24 July | 0555,1,Δ(θT/∂z) / (°C/cm),.000,0.0,value,number,False,False,0.9774,,2
+T11.3|p144|0|0|24 July | 0555|31|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,31,24 July | 0555,2,Δ(θT/∂z) / (°C/cm),.009,0.009,value,number,False,False,0.9774,,2
+T11.3|p144|0|0|24 July | 0555|31|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,31,24 July | 0555,3,Δ(θT/∂z) / (°C/cm),.000,0.0,value,number,False,False,0.9774,,2
+T11.3|p144|0|0|24 July | 0615|32|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,32,24 July | 0615,1,Δ(θT/∂z) / (°C/cm),.007,0.007,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0615|32|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,32,24 July | 0615,2,Δ(θT/∂z) / (°C/cm),.013,0.013,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0615|32|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,32,24 July | 0615,3,Δ(θT/∂z) / (°C/cm),.011,0.011,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0655|33|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,33,24 July | 0655,1,Δ(θT/∂z) / (°C/cm),.037,0.037,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0655|33|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,33,24 July | 0655,2,Δ(θT/∂z) / (°C/cm),.034,0.034,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0655|33|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,33,24 July | 0655,3,Δ(θT/∂z) / (°C/cm),.046,0.046,value,number,False,False,0.9675,,2
+T11.3|p144|0|0|24 July | 0715|34|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,34,24 July | 0715,1,Δ(θT/∂z) / (°C/cm),.060,0.06,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 0715|34|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,34,24 July | 0715,2,Δ(θT/∂z) / (°C/cm),.071,0.071,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 0715|34|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,34,24 July | 0715,3,Δ(θT/∂z) / (°C/cm),.063,0.063,value,number,False,False,0.9985,,2
+T11.3|p144|0|0|24 July | 0755|35|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,35,24 July | 0755,1,Δ(θT/∂z) / (°C/cm),.037,0.037,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0755|35|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,35,24 July | 0755,2,Δ(θT/∂z) / (°C/cm),.031,0.031,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0755|35|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,35,24 July | 0755,3,Δ(θT/∂z) / (°C/cm),.028,0.028,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0815|36|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,36,24 July | 0815,1,Δ(θT/∂z) / (°C/cm),.041,0.041,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0815|36|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,36,24 July | 0815,2,Δ(θT/∂z) / (°C/cm),.045,0.045,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0815|36|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,36,24 July | 0815,3,Δ(θT/∂z) / (°C/cm),.045,0.045,value,number,False,False,0.9682,,2
+T11.3|p144|0|0|24 July | 0855|37|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,37,24 July | 0855,1,Δ(θT/∂z) / (°C/cm),.073,0.073,value,number,False,False,0.9928,,2
+T11.3|p144|0|0|24 July | 0855|37|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,37,24 July | 0855,2,Δ(θT/∂z) / (°C/cm),.075,0.075,value,number,False,False,0.9928,,2
+T11.3|p144|0|0|24 July | 0855|37|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,37,24 July | 0855,3,Δ(θT/∂z) / (°C/cm),.085,0.085,value,number,False,False,0.9928,,2
+T11.3|p144|0|0|24 July | 0115|38|1|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,38,24 July | 0115,1,Δ(θT/∂z) / (°C/cm),.115,0.115,value,number,False,False,0.9982,,2
+T11.3|p144|0|0|24 July | 0115|38|2|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,38,24 July | 0115,2,Δ(θT/∂z) / (°C/cm),.115,0.115,value,number,False,False,0.9982,,2
+T11.3|p144|0|0|24 July | 0115|38|3|2|Δ(θT/∂z) / (°C/cm),11.3,144,,0,0,38,24 July | 0115,3,Δ(θT/∂z) / (°C/cm),.106,0.106,value,number,False,False,0.9982,,2

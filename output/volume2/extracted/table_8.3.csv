@@ -1,0 +1,81 @@
+cell_id,table,pdf_index,printed_page,panel,block,row,row_key,quantity,token,value,status,kind,estimated,footnote,conf,flags,col
+T8.3|p106|0|0|0-10|2|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,2,0-10,July 10 | Soil Moisture (% Dry Wt.),7.2,7.2,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|0-10|2|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,2,0-10,July 10 | Soil Density (Gr/cm³),1.06,1.06,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|0-10|2|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,2,0-10,July 16 | Soil Moisture (% Dry Wt.),6.8,6.8,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|0-10|2|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,2,0-10,July 16 | Soil Density (Gr/cm³),.99,0.99,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|10-20|3|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,3,10-20,July 10 | Soil Moisture (% Dry Wt.),7.0,7.0,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|10-20|3|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,3,10-20,July 10 | Soil Density (Gr/cm³),1.13,1.13,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|10-20|3|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,3,10-20,July 16 | Soil Moisture (% Dry Wt.),6.3,6.3,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|10-20|3|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,3,10-20,July 16 | Soil Density (Gr/cm³),1.07,1.07,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|20-30|4|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,4,20-30,July 10 | Soil Moisture (% Dry Wt.),3.8,3.8,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|20-30|4|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,4,20-30,July 10 | Soil Density (Gr/cm³),1.28,1.28,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|20-30|4|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,4,20-30,July 16 | Soil Moisture (% Dry Wt.),6.3,6.3,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|20-30|4|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,4,20-30,July 16 | Soil Density (Gr/cm³),1.11,1.11,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|30-40|5|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,5,30-40,July 10 | Soil Moisture (% Dry Wt.),4.2,4.2,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|30-40|5|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,5,30-40,July 10 | Soil Density (Gr/cm³),1.35,1.35,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|30-40|5|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,5,30-40,July 16 | Soil Moisture (% Dry Wt.),4.9,4.9,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|30-40|5|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,5,30-40,July 16 | Soil Density (Gr/cm³),1.17,1.17,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|40-50|6|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,6,40-50,July 10 | Soil Moisture (% Dry Wt.),5.1,5.1,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|40-50|6|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,6,40-50,July 10 | Soil Density (Gr/cm³),1.31,1.31,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|40-50|6|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,6,40-50,July 16 | Soil Moisture (% Dry Wt.),3.9,3.9,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|40-50|6|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,6,40-50,July 16 | Soil Density (Gr/cm³),1.19,1.19,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|50-60|7|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,7,50-60,July 10 | Soil Moisture (% Dry Wt.),3.1,3.1,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|50-60|7|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,7,50-60,July 10 | Soil Density (Gr/cm³),1.43,1.43,value,number,False,False,0.9997,,2
+T8.3|p106|0|0|50-60|7|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,7,50-60,July 16 | Soil Moisture (% Dry Wt.),3.7,3.7,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|50-60|7|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,7,50-60,July 16 | Soil Density (Gr/cm³),1.20,1.2,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|60-70|8|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,8,60-70,July 10 | Soil Moisture (% Dry Wt.),1.9,1.9,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|60-70|8|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,8,60-70,July 10 | Soil Density (Gr/cm³),1.53*,1.53,value,number,False,True,0.9997,,2
+T8.3|p106|0|0|60-70|8|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,8,60-70,July 16 | Soil Moisture (% Dry Wt.),3.4,3.4,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|60-70|8|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,8,60-70,July 16 | Soil Density (Gr/cm³),1.27,1.27,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|70-80|9|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,9,70-80,July 10 | Soil Moisture (% Dry Wt.),1.8,1.8,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|70-80|9|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,9,70-80,July 10 | Soil Density (Gr/cm³),1.53*,1.53,value,number,False,True,0.9997,,2
+T8.3|p106|0|0|70-80|9|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,9,70-80,July 16 | Soil Moisture (% Dry Wt.),3.2,3.2,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|70-80|9|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,9,70-80,July 16 | Soil Density (Gr/cm³),1.29,1.29,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|80-90|10|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,10,80-90,July 10 | Soil Moisture (% Dry Wt.),2.9,2.9,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|80-90|10|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,10,80-90,July 10 | Soil Density (Gr/cm³),1.53*,1.53,value,number,False,True,0.9997,,2
+T8.3|p106|0|0|80-90|10|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,10,80-90,July 16 | Soil Moisture (% Dry Wt.),4.8,4.8,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|80-90|10|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,10,80-90,July 16 | Soil Density (Gr/cm³),1.40,1.4,value,number,False,False,0.9997,,4
+T8.3|p106|0|0|90-100|11|1|July 10 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,11,90-100,July 10 | Soil Moisture (% Dry Wt.),5.7,5.7,value,number,False,False,0.9997,,1
+T8.3|p106|0|0|90-100|11|2|July 10 | Soil Density (Gr/cm³),8.3,106,96,0,0,11,90-100,July 10 | Soil Density (Gr/cm³),1.53*,1.53,value,number,False,True,0.9997,,2
+T8.3|p106|0|0|90-100|11|3|July 16 | Soil Moisture (% Dry Wt.),8.3,106,96,0,0,11,90-100,July 16 | Soil Moisture (% Dry Wt.),4.8,4.8,value,number,False,False,0.9997,,3
+T8.3|p106|0|0|90-100|11|4|July 16 | Soil Density (Gr/cm³),8.3,106,96,0,0,11,90-100,July 16 | Soil Density (Gr/cm³),1.45,1.45,value,number,False,False,0.9997,,4
+T8.3|p106|0|1|0-10|2|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,2,0-10,August 6 | Soil Moisture (% Dry Wt.),9.2,9.2,value,number,False,False,0.999,,1
+T8.3|p106|0|1|0-10|2|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,2,0-10,August 6 | Soil Density (Gr/cm³),1.03,1.03,value,number,False,False,0.999,,2
+T8.3|p106|0|1|0-10|2|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,2,0-10,August 29 | Soil Moisture (% Dry Wt.),6.6,6.6,value,number,False,False,0.999,,3
+T8.3|p106|0|1|0-10|2|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,2,0-10,August 29 | Soil Density (Gr/cm³),1.05,1.05,value,number,False,False,0.999,,4
+T8.3|p106|0|1|10-20|3|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,3,10-20,August 6 | Soil Moisture (% Dry Wt.),6.6,6.6,value,number,False,False,0.999,,1
+T8.3|p106|0|1|10-20|3|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,3,10-20,August 6 | Soil Density (Gr/cm³),1.11,1.11,value,number,False,False,0.999,,2
+T8.3|p106|0|1|10-20|3|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,3,10-20,August 29 | Soil Moisture (% Dry Wt.),6.5,6.5,value,number,False,False,0.999,,3
+T8.3|p106|0|1|10-20|3|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,3,10-20,August 29 | Soil Density (Gr/cm³),1.19,1.19,value,number,False,False,0.999,,4
+T8.3|p106|0|1|20-30|4|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,4,20-30,August 6 | Soil Moisture (% Dry Wt.),3.0,3.0,value,number,False,False,0.999,,1
+T8.3|p106|0|1|20-30|4|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,4,20-30,August 6 | Soil Density (Gr/cm³),1.23,1.23,value,number,False,False,0.999,,2
+T8.3|p106|0|1|20-30|4|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,4,20-30,August 29 | Soil Moisture (% Dry Wt.),6.0,6.0,value,number,False,False,0.999,,3
+T8.3|p106|0|1|20-30|4|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,4,20-30,August 29 | Soil Density (Gr/cm³),1.22,1.22,value,number,False,False,0.999,,4
+T8.3|p106|0|1|30-40|5|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,5,30-40,August 6 | Soil Moisture (% Dry Wt.),2.8,2.8,value,number,False,False,0.999,,1
+T8.3|p106|0|1|30-40|5|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,5,30-40,August 6 | Soil Density (Gr/cm³),1.27,1.27,value,number,False,False,0.999,,2
+T8.3|p106|0|1|30-40|5|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,5,30-40,August 29 | Soil Moisture (% Dry Wt.),4.4,4.4,value,number,False,False,0.999,,3
+T8.3|p106|0|1|30-40|5|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,5,30-40,August 29 | Soil Density (Gr/cm³),1.35,1.35,value,number,False,False,0.999,,4
+T8.3|p106|0|1|40-50|6|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,6,40-50,August 6 | Soil Moisture (% Dry Wt.),2.9,2.9,value,number,False,False,0.999,,1
+T8.3|p106|0|1|40-50|6|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,6,40-50,August 6 | Soil Density (Gr/cm³),1.29,1.29,value,number,False,False,0.999,,2
+T8.3|p106|0|1|40-50|6|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,6,40-50,August 29 | Soil Moisture (% Dry Wt.),5.6,5.6,value,number,False,False,0.999,,3
+T8.3|p106|0|1|40-50|6|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,6,40-50,August 29 | Soil Density (Gr/cm³),1.29,1.29,value,number,False,False,0.999,,4
+T8.3|p106|0|1|50-60|7|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,7,50-60,August 6 | Soil Moisture (% Dry Wt.),3.5,3.5,value,number,False,False,0.999,,1
+T8.3|p106|0|1|50-60|7|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,7,50-60,August 6 | Soil Density (Gr/cm³),1.32,1.32,value,number,False,False,0.999,,2
+T8.3|p106|0|1|50-60|7|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,7,50-60,August 29 | Soil Moisture (% Dry Wt.),6.7,6.7,value,number,False,False,0.999,,3
+T8.3|p106|0|1|50-60|7|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,7,50-60,August 29 | Soil Density (Gr/cm³),1.39,1.39,value,number,False,False,0.999,,4
+T8.3|p106|0|1|60-70|8|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,8,60-70,August 6 | Soil Moisture (% Dry Wt.),6.2,6.2,value,number,False,False,0.999,,1
+T8.3|p106|0|1|60-70|8|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,8,60-70,August 6 | Soil Density (Gr/cm³),1.20,1.2,value,number,False,False,0.999,,2
+T8.3|p106|0|1|60-70|8|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,8,60-70,August 29 | Soil Moisture (% Dry Wt.),3.8,3.8,value,number,False,False,0.999,,3
+T8.3|p106|0|1|60-70|8|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,8,60-70,August 29 | Soil Density (Gr/cm³),1.51,1.51,value,number,False,False,0.999,,4
+T8.3|p106|0|1|70-80|9|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,9,70-80,August 6 | Soil Moisture (% Dry Wt.),3.8,3.8,value,number,False,False,0.999,,1
+T8.3|p106|0|1|70-80|9|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,9,70-80,August 6 | Soil Density (Gr/cm³),1.35,1.35,value,number,False,False,0.999,,2
+T8.3|p106|0|1|70-80|9|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,9,70-80,August 29 | Soil Moisture (% Dry Wt.),2.9,2.9,value,number,False,False,0.999,,3
+T8.3|p106|0|1|70-80|9|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,9,70-80,August 29 | Soil Density (Gr/cm³),1.56,1.56,value,number,False,False,0.999,,4
+T8.3|p106|0|1|80-90|10|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,10,80-90,August 6 | Soil Moisture (% Dry Wt.),2.6,2.6,value,number,False,False,0.999,,1
+T8.3|p106|0|1|80-90|10|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,10,80-90,August 6 | Soil Density (Gr/cm³),1.45,1.45,value,number,False,False,0.999,,2
+T8.3|p106|0|1|80-90|10|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,10,80-90,August 29 | Soil Moisture (% Dry Wt.),2.4,2.4,value,number,False,False,0.999,,3
+T8.3|p106|0|1|80-90|10|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,10,80-90,August 29 | Soil Density (Gr/cm³),1.58,1.58,value,number,False,False,0.999,,4
+T8.3|p106|0|1|90-100|11|1|August 6 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,11,90-100,August 6 | Soil Moisture (% Dry Wt.),1.8,1.8,value,number,False,False,0.999,,1
+T8.3|p106|0|1|90-100|11|2|August 6 | Soil Density (Gr/cm³),8.3,106,96,0,1,11,90-100,August 6 | Soil Density (Gr/cm³),1.60,1.6,value,number,False,False,0.999,,2
+T8.3|p106|0|1|90-100|11|3|August 29 | Soil Moisture (% Dry Wt.),8.3,106,96,0,1,11,90-100,August 29 | Soil Moisture (% Dry Wt.),2.4,2.4,value,number,False,False,0.999,,3
+T8.3|p106|0|1|90-100|11|4|August 29 | Soil Density (Gr/cm³),8.3,106,96,0,1,11,90-100,August 29 | Soil Density (Gr/cm³),1.68,1.68,value,number,False,False,0.999,,4

@@ -1,0 +1,514 @@
+cell_id,table,pdf_index,grid_ti,grid_row,grid_col,quantity,mistral_token,sonnet_token,agree,compared,alignment,sonnet_unclear,checks
+T8.1|p66|16|1956-07-23|1005|radiation|insolation,8.1,66,0,5,4,insolation,0183,0183,True,True,aligned by non-blank cells,True,format
+T8.1|p67|23|1956-07-29|2105|vapor_pressure|vapor_pressure|1.0,8.1,67,0,29,5,vapor_pressure,20.7*,20.7•,True,True,aligned by non-blank cells,True,format
+T8.1|p67|24|1956-07-29|2305|vapor_pressure|vapor_pressure|1.0,8.1,67,0,29,6,vapor_pressure,20.9*,20.9•,True,True,aligned by non-blank cells,True,format
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|2.0,8.1,71,0,37,7,wind_speed,3.21,3.21,True,True,,True,8.x-profile;format
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|1.0,8.1,71,0,38,7,wind_speed,2.94,2.94,True,True,,True,format
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.5,8.1,71,0,39,7,wind_speed,2.96,2.96,True,True,,True,format
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.25,8.1,71,0,40,7,wind_speed,2.23,2.23,True,True,,True,format
+T8.2|p80|1956-07-23|0905|soil_temperature_change|run_time,8.2,80,0,43,1,run_time,.27,27,False,True,,True,format
+T8.2|p80|1956-07-23|1105|soil_temperature_change|run_time,8.2,80,0,43,2,run_time,.25,25,False,True,,True,format
+T8.2|p80|1956-07-23|1205|soil_temperature_change|run_time,8.2,80,0,43,3,run_time,.27,27,False,True,,True,format
+T8.2|p80|1956-07-23|1305|soil_temperature_change|run_time,8.2,80,0,43,4,run_time,.20,20,False,True,,True,format
+T8.2|p80|1956-07-23|1405|soil_temperature_change|run_time,8.2,80,0,43,5,run_time,.25,25,False,True,,True,format
+T8.2|p80|1956-07-23|1605|soil_temperature_change|run_time,8.2,80,0,43,6,run_time,.30,30,False,True,,True,format
+T8.2|p93|1956-08-07|1105|radiation|net_radiation,8.2,93,0,5,2,net_radiation,0130,0130,True,True,aligned by non-blank cells,True,8.x-radiation;format
+T8.2|p97|1956-08-08|1805|temperature|temperature|-0.06,8.2,97,0,17,5,temperature,30.8,30.8,True,True,aligned by non-blank cells,True,format
+T8.2|p97|1956-08-08|1805|temperature|temperature|-0.25,8.2,97,0,19,5,temperature,23.4,23.4,True,True,aligned by non-blank cells,True,format
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|8.0,8.2,104,0,24,2,vapor_pressure,16.7,16.57,False,True,,True,format
+T8.2|p104|1956-08-28|0805|soil_temperature_change|soil_temperature_change|-0.06,8.2,104,0,45,1,soil_temperature_change,32,.32,False,True,,True,format
+T13.1|p190|5|1956-07-06|0|8|dew_point,13.1,190,0,9,6,dew_point,1.50,"1,50",True,True,,False,13.1-humidity;format
+T9.1|p124|34|19|q_c,9.1,124,0,19,4,q_c,-7.50,- 7.50,True,True,,True,9.1-sum
+T9.1|p124|34|19|q_e,9.1,124,0,19,5,q_e,-2.96,-3.96,False,True,,True,9.1-9.2;9.1-sum
+T9.1|p124|34|19|q_s,9.1,124,0,19,6,q_s,-.35,- .35,True,True,,True,9.1-sum
+T9.1|p124|34|19|sum_q,9.1,124,0,19,7,sum_q,-11.81,-11.81,True,True,,True,9.1-sum
+T9.2|p125|34|20|q_e,9.2,125,0,20,2,q_e,-.238,-.238,True,True,,False,9.1-9.2
+T9.1|p124|43|28|R_n,9.1,124,0,28,8,R_n,10.80,10.80,True,True,,True,9.1-sum
+T9.1|p124|43|28|sum_q,9.1,124,0,28,7,sum_q,-9.97,- 9.97,True,True,,True,9.1-sum
+T9.1|p124|43|28|R_n_plus_sum_q,9.1,124,0,28,9,R_n_plus_sum_q,-.33,- .83,False,True,,True,9.1-sum
+T9.1|p124|48S|32|q_c,9.1,124,0,32,4,q_c,-3.63,- 3.63,True,True,,True,9.1-9.2
+T9.2|p125|48S|33|q_c,9.2,125,0,33,1,q_c,.218,.218,True,True,,True,9.1-9.2
+T9.1|p124|50|35|R_n,9.1,124,0,35,8,R_n,12.80,12.80,True,True,,False,9.1-9.2
+T9.2|p125|50|36|R_n,9.2,125,0,36,4,R_n,.763,.708,False,True,,True,9.1-9.2
+T9.1|p124|60|44|q_e,9.1,124,0,44,5,q_e,-.13,- .13,True,True,,False,9.1-9.2
+T9.2|p125|60|45|q_e,9.2,125,0,45,2,q_e,-.066,-.008,False,True,,True,9.1-9.2
+T13.1|p189|4|1956-07-06|1|6|temperature,13.1,189,1,7,2,temperature,24.4,24.4,True,True,,True,13.1-humidity
+T13.1|p189|4|1956-07-06|1|6|dew_point,13.1,189,1,7,6,dew_point,17.3,17.3,True,True,,True,13.1-humidity
+T13.1|p189|4|1956-07-06|1|6|vapor_pressure,13.1,189,1,7,5,vapor_pressure,18.5,18.5,True,True,,True,13.1-humidity
+T13.1|p189|4|1956-07-06|1|6|relative_humidity,13.1,189,1,7,4,relative_humidity,59,59,True,True,,True,13.1-humidity
+T13.1|p190|5|1956-07-06|0|8|temperature,13.1,190,0,9,2,temperature,25.3,25.3,True,True,,False,13.1-humidity
+T13.1|p190|5|1956-07-06|0|8|vapor_pressure,13.1,190,0,9,5,vapor_pressure,17.0,17.0,True,True,,False,13.1-humidity
+T13.1|p190|5|1956-07-06|0|8|relative_humidity,13.1,190,0,9,4,relative_humidity,52,52,True,True,,False,13.1-humidity
+T13.1|p190|6|1956-07-06|1|1|temperature,13.1,190,1,2,2,temperature,30.3,30.3,True,True,,True,13.1-humidity
+T13.1|p190|6|1956-07-06|1|1|dew_point,13.1,190,1,2,6,dew_point,17.3,17.3,True,True,,True,13.1-humidity
+T13.1|p190|6|1956-07-06|1|1|vapor_pressure,13.1,190,1,2,5,vapor_pressure,18.5,18.5,True,True,,True,13.1-humidity
+T13.1|p190|6|1956-07-06|1|1|relative_humidity,13.1,190,1,2,4,relative_humidity,43,43,True,True,,True,13.1-humidity
+T13.1|p191|8|1956-07-10|1|13|temperature,13.1,191,1,14,2,temperature,17.6,17.0,False,True,,True,13.1-humidity
+T13.1|p191|8|1956-07-10|1|13|dew_point,13.1,191,1,14,6,dew_point,10.8,10.8,True,True,,True,13.1-humidity
+T13.1|p191|8|1956-07-10|1|13|vapor_pressure,13.1,191,1,14,5,vapor_pressure,13.0,13.0,True,True,,True,13.1-humidity
+T13.1|p191|8|1956-07-10|1|13|relative_humidity,13.1,191,1,14,4,relative_humidity,59,50,False,True,,True,13.1-humidity
+T13.1|p192|9|1956-07-11|0|16|temperature,13.1,192,0,17,2,temperature,15.1,13.1,False,True,,True,13.1-humidity
+T13.1|p192|9|1956-07-11|0|16|dew_point,13.1,192,0,17,6,dew_point,2.6,2.6,True,True,,True,13.1-humidity
+T13.1|p192|9|1956-07-11|0|16|vapor_pressure,13.1,192,0,17,5,vapor_pressure,7.4,7.4,True,True,,True,13.1-humidity
+T13.1|p192|9|1956-07-11|0|16|relative_humidity,13.1,192,0,17,4,relative_humidity,49,40,False,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|5|temperature,13.1,192,1,6,2,temperature,26.3,20.3,False,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|5|dew_point,13.1,192,1,6,6,dew_point,18.8,18.8,True,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|5|vapor_pressure,13.1,192,1,6,5,vapor_pressure,21.0,21.8,False,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|5|relative_humidity,13.1,192,1,6,4,relative_humidity,63,63,True,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|14|temperature,13.1,192,1,15,2,temperature,18.1,18.1,True,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|14|dew_point,13.1,192,1,15,6,dew_point,9.8,9.8,True,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|14|vapor_pressure,13.1,192,1,15,5,vapor_pressure,11.4,11.4,True,True,,True,13.1-humidity
+T13.1|p192|10|1956-07-11|1|14|relative_humidity,13.1,192,1,15,4,relative_humidity,54,54,True,True,,True,13.1-humidity
+T13.1|p193|11|1956-07-14|0|16|temperature,13.1,193,0,17,2,temperature,12.5,12.5,True,True,,True,13.1-humidity
+T13.1|p193|11|1956-07-14|0|16|dew_point,13.1,193,0,17,6,dew_point,6.4,0.4,False,True,,True,13.1-humidity
+T13.1|p193|11|1956-07-14|0|16|vapor_pressure,13.1,193,0,17,5,vapor_pressure,6.3,6.3,True,True,,True,13.1-humidity
+T13.1|p193|11|1956-07-14|0|16|relative_humidity,13.1,193,0,17,4,relative_humidity,43,43,True,True,,True,13.1-humidity
+T13.1|p194|13|1956-07-22|0|9|temperature,13.1,194,0,10,2,temperature,18.0,18.0,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|9|dew_point,13.1,194,0,10,6,dew_point,13.1,13.1,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|9|vapor_pressure,13.1,194,0,10,5,vapor_pressure,15.9,15.0,False,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|9|relative_humidity,13.1,194,0,10,4,relative_humidity,72,72,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|15|temperature,13.1,194,0,16,2,temperature,8.1,8.1,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|15|dew_point,13.1,194,0,16,6,dew_point,8.1,8.1,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|15|vapor_pressure,13.1,194,0,16,5,vapor_pressure,11.3,11.3,True,True,,False,13.1-humidity
+T13.1|p194|13|1956-07-22|0|15|relative_humidity,13.1,194,0,16,4,relative_humidity,100,100,True,True,,False,13.1-humidity
+T13.1|p194|14|1956-07-22|1|11|temperature,13.1,194,1,12,2,temperature,13.1,13.1,True,True,,True,13.1-humidity
+T13.1|p194|14|1956-07-22|1|11|dew_point,13.1,194,1,12,6,dew_point,13.1,13.1,True,True,,True,13.1-humidity
+T13.1|p194|14|1956-07-22|1|11|vapor_pressure,13.1,194,1,12,5,vapor_pressure,15.0,15.0,True,True,,True,13.1-humidity
+T13.1|p194|14|1956-07-22|1|11|relative_humidity,13.1,194,1,12,4,relative_humidity,93,93,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|11|temperature,13.1,195,0,12,2,temperature,15.0,15.9,False,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|11|dew_point,13.1,195,0,12,6,dew_point,13.3,13.3,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|11|vapor_pressure,13.1,195,0,12,5,vapor_pressure,15.3,15.3,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|11|relative_humidity,13.1,195,0,12,4,relative_humidity,84,84,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|18|temperature,13.1,195,0,19,2,temperature,21.3,21.3,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|18|dew_point,13.1,195,0,19,6,dew_point,14.9,14.9,True,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|18|vapor_pressure,13.1,195,0,19,5,vapor_pressure,19.3,10.3,False,True,,True,13.1-humidity
+T13.1|p195|15|1956-07-23|0|18|relative_humidity,13.1,195,0,19,4,relative_humidity,75,75,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|14|temperature,13.1,195,1,15,2,temperature,12.4,12.4,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|14|dew_point,13.1,195,1,15,6,dew_point,1.2,1.2,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|14|vapor_pressure,13.1,195,1,15,5,vapor_pressure,5.5,5.5,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|14|relative_humidity,13.1,195,1,15,4,relative_humidity,38,38,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|17|temperature,13.1,195,1,18,2,temperature,24.4,24.4,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|17|dew_point,13.1,195,1,18,6,dew_point,16.9,10.9,False,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|17|vapor_pressure,13.1,195,1,18,5,vapor_pressure,18.1,18.1,True,True,,True,13.1-humidity
+T13.1|p195|16|1956-07-23|1|17|relative_humidity,13.1,195,1,18,4,relative_humidity,58,68,False,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|7|temperature,13.1,196,0,8,2,temperature,28.2,28.2,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|7|dew_point,13.1,196,0,8,6,dew_point,10.5,10.5,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|7|vapor_pressure,13.1,196,0,8,5,vapor_pressure,10.7,10.7,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|7|relative_humidity,13.1,196,0,8,4,relative_humidity,33,33,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|11|temperature,13.1,196,0,12,2,temperature,33.2,23.2,False,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|11|dew_point,13.1,196,0,12,6,dew_point,8.2,8.2,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|11|vapor_pressure,13.1,196,0,12,5,vapor_pressure,10.8,10.8,True,True,,True,13.1-humidity
+T13.1|p196|17|1956-07-23|0|11|relative_humidity,13.1,196,0,12,4,relative_humidity,38,38,True,True,,True,13.1-humidity
+T13.1|p196|18|1956-07-23|1|9|temperature,13.1,196,1,10,2,temperature,23.4,23.4,True,True,,True,13.1-humidity
+T13.1|p196|18|1956-07-23|1|9|dew_point,13.1,196,1,10,6,dew_point,5.8,5.8,True,True,,True,13.1-humidity
+T13.1|p196|18|1956-07-23|1|9|vapor_pressure,13.1,196,1,10,5,vapor_pressure,11.3,11.3,True,True,,True,13.1-humidity
+T13.1|p196|18|1956-07-23|1|9|relative_humidity,13.1,196,1,10,4,relative_humidity,39,30,False,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|11|temperature,13.1,197,0,12,2,temperature,20.3,20.3,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|11|dew_point,13.1,197,0,12,6,dew_point,-0.3,-0.3,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|11|vapor_pressure,13.1,197,0,12,5,vapor_pressure,6.9,6.0,False,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|11|relative_humidity,13.1,197,0,12,4,relative_humidity,25,25,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|16|temperature,13.1,197,0,17,2,temperature,13.5,13.5,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|16|dew_point,13.1,197,0,17,6,dew_point,0.9,0.9,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|16|vapor_pressure,13.1,197,0,17,5,vapor_pressure,5.7,5.7,True,True,,True,13.1-humidity
+T13.1|p197|19|1956-07-25|0|16|relative_humidity,13.1,197,0,17,4,relative_humidity,36,36,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|14|temperature,13.1,197,1,15,2,temperature,17.0,17.0,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|14|dew_point,13.1,197,1,15,6,dew_point,1.1,1.1,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|14|vapor_pressure,13.1,197,1,15,5,vapor_pressure,5.9,5.9,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|14|relative_humidity,13.1,197,1,15,4,relative_humidity,28,28,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|15|temperature,13.1,197,1,16,2,temperature,13.8,13.8,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|15|dew_point,13.1,197,1,16,6,dew_point,0.6,0.0,False,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|15|vapor_pressure,13.1,197,1,16,5,vapor_pressure,5.8,5.8,True,True,,True,13.1-humidity
+T13.1|p197|20|1956-07-25|1|15|relative_humidity,13.1,197,1,16,4,relative_humidity,36,36,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|4|temperature,13.1,198,1,5,2,temperature,26.4,26.4,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|4|dew_point,13.1,198,1,5,6,dew_point,10.9,10.9,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|4|vapor_pressure,13.1,198,1,5,5,vapor_pressure,13.6,13.6,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|4|relative_humidity,13.1,198,1,5,4,relative_humidity,38,38,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|13|temperature,13.1,198,1,14,2,temperature,19.5,19.5,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|13|dew_point,13.1,198,1,14,6,dew_point,1.9,1.9,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|13|vapor_pressure,13.1,198,1,14,5,vapor_pressure,5.2,5.2,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|13|relative_humidity,13.1,198,1,14,4,relative_humidity,23,23,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|16|temperature,13.1,198,1,17,2,temperature,26.9,26.9,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|16|dew_point,13.1,198,1,17,6,dew_point,10.6,10.6,True,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|16|vapor_pressure,13.1,198,1,17,5,vapor_pressure,15.8,12.8,False,True,,True,13.1-humidity
+T13.1|p198|22|1956-07-26|1|16|relative_humidity,13.1,198,1,17,4,relative_humidity,36,36,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|6|temperature,13.1,199,0,7,2,temperature,20.0,20.0,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|6|dew_point,13.1,199,0,7,6,dew_point,20.0,20.0,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|6|vapor_pressure,13.1,199,0,7,5,vapor_pressure,24.4,24.4,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|6|relative_humidity,13.1,199,0,7,4,relative_humidity,>100,&gt;100,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|7|temperature,13.1,199,0,8,2,temperature,19.5,19.5,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|7|dew_point,13.1,199,0,8,6,dew_point,19.5,19.5,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|7|vapor_pressure,13.1,199,0,8,5,vapor_pressure,23.7,23.7,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|7|relative_humidity,13.1,199,0,8,4,relative_humidity,>100,&gt;100,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|8|temperature,13.1,199,0,9,2,temperature,8.2,8.2,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|8|dew_point,13.1,199,0,9,6,dew_point,18.2,12.2,False,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|8|vapor_pressure,13.1,199,0,9,5,vapor_pressure,23.2,22.2,False,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|8|relative_humidity,13.1,199,0,9,4,relative_humidity,>100,>100,True,True,,True,13.1-humidity
+T13.1|p199|25|1956-08-01|0|9|temperature,13.1,199,0,10,2,temperature,19.4,19.4,True,True,,False,13.1-humidity
+T13.1|p199|25|1956-08-01|0|9|dew_point,13.1,199,0,10,6,dew_point,19.4,19.4,True,True,,False,13.1-humidity
+T13.1|p199|25|1956-08-01|0|9|vapor_pressure,13.1,199,0,10,5,vapor_pressure,23.2,23.2,True,True,,False,13.1-humidity
+T13.1|p199|25|1956-08-01|0|9|relative_humidity,13.1,199,0,10,4,relative_humidity,>100,>100,True,True,,False,13.1-humidity
+T13.1|p199|26|1956-08-02|1|7|temperature,13.1,199,1,8,2,temperature,24.4,24.4,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|7|dew_point,13.1,199,1,8,6,dew_point,20.4,20.4,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|7|vapor_pressure,13.1,199,1,8,5,vapor_pressure,25.9,25.9,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|7|relative_humidity,13.1,199,1,8,4,relative_humidity,78,78,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|10|temperature,13.1,199,1,11,2,temperature,19.4,20.4,False,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|10|dew_point,13.1,199,1,11,6,dew_point,19.1,19.1,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|10|vapor_pressure,13.1,199,1,11,5,vapor_pressure,22.0,22.0,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|10|relative_humidity,13.1,199,1,11,4,relative_humidity,91,91,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|15|temperature,13.1,199,1,16,2,temperature,14.0,14.0,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|15|dew_point,13.1,199,1,16,6,dew_point,10.6,10.6,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|15|vapor_pressure,13.1,199,1,16,5,vapor_pressure,13.7,13.7,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|15|relative_humidity,13.1,199,1,16,4,relative_humidity,78,78,True,True,,True,13.1-humidity
+T13.1|p199|26|1956-08-02|1|16|temperature,13.1,199,1,17,2,temperature,11.8,11.8,True,True,,False,13.1-humidity
+T13.1|p199|26|1956-08-02|1|16|dew_point,13.1,199,1,17,6,dew_point,9.6,9.6,True,True,,False,13.1-humidity
+T13.1|p199|26|1956-08-02|1|16|vapor_pressure,13.1,199,1,17,5,vapor_pressure,12.9,12.9,True,True,,False,13.1-humidity
+T13.1|p199|26|1956-08-02|1|16|relative_humidity,13.1,199,1,17,4,relative_humidity,95,95,True,True,,False,13.1-humidity
+T13.1|p200|27|1956-08-02|0|9|temperature,13.1,200,0,10,2,temperature,23.6,23.6,True,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|9|dew_point,13.1,200,0,10,6,dew_point,19.0,19.0,True,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|9|vapor_pressure,13.1,200,0,10,5,vapor_pressure,23.2,23.2,True,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|9|relative_humidity,13.1,200,0,10,4,relative_humidity,79,79,True,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|14|temperature,13.1,200,0,15,2,temperature,16.4,14.6,False,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|14|dew_point,13.1,200,0,15,6,dew_point,11.0,11.0,True,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|14|vapor_pressure,13.1,200,0,15,5,vapor_pressure,13.7,12.6,False,True,,True,13.1-humidity
+T13.1|p200|27|1956-08-02|0|14|relative_humidity,13.1,200,0,15,4,relative_humidity,72,75,False,True,,True,13.1-humidity
+T13.1|p200|28|1956-08-03|1|11|temperature,13.1,200,1,12,2,temperature,23.0,23.0,True,True,,True,13.1-humidity
+T13.1|p200|28|1956-08-03|1|11|dew_point,13.1,200,1,12,6,dew_point,11.0,11.6,False,True,,True,13.1-humidity
+T13.1|p200|28|1956-08-03|1|11|vapor_pressure,13.1,200,1,12,5,vapor_pressure,13.7,13.7,True,True,,True,13.1-humidity
+T13.1|p200|28|1956-08-03|1|11|relative_humidity,13.1,200,1,12,4,relative_humidity,49,49,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|3|temperature,13.1,201,0,4,2,temperature,26.5,26.5,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|3|dew_point,13.1,201,0,4,6,dew_point,15.5,15.5,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|3|vapor_pressure,13.1,201,0,4,5,vapor_pressure,15.5,..5,False,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|3|relative_humidity,13.1,201,0,4,4,relative_humidity,50,50,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|12|temperature,13.1,201,0,13,2,temperature,26.2,26.2,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|12|dew_point,13.1,201,0,13,6,dew_point,14.3,14.3,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|12|vapor_pressure,13.1,201,0,13,5,vapor_pressure,10.3,10.3,True,True,,True,13.1-humidity
+T13.1|p201|29|1956-08-03|0|12|relative_humidity,13.1,201,0,13,4,relative_humidity,48,48,True,True,,True,13.1-humidity
+T13.1|p201|30|1956-08-03|1|10|temperature,13.1,201,1,11,2,temperature,22.5,22.5,True,True,,True,13.1-humidity
+T13.1|p201|30|1956-08-03|1|10|dew_point,13.1,201,1,11,6,dew_point,16.7,16.7,True,True,,True,13.1-humidity
+T13.1|p201|30|1956-08-03|1|10|vapor_pressure,13.1,201,1,11,5,vapor_pressure,17.8,17.6,False,True,,True,13.1-humidity
+T13.1|p201|30|1956-08-03|1|10|relative_humidity,13.1,201,1,11,4,relative_humidity,64,64,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|10|temperature,13.1,202,0,11,2,temperature,19.8,19.8,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|10|dew_point,13.1,202,0,11,6,dew_point,10.2,10.2,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|10|vapor_pressure,13.1,202,0,11,5,vapor_pressure,13.5,13.5,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|10|relative_humidity,13.1,202,0,11,4,relative_humidity,53,53,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|13|temperature,13.1,202,0,14,2,temperature,15.2,16.2,False,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|13|dew_point,13.1,202,0,14,6,dew_point,7.3,7.3,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|13|vapor_pressure,13.1,202,0,14,5,vapor_pressure,10.2,10.2,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|13|relative_humidity,13.1,202,0,14,4,relative_humidity,76,76,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|17|temperature,13.1,202,0,18,2,temperature,31.2,31.2,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|17|dew_point,13.1,202,0,18,6,dew_point,18.6,18.0,False,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|17|vapor_pressure,13.1,202,0,18,5,vapor_pressure,21.5,21.5,True,True,,True,13.1-humidity
+T13.1|p202|37|1956-08-12|0|17|relative_humidity,13.1,202,0,18,4,relative_humidity,84,84,True,True,,True,13.1-humidity
+T13.1|p202|38|1956-08-12|1|4|temperature,13.1,202,1,5,2,temperature,22.2,25.9,False,True,,True,13.1-humidity
+T13.1|p202|38|1956-08-12|1|4|dew_point,13.1,202,1,5,6,dew_point,17.6,17.0,False,True,,True,13.1-humidity
+T13.1|p202|38|1956-08-12|1|4|vapor_pressure,13.1,202,1,5,5,vapor_pressure,20.7,26.7,False,True,,True,13.1-humidity
+T13.1|p202|38|1956-08-12|1|4|relative_humidity,13.1,202,1,5,4,relative_humidity,,..,False,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|8|temperature,13.1,203,0,9,2,temperature,23.0,23.0,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|8|dew_point,13.1,203,0,9,6,dew_point,8.4,8.4,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|8|vapor_pressure,13.1,203,0,9,5,vapor_pressure,11.9,11.9,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|8|relative_humidity,13.1,203,0,9,4,relative_humidity,39,39,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|16|temperature,13.1,203,0,17,2,temperature,25.0,25.0,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|16|dew_point,13.1,203,0,17,6,dew_point,12.2,12.2,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|16|vapor_pressure,13.1,203,0,17,5,vapor_pressure,14.2,14.2,True,True,,True,13.1-humidity
+T13.1|p203|39|1956-08-13|0|16|relative_humidity,13.1,203,0,17,4,relative_humidity,32,32,True,True,,True,13.1-humidity
+T13.1|p205|43|1956-08-15|0|14|temperature,13.1,205,0,15,2,temperature,18.7,18.7,True,True,,True,13.1-humidity
+T13.1|p205|43|1956-08-15|0|14|dew_point,13.1,205,0,15,6,dew_point,5.3,5.3,True,True,,True,13.1-humidity
+T13.1|p205|43|1956-08-15|0|14|vapor_pressure,13.1,205,0,15,5,vapor_pressure,4.9,3.9,False,True,,True,13.1-humidity
+T13.1|p205|43|1956-08-15|0|14|relative_humidity,13.1,205,0,15,4,relative_humidity,41,41,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|8|temperature,13.1,206,1,9,2,temperature,29.8,29.8,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|8|dew_point,13.1,206,1,9,6,dew_point,11.0,11.0,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|8|vapor_pressure,13.1,206,1,9,5,vapor_pressure,13.9,13.9,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|8|relative_humidity,13.1,206,1,9,4,relative_humidity,33,33,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|9|temperature,13.1,206,1,10,2,temperature,28.1,28.1,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|9|dew_point,13.1,206,1,10,6,dew_point,10.4,10.4,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|9|vapor_pressure,13.1,206,1,10,5,vapor_pressure,13.4,13.4,True,True,,True,13.1-humidity
+T13.1|p206|46|1956-08-15|1|9|relative_humidity,13.1,206,1,10,4,relative_humidity,35,35,True,True,,True,13.1-humidity
+T13.1|p207|47|1956-08-20|0|15|temperature,13.1,207,0,16,2,temperature,1.7,1.7,True,True,,True,13.1-humidity
+T13.1|p207|47|1956-08-20|0|15|dew_point,13.1,207,0,16,6,dew_point,-2.4,-2.4,True,True,,True,13.1-humidity
+T13.1|p207|47|1956-08-20|0|15|vapor_pressure,13.1,207,0,16,5,vapor_pressure,5.9,5.0,False,True,,True,13.1-humidity
+T13.1|p207|47|1956-08-20|0|15|relative_humidity,13.1,207,0,16,4,relative_humidity,71,71,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|1|temperature,13.1,207,1,2,2,temperature,12.0,12.0,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|1|dew_point,13.1,207,1,2,6,dew_point,7.4,7.4,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|1|vapor_pressure,13.1,207,1,2,5,vapor_pressure,10.3,10.3,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|1|relative_humidity,13.1,207,1,2,4,relative_humidity,49,49,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|15|temperature,13.1,207,1,16,2,temperature,-0.2,-0.2,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|15|dew_point,13.1,207,1,16,6,dew_point,-0.5,-0.5,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|15|vapor_pressure,13.1,207,1,16,5,vapor_pressure,6.3,6.3,True,True,,True,13.1-humidity
+T13.1|p207|48S|1956-08-20|1|15|relative_humidity,13.1,207,1,16,4,relative_humidity,95,95,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|3|temperature,13.1,208,0,4,2,temperature,15.2,15.2,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|3|dew_point,13.1,208,0,4,6,dew_point,11.1,11.1,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|3|vapor_pressure,13.1,208,0,4,5,vapor_pressure,12.2,12.2,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|3|relative_humidity,13.1,208,0,4,4,relative_humidity,75,75,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|12|temperature,13.1,208,0,13,2,temperature,10.8,10.8,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|12|dew_point,13.1,208,0,13,6,dew_point,1.0,1.0,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|12|vapor_pressure,13.1,208,0,13,5,vapor_pressure,6.7,6.7,True,True,,True,13.1-humidity
+T13.1|p208|48|1956-08-21|0|12|relative_humidity,13.1,208,0,13,4,relative_humidity,47,47,True,True,,True,13.1-humidity
+T13.1|p209|50|1956-08-21|0|9|temperature,13.1,209,0,10,2,temperature,18.6,18.6,True,True,,True,13.1-humidity
+T13.1|p209|50|1956-08-21|0|9|dew_point,13.1,209,0,10,6,dew_point,9.9,0.9,False,True,,True,13.1-humidity
+T13.1|p209|50|1956-08-21|0|9|vapor_pressure,13.1,209,0,10,5,vapor_pressure,11.4,11.4,True,True,,True,13.1-humidity
+T13.1|p209|50|1956-08-21|0|9|relative_humidity,13.1,209,0,10,4,relative_humidity,52,52,True,True,,True,13.1-humidity
+T13.1|p209|50|1956-08-21|0|15|temperature,13.1,209,0,16,2,temperature,10.1,,False,False,no second reading,False,13.1-humidity
+T13.1|p209|50|1956-08-21|0|15|dew_point,13.1,209,0,16,6,dew_point,-5.2,,False,False,no second reading,False,13.1-humidity
+T13.1|p209|50|1956-08-21|0|15|vapor_pressure,13.1,209,0,16,5,vapor_pressure,3.6,,False,False,no second reading,False,13.1-humidity
+T13.1|p209|50|1956-08-21|0|15|relative_humidity,13.1,209,0,16,4,relative_humidity,29,,False,False,no second reading,False,13.1-humidity
+T13.1|p209|51|1956-08-21|1|13|temperature,13.1,209,1,14,2,temperature,15.4,15.4,True,True,,True,13.1-humidity
+T13.1|p209|51|1956-08-21|1|13|dew_point,13.1,209,1,14,6,dew_point,6.8,6.8,True,True,,True,13.1-humidity
+T13.1|p209|51|1956-08-21|1|13|vapor_pressure,13.1,209,1,14,5,vapor_pressure,12.0,12.0,True,True,,True,13.1-humidity
+T13.1|p209|51|1956-08-21|1|13|relative_humidity,13.1,209,1,14,4,relative_humidity,68,68,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|11|temperature,13.1,210,0,12,2,temperature,13.6,13.6,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|11|dew_point,13.1,210,0,12,6,dew_point,4.5,4.5,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|11|vapor_pressure,13.1,210,0,12,5,vapor_pressure,7.9,7.9,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|11|relative_humidity,13.1,210,0,12,4,relative_humidity,50,50,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|17|temperature,13.1,210,0,18,2,temperature,19.5,19.5,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|17|dew_point,13.1,210,0,18,6,dew_point,7.4,7.4,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|17|vapor_pressure,13.1,210,0,18,5,vapor_pressure,9.6,9.6,True,True,,True,13.1-humidity
+T13.1|p210|52|1956-08-24|0|17|relative_humidity,13.1,210,0,18,4,relative_humidity,42,42,True,True,,True,13.1-humidity
+T13.1|p210|53|1956-08-24|1|5|temperature,13.1,210,1,6,2,temperature,21.1,21.1,True,True,,True,13.1-humidity
+T13.1|p210|53|1956-08-24|1|5|dew_point,13.1,210,1,6,6,dew_point,7.4,7.4,True,True,,True,13.1-humidity
+T13.1|p210|53|1956-08-24|1|5|vapor_pressure,13.1,210,1,6,5,vapor_pressure,11.3,11.3,True,True,,True,13.1-humidity
+T13.1|p210|53|1956-08-24|1|5|relative_humidity,13.1,210,1,6,4,relative_humidity,41,41,True,True,,True,13.1-humidity
+T13.1|p211|54|1956-08-24|0|8|temperature,13.1,211,0,9,2,temperature,15.8,17.8,False,True,,True,13.1-humidity
+T13.1|p211|54|1956-08-24|0|8|dew_point,13.1,211,0,9,6,dew_point,6.4,6.4,True,True,,True,13.1-humidity
+T13.1|p211|54|1956-08-24|0|8|vapor_pressure,13.1,211,0,9,5,vapor_pressure,9.6,9.6,True,True,,True,13.1-humidity
+T13.1|p211|54|1956-08-24|0|8|relative_humidity,13.1,211,0,9,4,relative_humidity,43,43,True,True,,True,13.1-humidity
+T13.1|p212|56|1956-08-25|0|14|temperature,13.1,212,0,15,2,temperature,13.2,13.2,True,True,,True,13.1-humidity
+T13.1|p212|56|1956-08-25|0|14|dew_point,13.1,212,0,15,6,dew_point,4.4,4.4,True,True,,True,13.1-humidity
+T13.1|p212|56|1956-08-25|0|14|vapor_pressure,13.1,212,0,15,5,vapor_pressure,18.8,10.8,False,True,,True,13.1-humidity
+T13.1|p212|56|1956-08-25|0|14|relative_humidity,13.1,212,0,15,4,relative_humidity,53,53,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|9|temperature,13.1,212,1,10,2,temperature,27.6,27.6,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|9|dew_point,13.1,212,1,10,6,dew_point,5.8,6.8,False,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|9|vapor_pressure,13.1,212,1,10,5,vapor_pressure,9.2,9.2,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|9|relative_humidity,13.1,212,1,10,4,relative_humidity,34,34,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|10|temperature,13.1,212,1,11,2,temperature,25.7,25.7,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|10|dew_point,13.1,212,1,11,6,dew_point,9.4,0.4,False,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|10|vapor_pressure,13.1,212,1,11,5,vapor_pressure,10.8,10.8,True,True,,True,13.1-humidity
+T13.1|p212|57|1956-08-25|1|10|relative_humidity,13.1,212,1,11,4,relative_humidity,34,34,True,True,,True,13.1-humidity
+T13.1|p213|58|1956-08-25|0|16|temperature,13.1,213,0,17,2,temperature,30.1,30.1,True,True,,True,13.1-humidity
+T13.1|p213|58|1956-08-25|0|16|dew_point,13.1,213,0,17,6,dew_point,10.6,10.6,True,True,,True,13.1-humidity
+T13.1|p213|58|1956-08-25|0|16|vapor_pressure,13.1,213,0,17,5,vapor_pressure,13.6,13.8,False,True,,True,13.1-humidity
+T13.1|p213|58|1956-08-25|0|16|relative_humidity,13.1,213,0,17,4,relative_humidity,30,30,True,True,,True,13.1-humidity
+T13.1|p213|59|1956-08-25|1|13|temperature,13.1,213,1,14,2,temperature,19.1,10.1,False,True,,True,13.1-humidity
+T13.1|p213|59|1956-08-25|1|13|dew_point,13.1,213,1,14,6,dew_point,3.8,3.8,True,True,,True,13.1-humidity
+T13.1|p213|59|1956-08-25|1|13|vapor_pressure,13.1,213,1,14,5,vapor_pressure,9.0,9.0,True,True,,True,13.1-humidity
+T13.1|p213|59|1956-08-25|1|13|relative_humidity,13.1,213,1,14,4,relative_humidity,36,30,False,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|3|temperature,13.1,214,1,4,2,temperature,28.6,28.6,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|3|dew_point,13.1,214,1,4,6,dew_point,10.0,10.0,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|3|vapor_pressure,13.1,214,1,4,5,vapor_pressure,13.0,13.0,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|3|relative_humidity,13.1,214,1,4,4,relative_humidity,33,33,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|8|temperature,13.1,214,1,9,2,temperature,24.9,24.0,False,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|8|dew_point,13.1,214,1,9,6,dew_point,9.4,9.4,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|8|vapor_pressure,13.1,214,1,9,5,vapor_pressure,11.0,11.0,True,True,,True,13.1-humidity
+T13.1|p214|61|1956-08-27|1|8|relative_humidity,13.1,214,1,9,4,relative_humidity,35,35,True,True,,True,13.1-humidity
+T13.1|p216|64|1956-08-27|0|1|temperature,13.1,216,0,2,2,temperature,20.5,20.5,True,True,,False,13.1-humidity
+T13.1|p216|64|1956-08-27|0|1|dew_point,13.1,216,0,2,6,dew_point,14.6,14.6,True,True,,False,13.1-humidity
+T13.1|p216|64|1956-08-27|0|1|vapor_pressure,13.1,216,0,2,5,vapor_pressure,16.6,16.6,True,True,,False,13.1-humidity
+T13.1|p216|64|1956-08-27|0|1|relative_humidity,13.1,216,0,2,4,relative_humidity,60,69,False,True,,False,13.1-humidity
+T13.1|p217|67|1956-08-30|1|5|temperature,13.1,217,1,6,2,temperature,23.7,23.7,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|5|dew_point,13.1,217,1,6,6,dew_point,1.2,1.2,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|5|vapor_pressure,13.1,217,1,6,5,vapor_pressure,10.2,10.2,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|5|relative_humidity,13.1,217,1,6,4,relative_humidity,37,37,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|12|temperature,13.1,217,1,13,2,temperature,18.4,18.4,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|12|dew_point,13.1,217,1,13,6,dew_point,-0.2,-0.2,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|12|vapor_pressure,13.1,217,1,13,5,vapor_pressure,5.1,6.1,False,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|12|relative_humidity,13.1,217,1,13,4,relative_humidity,28,28,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|15|temperature,13.1,217,1,16,2,temperature,9.7,9.7,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|15|dew_point,13.1,217,1,16,6,dew_point,-2.8,-2.8,True,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|15|vapor_pressure,13.1,217,1,16,5,vapor_pressure,5.8,4.8,False,True,,True,13.1-humidity
+T13.1|p217|67|1956-08-30|1|15|relative_humidity,13.1,217,1,16,4,relative_humidity,40,40,True,True,,True,13.1-humidity
+T13.1|p194|13|1956-07-22|0|9|pressure_altitude,13.1,194,0,10,0,pressure_altitude,2000,2000,True,True,,False,13.1-hypso
+T13.1|p194|13|1956-07-22|0|10|pressure_altitude,13.1,194,0,11,0,pressure_altitude,3500,2500,False,True,,True,13.1-hypso
+T13.1|p194|13|1956-07-22|0|9|pressure,13.1,194,0,10,1,pressure,881.0,881.0,True,True,,False,13.1-hypso
+T13.1|p194|13|1956-07-22|0|10|pressure,13.1,194,0,11,1,pressure,863.0,865.0,False,True,,True,13.1-hypso
+T13.1|p194|13|1956-07-22|0|11|pressure_altitude,13.1,194,0,12,0,pressure_altitude,3020,3020,True,True,,True,13.1-hypso
+T13.1|p194|13|1956-07-22|0|11|pressure,13.1,194,0,12,1,pressure,848.0,848.9,False,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|11|pressure_altitude,13.1,197,0,12,0,pressure_altitude,3025,3025,True,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|12|pressure_altitude,13.1,197,0,13,0,pressure_altitude,3515,3515,True,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|11|pressure,13.1,197,0,12,1,pressure,844.5,844.5,True,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|12|pressure,13.1,197,0,13,1,pressure,929.5,929.5,True,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|13|pressure_altitude,13.1,197,0,14,0,pressure_altitude,4035,4035,True,True,,True,13.1-hypso
+T13.1|p197|19|1956-07-25|0|13|pressure,13.1,197,0,14,1,pressure,813.5,813.5,True,True,,True,13.1-hypso
+T13.1|p202|37|1956-08-12|0|10|pressure_altitude,13.1,202,0,11,0,pressure_altitude,2495,2495,True,True,,True,13.1-hypso
+T13.1|p202|37|1956-08-12|0|11|pressure_altitude,13.1,202,0,12,0,pressure_altitude,3470,3470,True,True,,True,13.1-hypso
+T13.1|p202|37|1956-08-12|0|10|pressure,13.1,202,0,11,1,pressure,843.0,843.0,True,True,,True,13.1-hypso
+T13.1|p202|37|1956-08-12|0|11|pressure,13.1,202,0,12,1,pressure,829.5,828.5,False,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|5|pressure_altitude,13.1,203,0,6,0,pressure_altitude,1000,1060,False,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|6|pressure_altitude,13.1,203,0,7,0,pressure_altitude,1525,1525,True,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|5|pressure,13.1,203,0,6,1,pressure,912.0,912.0,True,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|6|pressure,13.1,203,0,7,1,pressure,836.5,936.5,False,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|7|pressure_altitude,13.1,203,0,8,0,pressure_altitude,2045,2045,True,True,,True,13.1-hypso
+T13.1|p203|39|1956-08-13|0|7|pressure,13.1,203,0,8,1,pressure,879.0,979.0,False,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|7|pressure_altitude,13.1,215,0,8,0,pressure_altitude,1010,1010,True,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|8|pressure_altitude,13.1,215,0,9,0,pressure_altitude,1505,1505,True,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|7|pressure,13.1,215,0,8,1,pressure,909.0,900.0,False,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|8|pressure,13.1,215,0,9,1,pressure,803.5,883.5,False,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|9|pressure_altitude,13.1,215,0,10,0,pressure_altitude,2015,2015,True,True,,True,13.1-hypso
+T13.1|p215|62|1956-08-27|0|9|pressure,13.1,215,0,10,1,pressure,867.0,867.0,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|9|pressure_altitude,13.1,215,1,10,0,pressure_altitude,2520,2520,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|10|pressure_altitude,13.1,215,1,11,0,pressure_altitude,3950,3950,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|9|pressure,13.1,215,1,10,1,pressure,845.5,845.5,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|10|pressure,13.1,215,1,11,1,pressure,831.5,831.5,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|11|pressure_altitude,13.1,215,1,12,0,pressure_altitude,3540,3540,True,True,,True,13.1-hypso
+T13.1|p215|63|1956-08-27|1|11|pressure,13.1,215,1,12,1,pressure,816.5,816.5,True,True,,True,13.1-hypso
+T13.1|p217|66|1956-08-29|0|16|pressure_altitude,13.1,217,0,17,0,pressure_altitude,1050,105.0,False,True,,True,13.1-hypso
+T13.1|p217|66|1956-08-29|0|17|pressure_altitude,13.1,217,0,18,0,pressure_altitude,205,205,True,True,,True,13.1-hypso
+T13.1|p217|66|1956-08-29|0|16|pressure,13.1,217,0,17,1,pressure,837.5,937.5,False,True,,True,13.1-hypso
+T13.1|p217|66|1956-08-29|0|17|pressure,13.1,217,0,18,1,pressure,925.0,925.0,True,True,,True,13.1-hypso
+T13.1|p218|68|1956-08-30|0|16|pressure_altitude,13.1,218,0,17,0,pressure_altitude,1010,1010,True,True,,True,13.1-hypso
+T13.1|p218|68|1956-08-30|0|17|pressure_altitude,13.1,218,0,18,0,pressure_altitude,200,200,True,True,,True,13.1-hypso
+T13.1|p218|68|1956-08-30|0|16|pressure,13.1,218,0,17,1,pressure,807.0,897.0,False,True,,True,13.1-hypso
+T13.1|p218|68|1956-08-30|0|17|pressure,13.1,218,0,18,1,pressure,924.0,924.0,True,True,,True,13.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|7|pressure,12.1,154,0,8,0,pressure,803,803,True,True,,True,12.1-order
+T12.1|p154|9|1956-07-11|0|sounding|8|pressure,12.1,154,0,9,0,pressure,809,800,False,True,,True,12.1-order
+T12.1|p154|9|1956-07-11|0|sounding|6|height,12.1,154,0,7,1,height,888,888,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|8|height,12.1,154,0,9,1,height,1414,1414,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|6|temperature,12.1,154,0,7,2,temperature,22.4,22.4,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|7|temperature,12.1,154,0,8,2,temperature,20.5,20.5,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|8|temperature,12.1,154,0,9,2,temperature,20.2,20.2,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|10|height,12.1,154,0,11,1,height,2548,2548,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|9|temperature,12.1,154,0,10,2,temperature,12.5,12.5,True,True,,True,12.1-hypso
+T12.1|p154|9|1956-07-11|0|sounding|10|temperature,12.1,154,0,11,2,temperature,10.9,10.9,True,True,,True,12.1-hypso
+T12.1|p155|12|1956-07-14|1|sounding|12|pressure,12.1,155,0,12,4,pressure,524,524,True,True,,True,12.1-order
+T12.1|p155|12|1956-07-14|1|sounding|13|pressure,12.1,155,0,13,4,pressure,604,604,True,True,,False,12.1-order
+T12.1|p156|14|1956-07-22|1|sounding|3|height,12.1,156,0,4,5,height,467,467,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|5|height,12.1,156,0,6,5,height,957,957,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|3|temperature,12.1,156,0,4,6,temperature,19.8,19.8,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|4|temperature,12.1,156,0,5,6,temperature,19.7,10.7,False,True,,False,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|5|temperature,12.1,156,0,6,6,temperature,15.7,15.7,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|7|height,12.1,156,0,8,5,height,1468,1468,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|6|temperature,12.1,156,0,7,6,temperature,11.5,11.5,True,True,,True,12.1-hypso
+T12.1|p156|14|1956-07-22|1|sounding|7|temperature,12.1,156,0,8,6,temperature,11.4,11.4,True,True,,True,12.1-hypso
+T12.1|p167|35|1956-08-11|0|sounding|5|pressure,12.1,167,0,5,0,pressure,800,806,False,True,,True,12.1-order
+T12.1|p167|35|1956-08-11|0|sounding|6|pressure,12.1,167,0,6,0,pressure,800,800,True,True,,True,12.1-order
+T12.1|p169|40|1956-08-14|1|sounding|5|pressure,12.1,169,0,5,4,pressure,850,850,True,True,,True,12.1-order
+T12.1|p169|40|1956-08-14|1|sounding|6|pressure,12.1,169,0,6,4,pressure,865,805,False,True,,True,12.1-order
+T12.1|p173|47|1956-08-20|0|sounding|1|height,12.1,173,0,1,1,height,0,0,True,True,,True,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|3|height,12.1,173,0,3,1,height,902,502,False,True,,True,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|1|temperature,12.1,173,0,1,2,temperature,19.0,19.0,True,True,,True,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|2|temperature,12.1,173,0,2,2,temperature,16.5,16.5,True,True,,False,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|3|temperature,12.1,173,0,3,2,temperature,13.1,13.1,True,True,,True,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|4|height,12.1,173,0,4,1,height,979,979,True,True,,True,12.1-hypso
+T12.1|p173|47|1956-08-20|0|sounding|4|temperature,12.1,173,0,4,2,temperature,9.1,9.1,True,True,,True,12.1-hypso
+T12.1|p174|50|1956-08-21|1|sounding|11|height,12.1,174,0,12,5,height,2533,2533,True,True,,True,12.1-hypso
+T12.1|p174|50|1956-08-21|1|sounding|12|height,12.1,174,0,13,5,height,3700,3700,True,True,,True,12.1-hypso
+T12.1|p174|50|1956-08-21|1|sounding|11|temperature,12.1,174,0,12,6,temperature,8.8,8.8,True,True,,True,12.1-hypso
+T12.1|p174|50|1956-08-21|1|sounding|12|temperature,12.1,174,0,13,6,temperature,0.9,0.9,True,True,,True,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|1|height,12.1,178,0,2,1,height,0,0,True,True,,True,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|2|height,12.1,178,0,3,1,height,300,390,False,True,,True,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|1|temperature,12.1,178,0,2,2,temperature,34.5,34.5,True,True,,True,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|2|temperature,12.1,178,0,3,2,temperature,30.5,30.5,True,True,,True,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|3|height,12.1,178,0,4,1,height,897,897,True,True,,False,12.1-hypso
+T12.1|p178|57|1956-08-25|0|sounding|3|temperature,12.1,178,0,4,2,temperature,25.2,25.2,True,True,,False,12.1-hypso
+T12.1|p178|58|1956-08-25|1|sounding|8|height,12.1,178,0,9,5,height,2546,2546,True,True,,True,12.1-hypso
+T12.1|p178|58|1956-08-25|1|sounding|10|height,12.1,178,0,11,5,height,3812,3812,True,True,,True,12.1-hypso
+T12.1|p178|58|1956-08-25|1|sounding|8|temperature,12.1,178,0,9,6,temperature,11.3,11.3,True,True,,True,12.1-hypso
+T12.1|p178|58|1956-08-25|1|sounding|9|temperature,12.1,178,0,10,6,temperature,20.0,20.0,True,True,,True,12.1-hypso
+T12.1|p178|58|1956-08-25|1|sounding|10|temperature,12.1,178,0,11,6,temperature,1.0,1.0,True,True,,True,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|6|height,12.1,182,0,7,5,height,1336,1336,True,True,,False,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|8|height,12.1,182,0,9,5,height,2400,2460,False,True,,True,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|6|temperature,12.1,182,0,7,6,temperature,18.0,18.0,True,True,,False,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|7|temperature,12.1,182,0,8,6,temperature,13.4,13.4,True,True,,True,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|8|temperature,12.1,182,0,9,6,temperature,8.4,8.4,True,True,,True,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|10|height,12.1,182,0,11,5,height,3711,3711,True,True,,False,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|9|temperature,12.1,182,0,10,6,temperature,3.0,3.0,True,True,,False,12.1-hypso
+T12.1|p182|66|1956-08-29|1|sounding|10|temperature,12.1,182,0,11,6,temperature,-2.0,- 2.0,True,True,,False,12.1-hypso
+T12.1|p157|16|1956-07-23|1|winds|7|wind_direction,12.1,157,0,24,6,wind_direction,610,010,False,True,,True,range
+T12.1|p173|47|1956-08-20|0|winds|5|wind_direction,12.1,173,0,23,2,wind_direction,910,010,False,True,,True,range
+T8.2|p105|1956-08-28|1505|temperature|temperature|-0.03,8.2,105,0,16,2,temperature,36.25,36.25,True,True,aligned by non-blank cells,False,8.x-time
+T8.2|p80|1956-07-23|1405|temperature|temperature|-0.06,8.2,80,0,17,5,temperature,32.72,32.72,True,True,,True,8.x-time
+T8.2|p104|1956-08-28|0905|temperature|temperature|-0.25,8.2,104,0,19,2,temperature,25.02,23.02,False,True,,False,8.x-time
+T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|1.0,8.1,64,0,38,3,wind_speed,66,66,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|2.0,8.1,64,0,37,3,wind_speed,44,44,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p65|8|1956-07-10|1705|temperature|temperature|0.5,8.1,65,0,15,2,temperature,32.61,32.01,False,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|8.0,8.1,66,0,26,4,vapor_pressure,18.14,18.14,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|16.0,8.1,66,0,25,4,vapor_pressure,17.06,17.66,False,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.25,8.1,69,0,31,2,vapor_pressure,16.99,16.09,False,True,,True,8.x-profile
+T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.12,8.1,69,0,32,2,vapor_pressure,16.12,16.12,True,True,,True,8.x-profile
+T8.1|p69|33|1956-08-07|1305|temperature|temperature|8.0,8.1,69,0,11,3,temperature,27.88,27.88,True,True,,False,8.x-profile
+T8.1|p69|33|1956-08-07|1305|temperature|temperature|16.0,8.1,69,0,10,3,temperature,21.71,21.71,True,True,,True,8.x-profile
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|4.0,8.1,69,0,12,5,temperature,22.47,22.47,True,True,,False,8.x-profile
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|8.0,8.1,69,0,11,5,temperature,25.68,22.68,False,True,,False,8.x-profile
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|16.0,8.1,69,0,10,5,temperature,23.03,23.03,True,True,,True,8.x-profile
+T8.1|p69|35|1956-08-11|2135|vapor_pressure|vapor_pressure|0.5,8.1,69,0,30,6,vapor_pressure,19.32,19.32,True,True,,True,8.x-profile
+T8.1|p71|46|1956-08-15|1850|temperature|temperature|8.0,8.1,71,0,11,4,temperature,33.61,33.01,False,True,,False,8.x-profile
+T8.1|p71|46|1956-08-15|1850|temperature|temperature|16.0,8.1,71,0,10,4,temperature,33.12,33.12,True,True,,True,8.x-profile
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|4.0,8.1,71,0,36,7,wind_speed,342,342,True,True,,True,8.x-profile
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|1.0,8.1,72,0,14,4,temperature,25.64,25.64,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|2.0,8.1,72,0,13,4,temperature,23.64,23.64,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|4.0,8.1,72,0,12,4,temperature,27.16,27.16,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|8.0,8.1,73,0,26,4,vapor_pressure,10.72,10.72,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|16.0,8.1,73,0,25,4,vapor_pressure,9.22,9.22,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p74|63|1956-08-27|2005|temperature|temperature|0.5,8.1,74,0,15,3,temperature,19.24,19.24,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p74|63|1956-08-27|2005|temperature|temperature|2.0,8.1,74,0,13,3,temperature,24.07,24.07,True,True,aligned by non-blank cells,False,8.x-profile
+T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|2.0,8.1,74,0,37,3,wind_speed,116,116,True,True,aligned by non-blank cells,False,8.x-profile
+T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|1.0,8.1,74,0,38,3,wind_speed,26,26,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p74|64|1956-08-27|2235|temperature|temperature|8.0,8.1,74,0,11,4,temperature,23.85,23.85,True,True,aligned by non-blank cells,False,8.x-profile
+T8.1|p74|64|1956-08-27|2235|temperature|temperature|16.0,8.1,74,0,10,4,temperature,26.77,26.77,True,True,aligned by non-blank cells,False,8.x-profile
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|1.0,8.1,74,0,38,4,wind_speed,46,46,True,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|0.5,8.1,74,0,39,4,wind_speed,26,25,False,True,aligned by non-blank cells,True,8.x-profile
+T8.1|p74|66|1956-08-29|2135|temperature|temperature|4.0,8.1,74,0,12,6,temperature,20.05,20.05,True,True,aligned by non-blank cells,False,8.x-profile
+T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|8.0,8.2,76,0,24,1,vapor_pressure,13.06,13.06,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|16.0,8.2,76,0,23,1,vapor_pressure,11.90,11.90,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p77|1956-07-11|0205|vapor_pressure|vapor_pressure|8.0,8.2,77,0,24,6,vapor_pressure,15.04,19.04,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p80|1956-07-23|0905|wind_speed|wind_speed|16.0,8.2,80,0,32,1,wind_speed,516,516,True,True,,True,8.x-profile
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|0.12,8.2,80,0,30,3,vapor_pressure,15.30,,False,False,no second reading,False,8.x-profile+time
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|16.0,8.2,80,0,23,3,vapor_pressure,13.77,13.77,True,True,,True,8.x-profile
+T8.2|p81|1956-07-23|2105|vapor_pressure|vapor_pressure|4.0,8.2,81,0,25,4,vapor_pressure,16.26,16.26,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|8.0,8.2,84,0,24,4,vapor_pressure,16.88,16.88,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|16.0,8.2,84,0,23,4,vapor_pressure,10.51,16.51,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p85|1956-07-24|2105|wind_speed|wind_speed|0.5,8.2,85,0,37,2,wind_speed,21,21,True,True,,True,8.x-profile+time
+T8.2|p85|1956-07-24|2205|temperature|temperature|1.0,8.2,85,0,12,3,temperature,17.27,17.27,True,True,,False,8.x-profile+time
+T8.2|p86|1956-07-25|0205|temperature|temperature|8.0,8.2,86,0,9,1,temperature,18.51,18.51,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p86|1956-07-25|0305|temperature|temperature|8.0,8.2,86,0,9,2,temperature,15.34,15.34,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|8.0,8.2,86,0,24,2,vapor_pressure,12.01,12.01,True,True,aligned by non-blank cells,False,8.x-profile
+T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|16.0,8.2,86,0,23,2,vapor_pressure,13.13,13.13,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|4.0,8.2,86,0,34,2,wind_speed,118,118,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|8.0,8.2,86,0,33,2,wind_speed,217,217,True,True,aligned by non-blank cells,False,8.x-profile+time
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|16.0,8.2,86,0,32,2,wind_speed,458,458,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p90|1956-07-26|0805|wind_speed|wind_speed|0.25,8.2,90,0,38,3,wind_speed,174,174,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.5,8.2,93,0,37,1,wind_speed,404,404,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.25,8.2,93,0,38,1,wind_speed,340,340,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.5,8.2,96,0,37,5,wind_speed,178,301,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.25,8.2,96,0,38,5,wind_speed,60,60,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|2.0,8.2,98,0,35,3,wind_speed,174,174,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|8.0,8.2,98,0,33,3,wind_speed,156,156,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.25,8.2,98,0,29,4,vapor_pressure,15.63,15.63,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.12,8.2,98,0,30,4,vapor_pressure,15.00,15.06,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p99|1956-08-09|0405|vapor_pressure|vapor_pressure|16.0,8.2,99,0,23,3,vapor_pressure,16.45,16.45,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|2.0,8.2,99,0,35,5,wind_speed,106,106,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|4.0,8.2,99,0,34,5,wind_speed,76,76,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|8.0,8.2,99,0,24,6,vapor_pressure,17.30,17.30,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|16.0,8.2,99,0,23,6,vapor_pressure,16.07,16.07,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.5,8.2,100,0,28,1,vapor_pressure,19.11,19.11,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|1.0,8.2,100,0,27,1,vapor_pressure,26.91,26.91,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|8.0,8.2,100,0,24,1,vapor_pressure,27.58,27.58,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.12,8.2,100,0,30,1,vapor_pressure,17.29,17.29,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|16.0,8.2,100,0,23,1,vapor_pressure,22.62,22.62,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|1.0,8.2,100,0,27,2,vapor_pressure,17.63,17.63,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|2.0,8.2,100,0,26,2,vapor_pressure,18.82,18.82,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|4.0,8.2,100,0,25,2,vapor_pressure,17.50,17.50,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|1005|vapor_pressure|vapor_pressure|2.0,8.2,100,0,26,3,vapor_pressure,17.63,17.63,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p100|1956-08-09|1105|wind_speed|wind_speed|1.0,8.2,100,0,36,4,wind_speed,366,306,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p102|1956-08-27|2105|temperature|temperature|1.0,8.2,102,0,12,3,temperature,18.84,18.84,True,True,aligned by non-blank cells,False,8.x-profile+time
+T8.2|p102|1956-08-27|2105|temperature|temperature|2.0,8.2,102,0,11,3,temperature,22.59,22.59,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|8.0,8.2,102,0,24,3,vapor_pressure,16.10,16.10,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|16.0,8.2,102,0,23,3,vapor_pressure,14.32,14.32,True,True,aligned by non-blank cells,True,8.x-profile
+T8.2|p102|1956-08-27|2105|wind_speed|wind_speed|0.5,8.2,102,0,37,3,wind_speed,33,33,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p102|1956-08-28|0005|temperature|temperature|16.0,8.2,102,0,8,5,temperature,24.46,24.46,True,True,aligned by non-blank cells,False,8.x-profile+time
+T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|1.0,8.2,103,0,36,2,wind_speed,61,61,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|8.0,8.2,103,0,33,2,wind_speed,149,149,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0405|temperature|temperature|0.5,8.2,103,0,13,3,temperature,14.59,14.59,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0405|temperature|temperature|1.0,8.2,103,0,12,3,temperature,18.91,16.91,False,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0405|temperature|temperature|2.0,8.2,103,0,11,3,temperature,19.01,19.01,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0405|wind_speed|wind_speed|4.0,8.2,103,0,34,3,wind_speed,112,112,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p103|1956-08-28|0605|vapor_pressure|vapor_pressure|8.0,8.2,103,0,24,5,vapor_pressure,13.83,13.83,True,True,aligned by non-blank cells,True,8.x-profile+time
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|4.0,8.2,104,0,25,2,vapor_pressure,18.37,16.37,False,True,,True,8.x-profile+time
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|16.0,8.2,104,0,23,2,vapor_pressure,17.96,17.96,True,True,,True,8.x-profile+time
+T8.2|p93|1956-08-07|1105|radiation|insolation,8.2,93,0,3,2,insolation,.0192,.0192,True,True,aligned by non-blank cells,True,8.x-radiation
+T8.2|p93|1956-08-07|1405|radiation|insolation,8.2,93,0,3,4,insolation,.0109,.0100,False,True,aligned by non-blank cells,True,8.x-radiation
+T8.2|p93|1956-08-07|1405|radiation|net_radiation,8.2,93,0,5,4,net_radiation,.0135,.0135,True,True,aligned by non-blank cells,True,8.x-radiation
+T8.2|p103|1956-08-28|0205|radiation|insolation,8.2,103,0,3,1,insolation,.0000,.0000,True,True,aligned by non-blank cells,True,8.x-radiation
+T8.2|p103|1956-08-28|0205|radiation|net_radiation,8.2,103,0,5,1,net_radiation,.0009,.0009,True,True,aligned by non-blank cells,True,8.x-radiation
+T8.1|p64|4|1956-07-06|0105|radiation|insolation,8.1,64,0,5,4,insolation,--,--,True,True,aligned by non-blank cells,True,keys
+T10.1|p136|4|2|I,10.1,136,0,2,3,I,,,True,True,,False,keys
+T12.1|p151|4|1956-07-06|1|sounding|1|pressure,12.1,151,0,2,4,pressure,947,947,True,True,,True,keys
+T13.1|p197|20|1956-07-25|1|1|temperature,13.1,197,1,2,2,temperature,32.8 / 29.4,29.4,False,True,,True,unread

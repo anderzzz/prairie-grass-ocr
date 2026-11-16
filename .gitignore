@@ -19,3 +19,5 @@ output/scores/
 output/experiments/
 # review pack reproduces reference values: local only
 /review/
+# Volume II: derived row-strip images (rebuilt by `make volume2-review`)
+output/volume2/second_read/images/

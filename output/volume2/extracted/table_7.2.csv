@@ -1,0 +1,65 @@
+cell_id,table,pdf_index,printed_page,panel,block,row,row_key,quantity,token,value,status,kind,estimated,footnote,conf,flags,col
+T7.2|p44|0|0|1600|1|1|$\overline{T}$,7.2,44,34,0,0,1,1600,$\overline{T}$,28.86,28.86,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|1600|1|2|$\sigma_T$,7.2,44,34,0,0,1,1600,$\sigma_T$,0.44,0.44,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|1600|1|3|S.E.$\overline{T}$,7.2,44,34,0,0,1,1600,S.E.$\overline{T}$,0.10,0.1,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|1600|1|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,1,1600,$\overline{T}_z - \overline{T}_{lm}$,-1.83,-1.83,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|1600|1|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,1,1600,$\sigma(T_z - T_{lm})$,0.93,0.93,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|1600|1|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,1,1600,SE($T_z - T_{lm}$),0.21,0.21,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|1600|1|7|*,7.2,44,34,0,0,1,1600,*,0.20,0.2,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|1600|1|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,1,1600,"r($T_z, T_{lm}$)",-.044,-0.044,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|800|2|1|$\overline{T}$,7.2,44,34,0,0,2,800,$\overline{T}$,29.37,29.37,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|800|2|2|$\sigma_T$,7.2,44,34,0,0,2,800,$\sigma_T$,.57,0.57,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|800|2|3|S.E.$\overline{T}$,7.2,44,34,0,0,2,800,S.E.$\overline{T}$,.13,0.13,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|800|2|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,2,800,$\overline{T}_z - \overline{T}_{lm}$,-1.32,-1.32,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|800|2|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,2,800,$\sigma(T_z - T_{lm})$,.92,0.92,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|800|2|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,2,800,SE($T_z - T_{lm}$),.21,0.21,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|800|2|7|*,7.2,44,34,0,0,2,800,*,.22,0.22,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|800|2|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,2,800,"r($T_z, T_{lm}$)",+.13,0.13,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|400|3|1|$\overline{T}$,7.2,44,34,0,0,3,400,$\overline{T}$,29.76,29.76,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|400|3|2|$\sigma_T$,7.2,44,34,0,0,3,400,$\sigma_T$,.75,0.75,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|400|3|3|S.E.$\overline{T}$,7.2,44,34,0,0,3,400,S.E.$\overline{T}$,.17,0.17,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|400|3|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,3,400,$\overline{T}_z - \overline{T}_{lm}$,-0.93,-0.93,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|400|3|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,3,400,$\sigma(T_z - T_{lm})$,.91,0.91,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|400|3|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,3,400,SE($T_z - T_{lm}$),.20,0.2,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|400|3|7|*,7.2,44,34,0,0,3,400,*,.25,0.25,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|400|3|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,3,400,"r($T_z, T_{lm}$)",+.31,0.31,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|200|4|1|$\overline{T}$,7.2,44,34,0,0,4,200,$\overline{T}$,30.31,30.31,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|200|4|2|$\sigma_T$,7.2,44,34,0,0,4,200,$\sigma_T$,.68,0.68,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|200|4|3|S.E.$\overline{T}$,7.2,44,34,0,0,4,200,S.E.$\overline{T}$,.15,0.15,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|200|4|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,4,200,$\overline{T}_z - \overline{T}_{lm}$,-0.38,-0.38,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|200|4|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,4,200,$\sigma(T_z - T_{lm})$,.91,0.91,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|200|4|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,4,200,SE($T_z - T_{lm}$),.20,0.2,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|200|4|7|*,7.2,44,34,0,0,4,200,*,.23,0.23,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|200|4|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,4,200,"r($T_z, T_{lm}$)",+.25,0.25,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|100|5|1|$\overline{T}$,7.2,44,34,0,0,5,100,$\overline{T}$,30.69,30.69,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|100|5|2|$\sigma_T$,7.2,44,34,0,0,5,100,$\sigma_T$,.80,0.8,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|100|5|3|S.E.$\overline{T}$,7.2,44,34,0,0,5,100,S.E.$\overline{T}$,.18,0.18,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|100|5|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,5,100,$\overline{T}_z - \overline{T}_{lm}$,,,not_printed,blank,False,False,,,4
+T7.2|p44|0|0|100|5|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,5,100,$\sigma(T_z - T_{lm})$,,,not_printed,blank,False,False,,,5
+T7.2|p44|0|0|100|5|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,5,100,SE($T_z - T_{lm}$),,,not_printed,blank,False,False,,,6
+T7.2|p44|0|0|100|5|7|*,7.2,44,34,0,0,5,100,*,,,not_printed,blank,False,False,,,7
+"T7.2|p44|0|0|100|5|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,5,100,"r($T_z, T_{lm}$)",,,not_printed,blank,False,False,,,8
+T7.2|p44|0|0|50|6|1|$\overline{T}$,7.2,44,34,0,0,6,50,$\overline{T}$,31.40,31.4,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|50|6|2|$\sigma_T$,7.2,44,34,0,0,6,50,$\sigma_T$,.93,0.93,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|50|6|3|S.E.$\overline{T}$,7.2,44,34,0,0,6,50,S.E.$\overline{T}$,.21,0.21,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|50|6|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,6,50,$\overline{T}_z - \overline{T}_{lm}$,+0.71,0.71,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|50|6|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,6,50,$\sigma(T_z - T_{lm})$,0.82,0.82,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|50|6|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,6,50,SE($T_z - T_{lm}$),.18,0.18,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|50|6|7|*,7.2,44,34,0,0,6,50,*,.27,0.27,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|50|6|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,6,50,"r($T_z, T_{lm}$)",+.56,0.56,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|25|7|1|$\overline{T}$,7.2,44,34,0,0,7,25,$\overline{T}$,32.54,32.54,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|25|7|2|$\sigma_T$,7.2,44,34,0,0,7,25,$\sigma_T$,0.92,0.92,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|25|7|3|S.E.$\overline{T}$,7.2,44,34,0,0,7,25,S.E.$\overline{T}$,.21,0.21,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|25|7|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,7,25,$\overline{T}_z - \overline{T}_{lm}$,+1.85,1.85,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|25|7|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,7,25,$\sigma(T_z - T_{lm})$,1.06,1.06,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|25|7|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,7,25,SE($T_z - T_{lm}$),.24,0.24,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|25|7|7|*,7.2,44,34,0,0,7,25,*,.27,0.27,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|25|7|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,7,25,"r($T_z, T_{lm}$)",+.25,0.25,value,number,False,False,0.9999,,8
+T7.2|p44|0|0|12|8|1|$\overline{T}$,7.2,44,34,0,0,8,12,$\overline{T}$,33.55,33.55,value,number,False,False,0.9999,,1
+T7.2|p44|0|0|12|8|2|$\sigma_T$,7.2,44,34,0,0,8,12,$\sigma_T$,1.06,1.06,value,number,False,False,0.9999,,2
+T7.2|p44|0|0|12|8|3|S.E.$\overline{T}$,7.2,44,34,0,0,8,12,S.E.$\overline{T}$,0.24,0.24,value,number,False,False,0.9999,,3
+T7.2|p44|0|0|12|8|4|$\overline{T}_z - \overline{T}_{lm}$,7.2,44,34,0,0,8,12,$\overline{T}_z - \overline{T}_{lm}$,+2.86,2.86,value,number,False,False,0.9999,,4
+T7.2|p44|0|0|12|8|5|$\sigma(T_z - T_{lm})$,7.2,44,34,0,0,8,12,$\sigma(T_z - T_{lm})$,1.03,1.03,value,number,False,False,0.9999,,5
+T7.2|p44|0|0|12|8|6|SE($T_z - T_{lm}$),7.2,44,34,0,0,8,12,SE($T_z - T_{lm}$),0.23,0.23,value,number,False,False,0.9999,,6
+T7.2|p44|0|0|12|8|7|*,7.2,44,34,0,0,8,12,*,0.30,0.3,value,number,False,False,0.9999,,7
+"T7.2|p44|0|0|12|8|8|r($T_z, T_{lm}$)",7.2,44,34,0,0,8,12,"r($T_z, T_{lm}$)",+.41,0.41,value,number,False,False,0.9999,,8

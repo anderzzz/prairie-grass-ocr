@@ -1,0 +1,266 @@
+cell_id,group,token_as_printed,basis,verdict,reviewer,date
+T12.1|p154|9|1956-07-11|0|sounding|8|pressure,A,800,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p156|14|1956-07-22|1|sounding|4|temperature,A,19.7,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T12.1|p157|16|1956-07-23|1|winds|7|wind_direction,A,010,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p167|35|1956-08-11|0|sounding|5|pressure,A,806,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p169|40|1956-08-14|1|sounding|6|pressure,A,805,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p173|47|1956-08-20|0|sounding|3|height,A,502,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p173|47|1956-08-20|0|winds|5|wind_direction,A,010,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p178|57|1956-08-25|0|sounding|2|height,A,390,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T12.1|p182|66|1956-08-29|1|sounding|8|height,A,2460,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p191|8|1956-07-10|1|13|temperature,A,17.6,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p191|8|1956-07-10|1|13|relative_humidity,A,59,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p192|9|1956-07-11|0|16|temperature,A,13.1,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p192|9|1956-07-11|0|16|relative_humidity,A,49,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p192|10|1956-07-11|1|5|temperature,A,26.3,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p192|10|1956-07-11|1|5|vapor_pressure,A,21.8,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p193|11|1956-07-14|0|16|dew_point,A,0.4,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p194|13|1956-07-22|0|9|vapor_pressure,A,15.0,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p194|13|1956-07-22|0|10|pressure_altitude,A,2500,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p194|13|1956-07-22|0|10|pressure,A,865.0,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p194|13|1956-07-22|0|11|pressure,A,848.0,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p195|15|1956-07-23|0|11|temperature,A,15.9,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p195|15|1956-07-23|0|18|vapor_pressure,A,19.3,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p195|16|1956-07-23|1|17|dew_point,A,16.9,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p195|16|1956-07-23|1|17|relative_humidity,A,58,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p196|17|1956-07-23|0|11|temperature,A,23.2,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p196|18|1956-07-23|1|9|relative_humidity,A,39,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p197|19|1956-07-25|0|11|vapor_pressure,A,6.0,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p197|20|1956-07-25|1|15|dew_point,A,0.0,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p197|20|1956-07-25|1|1|temperature,A,29.4,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p198|22|1956-07-26|1|16|vapor_pressure,A,12.8,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p199|25|1956-08-01|0|8|dew_point,A,18.2,"not ruled by owner; neither reading passes the checks ('18.2' vs '12.2'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p199|25|1956-08-01|0|8|vapor_pressure,A,23.2,"not ruled by owner; neither reading passes the checks ('23.2' vs '22.2'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p199|26|1956-08-02|1|10|temperature,A,20.4,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p200|27|1956-08-02|0|14|temperature,A,16.4,"not ruled by owner; neither reading passes the checks ('16.4' vs '14.6'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p200|27|1956-08-02|0|14|vapor_pressure,A,13.7,"not ruled by owner; neither reading passes the checks ('13.7' vs '12.6'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p200|27|1956-08-02|0|14|relative_humidity,A,72,"not ruled by owner; neither reading passes the checks ('72' vs '75'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p200|28|1956-08-03|1|11|dew_point,A,11.6,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p201|29|1956-08-03|0|3|vapor_pressure,A,15.5,"not ruled by owner; neither reading passes the checks ('15.5' vs '..5'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p201|30|1956-08-03|1|10|vapor_pressure,A,17.8,"not ruled by owner; neither reading passes the checks ('17.8' vs '17.6'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|37|1956-08-12|0|13|temperature,A,15.2,"not ruled by owner; neither reading passes the checks ('15.2' vs '16.2'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|37|1956-08-12|0|17|dew_point,A,18.6,"not ruled by owner; neither reading passes the checks ('18.6' vs '18.0'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|38|1956-08-12|1|4|temperature,A,22.2,"not ruled by owner; neither reading passes the checks ('22.2' vs '25.9'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|38|1956-08-12|1|4|dew_point,A,17.6,"not ruled by owner; neither reading passes the checks ('17.6' vs '17.0'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|38|1956-08-12|1|4|vapor_pressure,A,20.7,"not ruled by owner; neither reading passes the checks ('20.7' vs '26.7'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p202|38|1956-08-12|1|4|relative_humidity,A,,owner: illegible in the print,illegible,project owner,2026-11-16
+T13.1|p202|37|1956-08-12|0|11|pressure,A,829.5,"not ruled by owner; neither reading passes the checks ('829.5' vs '828.5'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p203|39|1956-08-13|0|5|pressure_altitude,A,1000,"not ruled by owner; neither reading passes the checks ('1000' vs '1060'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p203|39|1956-08-13|0|6|pressure,A,896.5,owner reading (typed),other,project owner,2026-11-16
+T13.1|p203|39|1956-08-13|0|7|pressure,A,879.0,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p205|43|1956-08-15|0|14|vapor_pressure,A,3.9,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p207|47|1956-08-20|0|15|vapor_pressure,A,5.0,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p209|50|1956-08-21|0|9|dew_point,A,9.9,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p211|54|1956-08-24|0|8|temperature,A,17.8,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p212|56|1956-08-25|0|14|vapor_pressure,A,18.8,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p212|57|1956-08-25|1|9|dew_point,A,5.8,"not ruled by owner; neither reading passes the checks ('5.8' vs '6.8'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p212|57|1956-08-25|1|10|dew_point,A,9.4,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p213|58|1956-08-25|0|16|vapor_pressure,A,13.6,"not ruled by owner; neither reading passes the checks ('13.6' vs '13.8'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p213|59|1956-08-25|1|13|temperature,A,19.1,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p213|59|1956-08-25|1|13|relative_humidity,A,36,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p214|61|1956-08-27|1|8|temperature,A,24.9,"not ruled by owner; neither reading passes the checks ('24.9' vs '24.0'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T13.1|p215|62|1956-08-27|0|7|pressure,A,900.0,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p215|62|1956-08-27|0|8|pressure,A,883.5,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p216|64|1956-08-27|0|1|relative_humidity,A,69,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T13.1|p217|67|1956-08-30|1|12|vapor_pressure,A,6.1,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p217|67|1956-08-30|1|15|vapor_pressure,A,4.8,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p217|66|1956-08-29|0|16|pressure_altitude,A,1050,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p217|66|1956-08-29|0|16|pressure,A,837.5,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p218|68|1956-08-30|0|16|pressure,A,897.0,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.1|p65|8|1956-07-10|1705|temperature|temperature|0.5,A,32.01,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|16.0,A,17.66,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.25,A,16.09,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|8.0,A,22.68,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.1|p71|46|1956-08-15|1850|temperature|temperature|8.0,A,33.01,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|0.5,A,26,"not ruled by owner; neither reading passes the checks ('26' vs '25'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T8.2|p77|1956-07-11|0205|vapor_pressure|vapor_pressure|8.0,A,15.04,"not ruled by owner; neither reading passes the checks ('15.04' vs '19.04'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T8.2|p80|1956-07-23|0905|soil_temperature_change|run_time,A,27,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p80|1956-07-23|1105|soil_temperature_change|run_time,A,25,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p80|1956-07-23|1205|soil_temperature_change|run_time,A,27,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p80|1956-07-23|1305|soil_temperature_change|run_time,A,20,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p80|1956-07-23|1405|soil_temperature_change|run_time,A,25,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p80|1956-07-23|1605|soil_temperature_change|run_time,A,30,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|16.0,A,16.51,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p93|1956-08-07|1405|radiation|insolation,A,.0109,"not ruled by owner; neither reading passes the checks ('.0109' vs '.0100'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.5,A,178,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.12,A,15.00,"not ruled by owner; neither reading passes the checks ('15.00' vs '15.06'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T8.2|p100|1956-08-09|1105|wind_speed|wind_speed|1.0,A,306,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.2|p103|1956-08-28|0405|temperature|temperature|1.0,A,16.91,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|8.0,A,16.57,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.2|p104|1956-08-28|0805|soil_temperature_change|soil_temperature_change|-0.06,A,.32,owner confirmed Sonnet's reading,sonnet,project owner,2026-11-16
+T8.2|p104|1956-08-28|0905|temperature|temperature|-0.25,A,23.02,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|4.0,A,16.37,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T9.1|p124|34|19|q_e,A,-3.96,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T9.1|p124|43|28|R_n_plus_sum_q,A,- .83,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T9.2|p125|50|36|R_n,A,.763,"not ruled by owner; neither reading passes the checks ('.763' vs '.708'); Mistral kept, doubtful",rule_doubtful,rule,2026-11-16
+T9.2|p125|60|45|q_e,A,-.008,"not ruled by owner; rule: sonnet reading, under which the checks pass",rule,rule,2026-11-16
+T13.1|p209|50|1956-08-21|0|15|temperature,B,10.1,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p209|50|1956-08-21|0|15|dew_point,B,-8.3,owner reading (typed),other,project owner,2026-11-16
+T13.1|p209|50|1956-08-21|0|15|vapor_pressure,B,3.6,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T13.1|p209|50|1956-08-21|0|15|relative_humidity,B,29,owner confirmed Mistral's reading,mistral,project owner,2026-11-16
+T8.1|p67|19|1956-07-25|1105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p67|20|1956-07-25|1305|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p67|21|1956-07-25|2205|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p67|22|1956-07-26|0005|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p67|23|1956-07-29|2105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p67|24|1956-07-29|2305|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|55|1956-08-25|0105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|56|1956-08-25|0305|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|57|1956-08-25|1735|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|58|1956-08-25|1935|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|59|1956-08-25|2235|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.1|p72|60|1956-08-26|0035|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-23|1705|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-23|1805|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-23|1905|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-23|2105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-23|2305|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p81|1956-07-24|0005|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1005|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1205|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1405|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1605|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p93|1956-08-07|1705|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|0805|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|0905|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|1005|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|1105|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|1205|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+T8.2|p96|1956-08-08|1305|precipitation|precipitation,B,--,owner reading,all_dashes,project owner,2026-11-16
+page:8.2 p84,B,,owner note: mistral,mistral,project owner,2026-11-16
+page:13.1 p218,B,,owner note: mistral,mistral,project owner,2026-11-16
+T12.1|p156|14|1956-07-22|1|sounding|5|height;T12.1|p156|14|1956-07-22|1|sounding|7|height;T12.1|p156|14|1956-07-22|1|sounding|5|temperature;T12.1|p156|14|1956-07-22|1|sounding|6|temperature;T12.1|p156|14|1956-07-22|1|sounding|7|temperature,C,,owner: printed as such,printed,project owner,2026-11-16
+T12.1|p174|50|1956-08-21|1|sounding|11|height;T12.1|p174|50|1956-08-21|1|sounding|12|height;T12.1|p174|50|1956-08-21|1|sounding|11|temperature;T12.1|p174|50|1956-08-21|1|sounding|12|temperature,C,,owner: printed as such,printed,project owner,2026-11-16
+T12.1|p178|58|1956-08-25|1|sounding|8|height;T12.1|p178|58|1956-08-25|1|sounding|10|height;T12.1|p178|58|1956-08-25|1|sounding|8|temperature;T12.1|p178|58|1956-08-25|1|sounding|9|temperature;T12.1|p178|58|1956-08-25|1|sounding|10|temperature,C,,owner: printed as such,printed,project owner,2026-11-16
+T12.1|p154|9|1956-07-11|0|sounding|8|height;T12.1|p154|9|1956-07-11|0|sounding|10|height;T12.1|p154|9|1956-07-11|0|sounding|8|temperature;T12.1|p154|9|1956-07-11|0|sounding|9|temperature;T12.1|p154|9|1956-07-11|0|sounding|10|temperature,C,,owner: printed as such,printed,project owner,2026-11-16
+T12.1|p154|9|1956-07-11|0|sounding|6|height;T12.1|p154|9|1956-07-11|0|sounding|8|height;T12.1|p154|9|1956-07-11|0|sounding|6|temperature;T12.1|p154|9|1956-07-11|0|sounding|7|temperature;T12.1|p154|9|1956-07-11|0|sounding|8|temperature,C,,owner: printed as such,printed,project owner,2026-11-16
+T12.1|p155|12|1956-07-14|1|sounding|12|pressure;T12.1|p155|12|1956-07-14|1|sounding|13|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p192|10|1956-07-11|1|14|temperature;T13.1|p192|10|1956-07-11|1|14|dew_point;T13.1|p192|10|1956-07-11|1|14|vapor_pressure;T13.1|p192|10|1956-07-11|1|14|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p194|13|1956-07-22|0|15|temperature;T13.1|p194|13|1956-07-22|0|15|dew_point;T13.1|p194|13|1956-07-22|0|15|vapor_pressure;T13.1|p194|13|1956-07-22|0|15|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p194|14|1956-07-22|1|11|temperature;T13.1|p194|14|1956-07-22|1|11|dew_point;T13.1|p194|14|1956-07-22|1|11|vapor_pressure;T13.1|p194|14|1956-07-22|1|11|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p195|16|1956-07-23|1|14|temperature;T13.1|p195|16|1956-07-23|1|14|dew_point;T13.1|p195|16|1956-07-23|1|14|vapor_pressure;T13.1|p195|16|1956-07-23|1|14|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p196|17|1956-07-23|0|7|temperature;T13.1|p196|17|1956-07-23|0|7|dew_point;T13.1|p196|17|1956-07-23|0|7|vapor_pressure;T13.1|p196|17|1956-07-23|0|7|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p197|19|1956-07-25|0|16|temperature;T13.1|p197|19|1956-07-25|0|16|dew_point;T13.1|p197|19|1956-07-25|0|16|vapor_pressure;T13.1|p197|19|1956-07-25|0|16|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p197|20|1956-07-25|1|14|temperature;T13.1|p197|20|1956-07-25|1|14|dew_point;T13.1|p197|20|1956-07-25|1|14|vapor_pressure;T13.1|p197|20|1956-07-25|1|14|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p198|22|1956-07-26|1|13|temperature;T13.1|p198|22|1956-07-26|1|13|dew_point;T13.1|p198|22|1956-07-26|1|13|vapor_pressure;T13.1|p198|22|1956-07-26|1|13|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p198|22|1956-07-26|1|4|temperature;T13.1|p198|22|1956-07-26|1|4|dew_point;T13.1|p198|22|1956-07-26|1|4|vapor_pressure;T13.1|p198|22|1956-07-26|1|4|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|25|1956-08-01|0|6|temperature;T13.1|p199|25|1956-08-01|0|6|dew_point;T13.1|p199|25|1956-08-01|0|6|vapor_pressure;T13.1|p199|25|1956-08-01|0|6|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|25|1956-08-01|0|7|temperature;T13.1|p199|25|1956-08-01|0|7|dew_point;T13.1|p199|25|1956-08-01|0|7|vapor_pressure;T13.1|p199|25|1956-08-01|0|7|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|25|1956-08-01|0|9|temperature;T13.1|p199|25|1956-08-01|0|9|dew_point;T13.1|p199|25|1956-08-01|0|9|vapor_pressure;T13.1|p199|25|1956-08-01|0|9|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|26|1956-08-02|1|15|temperature;T13.1|p199|26|1956-08-02|1|15|dew_point;T13.1|p199|26|1956-08-02|1|15|vapor_pressure;T13.1|p199|26|1956-08-02|1|15|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|26|1956-08-02|1|16|temperature;T13.1|p199|26|1956-08-02|1|16|dew_point;T13.1|p199|26|1956-08-02|1|16|vapor_pressure;T13.1|p199|26|1956-08-02|1|16|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p199|26|1956-08-02|1|7|temperature;T13.1|p199|26|1956-08-02|1|7|dew_point;T13.1|p199|26|1956-08-02|1|7|vapor_pressure;T13.1|p199|26|1956-08-02|1|7|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p200|27|1956-08-02|0|9|temperature;T13.1|p200|27|1956-08-02|0|9|dew_point;T13.1|p200|27|1956-08-02|0|9|vapor_pressure;T13.1|p200|27|1956-08-02|0|9|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p201|29|1956-08-03|0|12|temperature;T13.1|p201|29|1956-08-03|0|12|dew_point;T13.1|p201|29|1956-08-03|0|12|vapor_pressure;T13.1|p201|29|1956-08-03|0|12|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p202|37|1956-08-12|0|10|temperature;T13.1|p202|37|1956-08-12|0|10|dew_point;T13.1|p202|37|1956-08-12|0|10|vapor_pressure;T13.1|p202|37|1956-08-12|0|10|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p203|39|1956-08-13|0|16|temperature;T13.1|p203|39|1956-08-13|0|16|dew_point;T13.1|p203|39|1956-08-13|0|16|vapor_pressure;T13.1|p203|39|1956-08-13|0|16|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p203|39|1956-08-13|0|8|temperature;T13.1|p203|39|1956-08-13|0|8|dew_point;T13.1|p203|39|1956-08-13|0|8|vapor_pressure;T13.1|p203|39|1956-08-13|0|8|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p189|4|1956-07-06|1|6|temperature;T13.1|p189|4|1956-07-06|1|6|dew_point;T13.1|p189|4|1956-07-06|1|6|vapor_pressure;T13.1|p189|4|1956-07-06|1|6|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p206|46|1956-08-15|1|8|temperature;T13.1|p206|46|1956-08-15|1|8|dew_point;T13.1|p206|46|1956-08-15|1|8|vapor_pressure;T13.1|p206|46|1956-08-15|1|8|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p206|46|1956-08-15|1|9|temperature;T13.1|p206|46|1956-08-15|1|9|dew_point;T13.1|p206|46|1956-08-15|1|9|vapor_pressure;T13.1|p206|46|1956-08-15|1|9|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p208|48|1956-08-21|0|12|temperature;T13.1|p208|48|1956-08-21|0|12|dew_point;T13.1|p208|48|1956-08-21|0|12|vapor_pressure;T13.1|p208|48|1956-08-21|0|12|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p208|48|1956-08-21|0|3|temperature;T13.1|p208|48|1956-08-21|0|3|dew_point;T13.1|p208|48|1956-08-21|0|3|vapor_pressure;T13.1|p208|48|1956-08-21|0|3|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p207|48S|1956-08-20|1|15|temperature;T13.1|p207|48S|1956-08-20|1|15|dew_point;T13.1|p207|48S|1956-08-20|1|15|vapor_pressure;T13.1|p207|48S|1956-08-20|1|15|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p207|48S|1956-08-20|1|1|temperature;T13.1|p207|48S|1956-08-20|1|1|dew_point;T13.1|p207|48S|1956-08-20|1|1|vapor_pressure;T13.1|p207|48S|1956-08-20|1|1|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p190|5|1956-07-06|0|8|temperature;T13.1|p190|5|1956-07-06|0|8|dew_point;T13.1|p190|5|1956-07-06|0|8|vapor_pressure;T13.1|p190|5|1956-07-06|0|8|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p209|51|1956-08-21|1|13|temperature;T13.1|p209|51|1956-08-21|1|13|dew_point;T13.1|p209|51|1956-08-21|1|13|vapor_pressure;T13.1|p209|51|1956-08-21|1|13|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p210|52|1956-08-24|0|11|temperature;T13.1|p210|52|1956-08-24|0|11|dew_point;T13.1|p210|52|1956-08-24|0|11|vapor_pressure;T13.1|p210|52|1956-08-24|0|11|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p210|52|1956-08-24|0|17|temperature;T13.1|p210|52|1956-08-24|0|17|dew_point;T13.1|p210|52|1956-08-24|0|17|vapor_pressure;T13.1|p210|52|1956-08-24|0|17|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p210|53|1956-08-24|1|5|temperature;T13.1|p210|53|1956-08-24|1|5|dew_point;T13.1|p210|53|1956-08-24|1|5|vapor_pressure;T13.1|p210|53|1956-08-24|1|5|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p190|6|1956-07-06|1|1|temperature;T13.1|p190|6|1956-07-06|1|1|dew_point;T13.1|p190|6|1956-07-06|1|1|vapor_pressure;T13.1|p190|6|1956-07-06|1|1|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p214|61|1956-08-27|1|3|temperature;T13.1|p214|61|1956-08-27|1|3|dew_point;T13.1|p214|61|1956-08-27|1|3|vapor_pressure;T13.1|p214|61|1956-08-27|1|3|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p217|67|1956-08-30|1|5|temperature;T13.1|p217|67|1956-08-30|1|5|dew_point;T13.1|p217|67|1956-08-30|1|5|vapor_pressure;T13.1|p217|67|1956-08-30|1|5|relative_humidity,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p215|63|1956-08-27|1|10|pressure_altitude;T13.1|p215|63|1956-08-27|1|11|pressure_altitude;T13.1|p215|63|1956-08-27|1|10|pressure;T13.1|p215|63|1956-08-27|1|11|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p197|19|1956-07-25|0|11|pressure_altitude;T13.1|p197|19|1956-07-25|0|12|pressure_altitude;T13.1|p197|19|1956-07-25|0|11|pressure;T13.1|p197|19|1956-07-25|0|12|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p197|19|1956-07-25|0|12|pressure_altitude;T13.1|p197|19|1956-07-25|0|13|pressure_altitude;T13.1|p197|19|1956-07-25|0|12|pressure;T13.1|p197|19|1956-07-25|0|13|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p215|63|1956-08-27|1|9|pressure_altitude;T13.1|p215|63|1956-08-27|1|10|pressure_altitude;T13.1|p215|63|1956-08-27|1|9|pressure;T13.1|p215|63|1956-08-27|1|10|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p66|16|1956-07-23|1005|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|32|1956-08-06|2005|vapor_pressure|vapor_pressure|0.12,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|33|1956-08-07|1305|temperature|temperature|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|33|1956-08-07|1305|temperature|temperature|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|35S|1956-08-07|2305|temperature|temperature|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p69|35|1956-08-11|2135|vapor_pressure|vapor_pressure|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|46|1956-08-15|1850|temperature|temperature|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p73|52|1956-08-24|1120|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p72|58|1956-08-25|1935|temperature|temperature|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|63|1956-08-27|2005|temperature|temperature|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|63|1956-08-27|2005|temperature|temperature|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|63|1956-08-27|2005|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|64|1956-08-27|2235|temperature|temperature|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|64|1956-08-27|2235|temperature|temperature|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p74|66|1956-08-29|2135|temperature|temperature|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p76|1956-07-10|1305|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p80|1956-07-23|0905|wind_speed|wind_speed|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p81|1956-07-23|2105|vapor_pressure|vapor_pressure|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-27|2105|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p84|1956-07-24|1605|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p85|1956-07-24|2105|wind_speed|wind_speed|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p85|1956-07-24|2205|temperature|temperature|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0205|temperature|temperature|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|temperature|temperature|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p86|1956-07-25|0305|wind_speed|wind_speed|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p90|1956-07-26|0805|wind_speed|wind_speed|0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p93|1956-08-07|1005|wind_speed|wind_speed|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p96|1956-08-08|1205|wind_speed|wind_speed|0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p98|1956-08-08|2205|wind_speed|wind_speed|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p99|1956-08-09|0405|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p99|1956-08-09|0605|wind_speed|wind_speed|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.12,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0805|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|0905|vapor_pressure|vapor_pressure|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p100|1956-08-09|1005|vapor_pressure|vapor_pressure|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-27|2105|temperature|temperature|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-27|2105|temperature|temperature|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-27|2105|wind_speed|wind_speed|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p102|1956-08-28|0005|temperature|temperature|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0305|wind_speed|wind_speed|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0405|temperature|temperature|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0405|temperature|temperature|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0405|wind_speed|wind_speed|4.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0605|vapor_pressure|vapor_pressure|8.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p104|1956-08-28|0905|vapor_pressure|vapor_pressure|16.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p93|1956-08-07|1105|radiation|insolation;T8.2|p93|1956-08-07|1105|radiation|net_radiation,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p103|1956-08-28|0205|radiation|insolation;T8.2|p103|1956-08-28|0205|radiation|net_radiation,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p80|1956-07-23|1405|temperature|temperature|-0.06,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p105|1956-08-28|1505|temperature|temperature|-0.03,C,,owner: printed as such,printed,project owner,2026-11-16
+T9.1|p124|48S|32|q_c;T9.2|p125|48S|33|q_c,C,,owner: printed as such,printed,project owner,2026-11-16
+T13.1|p190|5|1956-07-06|0|8|dew_point,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p66|16|1956-07-23|1005|radiation|insolation,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|1.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|0.5,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p71|48S|1956-08-20|1255|wind_speed|wind_speed|2.0,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p93|1956-08-07|1105|radiation|net_radiation,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p97|1956-08-08|1805|temperature|temperature|-0.25,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.2|p97|1956-08-08|1805|temperature|temperature|-0.06,C,,owner: printed as such,printed,project owner,2026-11-16
+T8.1|p64|4|1956-07-06|0105|radiation|insolation;T10.1|p136|4|2|I;T12.1|p151|4|1956-07-06|1|sounding|1|pressure,C,,owner: printed as such,printed,project owner,2026-11-16
