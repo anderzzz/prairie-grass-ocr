@@ -1,0 +1,4 @@
+cell_id,group,token_as_printed,basis,verdict,reviewer,date
+T6.1|p225|r40|wind_speed|source|10,C,3.08,"owner: printed as such; with runs 14 and 39, one of three light-wind nights where Table 6.1 is 36-48 % above Table 8.1's 2 m speed (both profiles smooth): likely an instrument difference, not a misprint",printed,project owner,2026-11-17
+T6.1|p223|r14|wind_speed|source|10,C,1.91,"owner: printed as such; 37 % above Table 8.1's 2 m speed, like runs 39 and 40 (light-wind nights): likely an instrument difference, not a misprint",printed,project owner,2026-11-17
+T6.1|p225|r39|wind_speed|source|10,C,3.12,"owner: printed as such; 36 % above Table 8.1's 2 m speed, like runs 14 and 40 (light-wind nights): likely an instrument difference, not a misprint",printed,project owner,2026-11-17

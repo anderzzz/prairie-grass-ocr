@@ -17,7 +17,11 @@ Tolerances are deliberately loose: they are there to catch misreadings
               30 deg after the 8 deg vane offset stated on p. 209
   6.1-8.1     date and time within 30 min of Table 8.1's (6.1 prints the release
               start, 8.1 the observation time: usually 10 min apart), and the
-              10-min source speed within 30 % of Table 8.1's 2 m speed
+              10-min source speed within a factor 1.3 of Table 8.1's 2 m speed (either
+              way), and the 10-min source direction within 45 deg of Table 8.1's 1 m
+              direction. Runs 14, 39 and 40 fail the speed test as printed: 6.1 is
+              36-48 % above 8.1 in all three, on light-wind nights (owner review
+              2026-11-17: a difference between the instruments, not a misprint)
 """
 from __future__ import annotations
 
@@ -47,14 +51,16 @@ def adiff(a: float, b: float) -> float:
 
 
 def table_8_1() -> dict[str, dict]:
-    """release -> {date, cst, u2 (m/s)} from the Volume II dataset."""
+    """release -> {date, cst, u2 (m/s), d1 (deg)} from the Volume II dataset."""
     p = REPO / "output" / "volume2" / "dataset" / "table_8.1.csv"
     out: dict[str, dict] = {}
     for r in csv.DictReader(p.open()):
-        d = out.setdefault(r["release"], {"date": r["date"], "cst": r["cst"], "u2": None})
+        d = out.setdefault(r["release"], {"date": r["date"], "cst": r["cst"], "u2": None, "d1": None})
         if (r["section"] == "wind_speed" and r["status"] == "value" and r["height_m"]
                 and float(r["height_m"]) == 2.0 and d["u2"] is None):
             d["u2"] = float(r["value"]) / 100
+        if r["section"] == "wind_direction" and r["status"] == "value" and d["d1"] is None:
+            d["d1"] = float(r["value"])
     return out
 
 
@@ -130,8 +136,11 @@ def run_on(T: dict[str, list[dict]]) -> list[dict]:
                 fail("6.1-8.1", [kd, kt], f"release {rel}: {kd['date']} {kt['token']} vs Table 8.1 "
                                           f"{e['date']} {e['cst']}")
         s = v[rel].get(("wind_speed", "source", 10))
-        if s and e["u2"] and abs(s["value"] - e["u2"]) > 0.3 * max(s["value"], e["u2"]):
+        if s and e["u2"] and max(s["value"], e["u2"]) > 1.3 * min(s["value"], e["u2"]):
             fail("6.1-8.1", [s], f"release {rel}: 2 m speed {s['token']} m/s vs Table 8.1 {e['u2']:.2f} m/s")
+        dr = v[rel].get(("wind_direction", "source", 10))
+        if dr and e["d1"] is not None and adiff(dr["value"], e["d1"]) > 45:
+            fail("6.1-8.1", [dr], f"release {rel}: direction {dr['token']} deg vs Table 8.1 1 m {e['d1']:.0f} deg")
     return fails
 
 

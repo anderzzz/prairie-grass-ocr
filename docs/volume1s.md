@@ -44,7 +44,23 @@ Suspected errors in the original (`config/suspect_values.yaml`, section
 | release 60 time | 0135 | 0025 | Table 8.1 0035; Table 5.2 header 0030–0040 |
 | release 61 date | blank (= 26 Aug.) | 1956-08-27 | Table 8.1; Table 5.2 header |
 | release 62 date | 26 Aug. | 27 Aug. | Table 8.1; Table 5.2 header |
-| release 40 speed, source 10 min | 3.08 | none | Table 8.1 2 m speed 2.08 m/s; which table is off is unclear |
 
 The derived `date` column follows the print (26 Aug. for 61 and 62). Join on
 `release`, not on date.
+
+## Follow-up (2026-11-17, from data users' remarks)
+
+Release 40's 10-min source speed (3.08 against Table 8.1's 2.08 m/s at 2 m) was
+listed as suspect. Runs 14 (1.91 vs 1.39) and 39 (3.12 vs 2.29) show the same
+gap: in all three Table 6.1 is 36-48 % higher, against a median ratio of 1.00
+and at most 1.12 for every other release, all on light-wind nights with smooth
+Table 8.1 profiles. The check had passed 14 and 39 because it measured the gap
+against the larger speed (27 %); it now tests the ratio either way (factor 1.3),
+so all three fail it. They are kept as printed (`quality = printed_inconsistent`,
+`config/review/volume1s_followup.csv`) and read as a difference between the
+instruments rather than a misprint; the suspect entry for 40 was removed.
+
+A direction test was added: the 10-min source direction within 45 deg of
+Table 8.1's 1 m direction. Before the Table 8.1 re-read it failed only release
+40 (180 vs 106), which was a misreading of Table 8.1 (printed 166; see
+`docs/volume2.md`).

@@ -37,6 +37,9 @@ from volume2.common import parse as parse_token
 
 REVIEW = REPO / "review" / "volume1s"
 VERDICTS = REPO / "config" / "review" / "volume1s_verdicts.csv"
+# Decisions taken after the review pack (hand-kept; --resolve never rewrites it). Same columns;
+# a row here overrides the review verdict for its cell.
+FOLLOWUP = REPO / "config" / "review" / "volume1s_followup.csv"
 SUSPECTS = REPO / "config" / "suspect_values.yaml"
 DATASET = REPO / "output" / "volume1" / "dataset"
 FILES = {"5.1": "source_strength.csv", "5.4": "evaporation_correction.csv", "6.1": "slow_response_wind.csv"}
@@ -82,7 +85,7 @@ def build() -> None:
     T = parse_all()
     cells = {c["cell_id"]: c for t in FILES for c in T[t]}
     reads = {r["cell_id"]: r for r in csv.DictReader((SECOND / "reads.csv").open())}
-    owner = {v["cell_id"]: v for v in csv.DictReader(VERDICTS.open())} if VERDICTS.exists() else {}
+    owner = {v["cell_id"]: v for f in (VERDICTS, FOLLOWUP) if f.exists() for v in csv.DictReader(f.open())}
     for cid, c in cells.items():
         r = reads[cid]
         c["reviewed"], c["review_note"] = False, ""

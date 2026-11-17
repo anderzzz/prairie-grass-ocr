@@ -93,17 +93,7 @@ volume1s:
     reviewer: project owner
     date: 2026-11-16
 
-  - cell_id: T6.1|p225|r40|wind_speed|source|10
-    release: "40"
-    table: "6.1"
-    printed: "3.08"
-    suspect_alternative: ""
-    basis: >-
-      2 m speed 3.08 m/s at the source, against 2.08 m/s (208 cm/s) at 2 m in
-      Table 8.1, the only release outside 30 %. The 6.1 values agree among
-      themselves (20 min 3.15), so it is not clear which table is wrong, or
-      whether either is (different instruments). No alternative proposed.
-    pdf_index: 225
-    printed_page: 212
-    reviewer: project owner
-    date: 2026-11-16
+# Release 40 speed (source, 10 min) was listed here until 2026-11-17. Runs 14
+# and 39 show the same gap to Table 8.1 (6.1 36-48 % higher, all three on
+# light-wind nights, both tables smooth), so it reads as an instrument
+# difference rather than a misprint: see config/review/volume1s_followup.csv.
