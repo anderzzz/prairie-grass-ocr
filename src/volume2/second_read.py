@@ -1,6 +1,6 @@
 """Second reading of the rows involved in failed checks (Sonnet), and comparison.
 
-    cd src && uv run python -m volume2.second_read [--no-llm] [--max-calls N]
+    cd src && uv run python -m volume2.second_read [--no-llm] [--max-calls N] [--full 8.1 ...]
 
 For every page with suspect cells, the involved rows are cut from the page
 (row strips located by volume2.locate), stacked under the table's column
@@ -9,6 +9,9 @@ one image (at most ROWS_PER_CALL rows). Sonnet is not shown Mistral's reading.
 It transcribes every cell of each labelled row; the result is compared cell
 by cell with Mistral's row. Responses are cached (cache/reader_llm) and the
 spend is written to output/volume2/second_read/spend.json.
+
+--full TABLE also re-reads every other row of that table (check "full_read"),
+in calls of their own, so the readings of the check-involved rows stay as cached.
 
 Output: output/volume2/second_read/reads.csv, one row per involved cell:
 mistral token, sonnet token, agree, and the checks that involved it.
@@ -175,8 +178,12 @@ def call(img: np.ndarray, prompt: str, budget: dict) -> dict:
     return cached("reader_llm", params, img, run)
 
 
-def units() -> tuple[dict, dict, dict]:
-    """(page, table, ti) -> sorted grid rows; cell_id -> checks; cell_id -> cell."""
+FULL_TABLES = ("8.1", "8.2")    # tables read completely by Sonnet (0/6 confusion in smudged print)
+
+
+def units(full: tuple[str, ...] = ()) -> tuple[dict, dict, dict, dict]:
+    """(page, table, ti) -> sorted grid rows involved in checks; the same for the remaining rows
+    of the fully re-read tables; cell_id -> checks; cell_id -> cell."""
     T, _ = parse_all()
     cells = {c["cell_id"]: c for rows in T.values() for c in rows}
     checks = defaultdict(set)
@@ -192,20 +199,30 @@ def units() -> tuple[dict, dict, dict]:
         if c is None or c.get("grid_row") in (None, "") or c["quantity"] in ("remarks", "note"):
             continue
         u[(c["pdf_index"], c["table"], c["grid_ti"])].add(c["grid_row"])
-    return {k: sorted(v) for k, v in u.items()}, checks, cells
+    f = defaultdict(set)
+    for cid, c in cells.items():
+        if c["table"] in full and c.get("grid_row") not in (None, "") and c["quantity"] not in ("remarks", "note"):
+            checks[cid].add("full_read")
+            k = (c["pdf_index"], c["table"], c["grid_ti"])
+            if c["grid_row"] not in u.get(k, ()):
+                f[k].add(c["grid_row"])
+    return ({k: sorted(v) for k, v in u.items()}, {k: sorted(v) for k, v in f.items()}, checks, cells)
 
 
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-llm", action="store_true", help="build the images only")
     ap.add_argument("--max-calls", type=int, default=HALT_ABOVE)
+    ap.add_argument("--full", nargs="*", default=list(FULL_TABLES), help="tables to re-read completely")
     a = ap.parse_args()
-    U, checks, cells = units()
+    U, F, checks, cells = units(tuple(a.full))
     jobs = []
-    for (idx, table, ti), rows in sorted(U.items()):
-        for s in range(0, len(rows), ROWS_PER_CALL):
-            jobs.append((idx, table, ti, rows[s: s + ROWS_PER_CALL]))
-    print(f"{sum(len(v) for v in U.values())} rows on {len({k[0] for k in U})} pages -> {len(jobs)} calls")
+    for group in (U, F):
+        for (idx, table, ti), rows in sorted(group.items()):
+            for s in range(0, len(rows), ROWS_PER_CALL):
+                jobs.append((idx, table, ti, rows[s: s + ROWS_PER_CALL]))
+    print(f"{sum(len(v) for v in U.values())} check rows + {sum(len(v) for v in F.values())} full-read rows "
+          f"on {len({k[0] for k in U} | {k[0] for k in F})} pages -> {len(jobs)} calls")
     if len(jobs) > a.max_calls:
         raise SystemExit(f"{len(jobs)} calls > {a.max_calls}: halting before any call")
     SECOND.mkdir(parents=True, exist_ok=True)
@@ -275,6 +292,10 @@ def compare(checks: dict, cells: dict, reads: dict, unclear: set) -> None:
         else:
             m_len = len(mrow) if c["table"] != "13.1" else 7
             s_cells = srow[:m_len] if c["table"] == "13.1" else srow
+            if len(s_cells) < m_len and not any(x for x in mrow[len(s_cells):m_len]):
+                # Mistral's grid has empty trailing columns (unused page columns) that Sonnet leaves out
+                s_cells = list(s_cells) + [""] * (m_len - len(s_cells))
+                how = "padded: Mistral's trailing columns are empty"
             if len(s_cells) == m_len:
                 s_tok = s_cells[col]
             elif len([x for x in s_cells if x != ""]) == len([x for x in mrow[:m_len] if x]):

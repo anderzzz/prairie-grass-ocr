@@ -96,17 +96,58 @@ owner marked illegible (`status=illegible`, no value).
 
 Every dataset cell carries `quality`: `owner`, `two_readers`, `single_reader`
 (no check involved it), `printed_inconsistent` (owner: printed as such, still
-fails a check), `rule`, `doubtful`, `illegible`, `unread`.
+fails a check), `context` (Table 8.1 follow-up, below), `rule`, `doubtful`,
+`illegible`, `unread`.
 
-Outlier screen (`src/volume2/outliers.py`, run by `make volume2-dataset`) adds
-a column `outlier` and removes nothing. A `spike` is a value off the mean of its
-two neighbours (8.2 in time, 12.1 up the sounding, 13.1 in pressure) by more
-than 6 robust scales, both neighbours on the same side, and (8.2) seen at one
-height only, since a jump at all heights at once is weather. A `global` value lies
-more than 6 robust scales from its variable's median (radiation, clock times
-and wind directions excluded).
+## Follow-up: full second reading of Tables 8.1 and 8.2 (2026-11-17)
 
-Table 11.3 (time series of Δ(∂T/∂z) at 12 cm) is left out of the dataset by
-owner decision (2026-11-16): the printed table carries hand corrections and is
-too dubious to fix at reasonable effort. It is still extracted
-(`output/volume2/extracted/table_11.3.csv`) but not in `output/volume2/dataset`.
+Data users found Table 8.1's 1 m direction for release 40 (106) 74 deg off
+Table 6.1 and the plume. The print says 166, and only Mistral had read that cell.
+In this print 0, 6, 8 and 9 are easily confused when worn. So every row of Tables 8.1
+and 8.2 was then read by Sonnet as well (`second_read.py`, `FULL_TABLES`; 224 new
+calls, $1.38). These calls are separate from the check-row calls, so the earlier
+readings stayed cached. Where Mistral's grid has empty trailing columns, Sonnet's
+shorter rows are padded instead of being dropped.
+
+Disagreements are settled by `volume2.followup` into
+`config/review/volume2_followup.csv`, which `volume2.dataset` applies after the
+review verdicts:
+
+* Cells already ruled in the 2026-11-16 owner review are left alone.
+* Strip shifts: where Sonnet's strip straddled rows, its row reproduces Mistral's
+  row above or below (all of page 100's lower soil rows, much of page 96).
+  These cells get no second reading (`single_reader`, Mistral kept), and that
+  includes cells that "agreed" only by coincidence.
+* Decimal point only: the column's printed format decides (a zero is printed
+  `00`).
+* Otherwise context decides (`quality = context`). Each candidate is compared with
+  the interpolation between the levels above and below (ln z for air, depth for
+  soil) and, in 8.2, with the mean of the neighbouring hours. A residual counts
+  only in units of that quantity's typical scatter. The other reading has to be off
+  by more than 4 units while the chosen one is at most half as far off, and no
+  axis may fit neither reading.
+* If nothing decides, Mistral's reading is kept with `quality = doubtful`.
+* Decisions made by hand on Table 8.1 (`config/review/volume2_followup_hand.csv`)
+  are kept.
+
+Third readings were tried and are not used to decide. Each disputed cell was
+cropped and shown with only the two candidates, in random order, to Sonnet
+(`volume2.adjudicate`, 409 calls, $1.87) and, on the 96 cells where context is
+unambiguous, to Opus ($1.10). Both contradicted the profile about as often as they
+agreed: Sonnet 22 agree to 42 contradict, Opus 30 to 43. Both called worn 9s and 6s
+"clean 0s", e.g. 408 for 498 between 540 and 452. The scan is bilevel, so a worn 9 or 6
+loses its inner stroke and becomes an oval. "It looks like a 0" is therefore no
+evidence, while a hook or tail that is present is. Their verdicts are kept in
+`value_source` as information (`output/volume2/second_read/adjudication*.csv`).
+For the same reason, three hand decisions on Table 8.1 that rested only on an
+"oval" were downgraded to doubtful.
+
+Result:
+
+* Table 8.1 (2,982 cells): 2,775 `two_readers`, 45 `context`, 59 `doubtful`,
+  61 `single_reader`.
+* Table 8.2 (7,428 cells, before this almost all `single_reader`): 6,818
+  `two_readers`, 114 `context`, 188 `doubtful`, 222 `single_reader`.
+* Values changed from the previous release: 17 in 8.1 (9 of them `.00` to `00`) and 10 in 8.2,
+  e.g. 409 to 489 (8 m wind) and 22.40 to 23.40 (soil temperature at -0.12 m; the
+  neighbouring hours read 23.4).

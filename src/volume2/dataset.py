@@ -31,6 +31,9 @@ ROOT = OUT.parents[1]
 VERDICTS_IN = ROOT / "review" / "volume2" / "verdicts.csv"
 ITEMS = ROOT / "review" / "volume2" / "items.json"
 VERDICTS = ROOT / "config" / "review" / "volume2_verdicts.csv"
+# Decisions taken after the review pack (hand-kept; --resolve never rewrites it). Same columns;
+# applied after VERDICTS, so a row here overrides the review verdict for its cell.
+FOLLOWUP = ROOT / "config" / "review" / "volume2_followup.csv"
 DATASET = OUT / "dataset"
 REVIEWER, DATE = "project owner", None
 
@@ -128,7 +131,7 @@ def build() -> None:
     for c in cells.values():
         if c["status"] == "unread":
             c["pending"] = True
-    owner = list(csv.DictReader(VERDICTS.open())) if VERDICTS.exists() else []
+    owner = [v for f in (VERDICTS, FOLLOWUP) if f.exists() for v in csv.DictReader(f.open())]
     for v in owner:
         if v["group"] == "C":
             for cid in v["cell_id"].split(";"):
@@ -146,14 +149,18 @@ def build() -> None:
                      pending=False, quality="illegible",
                      value_source=f"{v['basis']} ({v['reviewer']}, {v['date']}); OCR read {c['token']!r}")
             continue
+        if v["verdict"] == "single_reader":              # the second reading was unusable
+            c.update(pending=False, quality="single_reader", value_source=f"mistral; {v['basis']}")
+            continue
         p = parse(v["token_as_printed"])
-        rule = v["verdict"].startswith("rule")
+        rule = v["verdict"].startswith(("rule", "context"))   # not an owner reading
         c.update(token=p["token"], value=p["value"], kind=p["kind"], estimated=p["estimated"],
                  footnote=p["footnote"], status={"number": "value", "above": "value", "range": "value",
                                                  "blank": "not_printed", "missing": "missing",
                                                  "text": "text"}.get(p["kind"], "unread"),
                  value_source=f"{v['basis']} ({v['reviewer']}, {v['date']})", reviewed=not rule, pending=False,
-                 quality={"rule": "rule", "rule_doubtful": "doubtful"}.get(v["verdict"], "owner"))
+                 quality={"rule": "rule", "rule_doubtful": "doubtful", "context": "context",
+                          "context_doubtful": "doubtful"}.get(v["verdict"], "owner"))
     fails = defaultdict(set)
     for r in run_on(T):
         if r["cell_id"]:

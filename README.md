@@ -195,8 +195,11 @@ follow Volume II: `token`, `value`, `status`, `quality`, `value_source`, `check_
   records).
 
 `suspect`, `suspect_alternative`, `suspect_note` mark printed values that disagree with
-other tables (release 60 time, 61/62 date, 40 speed; `config/suspect_values.yaml`). They are
-never corrected. See `docs/volume1s.md` for the checks and the review.
+other tables (release 60 time, 61/62 date; `config/suspect_values.yaml`). They are
+never corrected. See `docs/volume1s.md` for the checks and the review. The 10-min source
+speed of runs 14, 39 and 40 is 36–48 % above Table 8.1's 2 m speed (every other run within
+12 %): kept as printed, `quality = printed_inconsistent`, most likely an instrument difference
+on light-wind nights.
 
 ---
 
@@ -261,13 +264,20 @@ out on 2026-11-16 because the printed table carries hand corrections. The raw pa
 | `two_readers` | Mistral and Sonnet read the same token independently |
 | `single_reader` | Mistral only, and no consistency check involved the cell (the large majority) |
 | `printed_inconsistent` | The owner confirmed it is printed this way, yet it still fails a check |
+| `context` | Tables 8.1/8.2. The readers differed. One reading was chosen because it fits the height profile, the neighbouring hours or another table and the other does not (`value_source` gives the residuals). Chosen by Claude under the owner's method, not by the owner. |
 | `rule` | Not ruled by the owner. The reading under which the failed checks pass was taken. |
-| `doubtful` | Not ruled by the owner, and neither reading passes. Mistral's reading is kept. |
+| `doubtful` | Not ruled by the owner, and neither reading passes, or (Tables 8.1/8.2) the context does not decide between the two readings. Mistral's reading is kept. |
 | `illegible` / `unread` | No usable value |
 
 ### Table-specific columns
 
 **Tables 8.1 and 8.2** (micrometeorology profiles):
+
+Tables 8.1 and 8.2 were read in full by Sonnet as well as Mistral (2026-11-17), after data
+users found a misread wind direction (release 40: 106 for a printed 166). In this print 0, 6, 8
+and 9 are easily confused. About 92 % of their cells are now `two_readers`, and every
+disagreement is settled as `context` or `doubtful`, with `value_source` giving the reason
+(`docs/volume2.md`). The other Volume II tables are still mostly `single_reader`.
 
 - `release` / `release_token`: gas release number (= Volume I `run`; 8.1 only).
 - `date` (ISO), `cst` (hhmm). `cst_token` and `date_read` hold what was printed. CST values

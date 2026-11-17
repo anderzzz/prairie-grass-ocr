@@ -1,7 +1,7 @@
 {
- "calls": 88,
- "usd": 0.3596,
- "input_tokens": 93627,
- "output_tokens": 17233,
+ "calls": 312,
+ "usd": 1.7472,
+ "input_tokens": 391177,
+ "output_tokens": 96484,
  "model": "claude-sonnet-5-5"
 }
