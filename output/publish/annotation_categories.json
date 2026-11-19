@@ -1,0 +1,12 @@
+{
+ "suspected_original_error": "Read correctly, but the curators suspect a typing error in the 1958 report. The printed value is kept; `alternative` is the suspected intended value.",
+ "printed_inconsistent": "The owner confirmed the print, yet it fails a consistency check. No correction is proposed.",
+ "doubtful_reading": "The readers disagree and nothing decided between them; the first reader's (Mistral's) token is kept, `alternative` is the other reading.",
+ "reading_decided_by_context": "The readers disagreed; the kept reading fits the height profile or neighbouring hours and the alternative does not. Decided by Claude under the owner's method, not by the owner.",
+ "reading_decided_by_rule": "The readers disagreed and the owner left it open; the reading under which the failed checks pass was kept.",
+ "illegible": "The owner could not read the print; no value.",
+ "key_decided": "A row key (run, date) was smudged or unreadable and was set by a person.",
+ "unit_as_printed": "The printed unit or heading is wrong; the dataset keeps it as printed.",
+ "excluded_table": "A printed table left out of the dataset.",
+ "unverified_transcription": "Kept as machine-read, not reviewed cell by cell."
+}

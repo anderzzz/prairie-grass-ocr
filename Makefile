@@ -2,7 +2,7 @@
 UV ?= uv
 PY  = $(UV) run python
 
-.PHONY: volume2-followup pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks volume2 volume2-review volume2-dataset volume1s volume1s-dataset
+.PHONY: volume2-followup pilot recon select extract reference score score-holdout review test clean-cache volume dataset notebooks volume2 volume2-review volume2-dataset volume1s volume1s-dataset annotations reference-comparison review-round2
 
 pilot: recon select extract test reference score review   # full pilot incl. holdout: git checkout pilot-v1 && make pilot
 
@@ -39,6 +39,15 @@ volume:           ## all Volume I table pages -> output/volume1 (post-pilot)
 
 dataset:          ## reviewed Volume I dataset (extraction + owner verdicts; no reference) -> output/volume1/dataset
 	cd src && $(PY) -m dataset.build
+
+annotations:      ## curators' statements on the datasets (suspects, errata, keys, doubtful readings) -> output/publish/annotations.jsonl
+	cd src && $(PY) -m publish.annotations
+
+reference-comparison: ## cells where Volume I and the harmo.org reference differ (needs make reference) -> output/publish/reference_comparison.csv
+	$(PY) -m scoring.reference_comparison
+
+review-round2:    ## owner review pack: doubtful readings + outliers (no reference) -> review/round2/index.html
+	cd src && $(PY) -m publish.review_pack
 
 notebooks:        ## exploration notebooks (needs `make dataset` first)
 	$(UV) run --group notebooks jupyter lab notebooks/
