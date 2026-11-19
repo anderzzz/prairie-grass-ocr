@@ -71,9 +71,19 @@ Two rules apply when reading these files:
 - **Read with `keep_default_na=False`.** Otherwise pandas turns empty strings, and tokens such
   as `NA`, into NaN, and you lose the difference between "nothing printed" and "missing".
 
-`notebooks/pgdata.py` has ready-made loaders (`arcs()`, `towers()`) that apply these rules,
-convert booleans and add a printed run order. `make notebooks` opens the exploration
-notebooks.
+`notebooks/pgdata.py` has ready-made loaders (`arcs()`, `towers()`, `source_strength()`,
+`slow_wind()`, `micromet()`, `profiles()`) that apply these rules, convert booleans and add a
+printed run order. `arc_summary()` gives plume statistics per run and arc, and `run_table()`
+gives one row per run that joins Volume I and Volume II. `make notebooks` opens the notebooks:
+
+| Notebook | Content |
+|---|---|
+| `00_start_here` | Guided tour: sampler layout, which file holds what, one run end to end |
+| `01`–`03` | Structure checks, raw plume profiles, review and provenance |
+| `04_descriptive_statistics` | Ranges, distributions; physical, spatial and cross-table outlier checks |
+| `05_meteorology_and_stability` | Convection vs inversion, Richardson number, log wind law, roughness length |
+| `06_dispersion_modelling` | Gaussian plume: σy and σz vs distance, Taylor's theory, a validated regression |
+| `07_correlations` | Run-level correlations, confounding (Simpson's paradox), bootstrap intervals |
 
 ---
 

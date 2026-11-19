@@ -1454,6 +1454,7 @@ notebooks = [
     { name = "matplotlib" },
     { name = "nbclient" },
     { name = "pandas" },
+    { name = "scipy" },
 ]
 
 [package.metadata]
@@ -1478,6 +1479,7 @@ notebooks = [
     { name = "matplotlib", specifier = ">=3.11.2" },
     { name = "nbclient", specifier = ">=0.11.0" },
     { name = "pandas", specifier = ">=3.0.6" },
+    { name = "scipy", specifier = ">=1.17" },
 ]
 
 [[package]]
