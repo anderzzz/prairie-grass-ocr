@@ -1,0 +1,100 @@
+# Metadata of the data release (src/publish/release.py, make release).
+# Also the source for the Zenodo record's metadata.
+
+name: prairie-grass-1956
+title: "Project Prairie Grass (1956): tracer concentrations and micrometeorology, transcribed cell by cell from the 1958 report"
+version: "1.0.0"
+date: null            # release date; null = the build date
+
+description: >
+  Machine-readable transcription of the data tables in Project Prairie Grass, A Field Program in
+  Diffusion (Barad, ed., 1958; Geophysical Research Papers No. 59, Vols. I and II), the 1956 SO2
+  tracer experiment near O'Neill, Nebraska that underlies much of near-field dispersion modelling.
+  Volume I: concentrations on the five sampling arcs and six towers, release rates, evaporation
+  correction factors, slow-response winds and run remarks. Volume II: micrometeorology at release
+  times and hourly, heat budget, soil, optical temperature-gradient, rawinsonde and aircraft tables.
+  Every value is the printed token, kept beside the parsed number, with its status (value,
+  not measurable, missing, ...), how it was read and how well it is supported. Nothing is
+  interpolated, smoothed or corrected; suspected errors in the 1958 original are marked with the
+  evidence and a suggested alternative, never substituted.
+
+creators:
+  - name: "Anders Ohrn"          # TO CONFIRM: spelling as it should appear in the citation
+    orcid: null                  # TO ADD
+    roles: [creator]
+
+keywords:
+  - Project Prairie Grass
+  - atmospheric dispersion
+  - tracer experiment
+  - sulfur dioxide
+  - micrometeorology
+  - surface layer
+  - data rescue
+  - digitization
+  - 1956
+
+sources:
+  - title: "Barad, M. L. (ed.), 1958: Project Prairie Grass, A Field Program in Diffusion, Vol. I. Geophysical Research Papers No. 59, AFCRC-TR-58-235(I), Air Force Cambridge Research Center"
+    url: https://harmo.org/jsirwin/PGrassVolumeI.pdf
+  - title: "Barad, M. L. (ed.), 1958: Project Prairie Grass, A Field Program in Diffusion, Vol. II. Geophysical Research Papers No. 59, AFCRC-TR-58-235(II), Air Force Cambridge Research Center"
+    url: https://harmo.org/jsirwin/PGrassVolumeII.pdf
+
+# The scans the transcription was made from (not included in this release).
+scans:
+  - volume: "I"
+    url: https://harmo.org/jsirwin/PGrassVolumeI.pdf
+    bytes: 15787387
+    sha256: b08054adca5f51ef1e8ee5539a188cce8daa92c58b8129aae5c614af02a9fa85
+    last_modified: "2009-12-11"     # HTTP Last-Modified on harmo.org
+  - volume: "II"
+    url: https://harmo.org/jsirwin/PGrassVolumeII.pdf
+    bytes: 8020750
+    sha256: a15ee93dac7e3f2d17c1dff11f6cfbce4c284afaf976ed0f815c9928b7577c37
+    last_modified: "2009-12-11"
+
+citation: >
+  Ohrn, A. (2026). Project Prairie Grass (1956): tracer concentrations and micrometeorology,
+  transcribed cell by cell from the 1958 report (Version 1.0.0) [Data set]. Zenodo.
+  https://doi.org/[DOI to be assigned]
+
+# The comparison with the earlier transcription (built by scoring/reference_comparison.py),
+# shipped as annotations/<file>. Described here rather than in src/publish/release.py, which
+# must not name that transcription (tests/test_isolation.py).
+comparison_file:
+  file: reference_comparison.csv
+  description: >
+    Volume I cells where this dataset and J. S. Irwin's transcription (harmo.org) differ or
+    differed before review, with the type of difference and who was right.
+  fields:
+    file: {type: string, description: "Dataset file the cell belongs to"}
+    printed_token: {type: string, description: "The token as printed (this dataset)"}
+    dataset_status:
+      type: string
+      description: "status of the cell in this dataset"
+      enum: [value, not_measurable, missing, not_printed, text, code, illegible, unread]
+    dataset_value: {type: number, description: "value of the cell in this dataset"}
+    reference_file: {type: string, description: "File of J. S. Irwin's transcription (harmo.org) compared against"}
+    reference_entry:
+      type: string
+      description: >
+        The entry in that file, as written there (-9 = missing, 0.0 = no measurable
+        concentration, per its own conventions)
+    reference_reading:
+      type: string
+      description: "That entry interpreted with this dataset's status vocabulary"
+      enum: [value, missing, not_measurable]
+    reference_agrees_with_print: {type: boolean, description: "The entry equals what the page prints"}
+    difference:
+      type: string
+      description: "Type of difference between the earlier transcription and the print"
+      enum: [none, digit, magnitude, column_copy, post_assignment, printed_blank_coded_missing,
+             printed_zero_coded_blank, value_missing_from_reference, reference_value_where_print_blank]
+    ratio: {type: number, description: "earlier value / dataset value, where both are numbers"}
+    reference_matches_suspected_alternative:
+      type: boolean
+      description: "The earlier file holds the value the owner suspects was intended (run 44, 800 m, post 69)"
+    review_group: {type: string, description: "Review group of the 2026-11-15 owner review (A-D, BM)"}
+    reviewed_by: {type: string, description: "Who reviewed the cell against the scan"}
+    review_date: {type: date, description: "Date of that review"}
+    reference_sha256: {type: string, description: "SHA-256 of the earlier transcription's file compared against"}

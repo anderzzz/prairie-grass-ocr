@@ -362,6 +362,7 @@ make volume1s           # Vol I Tables 5.1, 5.4, 6.1: OCR + second reading (cach
 make volume1s-dataset   # their dataset (after review: DATE=yyyy-mm-dd make volume1s-dataset)
 make test
 make notebooks          # JupyterLab with the exploration notebooks
+make release            # data release bundle -> release/prairie-grass-data (data card, datapackage.json, licence)
 ```
 
 Full re-extraction of Volume I is `make volume`. The pilot (`make pilot`, `make score-holdout`)
@@ -390,3 +391,13 @@ output/           extractions and the datasets
 - `docs/volume2.md`: Volume II conventions, checks, review and outlier rules
 - `REPORT.md`: pilot method and accuracy, the full Volume I run, and the owner review
 - `docs/recon_discrepancies.md`, `docs/page_map.csv`: page-level reconciliation
+
+## Licence
+
+- Code: MIT (`LICENSE`).
+- Datasets, annotations and their documentation: CC BY 4.0 (`LICENSE-DATA`).
+- The scanned report volumes in `rawdata/` are third-party files covered by neither; see
+  `rawdata/README.md` for their source and checksums. They are not part of the data release.
+
+The data release (`make release`) is described by its data card (`docs/data_card.md`, rendered as the
+bundle's `README.md`) and `datapackage.json`; release metadata is in `config/release.yaml`.

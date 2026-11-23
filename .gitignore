@@ -23,3 +23,5 @@ output/experiments/
 output/volume2/second_read/images/
 .ipynb_checkpoints/
 output/volume2/second_read/adjudicate/
+# data release bundle (make release)
+release/
