@@ -36,6 +36,9 @@ REPO = Path(__file__).resolve().parents[2]
 OUT = REPO / "release" / "prairie-grass-data"
 META = REPO / "config" / "release.yaml"
 CARD = REPO / "docs" / "data_card.md"
+NOTEBOOKS = REPO / "notebooks"
+NOTEBOOK_REQUIREMENTS = ["pandas>=2.2", "matplotlib>=3.8", "scipy>=1.11", "scikit-learn>=1.4",
+                         "huggingface_hub>=0.23  # only to download the data when it is not alongside"]
 
 # ---------------------------------------------------------------- field dictionary
 STATUS = {
@@ -369,6 +372,13 @@ def main() -> None:
     (OUT / "datapackage.json").write_text(json.dumps(pkg, indent=1, ensure_ascii=False) + "\n")
     (OUT / "README.md").write_text(render_card(meta, loaded, len(ann)))
     shutil.copyfile(REPO / "LICENSE-DATA", OUT / "LICENSE")
+    # Introductory notebooks (with their outputs) and their helper; they find the data one level up.
+    nb_dir = OUT / "notebooks"
+    nb_dir.mkdir()
+    for f in sorted(NOTEBOOKS.glob("*.ipynb")) + [NOTEBOOKS / "pgdata.py"]:
+        shutil.copyfile(f, nb_dir / f.name)
+    (nb_dir / "requirements.txt").write_text("\n".join(NOTEBOOK_REQUIREMENTS) + "\n")
+    shutil.copyfile(REPO / "LICENSE", nb_dir / "LICENSE")
     n = sum(len(v) for v in loaded.values())
     print(f"release: {OUT}  {len(pkg_res)} resources, {n:,} rows, {len(ann)} annotations")
 

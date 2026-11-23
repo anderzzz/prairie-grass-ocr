@@ -74,16 +74,17 @@ Two rules apply when reading these files:
 `notebooks/pgdata.py` has ready-made loaders (`arcs()`, `towers()`, `source_strength()`,
 `slow_wind()`, `micromet()`, `profiles()`) that apply these rules, convert booleans and add a
 printed run order. `arc_summary()` gives plume statistics per run and arc, and `run_table()`
-gives one row per run that joins Volume I and Volume II. `make notebooks` opens the notebooks:
+gives one row per run that joins Volume I and Volume II. The notebooks read the data release
+(`make release` first; they also ship inside it), and `make notebooks` opens them:
 
 | Notebook | Content |
 |---|---|
-| `00_start_here` | Guided tour: sampler layout, which file holds what, one run end to end |
-| `01`–`03` | Structure checks, raw plume profiles, review and provenance |
-| `04_descriptive_statistics` | Ranges, distributions; physical, spatial and cross-table outlier checks |
-| `05_meteorology_and_stability` | Convection vs inversion, Richardson number, log wind law, roughness length |
-| `06_dispersion_modelling` | Gaussian plume: σy and σz vs distance, Taylor's theory, a validated regression |
-| `07_correlations` | Run-level correlations, confounding (Simpson's paradox), bootstrap intervals |
+| `01_the_data` | The files and how to read them, keys and joins, summary numbers, data quality and annotations |
+| `02_the_physical_picture` | The field, single plumes from above and from the side, day against night, two animations |
+| `03_modelling_dispersion` | Gaussian plume: σy and σz from the data, the textbook Pasquill–Gifford–Briggs model scored as in model benchmarks, fitted and machine-learned models under leave-one-run-out validation |
+
+`pgdata.data_dir()` finds the data in `PG_DATA_DIR`, else in the release the notebook sits in,
+else in `release/prairie-grass-data`, else it downloads the Hugging Face copy.
 
 ---
 

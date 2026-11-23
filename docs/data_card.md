@@ -28,6 +28,22 @@ Plus:
 - `annotations/annotations.jsonl`: {{n_annotations}} statements about specific cells, rows or tables
   (see [Annotations](#annotations)).
 - `annotations/annotation_categories.json`: what each annotation category means.
+- `notebooks/`: three introductory Jupyter notebooks, saved with their outputs (see
+  [Notebooks](#notebooks)).
+
+## Notebooks
+
+Three short notebooks show what the data holds and how to use it. Each runs in a minute.
+
+| Notebook | Content |
+|---|---|
+| `01_the_data` | The files and how to read them, keys and joins, summary numbers, data quality and annotations |
+| `02_the_physical_picture` | The field, single plumes from above and from the side, day against night, two animations |
+| `03_modelling_dispersion` | Gaussian plume: σy and σz from the data, the textbook Pasquill–Gifford–Briggs model scored as in model benchmarks, and fitted and machine-learned models under leave-one-run-out validation |
+
+They use `notebooks/pgdata.py`, which loads the files with the reading rules below and finds the
+data in the folder above. Install with `pip install -r notebooks/requirements.txt`. The
+notebook code is under the MIT licence (`notebooks/LICENSE`).
 
 ## How to read the files
 
@@ -233,6 +249,7 @@ Please also cite the original report (above).
 ## Licence
 
 The data and this documentation: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+The notebooks and `pgdata.py`: MIT.
 The underlying measurements are those of the 1958 report.
 
 ## Versions

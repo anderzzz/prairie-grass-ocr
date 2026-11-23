@@ -1,19 +1,81 @@
-"""Load the reviewed Volume I dataset for exploration.
+"""Helpers for the Project Prairie Grass notebooks: find the data, load it tidily, plot it.
 
-Reads output/volume1/dataset/{arcs,towers}.csv (built by `make dataset`).
-No reference data is read here.
+Where the data comes from (first match wins):
+1. the folder in the environment variable PG_DATA_DIR;
+2. the data release this file sits in (notebooks/ inside the unzipped Zenodo download);
+3. release/prairie-grass-data in the source repository (built by `make release`);
+4. a download of the Hugging Face dataset HF_REPO at tag HF_REVISION (cached locally).
+
+Every loader reads the published CSVs only. Values are used as printed; anything
+derived is computed here and named as such.
 """
 from __future__ import annotations
 
+import json
+import os
+from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-REPO = Path(__file__).resolve().parents[1]
-DATASET = REPO / "output" / "volume1" / "dataset"
+DOI = "10.5281/zenodo.24462501"
+HF_REPO = "TO-SET/prairie-grass-1956"   # Hugging Face dataset repo id
+HF_REVISION = "v1.0.0"                  # the tag that matches the Zenodo version
+
 ARCS_M = [50, 100, 200, 400, 800]
 TOWER_HEIGHTS_M = [0.5, 1.0, 1.5, 2.5, 4.5, 7.5, 10.5, 13.5, 17.5]
+
+
+def _is_release(d: Path) -> bool:
+    return (d / "datapackage.json").is_file() and (d / "volume1").is_dir()
+
+
+@lru_cache(maxsize=1)
+def _locate() -> tuple[Path, str]:
+    here = Path(__file__).resolve().parent
+    candidates = [(Path(os.environ["PG_DATA_DIR"]), "the folder in PG_DATA_DIR")] if os.environ.get("PG_DATA_DIR") else []
+    candidates += [(here.parent, "the data release this notebook belongs to"),
+                   (here.parent / "release" / "prairie-grass-data", "the release built in the source repository")]
+    for d, label in candidates:
+        if _is_release(d):
+            return d, label
+    from huggingface_hub import snapshot_download   # only needed for the download route
+    d = snapshot_download(HF_REPO, repo_type="dataset", revision=HF_REVISION,
+                          allow_patterns=["*.csv", "*.json", "*.jsonl", "*.md"])
+    return Path(d), f"Hugging Face {HF_REPO} @ {HF_REVISION} (cached download)"
+
+
+def data_dir() -> Path:
+    """The root of the data release (the folder holding datapackage.json)."""
+    return _locate()[0]
+
+
+def data_source() -> str:
+    """Where the data was found, in words."""
+    return f"Project Prairie Grass data v{datapackage()['version']}, from {_locate()[1]}"
+
+
+def v1(name: str) -> Path:
+    return data_dir() / "volume1" / name
+
+
+def v2(name: str) -> Path:
+    return data_dir() / "volume2" / name
+
+
+def datapackage() -> dict:
+    return json.loads((data_dir() / "datapackage.json").read_text())
+
+
+def annotations() -> pd.DataFrame:
+    """Curators' statements about cells, rows and tables (annotations/annotations.jsonl)."""
+    lines = (data_dir() / "annotations" / "annotations.jsonl").read_text().splitlines()
+    return pd.DataFrame([json.loads(x) for x in lines if x.strip()])
+
+
+def annotation_categories() -> dict:
+    return json.loads((data_dir() / "annotations" / "annotation_categories.json").read_text())
 
 
 def run_order(run: str) -> float:
@@ -35,14 +97,14 @@ def _common(df: pd.DataFrame) -> pd.DataFrame:
 def arcs() -> pd.DataFrame:
     """One row per arc sampler cell (Table 5.2). bearing_unwrapped runs 270..450
     so that west -> north -> east is continuous."""
-    df = _common(pd.read_csv(DATASET / "arcs.csv", dtype={"run": str, "token": str}, keep_default_na=False))
+    df = _common(pd.read_csv(v1("arcs.csv"), dtype={"run": str, "token": str}, keep_default_na=False))
     df["bearing_unwrapped"] = df["bearing_deg"].where(df["bearing_deg"] >= 270, df["bearing_deg"] + 360)
     return df
 
 
 def towers() -> pd.DataFrame:
     """One row per tower sampler cell (Table 5.3)."""
-    return _common(pd.read_csv(DATASET / "towers.csv", dtype={"run": str, "token": str}, keep_default_na=False))
+    return _common(pd.read_csv(v1("towers.csv"), dtype={"run": str, "token": str}, keep_default_na=False))
 
 
 def runs_in_order(df: pd.DataFrame) -> list[str]:
@@ -71,12 +133,9 @@ def style() -> None:
 
 
 # ---------------------------------------------------------------------------
-# Run-level helpers for the analysis notebooks (04-07).
-# Everything below reads only output/volume{1,2}/dataset/. Values are used as
-# printed; any derived quantity is computed here and named as such.
+# Run-level helpers
 # ---------------------------------------------------------------------------
 
-VOL2 = REPO / "output" / "volume2" / "dataset"
 SOURCE_HEIGHT_M = 0.46   # release height of the SO2 point source (Vol. I, ch. 2)
 G = 9.81                 # m s-2
 KAPPA = 0.4              # von Karman constant
@@ -91,15 +150,20 @@ def _num(s: pd.Series) -> pd.Series:
     return pd.to_numeric(s.replace("", None), errors="coerce")
 
 
+def run_remarks() -> pd.DataFrame:
+    """Free-text remarks per run (Table 5.1 footnotes and similar)."""
+    return _read(v1("run_remarks.csv"))
+
+
 def source_strength() -> pd.Series:
     """Release rate Q (g/s) per run, Table 5.1."""
-    d = _read(DATASET / "source_strength.csv")
+    d = _read(v1("source_strength.csv"))
     return pd.Series(_num(d["value"]).to_numpy(), index=d["run"], name="Q_g_s")
 
 
 def evaporation_correction() -> pd.DataFrame:
     """Table 5.4 factors, wide: run x arc_m. NaN where printed 'missing data'."""
-    d = _read(DATASET / "evaporation_correction.csv")
+    d = _read(v1("evaporation_correction.csv"))
     d["value"] = _num(d["value"])
     return d.pivot(index="run", columns="arc_m", values="value").rename(columns=int)
 
@@ -107,7 +171,7 @@ def evaporation_correction() -> pd.DataFrame:
 def slow_wind() -> pd.DataFrame:
     """Table 6.1, one row per release. Columns like u_source_10 (m/s),
     dir_source_10 (deg), sigma_theta_source_10 (deg), plus date and time_cst."""
-    d = _read(DATASET / "slow_response_wind.csv")
+    d = _read(v1("slow_response_wind.csv"))
     keys = d.drop_duplicates("release").set_index("release")[["date", "time_cst"]]
     v = d[~d["quantity"].str.startswith("key")].copy()
     v["value"] = _num(v["value"])
@@ -120,7 +184,7 @@ def slow_wind() -> pd.DataFrame:
 def micromet(table: str = "8.1") -> pd.DataFrame:
     """Tidy Table 8.1 (or 8.2): numeric `value`, `height_m`, only status == value.
     Wind speed is converted from the printed cm/s to m/s in `value_si`."""
-    d = _read(VOL2 / f"table_{table}.csv")
+    d = _read(v2(f"table_{table}.csv"))
     d = d[d["status"] == "value"].copy()
     d["value"] = _num(d["value"])
     d["height_m"] = _num(d["height_m"])
@@ -204,7 +268,6 @@ def run_table() -> pd.DataFrame:
     rad = micromet()
     rad = rad[rad["section"] == "radiation"]
     # physical bound: nothing at the surface exceeds the solar constant, ~0.033 cal cm-2 s-1.
-    # A guard only: release 16 insolation, once read '0183', is '.0183' since the owner review of 2026-11-23.
     rad = rad[rad["value"].abs() < 0.033].drop_duplicates(["release", "quantity"]) \
         .pivot(index="release", columns="quantity", values="value")
 

@@ -55,7 +55,7 @@ release:          ## data release bundle: datasets + datapackage.json + data car
 review-round3:    ## owner review pack: what round 2 left open, cells located from the print -> review/round3/index.html
 	cd src && $(PY) -m publish.review_round3
 
-notebooks:        ## exploration notebooks (needs `make dataset` first)
+notebooks:        ## introductory notebooks (read release/prairie-grass-data: `make release` first)
 	$(UV) run --group notebooks jupyter lab notebooks/
 
 volume2:          ## Volume II: Mistral OCR (cached) -> parsed tables -> consistency checks -> output/volume2
