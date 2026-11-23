@@ -124,8 +124,7 @@ original. Left out of the dataset; the raw parse is in `output/volume2/extracted
 - **Smudged date headers, Volume II:** Table 8.2 PDF 97 date set to 8 Aug. (read
   "August 9"; page sits between two 8 Aug. pages). Table 8.1 release 29 date set to
   3 Aug. (read "5"; Tables 10.1, 12.1 and release order give 3 Aug.).
-  > **Open:** the owner's answer named both 3 and 5 August; 3 Aug. applied "to be
-  > confirmed". Settle before publication.
+  > **Settled (2026-11-23):** the owner confirmed 3 Aug. against the scan.
 - **Table 13.1 free-text remarks:** kept as Mistral read them, marked "unverified
   transcription", not reviewed cell by cell.
 - **Faint column rules (Vol. I):** seven pages needed a column template to place cells;
@@ -205,7 +204,7 @@ original. Left out of the dataset; the raw parse is in `output/volume2/extracted
 
 ## Next steps
 
-- Settle the release 29 date (**Open** above).
+- ~~Settle the release 29 date~~ (settled 2026-11-23: 3 Aug.).
 - Re-check the LLM glyph-judge experiment (section 4) before citing it: its crops came
   from `volume2.adjudicate.cell_images`, the locator that misplaced round-2 boxes on
   sloped pages, so some judged crops may have shown the wrong cell.

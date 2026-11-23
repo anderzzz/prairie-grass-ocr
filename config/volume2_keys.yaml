@@ -17,7 +17,7 @@ keys:
     field: date
     value: "1956-08-03"
     basis: day smudged (Mistral read "5"); Tables 10.1 and 12.1 and the release order give 3 August
-    note: owner's answer named both 3 and 5 August; 3 August applied, to be confirmed
+    note: confirmed 3 August by the owner against the scan, 2026-11-23
 
 errata:
   - table: "10.1"

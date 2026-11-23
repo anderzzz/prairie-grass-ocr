@@ -203,8 +203,6 @@ established it (`value_source`, and `decided_by` in the annotations).
 - **Unseen misreads.** In Volume I, a cell that our OCR and the earlier transcription misread *the
   same way* was never surfaced. We estimate fewer than 1 in 600 cells. In Volume II, tables other than
   8.1/8.2 are mostly `single_reader`: a 0/6 slip that breaks no check is invisible.
-- **Release 29, Table 8.1 date.** The day is smudged. 3 August is applied, from Tables 10.1 and 12.1
-  and the release order. To be confirmed.
 - **Table 13.1 remarks** are machine-transcribed and not reviewed cell by cell (flagged "unverified
   transcription").
 - **One doubtful and one illegible cell** remain in Volume II (both in Table 13.1).
