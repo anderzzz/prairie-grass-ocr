@@ -4,7 +4,9 @@
 name: prairie-grass-1956
 title: "Project Prairie Grass (1956): tracer concentrations and micrometeorology, transcribed cell by cell from the 1958 report"
 version: "1.0.0"
-date: null            # release date; null = the build date
+date: "2026-11-23"   # release date; null = the build date
+doi: "10.5281/zenodo.24462501"
+homepage: https://doi.org/10.5281/zenodo.24462501
 
 description: >
   Machine-readable transcription of the data tables in Project Prairie Grass, A Field Program in
@@ -19,8 +21,8 @@ description: >
   evidence and a suggested alternative, never substituted.
 
 creators:
-  - name: "Anders Ohrn"          # TO CONFIRM: spelling as it should appear in the citation
-    orcid: null                  # TO ADD
+  - name: "Anders Ohrn"
+    orcid: null
     roles: [creator]
 
 keywords:
@@ -31,8 +33,16 @@ keywords:
   - micrometeorology
   - surface layer
   - data rescue
-  - digitization
-  - 1956
+  - near-field dispersion
+  - plume dispersion
+  - dispersion model evaluation
+  - boundary layer meteorology
+  - atmospheric stability
+  - heat budget
+  - rawinsonde
+  - O'Neill Nebraska
+  - historical data
+  - OCR
 
 sources:
   - title: "Barad, M. L. (ed.), 1958: Project Prairie Grass, A Field Program in Diffusion, Vol. I. Geophysical Research Papers No. 59, AFCRC-TR-58-235(I), Air Force Cambridge Research Center"
@@ -53,10 +63,22 @@ scans:
     sha256: a15ee93dac7e3f2d17c1dff11f6cfbce4c284afaf976ed0f815c9928b7577c37
     last_modified: "2009-12-11"
 
+# Zenodo form only (not used by src/publish/release.py).
+zenodo_abstract: >
+  Dataset on gas dispersion measurements in an open field from 1956. The raw data are optical
+  PDF scans, here digitized using advanced OCR and manual inspection. A standard dataset for
+  benchmarking gas dispersion, near-field dispersion and plume models.
+zenodo_notes: >
+  Occasional digits are smudged in the scan and not recoverable. In particular, the digits 0 and 6
+  are easily confounded in imperfect scans; in most instances such errors would make little
+  practical difference, and reasonable assignments have been made. No attempt has been made to
+  correct suspected typos in the original data; they are flagged, with evidence and a suggested
+  alternative, beside the printed value (see README).
+
 citation: >
   Ohrn, A. (2026). Project Prairie Grass (1956): tracer concentrations and micrometeorology,
   transcribed cell by cell from the 1958 report (Version 1.0.0) [Data set]. Zenodo.
-  https://doi.org/[DOI to be assigned]
+  https://doi.org/10.5281/zenodo.24462501
 
 # The comparison with the earlier transcription (built by scoring/reference_comparison.py),
 # shipped as annotations/<file>. Described here rather than in src/publish/release.py, which
