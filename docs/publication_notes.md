@@ -75,7 +75,6 @@ or as an `erratum` (Vol. II).
 | Table 6.1, release 61, date | blank (= 26 Aug.) | 27 Aug. | Table 8.1 and Table 5.2 header |
 | Table 6.1, release 62, date | 26 Aug. | 27 Aug. | as above; date probably printed one column too far right |
 | Table 10.1, release 45, time | 1200 | 1700 | Table 8.1 (1705), Table 12.1 sounding (1658) |
-| Table 8.1/8.2, release 16 insolation | `0183` | .0183 | missing decimal point; above the solar constant. `printed_inconsistent`; dropped only in the analysis helpers (`pgdata`), not in the data |
 | Table 9.1 heading | "Kcal/cm² sec" | 10⁻³ cal cm⁻² s⁻¹ | Table 9.2 = 0.06 × Table 9.1 throughout. Unit recorded as printed |
 | Table 9.1, last column | headed "R_n + Σq_i" | −(R_n + Σq) | holds for every release |
 
@@ -96,8 +95,29 @@ original. Left out of the dataset; the raw parse is in `output/volume2/extracted
 - **Illegible value:** one cell, Table 13.1 (field test 38, 12 Aug., relative humidity),
   `status = illegible`, no value.
 - **Doubtful values:** readers disagree and nothing (owner, context, checks) decides;
-  Mistral's reading kept with `quality = doubtful`. Table 8.1: 59; 8.2: 188; 13.1: 17;
-  9.2: 1. Users who need certainty should drop these.
+  Mistral's reading kept with `quality = doubtful`. One cell left after the owner
+  reviews of 2026-11-23 (was 265): Table 13.1 field test 38, 12 Aug., 630 ft, vapour
+  pressure, faded in the print (Mistral 20.7, Sonnet 26.7).
+- **Second owner review (2026-11-23):** 388 items (265 doubtful readings, 123 outliers).
+  357 verdicts applied (`config/review/round2_verdicts.csv`, export kept as
+  `round2_export.csv`): 237 doubtful readings settled (103 values changed), 119 outliers
+  confirmed as printed, 4 outliers found to be misreadings (e.g. Table 13.1 field test 67
+  dew point 1.2 -> 7.2, which also clears that row's humidity check). Not applied: 22
+  undecided (19 "can't tell", 3 blank), 7 where the review image boxed or showed the
+  wrong cell (`HOLD` in `src/publish/round2.py`), 2 open questions (`ASK`: release 16
+  insolation `0183`, Table 8.2 7 Aug. 1105 net radiation `0130`).
+- **Third owner review (2026-11-23):** the 31 items round 2 left open, shown afresh by
+  `src/publish/review_round3.py`: no drawn box; column heading and ~3 rows either side,
+  the row marked only where its printed label was read, crops straightened where the
+  page is typed at a slant (PDF 94 about 1 line, PDF 96 about 1.8 lines across the
+  table, the cause of the round-2 misplacements). 30 verdicts applied
+  (`config/review/round3_verdicts.csv`, export `round3_export.csv`): 27 doubtful
+  readings confirmed as Mistral read them (no value changed), the PDF 100 soil outlier
+  `.12` confirmed as printed, and the two decimal-point questions ruled as misreadings
+  (the point is printed, faintly): release 16 insolation `.0183` (previously recorded as
+  a printed `0183`, a suspected missing decimal point) and Table 8.2 7 Aug. 1105 net
+  radiation `.0130`. Both now pass every check, and so does the 7 Aug. insolation `.0192`
+  beside it. One "can't tell" remains doubtful.
 - **Inferred run key, run 66 (PDF 200):** header unreadable (Mistral read "86"). Keyed by
   page order (half B of run 66 is PDF 201). Independently supported: 269 of 270 cells
   then match the reference. `key_source` says "inferred".
@@ -166,7 +186,7 @@ original. Left out of the dataset; the raw parse is in `output/volume2/extracted
   cells carry a flag; they are doubts, not errors.
 - **Outlier screen marks, never removes** (Volume II: 125 cells flagged).
 - **Analysis-side choices live in `notebooks/pgdata.py`, never in the data** (e.g.
-  dropping the release 16 insolation misprint, Ri_b fallback to 4 m).
+  radiation above the solar constant dropped, Ri_b fallback to 4 m).
 - **Mistral OCR as primary reader** (98.2 % vs 83 % for the best offline reader on dev
   pages); offline readers kept as a cross-check. Model pinned, all raw responses
   committed, so the dataset rebuilds without any API.
@@ -175,21 +195,24 @@ original. Left out of the dataset; the raw parse is in `output/volume2/extracted
 
 | Quality | Volume I concentrations | Volume I small tables | Volume II |
 |---|---|---|---|
-| owner-reviewed | 159 | 9 | 82 |
-| two independent readers | n/a (offline cross-check) | 1,350 | 9,744 |
-| context-decided | | | 159 |
+| owner-reviewed | 162 | 9 | 459 |
+| two independent readers | n/a (offline cross-check) | 1,350 | 9,689 |
+| context-decided | | | 157 |
 | rule-decided | | | 24 |
-| doubtful | | | 265 |
-| printed_inconsistent | | 11 | 251 |
+| doubtful | | | 1 |
+| printed_inconsistent | | 11 | 245 |
 | illegible | | | 1 |
 
 ## Next steps
 
 - Settle the release 29 date (**Open** above).
+- Re-check the LLM glyph-judge experiment (section 4) before citing it: its crops came
+  from `volume2.adjudicate.cell_images`, the locator that misplaced round-2 boxes on
+  sloped pages, so some judged crops may have shown the wrong cell.
 - Decide whether to compare against the Aarhus `PrairieGrass.xls` as well (see the note
   in section 1).
 - Machine-readable companions (built 2026-11-19):
-  - `output/publish/annotations.jsonl` (`make annotations`): 724 statements on our data,
+  - `output/publish/annotations.jsonl` (`make annotations`): 452 statements (724 before the owner reviews of 2026-11-23) on our data,
     one per line, keyed by file + `cell_id` (or a row selector / whole table), with
     category, printed token, alternative, evidence, decided_by, date. Category glossary in
     `output/publish/annotation_categories.json`. `tests/test_annotations.py` checks it

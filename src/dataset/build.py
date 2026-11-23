@@ -46,6 +46,7 @@ REPO = Path(__file__).resolve().parents[2]
 VOL = REPO / "output" / "volume1"
 VERDICTS = REPO / "config" / "review" / "volume1_verdicts.csv"
 SUSPECTS = REPO / "config" / "suspect_values.yaml"
+ROUNDS = [REPO / "config" / "review" / f"round{n}_verdicts.csv" for n in (2, 3)]   # src/publish/round2.py
 OUT = VOL / "dataset"
 
 COMMON = ["status", "concentration_mg_m3", "estimated", "token", "value_source", "reviewed",
@@ -65,6 +66,10 @@ def run_order(run: str) -> tuple:
 
 def main() -> dict:
     verd = {r["cell_id"]: r for r in csv.DictReader(VERDICTS.open())} if VERDICTS.exists() else {}
+    for path in (p for p in ROUNDS if p.exists()):     # later owner reviews: outliers confirmed as printed
+        for r in csv.DictReader(path.open()):
+            if r["file"].startswith("volume1/"):
+                verd[r["cell_id"]] = {**r, "basis": f"{r['basis']}, {r['reviewer']}, {r['date']}"}
     sus = {s["cell_id"]: s for s in (yaml.safe_load(SUSPECTS.read_text()) or {}).get("volume1", [])} \
         if SUSPECTS.exists() else {}
     arcs, towers, used = [], [], set()

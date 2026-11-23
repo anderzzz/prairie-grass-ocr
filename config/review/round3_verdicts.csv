@@ -1,0 +1,31 @@
+cell_id,file,group,token_as_printed,basis,verdict,reviewer,date
+T13.1|p201|29|1956-08-03|0|3|vapor_pressure,volume2/table_13.1.csv,D,15.5,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|1|1956-07-03|1105|temperature|temperature|-1.0,volume2/table_8.1.csv,D,18.21,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|2|1956-07-03|1505|temperature|temperature|-1.0,volume2/table_8.1.csv,D,18.18,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|3|1956-07-05|2205|temperature|temperature|-1.0,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|4|1956-07-06|0105|temperature|temperature|-1.0,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|5|1956-07-06|1405|temperature|temperature|-1.0,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p64|6|1956-07-06|1705|temperature|temperature|-1.0,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|0905|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,19.09,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|0905|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,186,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1105|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,18.83,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1105|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,180,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,15.30,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1205|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,170,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1305|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1305|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,170,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1405|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,14.11,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1405|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,200,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1605|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1605|vapor_pressure|vapor_pressure|0.25,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1605|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,210,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-07|2205|radiation|insolation,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-08|0005|temperature|temperature|-0.06,volume2/table_8.2.csv,D,23.94,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-08|0005|temperature|temperature|-0.12,volume2/table_8.2.csv,D,24.89,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1205|temperature|temperature|1.0,volume2/table_8.2.csv,D,28.61,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1205|temperature|temperature|16.0,volume2/table_8.2.csv,D,26.74,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|temperature|temperature|1.0,volume2/table_8.2.csv,D,29.70,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|temperature|temperature|16.0,volume2/table_8.2.csv,D,27.54,owner confirmed Mistral's reading (round 3),mistral,project owner,2026-11-23
+T8.1|p66|16|1956-07-23|1005|radiation|insolation,volume2/table_8.1.csv,Q,.0183,owner: the decimal point is printed (faint); '0183' was a misreading (round 3),misread,project owner,2026-11-23
+T8.2|p93|1956-08-07|1105|radiation|net_radiation,volume2/table_8.2.csv,Q,.0130,owner: the decimal point is printed (faint); '0130' was a misreading (round 3),misread,project owner,2026-11-23
+T8.2|p100|1956-08-09|0905|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.2.csv,O,.12,owner: printed as such (outlier review: round 3),printed,project owner,2026-11-23

@@ -145,7 +145,8 @@ For the same reason, three hand decisions on Table 8.1 that rested only on an
 Result:
 
 * Table 8.1 (2,982 cells): 2,775 `two_readers`, 45 `context`, 59 `doubtful`,
-  61 `single_reader`.
+  61 `single_reader` (before the second owner review of 2026-11-23, which settled most
+  `doubtful` cells: see `docs/publication_notes.md`).
 * Table 8.2 (7,428 cells, before this almost all `single_reader`): 6,818
   `two_readers`, 114 `context`, 188 `doubtful`, 222 `single_reader`.
 * Values changed from the previous release: 17 in 8.1 (9 of them `.00` to `00`) and 10 in 8.2,

@@ -160,7 +160,7 @@ Ten-minute mean SO₂ concentrations, **mg m⁻³ as printed**, from Tables 5.2 
 | `status` | `value`, `not_measurable`, `missing`, `unread` |
 | `concentration_mg_m3` | Filled **only** when `status = value` |
 | `estimated` | Printed with `*` ("estimated value"); one tower cell |
-| `token`, `value_source`, `reviewed` | See provenance above. 159 cells were reviewed: every cell where Mistral and the [harmo.org](https://www.harmo.org) reference transcription disagreed. |
+| `token`, `value_source`, `reviewed` | See provenance above. 162 cells were reviewed: every cell where Mistral and the [harmo.org](https://www.harmo.org) reference transcription disagreed, plus 3 outliers confirmed as printed in the second review (`config/review/round2_verdicts.csv`). |
 | `flagged`, `flag_notes` | Pipeline flags: about 8% of arc cells, 18% of tower cells |
 | `suspect`, `suspect_alternative`, `suspect_note` | The owner suspects an error **in the original report** (`config/suspect_values.yaml`). The printed value is kept; the alternative is only carried alongside it. |
 | `key_source`, `pdf_index`, `printed_page`, `cell_id` | Provenance |
@@ -287,7 +287,8 @@ Tables 8.1 and 8.2 were read in full by Sonnet as well as Mistral (2026-11-17), 
 users found a misread wind direction (release 40: 106 for a printed 166). In this print 0, 6, 8
 and 9 are easily confused. About 92 % of their cells are now `two_readers`, and every
 disagreement is settled as `context` or `doubtful`, with `value_source` giving the reason
-(`docs/volume2.md`). The other Volume II tables are still mostly `single_reader`.
+(`docs/volume2.md`). A second owner review (2026-11-23) ruled on most `doubtful` cells and on
+the outliers, and a third settled what it left open; 1 cell remains `doubtful` across Volume II. The other Volume II tables are still mostly `single_reader`.
 
 - `release` / `release_token`: gas release number (= Volume I `run`; 8.1 only).
 - `date` (ISO), `cst` (hhmm). `cst_token` and `date_read` hold what was printed. CST values

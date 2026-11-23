@@ -138,7 +138,7 @@ T9.2|p125|49|35|R_n,9.2,125,115,49,49,35,R_n,cal/cm2 min,.774,0.774,value,number
 T9.2|p125|50|36|q_c,9.2,125,115,50,50,36,q_c,cal/cm2 min,-.542,-0.542,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,36,
 T9.2|p125|50|36|q_e,9.2,125,115,50,50,36,q_e,cal/cm2 min,-.152,-0.152,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,36,
 T9.2|p125|50|36|q_s,9.2,125,115,50,50,36,q_s,cal/cm2 min,-.080,-0.08,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,36,
-T9.2|p125|50|36|R_n,9.2,125,115,50,50,36,R_n,cal/cm2 min,.763,0.763,value,number,False,False,0.9957,,doubtful,"not ruled by owner; neither reading passes the checks ('.763' vs '.708'); Mistral kept, doubtful (rule, 2026-11-16)",False,False,9.1-9.2,,0,36,
+T9.2|p125|50|36|R_n,9.2,125,115,50,50,36,R_n,cal/cm2 min,.763,0.763,value,number,False,False,0.9957,,owner,"owner confirmed Mistral's reading (round 2) (project owner, 2026-11-23)",True,False,9.1-9.2,,0,36,
 T9.2|p125|51|37|q_c,9.2,125,115,51,51,37,q_c,cal/cm2 min,-.409,-0.409,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,37,
 T9.2|p125|51|37|q_e,9.2,125,115,51,51,37,q_e,cal/cm2 min,-.154,-0.154,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,37,
 T9.2|p125|51|37|q_s,9.2,125,115,51,51,37,q_s,cal/cm2 min,-.031,-0.031,value,number,False,False,0.9957,,single_reader,mistral,False,False,,,0,37,

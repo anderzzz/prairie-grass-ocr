@@ -195,7 +195,7 @@ def run_table() -> pd.DataFrame:
     - u_star, z0: log-law fit over 0.25-2 m (neutral form, crude outside neutral)
     - regime: 'convective' (Ri_b < -0.01), 'near-neutral', 'stable' (Ri_b > 0.01)
     - u_ref: transport speed, m/s (Table 6.1 source 2 m, else Table 8.1 2 m)
-    Radiation values above the solar constant are dropped (one misprint, release 16).
+    Radiation values above the solar constant are dropped (none in the current build).
     """
     q = source_strength()
     w = slow_wind()
@@ -204,7 +204,7 @@ def run_table() -> pd.DataFrame:
     rad = micromet()
     rad = rad[rad["section"] == "radiation"]
     # physical bound: nothing at the surface exceeds the solar constant, ~0.033 cal cm-2 s-1.
-    # Catches release 16 insolation printed '0183' (no decimal point; quality printed_inconsistent).
+    # A guard only: release 16 insolation, once read '0183', is '.0183' since the owner review of 2026-11-23.
     rad = rad[rad["value"].abs() < 0.033].drop_duplicates(["release", "quantity"]) \
         .pivot(index="release", columns="quantity", values="value")
 

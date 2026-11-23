@@ -34,6 +34,8 @@ VERDICTS = ROOT / "config" / "review" / "volume2_verdicts.csv"
 # Decisions taken after the review pack (hand-kept; --resolve never rewrites it). Same columns;
 # applied after VERDICTS, so a row here overrides the review verdict for its cell.
 FOLLOWUP = ROOT / "config" / "review" / "volume2_followup.csv"
+# Owner review rounds 2 and 3 (src/publish/round2.py); applied last, in order. Volume II rows only.
+ROUNDS = [ROOT / "config" / "review" / f"round{n}_verdicts.csv" for n in (2, 3)]
 DATASET = OUT / "dataset"
 REVIEWER, DATE = "project owner", None
 
@@ -132,6 +134,8 @@ def build() -> None:
         if c["status"] == "unread":
             c["pending"] = True
     owner = [v for f in (VERDICTS, FOLLOWUP) if f.exists() for v in csv.DictReader(f.open())]
+    owner += [v for f in ROUNDS if f.exists() for v in csv.DictReader(f.open()) if v["file"].startswith("volume2/")]
+    printed = set()                                   # owner: "printed as such"; quality set after the checks
     for v in owner:
         if v["group"] == "C":
             for cid in v["cell_id"].split(";"):
@@ -152,6 +156,13 @@ def build() -> None:
         if v["verdict"] == "single_reader":              # the second reading was unusable
             c.update(pending=False, quality="single_reader", value_source=f"mistral; {v['basis']}")
             continue
+        if v["verdict"] == "printed":                    # outlier confirmed as printed: token unchanged
+            if v["token_as_printed"] != c["token"]:
+                raise SystemExit(f"{v['cell_id']}: confirmed {v['token_as_printed']!r}, dataset has {c['token']!r}")
+            c.pop("quality", None)
+            c.update(reviewed=True, pending=False, review_note=f"{v['basis']} ({v['reviewer']}, {v['date']})")
+            printed.add(c["cell_id"])
+            continue
         p = parse(v["token_as_printed"])
         rule = v["verdict"].startswith(("rule", "context"))   # not an owner reading
         c.update(token=p["token"], value=p["value"], kind=p["kind"], estimated=p["estimated"],
@@ -167,6 +178,8 @@ def build() -> None:
             fails[r["cell_id"]].add(r["check"])
     for c in cells.values():
         c["check_failures"] = ";".join(sorted(fails.get(c["cell_id"], ())))
+        if c["cell_id"] in printed:
+            c["quality"] = "printed_inconsistent" if c["check_failures"] else "owner"
         if "quality" not in c:
             c["quality"] = ("unread" if c["status"] == "unread" else
                             "doubtful" if c["pending"] else

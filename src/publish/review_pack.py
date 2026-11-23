@@ -196,30 +196,41 @@ def volume1_items() -> list[dict]:
     return items
 
 
-def write_html(items: list[dict]) -> None:
+def write_html(items: list[dict], pack: Path = PACK, title: str = "Round 2", key: str = "pg-round2-verdicts",
+               wrong_box: bool = False) -> None:
     blocks = []
     for k, it in enumerate(items):
         e = html.escape
         cell = f"<img class=cell src='{it['cell']}' loading=lazy>" if it["cell"] else \
-            "<div class=ev>(column not located: find the value in the row)</div>"
+            ("" if it.get("anchor") else "<div class=ev>(column not located: find the value in the row)</div>")
         if it["group"] == "D" and it["sonnet"]:
             q = (f"<label><input type=radio name=v{k} value=mistral> <code>{e(it['mistral'])}</code></label>"
                  f"<label><input type=radio name=v{k} value=sonnet> <code>{e(it['sonnet'])}</code></label>")
         elif it["group"] == "D":
             q = f"<label><input type=radio name=v{k} value=mistral> <code>{e(it['mistral'])}</code> is right</label>"
+        elif it["group"] == "Q":
+            q = (f"<label><input type=radio name=v{k} value=printed_typo> printed <code>{e(it['token'])}</code> "
+                 f"(no decimal point): a typo in the original; intended:</label>"
+                 f"<input class=t name=t{k} placeholder='value'>"
+                 f"<label><input type=radio name=v{k} value=misread> the decimal point is printed "
+                 f"(a misreading)</label>")
         else:
             q = (f"<label><input type=radio name=v{k} value=printed_real> printed <code>{e(it['token'])}</code>, "
                  f"plausibly real</label>"
                  f"<label><input type=radio name=v{k} value=printed_typo> printed, but a typo; intended:</label>")
-        q += (f"<label><input type=radio name=v{k} value={'other' if it['group'] == 'D' else 'misread'}> "
-              f"{'other' if it['group'] == 'D' else 'misread'}; printed:</label>"
-              f"<input class=t name=t{k} placeholder='value'>"
-              f"<label><input type=radio name=v{k} value=cant_tell> can't tell</label>"
-              f"<input class=n name=n{k} placeholder='note (optional)'>")
+        if it["group"] != "Q":
+            q += (f"<label><input type=radio name=v{k} value={'other' if it['group'] == 'D' else 'misread'}> "
+                  f"{'other' if it['group'] == 'D' else 'misread'}; printed:</label>"
+                  f"<input class=t name=t{k} placeholder='value'>")
+        q += f"<label><input type=radio name=v{k} value=cant_tell> can't tell</label>"
+        if wrong_box:
+            q += f"<label><input type=radio name=v{k} value=wrong_box> box is on the wrong cell</label>"
+        q += f"<input class=n name=n{k} placeholder='note (optional)'>"
         blocks.append(
             f"<div class='it g{it['group']}' data-k={k} data-id=\"{e(it['cell_id'])}\" data-file='{it['file']}' "
             f"data-group={it['group']}><div class=h><span class=g>{it['group']}</span> {e(it['where'])}"
             f"{' &middot; <i>' + e(it['why']) + '</i>' if it['why'] else ''}</div>"
+            f"{'<div class=anc>' + it['anchor'] + '</div>' if it.get('anchor') else ''}"
             f"<img src='{it['img']}' loading=lazy>{cell}"
             f"{'<div class=ctx>' + it['context'] + '</div>' if it['context'] else ''}"
             f"<details><summary>how it was settled so far ({e(it['quality'])})</summary>"
@@ -237,20 +248,21 @@ body{{background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,sans-serif;m
 .it.done{{opacity:.55}}
 .it img{{max-width:100%;background:#fff;display:block;margin:6px 0}} .it img.cell{{max-height:110px}}
 .g{{display:inline-block;min-width:1.4em;text-align:center;border-radius:4px;color:#fff;font-weight:600;margin-right:4px}}
-.gD .g{{background:var(--d)}} .gO .g{{background:var(--o)}}
+.gD .g{{background:var(--d)}} .gO .g{{background:var(--o)}} .gQ .g{{background:#7c3aed}} .anc{{margin:4px 0}}
 .ev,.ctx{{color:var(--mut)}} .ctx{{margin:4px 0}} .c label{{margin-right:14px;white-space:nowrap}}
 .t{{width:7em;margin-right:14px}} .n{{width:16em}} code{{font-size:16px}}
 .bar{{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--bd);z-index:1}}
 </style></head><body>
-<div class=bar><b>Round 2</b> &middot; <span class=g style="background:var(--d)">D</span>{n['D']} doubtful readings
-&middot; <span class=g style="background:var(--o)">O</span>{n['O']} outliers &nbsp;
+<div class=bar><b>{title}</b> &middot; <span class=g style="background:var(--d)">D</span>{n['D']} doubtful readings
+&middot; <span class=g style="background:var(--o)">O</span>{n['O']} outliers
+{f'&middot; <span class=g style="background:#7c3aed">Q</span>{n["Q"]} questions' if n['Q'] else ''} &nbsp;
 <label><input type=checkbox id=hide> hide decided</label> &nbsp;
 <button id=dl>Download verdicts</button> <span id=cnt></span>
 <div class=ev>Judge from the ink. In this print a worn 6 or 9 loses its inner stroke and looks like a 0:
 an oval alone is no evidence, a hook or tail is. Context (profile, hours) is shown to help, not to decide.</div></div>
 {''.join(blocks)}
 <script>
-const KEY='pg-round2-verdicts';
+const KEY='{key}';
 let st={{}}; try{{st=JSON.parse(localStorage.getItem(KEY)||'{{}}')}}catch(e){{}}
 function save(){{try{{localStorage.setItem(KEY,JSON.stringify(st))}}catch(e){{}};count()}}
 function count(){{const all=[...document.querySelectorAll('.it')];
@@ -272,7 +284,7 @@ document.getElementById('dl').onclick=()=>{{
  a.download='verdicts.csv';a.click()}};
 count();
 </script></body></html>"""
-    (PACK / "index.html").write_text(page)
+    (pack / "index.html").write_text(page)
 
 
 def main() -> None:

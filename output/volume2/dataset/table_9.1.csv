@@ -43,7 +43,7 @@ T9.1|p124|10|5|q_e,9.1,124,114,10,10,5,q_e,Kcal/cm2 sec (as printed),-1.78,-1.78
 T9.1|p124|10|5|q_s,9.1,124,114,10,10,5,q_s,Kcal/cm2 sec (as printed),-1.39,-1.39,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,5,
 T9.1|p124|10|5|sum_q,9.1,124,114,10,10,5,sum_q,Kcal/cm2 sec (as printed),-9.53,-9.53,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,5,
 T9.1|p124|10|5|R_n,9.1,124,114,10,10,5,R_n,Kcal/cm2 sec (as printed),12.80,12.8,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,5,
-T9.1|p124|10|5|R_n_plus_sum_q,9.1,124,114,10,10,5,R_n_plus_sum_q,Kcal/cm2 sec (as printed),-3.27,-3.27,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,5,global (-8 scales)
+T9.1|p124|10|5|R_n_plus_sum_q,9.1,124,114,10,10,5,R_n_plus_sum_q,Kcal/cm2 sec (as printed),-3.27,-3.27,value,number,False,False,0.9977,,owner,mistral,True,False,,"owner: printed as such (outlier review: global (-8 scales)) (project owner, 2026-11-23)",0,5,global (-8 scales)
 T9.1|p124|15|6|du,9.1,124,114,15,15,6,du,cm/sec,40,40.0,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,6,
 T9.1|p124|15|6|dtheta,9.1,124,114,15,15,6,dtheta,degC,-.70,-0.7,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,6,
 T9.1|p124|15|6|de,9.1,124,114,15,15,6,de,mb,-.09,-0.09,value,number,False,False,0.9977,,single_reader,mistral,False,False,,,0,6,

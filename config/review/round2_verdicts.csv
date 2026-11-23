@@ -1,0 +1,358 @@
+cell_id,file,group,token_as_printed,basis,verdict,reviewer,date
+T13.1|p199|25|1956-08-01|0|8|vapor_pressure,volume2/table_13.1.csv,D,22.2,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p199|25|1956-08-01|0|8|dew_point,volume2/table_13.1.csv,D,18.2,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p200|27|1956-08-02|0|14|temperature,volume2/table_13.1.csv,D,14.6,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p200|27|1956-08-02|0|14|relative_humidity,volume2/table_13.1.csv,D,75,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p200|27|1956-08-02|0|14|vapor_pressure,volume2/table_13.1.csv,D,12.6,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p201|30|1956-08-03|1|10|vapor_pressure,volume2/table_13.1.csv,D,17.8,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|11|pressure,volume2/table_13.1.csv,D,828.5,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|13|temperature,volume2/table_13.1.csv,D,16.2,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|17|dew_point,volume2/table_13.1.csv,D,18.6,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p202|38|1956-08-12|1|4|temperature,volume2/table_13.1.csv,D,22.2,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p202|38|1956-08-12|1|4|dew_point,volume2/table_13.1.csv,D,17.6,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p203|39|1956-08-13|0|5|pressure_altitude,volume2/table_13.1.csv,D,1000,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p212|57|1956-08-25|1|9|dew_point,volume2/table_13.1.csv,D,5.8,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T13.1|p213|58|1956-08-25|0|16|vapor_pressure,volume2/table_13.1.csv,D,13.8,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T13.1|p214|61|1956-08-27|1|8|temperature,volume2/table_13.1.csv,D,24.9,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p64|2|1956-07-03|1505|temperature|temperature|-0.03,volume2/table_8.1.csv,D,25.39,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p64|1|1956-07-03|1105|vapor_pressure|vapor_pressure|8.0,volume2/table_8.1.csv,D,18.44,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p64|3|1956-07-05|2205|wind_speed|wind_speed|0.25,volume2/table_8.1.csv,D,10,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p64|1|1956-07-03|1105|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p65|9|1956-07-11|1005|temperature|temperature|16.0,volume2/table_8.1.csv,D,25.76,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p65|12|1956-07-14|1005|temperature|temperature|-0.25,volume2/table_8.1.csv,D,23.65,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p65|10|1956-07-11|1205|wind_speed|wind_speed|8.0,volume2/table_8.1.csv,D,536,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p65|9|1956-07-11|1005|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.1.csv,D,.59,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p66|17|1956-07-23|2005|temperature|temperature|0.12,volume2/table_8.1.csv,D,27.00,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p66|13|1956-07-22|2005|temperature|temperature|-0.03,volume2/table_8.1.csv,D,26.46,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p66|13|1956-07-22|2005|vapor_pressure|vapor_pressure|0.5,volume2/table_8.1.csv,D,15.88,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p67|19|1956-07-25|1105|temperature|temperature|16.0,volume2/table_8.1.csv,D,27.26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p67|21|1956-07-25|2205|wind_speed|wind_speed|16.0,volume2/table_8.1.csv,D,850,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p67|24|1956-07-29|2305|wind_speed|wind_speed|2.0,volume2/table_8.1.csv,D,586,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p67|21|1956-07-25|2205|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.1.csv,D,-.16,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p68|27|1956-08-02|1405|temperature|temperature|8.0,volume2/table_8.1.csv,D,30.26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p68|27|1956-08-02|1405|soil_temperature_change|run_time,volume2/table_8.1.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p69|35|1956-08-11|2135|vapor_pressure|vapor_pressure|16.0,volume2/table_8.1.csv,D,19.08,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p69|35S|1956-08-07|2305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.1.csv,D,-.38,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|39|1956-08-13|2235|temperature|temperature|16.0,volume2/table_8.1.csv,D,23.68,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|40|1956-08-14|0035|temperature|temperature|0.25,volume2/table_8.1.csv,D,19.20,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|40|1956-08-14|0035|temperature|temperature|-0.03,volume2/table_8.1.csv,D,23.54,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|39|1956-08-13|2235|temperature|temperature|-0.25,volume2/table_8.1.csv,D,24.63,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|40|1956-08-14|0035|temperature|temperature|-0.25,volume2/table_8.1.csv,D,24.89,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p70|38|1956-08-12|0505|temperature|temperature|-0.5,volume2/table_8.1.csv,D,21.81,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|41|1956-08-14|0305|vapor_pressure|vapor_pressure|0.12,volume2/table_8.1.csv,D,15.09,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p70|37|1956-08-12|0305|wind_speed|wind_speed|16.0,volume2/table_8.1.csv,D,726,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p70|40|1956-08-14|0035|wind_speed|wind_speed|16.0,volume2/table_8.1.csv,D,486,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|39|1956-08-13|2235|wind_speed|wind_speed|8.0,volume2/table_8.1.csv,D,410,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|37|1956-08-12|0305|wind_speed|wind_speed|2.0,volume2/table_8.1.csv,D,450,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|42|1956-08-14|0505|wind_speed|wind_speed|0.25,volume2/table_8.1.csv,D,380,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p70|38|1956-08-12|0505|soil_temperature_change|run_time,volume2/table_8.1.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p71|43|1956-08-15|1205|temperature|temperature|8.0,volume2/table_8.1.csv,D,32.00,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p71|46|1956-08-15|1850|temperature|temperature|-0.06,volume2/table_8.1.csv,D,31.07,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p71|43|1956-08-15|1205|vapor_pressure|vapor_pressure|8.0,volume2/table_8.1.csv,D,12.28,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p71|45|1956-08-15|1705|soil_temperature_change|run_time,volume2/table_8.1.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p71|48|1956-08-21|0905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.1.csv,D,.90,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p72|59|1956-08-25|2235|temperature|temperature|0.12,volume2/table_8.1.csv,D,22.20,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p72|60|1956-08-26|0035|temperature|temperature|-0.03,volume2/table_8.1.csv,D,23.28,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p72|57|1956-08-25|1735|wind_speed|wind_speed|8.0,volume2/table_8.1.csv,D,879,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p73|53|1956-08-24|2005|temperature|temperature|-0.25,volume2/table_8.1.csv,D,22.86,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p73|50|1956-08-21|1405|wind_speed|wind_speed|1.0,volume2/table_8.1.csv,D,606,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p73|51|1956-08-21|1535|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.1.csv,D,-.02,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p74|61|1956-08-27|1105|temperature|temperature|0.12,volume2/table_8.1.csv,D,34.61,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p74|64|1956-08-27|2235|temperature|temperature|-0.06,volume2/table_8.1.csv,D,24.68,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p74|61|1956-08-27|1105|temperature|temperature|-0.5,volume2/table_8.1.csv,D,21.49,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p74|61|1956-08-27|1105|vapor_pressure|vapor_pressure|0.25,volume2/table_8.1.csv,D,12.36,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|8.0,volume2/table_8.1.csv,D,209,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p74|64|1956-08-27|2235|wind_speed|wind_speed|0.5,volume2/table_8.1.csv,D,25,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p74|61|1956-08-27|1105|soil_temperature_change|run_time,volume2/table_8.1.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p74|63|1956-08-27|2005|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.1.csv,D,-.80,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.1|p75|67|1956-08-30|0035|vapor_pressure|vapor_pressure|0.12,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.1|p75|68|1956-08-30|0235|vapor_pressure|vapor_pressure|0.12,volume2/table_8.1.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p76|1956-07-10|1405|temperature|temperature|16.0,volume2/table_8.2.csv,D,28.71,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p76|1956-07-10|1405|temperature|temperature|8.0,volume2/table_8.2.csv,D,29.04,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p76|1956-07-10|1505|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,479,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p76|1956-07-10|1705|wind_speed|wind_speed|4.0,volume2/table_8.2.csv,D,498,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p76|1956-07-10|1305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,.85,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p76|1956-07-10|1805|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-11|0205|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,19.04,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p77|1956-07-10|1905|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-10|2005|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-10|2105|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-11|0005|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-11|0105|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-11|0205|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p77|1956-07-11|0105|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,D,+.09,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p78|1956-07-11|0305|temperature|temperature|1.0,volume2/table_8.2.csv,D,21.16,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0805|temperature|temperature|0.5,volume2/table_8.2.csv,D,24.66,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0405|temperature|temperature|-0.25,volume2/table_8.2.csv,D,23.10,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p78|1956-07-11|0805|vapor_pressure|vapor_pressure|4.0,volume2/table_8.2.csv,D,18.58,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p78|1956-07-11|0605|vapor_pressure|vapor_pressure|2.0,volume2/table_8.2.csv,D,17.30,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p78|1956-07-11|0705|vapor_pressure|vapor_pressure|1.0,volume2/table_8.2.csv,D,18.19,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0305|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0405|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0505|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0605|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0705|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0805|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0705|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-.29,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p78|1956-07-11|0405|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.2.csv,D,-.01,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1605|temperature|temperature|16.0,volume2/table_8.2.csv,D,32.83,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p79|1956-07-11|1305|temperature|temperature|-0.03,volume2/table_8.2.csv,D,34.30,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p79|1956-07-11|1305|temperature|temperature|-0.5,volume2/table_8.2.csv,D,20.40,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p79|1956-07-11|1505|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,466,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p79|1956-07-11|0905|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1105|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1305|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1405|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1505|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1605|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p79|1956-07-11|1505|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,D,+.38,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1105|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1605|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|4.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p80|1956-07-23|1205|vapor_pressure|vapor_pressure|2.0,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p81|1956-07-24|0005|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,437,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p82|1956-07-24|0305|wind_speed|wind_speed|2.0,volume2/table_8.2.csv,D,319,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p83|1956-07-24|0905|temperature|temperature|4.0,volume2/table_8.2.csv,D,23.56,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p83|1956-07-24|1205|temperature|temperature|-0.03,volume2/table_8.2.csv,D,32.65,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p83|1956-07-24|0705|temperature|temperature|-0.12,volume2/table_8.2.csv,D,23.66,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p83|1956-07-24|0805|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,D,-.06,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p84|1956-07-24|1405|temperature|temperature|-0.03,volume2/table_8.2.csv,D,36.12,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p84|1956-07-24|1805|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,16.61,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p84|1956-07-24|1905|vapor_pressure|vapor_pressure|0.5,volume2/table_8.2.csv,D,12.26,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p84|1956-07-24|1905|vapor_pressure|vapor_pressure|0.25,volume2/table_8.2.csv,D,12.30,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p85|1956-07-24|2205|vapor_pressure|vapor_pressure|2.0,volume2/table_8.2.csv,D,12.38,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p85|1956-07-24|2005|wind_speed|wind_speed|2.0,volume2/table_8.2.csv,D,146,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p85|1956-07-24|2305|wind_speed|wind_speed|0.5,volume2/table_8.2.csv,D,69,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p85|1956-07-24|2005|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-1.19,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p85|1956-07-25|0005|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,D,-.39,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p86|1956-07-25|0305|temperature|temperature|-0.12,volume2/table_8.2.csv,D,24.56,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p86|1956-07-25|0405|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,94,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p86|1956-07-25|0305|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,190,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p86|1956-07-25|0405|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-.06,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p87|1956-07-25|0905|radiation|insolation,volume2/table_8.2.csv,D,.0056,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p87|1956-07-25|0905|vapor_pressure|vapor_pressure|16.0,volume2/table_8.2.csv,D,15.09,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p87|1956-07-25|1205|wind_speed|wind_speed|8.0,volume2/table_8.2.csv,D,1009,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p88|1956-07-25|1705|radiation|insolation,volume2/table_8.2.csv,D,.0090,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p88|1956-07-25|1705|temperature|temperature|-0.03,volume2/table_8.2.csv,D,34.46,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p88|1956-07-25|1905|temperature|temperature|-0.06,volume2/table_8.2.csv,D,30.26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p88|1956-07-25|1705|temperature|temperature|-0.5,volume2/table_8.2.csv,D,21.06,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p88|1956-07-25|2105|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,14.59,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p88|1956-07-25|1705|wind_speed|wind_speed|0.5,volume2/table_8.2.csv,D,789,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p88|1956-07-25|1605|soil_temperature_change|initial_time,volume2/table_8.2.csv,D,1550,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p88|1956-07-25|1705|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,.63,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p89|1956-07-26|0405|temperature|temperature|-0.25,volume2/table_8.2.csv,D,24.10,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p89|1956-07-26|0305|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,16.97,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p89|1956-07-26|0505|wind_speed|wind_speed|4.0,volume2/table_8.2.csv,D,238,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p89|1956-07-26|0005|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,179,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p90|1956-08-06|1805|temperature|temperature|16.0,volume2/table_8.2.csv,D,29.29,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p90|1956-07-26|1005|temperature|temperature|-0.12,volume2/table_8.2.csv,D,24.29,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p90|1956-07-26|0905|vapor_pressure|vapor_pressure|16.0,volume2/table_8.2.csv,D,13.88,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p90|1956-07-26|0605|soil_temperature_change|run_time,volume2/table_8.2.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p91|1956-08-06|2105|vapor_pressure|vapor_pressure|4.0,volume2/table_8.2.csv,D,15.00,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p91|1956-08-07|0305|vapor_pressure|vapor_pressure|4.0,volume2/table_8.2.csv,D,19.59,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p91|1956-08-06|2105|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,492,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p91|1956-08-06|2205|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,281,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p91|1956-08-07|0305|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,D,-.06,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0905|radiation|net_radiation,volume2/table_8.2.csv,D,.0068,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0705|temperature|temperature|16.0,volume2/table_8.2.csv,D,18.28,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p92|1956-08-07|0705|vapor_pressure|vapor_pressure|1.0,volume2/table_8.2.csv,D,18.56,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0905|vapor_pressure|vapor_pressure|1.0,volume2/table_8.2.csv,D,18.68,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0605|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,589,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0705|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,299,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p92|1956-08-07|0805|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,340,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p92|1956-08-07|0505|soil_temperature_change|run_time,volume2/table_8.2.csv,D,26,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p93|1956-08-07|1405|radiation|insolation,volume2/table_8.2.csv,D,.0109,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p93|1956-08-07|1605|temperature|temperature|1.0,volume2/table_8.2.csv,D,31.36,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p93|1956-08-07|1105|temperature|temperature|-0.03,volume2/table_8.2.csv,D,25.80,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p93|1956-08-07|1205|temperature|temperature|-0.25,volume2/table_8.2.csv,D,22.70,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p93|1956-08-07|1205|vapor_pressure|vapor_pressure|16.0,volume2/table_8.2.csv,D,18.90,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p93|1956-08-07|1105|wind_speed|wind_speed|2.0,volume2/table_8.2.csv,D,609,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p93|1956-08-07|1705|wind_speed|wind_speed|0.5,volume2/table_8.2.csv,D,560,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p93|1956-08-07|1605|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-.19,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p94|1956-08-07|1905|radiation|insolation,volume2/table_8.2.csv,D,.0009,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-08|0005|radiation|insolation,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-07|2205|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,20.08,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p94|1956-08-07|2105|wind_speed|wind_speed|4.0,volume2/table_8.2.csv,D,287,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p94|1956-08-07|2105|wind_speed|wind_speed|0.5,volume2/table_8.2.csv,D,139,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-08|0005|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,399,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-07|2205|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-.28,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p94|1956-08-08|0005|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,D,-.22,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p94|1956-08-07|1905|soil_temperature_change|soil_temperature_change|-0.25,volume2/table_8.2.csv,D,.09,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p94|1956-08-07|2005|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,D,-.09,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p95|1956-08-08|0405|temperature|temperature|1.0,volume2/table_8.2.csv,D,16.00,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p95|1956-08-08|0305|temperature|temperature|-0.25,volume2/table_8.2.csv,D,23.87,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p95|1956-08-08|0505|soil_temperature_change|soil_temperature_change|-0.25,volume2/table_8.2.csv,D,-.01,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|0805|radiation|insolation,volume2/table_8.2.csv,D,.0030,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|0905|radiation|insolation,volume2/table_8.2.csv,D,.0139,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1005|radiation|insolation,volume2/table_8.2.csv,D,.0179,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1105|radiation|insolation,volume2/table_8.2.csv,D,.0190,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1205|radiation|insolation,volume2/table_8.2.csv,D,.0220,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|radiation|insolation,volume2/table_8.2.csv,D,.0218,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|temperature|temperature|0.5,volume2/table_8.2.csv,D,30.74,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|0805|vapor_pressure|vapor_pressure|0.5,volume2/table_8.2.csv,D,--,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,15.61,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|0905|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,489,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p96|1956-08-08|0905|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,270,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p96|1956-08-08|1305|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,150,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p96|1956-08-08|0905|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,D,.23,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p97|1956-08-08|1605|radiation|reflected,volume2/table_8.2.csv,D,.0029,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p97|1956-08-08|1605|temperature|temperature|-0.03,volume2/table_8.2.csv,D,34.46,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p97|1956-08-08|1505|temperature|temperature|-0.12,volume2/table_8.2.csv,D,25.65,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p97|1956-08-08|1705|temperature|temperature|-0.12,volume2/table_8.2.csv,D,27.18,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p97|1956-08-08|1805|temperature|temperature|-1.0,volume2/table_8.2.csv,D,20.00,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p97|1956-08-08|1405|wind_speed|wind_speed|4.0,volume2/table_8.2.csv,D,368,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p97|1956-08-08|1505|wind_speed|wind_speed|1.0,volume2/table_8.2.csv,D,249,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p97|1956-08-08|1505|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,173,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p98|1956-08-08|2305|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,15.00,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p98|1956-08-09|0105|wind_speed|wind_speed|2.0,volume2/table_8.2.csv,D,269,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p98|1956-08-08|2005|soil_temperature_change|run_time,volume2/table_8.2.csv,D,33,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p99|1956-08-09|0505|temperature|temperature|0.5,volume2/table_8.2.csv,D,15.88,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p99|1956-08-09|0505|temperature|temperature|-0.03,volume2/table_8.2.csv,D,19.40,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p99|1956-08-09|0405|temperature|temperature|-0.5,volume2/table_8.2.csv,D,21.91,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p99|1956-08-09|0205|wind_speed|wind_speed|0.25,volume2/table_8.2.csv,D,19,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p100|1956-08-09|1305|radiation|net_radiation,volume2/table_8.2.csv,D,.0069,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p100|1956-08-09|0905|temperature|temperature|-0.06,volume2/table_8.2.csv,D,21.98,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p101|1956-08-27|1605|radiation|net_radiation,volume2/table_8.2.csv,D,.0060,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p101|1956-08-27|1605|temperature|temperature|8.0,volume2/table_8.2.csv,D,33.28,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p101|1956-08-09|1505|vapor_pressure|vapor_pressure|8.0,volume2/table_8.2.csv,D,14.06,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p101|1956-08-09|1605|vapor_pressure|vapor_pressure|1.0,volume2/table_8.2.csv,D,14.09,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p101|1956-08-09|1605|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,14.88,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p101|1956-08-09|1705|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,14.83,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p101|1956-08-09|1405|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,246,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p101|1956-08-27|1505|wind_speed|wind_speed|0.5,volume2/table_8.2.csv,D,456,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p101|1956-08-27|1605|wind_direction|wind_direction|1.0,volume2/table_8.2.csv,D,162,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p101|1956-08-27|1605|soil_temperature_change|initial_time,volume2/table_8.2.csv,D,1553,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p102|1956-08-28|0105|radiation|net_radiation,volume2/table_8.2.csv,D,-.0009,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p102|1956-08-27|2205|temperature|temperature|16.0,volume2/table_8.2.csv,D,26.72,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p102|1956-08-27|2205|temperature|temperature|0.25,volume2/table_8.2.csv,D,18.56,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p102|1956-08-27|2105|temperature|temperature|-1.0,volume2/table_8.2.csv,D,19.79,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p102|1956-08-27|1705|vapor_pressure|vapor_pressure|0.12,volume2/table_8.2.csv,D,13.98,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p103|1956-08-28|0705|temperature|temperature|-0.06,volume2/table_8.2.csv,D,20.63,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p103|1956-08-28|0405|temperature|temperature|-0.12,volume2/table_8.2.csv,D,23.69,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p103|1956-08-28|0205|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,D,289,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p103|1956-08-28|0705|wind_speed|wind_speed|8.0,volume2/table_8.2.csv,D,395,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p104|1956-08-28|0805|temperature|temperature|0.25,volume2/table_8.2.csv,D,22.05,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p105|1956-08-28|1405|temperature|temperature|8.0,volume2/table_8.2.csv,D,32.20,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T8.2|p105|1956-08-28|1405|temperature|temperature|-0.25,volume2/table_8.2.csv,D,22.78,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+T8.2|p105|1956-08-28|1805|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,D,.09,owner confirmed Sonnet's reading (round 2),sonnet,project owner,2026-11-23
+T9.2|p125|50|36|R_n,volume2/table_9.2.csv,D,.763,owner confirmed Mistral's reading (round 2),mistral,project owner,2026-11-23
+p98_5.2_r3_400_86,volume1/arcs.csv,O,10.1,owner: printed as such (outlier review: 12x the larger neighbour),printed,project owner,2026-11-23
+p104_5.2_r6_800_104,volume1/arcs.csv,O,0.155,owner: printed as such (outlier review: 8x the larger neighbour),printed,project owner,2026-11-23
+p182_5.2_r52_800_62,volume1/arcs.csv,O,0.035,owner: printed as such (outlier review: 7x the larger neighbour),printed,project owner,2026-11-23
+T12.1|p155|12|1956-07-14|1|sounding|12|pressure,volume2/table_12.1.csv,O,524,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T12.1|p178|58|1956-08-25|1|sounding|9|temperature,volume2/table_12.1.csv,O,20.0,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p189|3|1956-07-05|0|15|relative_humidity,volume2/table_13.1.csv,O,73,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p189|4|1956-07-06|1|14|relative_humidity,volume2/table_13.1.csv,O,82,owner: printed as such (outlier review: spike (+10 scales)),printed,project owner,2026-11-23
+T13.1|p190|5|1956-07-06|0|8|dew_point,volume2/table_13.1.csv,O,1.50,owner: printed as such (outlier review: spike (-18 scales)),printed,project owner,2026-11-23
+T13.1|p190|5|1956-07-06|0|9|dew_point,volume2/table_13.1.csv,O,14.3,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p190|5|1956-07-06|0|15|relative_humidity,volume2/table_13.1.csv,O,63,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p193|11|1956-07-14|0|8|relative_humidity,volume2/table_13.1.csv,O,82,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p193|11|1956-07-14|0|8|vapor_pressure,volume2/table_13.1.csv,O,22.8,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T13.1|p193|11|1956-07-14|0|9|relative_humidity,volume2/table_13.1.csv,O,50,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T13.1|p193|11|1956-07-14|0|9|vapor_pressure,volume2/table_13.1.csv,O,14.8,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p193|12|1956-07-14|1|3|vapor_pressure,volume2/table_13.1.csv,O,24.8,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p193|12|1956-07-14|1|16|relative_humidity,volume2/table_13.1.csv,O,44,owner: printed as such (outlier review: spike (-11 scales)),printed,project owner,2026-11-23
+T13.1|p193|12|1956-07-14|1|16|vapor_pressure,volume2/table_13.1.csv,O,16.4,owner: printed as such (outlier review: spike (-14 scales)),printed,project owner,2026-11-23
+T13.1|p193|12|1956-07-14|1|16|dew_point,volume2/table_13.1.csv,O,14.4,owner: printed as such (outlier review: spike (-9 scales)),printed,project owner,2026-11-23
+T13.1|p195|15|1956-07-23|0|11|relative_humidity,volume2/table_13.1.csv,O,84,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p197|19|1956-07-25|0|5|temperature,volume2/table_13.1.csv,O,25.2,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p197|19|1956-07-25|0|12|temperature,volume2/table_13.1.csv,O,20.0,owner: printed as such (outlier review: spike (-12 scales)),printed,project owner,2026-11-23
+T13.1|p197|19|1956-07-25|0|12|relative_humidity,volume2/table_13.1.csv,O,25,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T13.1|p197|19|1956-07-25|0|12|vapor_pressure,volume2/table_13.1.csv,O,5.9,owner: printed as such (outlier review: spike (-13 scales)),printed,project owner,2026-11-23
+T13.1|p197|19|1956-07-25|0|12|dew_point,volume2/table_13.1.csv,O,-0.5,owner: printed as such (outlier review: spike (-17 scales)),printed,project owner,2026-11-23
+T13.1|p199|25|1956-08-01|0|7|temperature,volume2/table_13.1.csv,O,19.5,owner: printed as such (outlier review: spike (+13 scales)),printed,project owner,2026-11-23
+T13.1|p199|26|1956-08-02|1|13|relative_humidity,volume2/table_13.1.csv,O,63,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T13.1|p200|27|1956-08-02|0|13|relative_humidity,volume2/table_13.1.csv,O,98,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p200|28|1956-08-03|1|17|relative_humidity,volume2/table_13.1.csv,O,55,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p200|28|1956-08-03|1|17|vapor_pressure,volume2/table_13.1.csv,O,20.4,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p201|29|1956-08-03|0|4|vapor_pressure,volume2/table_13.1.csv,O,16.5,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p201|29|1956-08-03|0|5|vapor_pressure,volume2/table_13.1.csv,O,16.7,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p201|29|1956-08-03|0|12|vapor_pressure,volume2/table_13.1.csv,O,10.3,owner: printed as such (outlier review: spike (-11 scales)),printed,project owner,2026-11-23
+T13.1|p201|30|1956-08-03|1|14|relative_humidity,volume2/table_13.1.csv,O,64,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|2|temperature,volume2/table_13.1.csv,O,21.1,owner: printed as such (outlier review: spike (-13 scales)),printed,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|6|relative_humidity,volume2/table_13.1.csv,O,58,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|6|vapor_pressure,volume2/table_13.1.csv,O,16.7,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|16|relative_humidity,volume2/table_13.1.csv,O,77,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p202|37|1956-08-12|0|16|vapor_pressure,volume2/table_13.1.csv,O,20.9,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p202|38|1956-08-12|1|13|relative_humidity,volume2/table_13.1.csv,O,51,owner: printed as such (outlier review: spike (-10 scales)),printed,project owner,2026-11-23
+T13.1|p202|38|1956-08-12|1|13|dew_point,volume2/table_13.1.csv,O,6.5,owner: printed as such (outlier review: spike (-6 scales)),printed,project owner,2026-11-23
+T13.1|p203|40|1956-08-14|1|16|temperature,volume2/table_13.1.csv,O,24.4,owner: printed as such (outlier review: spike (-6 scales)),printed,project owner,2026-11-23
+T13.1|p205|43|1956-08-15|0|15|vapor_pressure,volume2/table_13.1.csv,O,9.9,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p208|49|1956-08-21|1|12|relative_humidity,volume2/table_13.1.csv,O,62,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p208|49|1956-08-21|1|13|relative_humidity,volume2/table_13.1.csv,O,33,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p208|49|1956-08-21|1|13|dew_point,volume2/table_13.1.csv,O,-3.5,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p209|51|1956-08-21|1|17|relative_humidity,volume2/table_13.1.csv,O,82,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T13.1|p211|54|1956-08-24|0|14|relative_humidity,volume2/table_13.1.csv,O,36,owner: printed as such (outlier review: spike (-9 scales)),printed,project owner,2026-11-23
+T13.1|p211|54|1956-08-24|0|14|dew_point,volume2/table_13.1.csv,O,-1.6,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T13.1|p212|56|1956-08-25|0|13|vapor_pressure,volume2/table_13.1.csv,O,8.7,owner: printed as such (outlier review: spike (-10 scales)),printed,project owner,2026-11-23
+T13.1|p212|57|1956-08-25|1|8|temperature,volume2/table_13.1.csv,O,22.8,owner: printed as such (outlier review: spike (-14 scales)),printed,project owner,2026-11-23
+T13.1|p212|57|1956-08-25|1|9|temperature,volume2/table_13.1.csv,O,27.6,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p215|62|1956-08-27|0|1|relative_humidity,volume2/table_13.1.csv,O,43,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p215|62|1956-08-27|0|1|vapor_pressure,volume2/table_13.1.csv,O,17.0,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p215|62|1956-08-27|0|19|temperature,volume2/table_13.1.csv,O,31.4,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T13.1|p217|66|1956-08-29|0|16|temperature,volume2/table_13.1.csv,O,24.5,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T13.1|p217|66|1956-08-29|0|16|dew_point,volume2/table_13.1.csv,O,7.0,owner: printed as such (outlier review: spike (+9 scales)),printed,project owner,2026-11-23
+T13.1|p217|67|1956-08-30|1|5|dew_point,volume2/table_13.1.csv,O,7.2,owner reading; outlier was a misreading of '1.2' (round 2),misread,project owner,2026-11-23
+T13.1|p217|67|1956-08-30|1|16|dew_point,volume2/table_13.1.csv,O,9.3,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.1|p68|28|1956-08-03|0005|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.1.csv,O,-.20,owner: printed as such (outlier review: global (-13 scales)),printed,project owner,2026-11-23
+T8.1|p68|28|1956-08-03|0005|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.1.csv,O,-.31,owner: printed as such (outlier review: global (-20 scales)),printed,project owner,2026-11-23
+T8.1|p69|33|1956-08-07|1305|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.1.csv,O,-.11,owner: printed as such (outlier review: global (-7 scales)),printed,project owner,2026-11-23
+T8.2|p76|1956-07-10|1605|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,.06,owner: printed as such (outlier review: spike (-9 scales)),printed,project owner,2026-11-23
+T8.2|p77|1956-07-11|0105|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,O,1368,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.2|p77|1956-07-10|1905|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,.51,owner: printed as such (outlier review: spike (+17 scales)),printed,project owner,2026-11-23
+T8.2|p78|1956-07-11|0805|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,-.15,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T8.2|p79|1956-07-11|1105|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,+1.12,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T8.2|p80|1956-07-23|1105|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,1.03,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.2|p80|1956-07-23|1605|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,.12,owner: printed as such (outlier review: global (+8 scales)),printed,project owner,2026-11-23
+T8.2|p81|1956-07-23|1705|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.85,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T8.2|p81|1956-07-23|1905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.76,owner: printed as such (outlier review: spike (-18 scales)),printed,project owner,2026-11-23
+T8.2|p81|1956-07-23|2105|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.68,owner: printed as such (outlier review: spike (+28 scales)),printed,project owner,2026-11-23
+T8.2|p81|1956-07-23|2305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.49,owner reading; outlier was a misreading of '-.40' (round 2),misread,project owner,2026-11-23
+T8.2|p81|1956-07-23|1705|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,-.15,owner: printed as such (outlier review: global (-10 scales)),printed,project owner,2026-11-23
+T8.2|p81|1956-07-23|1705|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.2.csv,O,-.12,owner: printed as such (outlier review: global (-8 scales)),printed,project owner,2026-11-23
+T8.2|p83|1956-07-24|1105|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,1.27,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.2|p84|1956-07-24|1405|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.45,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T8.2|p84|1956-07-24|1505|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.01,owner reading; outlier was a misreading of '.91' (round 2),misread,project owner,2026-11-23
+T8.2|p84|1956-07-24|1605|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,.09,owner: printed as such (outlier review: global (+6 scales)),printed,project owner,2026-11-23
+T8.2|p84|1956-07-24|1805|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,.10,owner: printed as such (outlier review: global (+7 scales)),printed,project owner,2026-11-23
+T8.2|p85|1956-07-24|2005|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,.11,owner: printed as such (outlier review: global (+7 scales)),printed,project owner,2026-11-23
+T8.2|p86|1956-07-25|0405|temperature|temperature|0.12,volume2/table_8.2.csv,O,13.01,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T8.2|p86|1956-07-25|0605|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,-.58,owner: printed as such (outlier review: spike (-12 scales)),printed,project owner,2026-11-23
+T8.2|p87|1956-07-25|0905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.45,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T8.2|p87|1956-07-25|1205|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,1.03,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T8.2|p88|1956-07-25|1605|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.12,owner: printed as such (outlier review: spike (-10 scales)),printed,project owner,2026-11-23
+T8.2|p88|1956-07-25|1805|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.74,owner: printed as such (outlier review: spike (+18 scales)),printed,project owner,2026-11-23
+T8.2|p88|1956-07-25|1905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.74,owner: printed as such (outlier review: spike (-19 scales)),printed,project owner,2026-11-23
+T8.2|p89|1956-07-25|2305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.23,owner: printed as such (outlier review: spike (+11 scales)),printed,project owner,2026-11-23
+T8.2|p89|1956-07-26|0005|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.24,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T8.2|p91|1956-08-06|1905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.05,owner: printed as such (outlier review: spike (+13 scales)),printed,project owner,2026-11-23
+T8.2|p91|1956-08-06|2105|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.50,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T8.2|p91|1956-08-07|0005|soil_temperature_change|soil_temperature_change|-0.5,volume2/table_8.2.csv,O,.09,owner: printed as such (outlier review: global (+6 scales)),printed,project owner,2026-11-23
+T8.2|p92|1956-08-07|0805|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.72,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T8.2|p92|1956-08-07|0505|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,.78,owner: printed as such (outlier review: spike (+21 scales)),printed,project owner,2026-11-23
+T8.2|p92|1956-08-07|0605|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,-.08,owner: printed as such (outlier review: spike (-10 scales)),printed,project owner,2026-11-23
+T8.2|p92|1956-08-07|0605|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.2.csv,O,.10,owner: printed as such (outlier review: global (+7 scales)),printed,project owner,2026-11-23
+T8.2|p93|1956-08-07|1205|radiation|net_radiation,volume2/table_8.2.csv,O,.0110,owner: printed as such (outlier review: spike (-79707 scales)),printed,project owner,2026-11-23
+T8.2|p93|1956-08-07|1105|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,1.00,owner: printed as such (outlier review: spike (+22 scales)),printed,project owner,2026-11-23
+T8.2|p95|1956-08-08|0105|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,O,479,owner: printed as such (outlier review: spike (-6 scales)),printed,project owner,2026-11-23
+T8.2|p95|1956-08-08|0205|wind_speed|wind_speed|16.0,volume2/table_8.2.csv,O,1190,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.2|p96|1956-08-08|0905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,1.32,owner: printed as such (outlier review: spike (+16 scales)),printed,project owner,2026-11-23
+T8.2|p96|1956-08-08|1005|soil_temperature_change|soil_temperature_change|-0.06,volume2/table_8.2.csv,O,.06,owner: printed as such (outlier review: spike (-13 scales)),printed,project owner,2026-11-23
+T8.2|p96|1956-08-08|1205|soil_temperature_change|soil_temperature_change|-0.25,volume2/table_8.2.csv,O,-.55,owner: printed as such (outlier review: spike (-13 scales)),printed,project owner,2026-11-23
+T8.2|p97|1956-08-08|1505|soil_temperature_change|soil_temperature_change|-1.0,volume2/table_8.2.csv,O,-.09,owner: printed as such (outlier review: global (-6 scales)),printed,project owner,2026-11-23
+T8.2|p98|1956-08-09|0105|temperature|temperature|0.12,volume2/table_8.2.csv,O,17.07,owner: printed as such (outlier review: spike (+6 scales)),printed,project owner,2026-11-23
+T8.2|p99|1956-08-09|0705|vapor_pressure|vapor_pressure|16.0,volume2/table_8.2.csv,O,16.07,owner: printed as such (outlier review: spike (-6 scales)),printed,project owner,2026-11-23
+T8.2|p99|1956-08-09|0205|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.53,owner: printed as such (outlier review: spike (-7 scales)),printed,project owner,2026-11-23
+T8.2|p99|1956-08-09|0605|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.18,owner: printed as such (outlier review: spike (-11 scales)),printed,project owner,2026-11-23
+T8.2|p100|1956-08-09|1205|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,1.17,owner: printed as such (outlier review: spike (+12 scales)),printed,project owner,2026-11-23
+T8.2|p100|1956-08-09|1305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.22,owner: printed as such (outlier review: spike (-15 scales)),printed,project owner,2026-11-23
+T8.2|p101|1956-08-09|1405|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.60,owner: printed as such (outlier review: spike (+7 scales)),printed,project owner,2026-11-23
+T8.2|p102|1956-08-28|0105|temperature|temperature|16.0,volume2/table_8.2.csv,O,21.75,owner: printed as such (outlier review: spike (-6 scales)),printed,project owner,2026-11-23
+T8.2|p102|1956-08-27|1905|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,-.96,owner: printed as such (outlier review: spike (-11 scales)),printed,project owner,2026-11-23
+T8.2|p103|1956-08-28|0305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.07,owner: printed as such (outlier review: spike (+8 scales)),printed,project owner,2026-11-23
+T8.2|p104|1956-08-28|1305|radiation|net_radiation,volume2/table_8.2.csv,O,.0030,owner: printed as such (outlier review: spike (-8 scales)),printed,project owner,2026-11-23
+T8.2|p104|1956-08-28|0805|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.67,owner reading; outlier was a misreading of '6.7' (round 2),misread,project owner,2026-11-23
+T8.2|p104|1956-08-28|1305|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.19,owner: printed as such (outlier review: spike (-12 scales)),printed,project owner,2026-11-23
+T8.2|p105|1956-08-28|1405|soil_temperature_change|soil_temperature_change|-0.03,volume2/table_8.2.csv,O,.72,owner: printed as such (outlier review: spike (+15 scales)),printed,project owner,2026-11-23
+T8.3|p106|0|1|0-10|2|1|August 6 | Soil Moisture (% Dry Wt.),volume2/table_8.3.csv,O,9.2,owner: printed as such (outlier review: global (+7 scales)),printed,project owner,2026-11-23
+T9.1|p124|10|5|R_n_plus_sum_q,volume2/table_9.1.csv,O,-3.27,owner: printed as such (outlier review: global (-8 scales)),printed,project owner,2026-11-23

@@ -1172,7 +1172,7 @@ run,arc_m,post,bearing_deg,status,concentration_mg_m3,estimated,token,value_sour
 3,400,83,74,value,17.6,False,17.6,mistral,False,True,"800 m post number printed as '166', expected 165 (row shift?) | Mistral row key '83' differs from the expected key",False,,,pipeline,98,85,p98_5.2_r3_400_83
 3,400,84,76,value,18.4,False,18.4,mistral,False,True,"implausible: 18.4 vs neighbours 17.6, 0.25 (x8.8)",False,,,pipeline,98,85,p98_5.2_r3_400_84
 3,400,85,78,value,0.25,False,0.250,mistral,False,True,"implausible: 0.25 vs neighbours 18.4, 10.1 (x54.5)",False,,,pipeline,98,85,p98_5.2_r3_400_85
-3,400,86,80,value,10.1,False,10.1,mistral,False,True,"implausible: 10.1 vs neighbours 0.25, 0.83 (x22.2)",False,,,pipeline,98,85,p98_5.2_r3_400_86
+3,400,86,80,value,10.1,False,10.1,"owner review (owner: printed as such (outlier review: 12x the larger neighbour), project owner, 2026-11-23)",True,True,"implausible: 10.1 vs neighbours 0.25, 0.83 (x22.2)",False,,,pipeline,98,85,p98_5.2_r3_400_86
 3,400,87,82,value,0.83,False,0.830,mistral,False,False,,False,,,pipeline,98,85,p98_5.2_r3_400_87
 3,400,88,84,value,0.01,False,0.010,mistral,False,True,"implausible: 0.01 vs neighbours 0.83, 0.01 (x9.1)",False,,,pipeline,98,85,p98_5.2_r3_400_88
 3,400,89,86,value,0.01,False,0.010,mistral,False,False,,False,,,pipeline,98,85,p98_5.2_r3_400_89
@@ -2916,7 +2916,7 @@ run,arc_m,post,bearing_deg,status,concentration_mg_m3,estimated,token,value_sour
 6,800,101,10,value,0.075,False,0.075,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_101
 6,800,102,11,value,0.02,False,0.020,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_102
 6,800,103,12,value,0.02,False,0.020,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_103
-6,800,104,13,value,0.155,False,0.155,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_104
+6,800,104,13,value,0.155,False,0.155,"owner review (owner: printed as such (outlier review: 8x the larger neighbour), project owner, 2026-11-23)",True,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_104
 6,800,105,14,not_measurable,,False,,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_105
 6,800,106,15,not_measurable,,False,,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_106
 6,800,107,16,not_measurable,,False,,mistral,False,False,,False,,,pipeline (Mistral header agrees),104,91,p104_5.2_r6_800_107
@@ -24220,7 +24220,7 @@ run,arc_m,post,bearing_deg,status,concentration_mg_m3,estimated,token,value_sour
 52,800,59,328,not_measurable,,False,,mistral,False,True,"800 m post number printed as '58', expected 59 (row shift?)",False,,,pipeline,182,169,p182_5.2_r52_800_59
 52,800,60,329,value,0.01,False,0.010,mistral,False,False,,False,,,pipeline,182,169,p182_5.2_r52_800_60
 52,800,61,330,not_measurable,,False,,mistral,False,False,,False,,,pipeline,182,169,p182_5.2_r52_800_61
-52,800,62,331,value,0.035,False,0.035,mistral,False,False,,False,,,pipeline,182,169,p182_5.2_r52_800_62
+52,800,62,331,value,0.035,False,0.035,"owner review (owner: printed as such (outlier review: 7x the larger neighbour), project owner, 2026-11-23)",True,False,,False,,,pipeline,182,169,p182_5.2_r52_800_62
 52,800,63,332,value,0.005,False,0.005,mistral,False,True,,False,,,pipeline,182,169,p182_5.2_r52_800_63
 52,800,64,333,not_measurable,,False,,mistral,False,False,,False,,,pipeline,182,169,p182_5.2_r52_800_64
 52,800,65,334,not_measurable,,False,,mistral,False,False,,False,,,pipeline,182,169,p182_5.2_r52_800_65
