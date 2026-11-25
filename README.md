@@ -395,8 +395,8 @@ output/           extractions and the datasets
 
 ## Licence
 
-- Code: MIT (`LICENSE`).
-- Datasets, annotations and their documentation: CC BY 4.0 (`LICENSE-DATA`).
+- Code: MIT (`LICENSE`). The notebooks and `notebooks/pgdata.py`: MIT No Attribution (`notebooks/LICENSE`).
+- Datasets, annotations and their documentation: CC0 1.0, public domain dedication (`LICENSE-DATA`).
 - The scanned report volumes in `rawdata/` are third-party files covered by neither; see
   `rawdata/README.md` for their source and checksums. They are not part of the data release.
 

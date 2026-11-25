@@ -1,22 +1,25 @@
 Project Prairie Grass (1956): transcribed data tables
-Copyright (c) 2026 Anders Ohrn
 
-The datasets and their documentation are licensed under the Creative Commons
-Attribution 4.0 International licence (CC BY 4.0):
+CC0 1.0 Universal (public domain dedication)
 
-    https://creativecommons.org/licenses/by/4.0/
-    Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+    https://creativecommons.org/publicdomain/zero/1.0/
+    Legal code: https://creativecommons.org/publicdomain/zero/1.0/legalcode
 
-You are free to share and adapt the material for any purpose, including
-commercially, provided you give appropriate credit, provide a link to the
-licence, and indicate if changes were made. Cite the dataset as given in its
-README (data card), and the original report:
+To the extent possible under law, the transcriber has waived all copyright and
+related or neighbouring rights to this transcription, its annotations and its
+documentation. You may copy, modify, distribute and use them, including
+commercially, without asking permission and without conditions.
+
+The measurements are those of the original report, a US Government (Air Force)
+publication:
 
     Barad, M. L. (ed.), 1958: Project Prairie Grass, A Field Program in
     Diffusion, Vols. I and II. Geophysical Research Papers No. 59,
     AFCRC-TR-58-235(I) and (II), Air Force Cambridge Research Center.
 
+Citation is not a condition of use, but as good scientific practice please
+cite the original report, and the dataset as given in its README (data card)
+so that others can find the exact version you used.
+
 In the repository this covers output/volume1/dataset/, output/volume2/dataset/,
-output/publish/ and the data release built by `make release`. The underlying
-measurements are those of the 1958 report; the licence covers this
-transcription, its annotations and documentation.
+output/publish/ and the data release built by `make release`.

@@ -1,6 +1,6 @@
 # {{title}}
 
-Version {{version}} ({{date}}) · {{creators}} · Licence: CC BY 4.0
+Version {{version}} ({{date}}) · {{creators}} · Licence: CC0 1.0
 
 This dataset is a cell-by-cell transcription of the data tables in **Project Prairie Grass, A Field
 Program in Diffusion** (M. L. Barad, ed., 1958; Geophysical Research Papers No. 59, Volumes I and II,
@@ -15,6 +15,11 @@ it was compared against one of them (see [Differences from earlier transcription
 **The guiding rule: every value is what the page prints.** Nothing is interpolated, smoothed or
 corrected. Where we think the print is wrong, the printed token stays and our interpretation sits in
 a separate column, with its evidence.
+
+**Where to get it.** The archived release is on Zenodo, doi:[10.5281/zenodo.24462501](https://doi.org/10.5281/zenodo.24462501).
+An identical copy is on Hugging Face, [Anderzzz/prairie-grass-1956](https://huggingface.co/datasets/Anderzzz/prairie-grass-1956)
+(tag `v1.0.0`), where the tables can be browsed and loaded with `datasets.load_dataset("Anderzzz/prairie-grass-1956", "arcs")`.
+Read the cell `status` rather than nulls: an empty cell becomes null there, and `status` says what it means.
 
 ## Contents
 
@@ -43,7 +48,7 @@ Three short notebooks show what the data holds and how to use it. Each runs in a
 
 They use `notebooks/pgdata.py`, which loads the files with the reading rules below and finds the
 data in the folder above. Install with `pip install -r notebooks/requirements.txt`. The
-notebook code is under the MIT licence (`notebooks/LICENSE`).
+notebook code is under MIT No Attribution (MIT-0, `notebooks/LICENSE`): use it freely, no credit needed.
 
 ## How to read the files
 
@@ -248,8 +253,9 @@ Please also cite the original report (above).
 
 ## Licence
 
-The data and this documentation: [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
-The notebooks and `pgdata.py`: MIT.
+The data and this documentation: [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), a public domain
+dedication. No conditions; citing the original report and this dataset is requested, not required.
+The notebooks and `pgdata.py`: [MIT No Attribution](https://opensource.org/license/mit-0) (MIT-0).
 The underlying measurements are those of the 1958 report.
 
 ## Versions

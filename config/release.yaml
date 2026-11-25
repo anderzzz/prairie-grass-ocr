@@ -20,10 +20,20 @@ description: >
   interpolated, smoothed or corrected; suspected errors in the 1958 original are marked with the
   evidence and a suggested alternative, never substituted.
 
+# Zenodo "Creators": who made the data. Barad edited the 1958 report that holds the measurements.
 creators:
-  - name: "Anders Ohrn"
+  - name: "Barad, Morton L."
+    display: "M. L. Barad (ed., 1958)"
+    affiliation: "Air Force Cambridge Research Center"
     orcid: null
     roles: [creator]
+# Zenodo "Contributors": who made this transcription (role Data curator).
+contributors:
+  - name: "Ohrn, Anders"
+    display: "Anders Ohrn (data curator)"
+    affiliation: null
+    orcid: null
+    roles: [curator]
 
 keywords:
   - Project Prairie Grass
@@ -76,9 +86,9 @@ zenodo_notes: >
   alternative, beside the printed value (see README).
 
 citation: >
-  Ohrn, A. (2026). Project Prairie Grass (1956): tracer concentrations and micrometeorology,
-  transcribed cell by cell from the 1958 report (Version 1.0.0) [Data set]. Zenodo.
-  https://doi.org/10.5281/zenodo.24462501
+  Barad, M. L. (ed.) (2026). Project Prairie Grass (1956): tracer concentrations and
+  micrometeorology, transcribed cell by cell from the 1958 report (Version 1.0.0) [Data set].
+  Data curated by A. Ohrn. Zenodo. https://doi.org/10.5281/zenodo.24462501
 
 # The comparison with the earlier transcription (built by scoring/reference_comparison.py),
 # shipped as annotations/<file>. Described here rather than in src/publish/release.py, which

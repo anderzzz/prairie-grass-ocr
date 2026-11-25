@@ -20,7 +20,7 @@ import numpy as np
 import pandas as pd
 
 DOI = "10.5281/zenodo.24462501"
-HF_REPO = "TO-SET/prairie-grass-1956"   # Hugging Face dataset repo id
+HF_REPO = "Anderzzz/prairie-grass-1956"   # Hugging Face dataset repo id
 HF_REVISION = "v1.0.0"                  # the tag that matches the Zenodo version
 
 ARCS_M = [50, 100, 200, 400, 800]

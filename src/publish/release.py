@@ -4,9 +4,9 @@
 
 Bundle layout (paths as used by `file` in annotations.jsonl):
 
-  README.md                     data card (docs/data_card.md, with counts filled in)
+  README.md                     data card (docs/data_card.md, with counts filled in; HF YAML header)
   datapackage.json              Frictionless Data Package: every file and column described
-  LICENSE                       CC BY 4.0 (the data and its documentation)
+  LICENSE                       CC0 1.0 (the data and its documentation)
   volume1/*.csv                 Volume I tables 5.1-5.4, 6.1, run remarks
   volume2/table_<id>.csv        Volume II tables
   annotations/annotations.jsonl, annotation_categories.json, reference_comparison.csv
@@ -308,13 +308,44 @@ def render_card(meta: dict, loaded: dict[str, list[dict]], n_ann: int) -> str:
     card = CARD.read_text()
     for k, v in {"title": meta["title"], "version": meta["version"], "date": meta.get("date") or date.today().isoformat(),
                  "file_table": files, "quality_table": quality, "v1_status": v1status, "scan_table": scans,
-                 "n_annotations": f"{n_ann:,}", "creators": ", ".join(c["name"] for c in meta["creators"]),
+                 "n_annotations": f"{n_ann:,}", "creators": "; ".join(c.get("display", c["name"]) for c in meta["creators"] + meta.get("contributors", [])),
                  "citation": meta["citation"].strip()}.items():
         card = card.replace("{{" + k + "}}", v)
     left = re.findall(r"\{\{\w+\}\}", card)
     if left:
         raise SystemExit(f"data card: unfilled placeholders {left}")
     return card
+
+
+HF_DTYPE = {"string": "string", "integer": "int64", "number": "float64", "boolean": "bool", "date": "string"}
+
+
+def hf_front_matter(pkg_res: list[dict]) -> str:
+    """YAML header for the Hugging Face dataset card: licence, tags and one viewer config per table.
+
+    Hugging Face reads it and hides it; other renderers show it as a block at the top. Column types
+    come from datapackage.json, so `run` stays a string (35S) instead of being guessed as an integer.
+    Only an empty cell is null (`keep_default_na: false`), so printed tokens such as NA stay text."""
+    lines = ["---", "license: cc0-1.0", "pretty_name: Project Prairie Grass (1956)", "language:", "- en",
+             "size_categories:", "- 10K<n<100K", "task_categories:", "- tabular-regression", "tags:"]
+    lines += [f"- {k}" for k in ["atmospheric-dispersion", "air-pollution", "micrometeorology", "physics",
+                                 "benchmark", "historical-data", "tabular"]]
+    def cname(path: str) -> str:
+        return path.removesuffix(".csv").split("/")[-1].replace(".", "_")
+    csvs = [r for r in pkg_res if r["format"] == "csv"]
+    lines += ["configs:"]
+    for i, r in enumerate(csvs):
+        lines += [f"- config_name: {cname(r['path'])}", f"  data_files: {r['path']}",
+                  "  keep_default_na: false", "  na_values:", "  - ''"]
+        if i == 0:
+            lines.append("  default: true")
+    # annotations.jsonl gets no config: in a repo of CSVs the HF loader would parse it as CSV.
+    lines += ["dataset_info:"]
+    for r in csvs:
+        lines += [f"- config_name: {cname(r['path'])}", "  features:"]
+        for f in r["schema"]["fields"]:
+            lines += [f"  - name: {f['name']}", f"    dtype: {HF_DTYPE[f['type']]}"]
+    return "\n".join(lines + ["---", ""]) + "\n"
 
 
 # ---------------------------------------------------------------- build
@@ -359,18 +390,18 @@ def main() -> None:
         "name": meta["name"], "title": meta["title"], "version": meta["version"],
         "description": " ".join(meta["description"].split()),
         **({"homepage": meta["homepage"]} if meta.get("homepage") else {}),
-        "licenses": [{"name": "CC-BY-4.0", "path": "https://creativecommons.org/licenses/by/4.0/",
-                      "title": "Creative Commons Attribution 4.0"}],
+        "licenses": [{"name": "CC0-1.0", "path": "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "title": "CC0 1.0 Universal"}],
         "contributors": [{"title": c["name"], "roles": c.get("roles", ["creator"]),
                           **({"path": f"https://orcid.org/{c['orcid']}"} if c.get("orcid") else {})}
-                         for c in meta["creators"]],
+                         for c in meta["creators"] + meta.get("contributors", [])],
         "sources": [{"title": s["title"], "path": s.get("url", "")} for s in meta["sources"]],
         "keywords": meta["keywords"],
         "created": meta.get("date") or date.today().isoformat(),
         "resources": pkg_res,
     }
     (OUT / "datapackage.json").write_text(json.dumps(pkg, indent=1, ensure_ascii=False) + "\n")
-    (OUT / "README.md").write_text(render_card(meta, loaded, len(ann)))
+    (OUT / "README.md").write_text(hf_front_matter(pkg_res) + render_card(meta, loaded, len(ann)))
     shutil.copyfile(REPO / "LICENSE-DATA", OUT / "LICENSE")
     # Introductory notebooks (with their outputs) and their helper; they find the data one level up.
     nb_dir = OUT / "notebooks"
@@ -378,7 +409,7 @@ def main() -> None:
     for f in sorted(NOTEBOOKS.glob("*.ipynb")) + [NOTEBOOKS / "pgdata.py"]:
         shutil.copyfile(f, nb_dir / f.name)
     (nb_dir / "requirements.txt").write_text("\n".join(NOTEBOOK_REQUIREMENTS) + "\n")
-    shutil.copyfile(REPO / "LICENSE", nb_dir / "LICENSE")
+    shutil.copyfile(NOTEBOOKS / "LICENSE", nb_dir / "LICENSE")
     n = sum(len(v) for v in loaded.values())
     print(f"release: {OUT}  {len(pkg_res)} resources, {n:,} rows, {len(ann)} annotations")
 
